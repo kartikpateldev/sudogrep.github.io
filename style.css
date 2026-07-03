@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: #020617;
+  padding: 1rem 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+  color: #cbd5f5;
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #cbd5f5;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.8rem;
+  background: #22c55e;
+  color: #020617;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  border-radius: 6px;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section.dark {
+  background: #020617;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Apps Card */
+.apps-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #020617;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Footer */
+.footer {
+  background: #020617;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.contact-email {
+  margin-top: 1rem;
+  font-weight: 600;
+}
