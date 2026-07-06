@@ -3,103 +3,473 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SudoGrep | Mobile App Development Studio</title>
-  <meta name="description" content="SudoGrep is a mobile app development studio creating simple, fast, and elegant Android applications.">
+  <title>SudoGrep | IT Software & Application Development Company</title>
+  <meta name="description" content="SudoGrep is a leading IT software and application development company offering web development, mobile apps, backend solutions, and custom software services.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="logo">SudoGrep</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#apps">Apps</a>
-        <a href="#contact">Contact</a>
+      <div class="logo">
+        <img src="assets/logo_square.png" alt="SudoGrep Logo" class="logo-image">
+        <span class="logo-text">SudoGrep</span>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h2>Building clean, powerful mobile apps</h2>
-      <p>We design and develop high-quality Android applications focused on simplicity, performance, and user experience.</p>
-      <a class="btn" href="#apps">View Our Apps</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
     </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
     <div class="container">
-      <h3>About SudoGrep</h3>
-      <p>
-        SudoGrep is an independent mobile app development studio focused on building
-        intuitive, lightweight, and reliable Android applications.  
-        We believe great software should be simple, fast, and privacy-friendly.
-      </p>
-    </div>
-  </section>
-
-  <!-- Apps -->
-  <section id="apps" class="section dark">
-    <div class="container">
-      <h3>Our Apps</h3>
-      <p>
-        Explore all our published Android applications on Google Play.
-      </p>
-
-      <div class="apps-card">
-        <h4>Google Play Developer Profile</h4>
-        <p>
-          All our apps, ratings, installs, and updates are available on our official
-          Play Store page.
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Transforming Ideas into Digital Reality
+        </div>
+        <h1 class="hero-title">
+          Building Exceptional
+          <span class="gradient-text">Software Solutions</span>
+        </h1>
+        <p class="hero-description">
+          We are a leading IT software and application development company with vast experience in creating innovative, scalable, and high-performance digital solutions for businesses worldwide.
         </p>
-        <a class="btn-outline" target="_blank"
-           href="https://play.google.com/store/apps/dev?id=7135905913091619860">
-          View Apps on Google Play
-        </a>
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">Explore Services</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support Available</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Us -->
-  <section class="section">
-    <div class="container grid">
-      <div>
-        <h4>🚀 Performance First</h4>
-        <p>Optimized apps with smooth UI and fast performance.</p>
-      </div>
-      <div>
-        <h4>🎯 Minimal Design</h4>
-        <p>Clean interfaces that users love and understand instantly.</p>
-      </div>
-      <div>
-        <h4>🔐 Privacy Focused</h4>
-        <p>No unnecessary permissions. User trust matters.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section dark">
+  <!-- Services Section -->
+  <section id="services" class="services">
     <div class="container">
-      <h3>Contact</h3>
-      <p>For business inquiries, collaborations, or support:</p>
-      <p class="contact-email">📧 support@sudogrep.in</p>
+      <div class="section-header">
+        <span class="section-badge">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-description">
+          Comprehensive IT solutions tailored to your business needs
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card" data-color="blue">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Software Development</h3>
+          <p class="service-description">
+            Custom software solutions designed to streamline your business processes and drive growth with cutting-edge technology.
+          </p>
+          <ul class="service-features">
+            <li>Enterprise Software</li>
+            <li>SaaS Applications</li>
+            <li>Custom Solutions</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="purple">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Mobile App Development</h3>
+          <p class="service-description">
+            Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android devices.
+          </p>
+          <ul class="service-features">
+            <li>iOS & Android Apps</li>
+            <li>Cross-Platform Solutions</li>
+            <li>App Maintenance</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="green">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Website & Web App Development</h3>
+          <p class="service-description">
+            Modern, responsive websites and powerful web applications built with the latest frameworks and best practices.
+          </p>
+          <ul class="service-features">
+            <li>Responsive Websites</li>
+            <li>Progressive Web Apps</li>
+            <li>E-commerce Solutions</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="orange">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Backend Development</h3>
+          <p class="service-description">
+            Robust, scalable backend systems and APIs that power your applications with reliability and performance.
+          </p>
+          <ul class="service-features">
+            <li>RESTful APIs</li>
+            <li>Database Design</li>
+            <li>Cloud Integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="cyan">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">SEO Services</h3>
+          <p class="service-description">
+            Boost your online visibility and drive organic traffic with our comprehensive SEO strategies and optimization.
+          </p>
+          <ul class="service-features">
+            <li>On-Page SEO</li>
+            <li>Technical SEO</li>
+            <li>Content Optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="pink">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Manual Testing</h3>
+          <p class="service-description">
+            Comprehensive manual testing services to ensure your software meets quality standards and user expectations.
+          </p>
+          <ul class="service-features">
+            <li>Functional Testing</li>
+            <li>Usability Testing</li>
+            <li>Regression Testing</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="blue">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Automation Testing</h3>
+          <p class="service-description">
+            Accelerate your testing process with automated test suites that ensure consistent quality and faster releases.
+          </p>
+          <ul class="service-features">
+            <li>Test Automation</li>
+            <li>CI/CD Integration</li>
+            <li>Performance Testing</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="purple">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+              <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+              <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Machine Learning</h3>
+          <p class="service-description">
+            Harness the power of AI and machine learning to build intelligent solutions that drive business innovation.
+          </p>
+          <ul class="service-features">
+            <li>Predictive Analytics</li>
+            <li>ML Model Development</li>
+            <li>AI Integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-badge">About Us</span>
+          <h2 class="section-title">Experience That Delivers Results</h2>
+          <p class="about-description">
+            SudoGrep is a premier IT software and application development company dedicated to transforming innovative ideas into powerful digital solutions. With vast experience across multiple domains, we specialize in delivering high-quality software that drives business success.
+          </p>
+          <p class="about-description">
+            Our team of expert developers, designers, and strategists work collaboratively to build solutions that are not only technically excellent but also aligned with your business objectives. We pride ourselves on our commitment to quality, innovation, and client satisfaction.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div class="feature-text">
+                <strong>Expert Team</strong>
+                <span>Skilled professionals with years of experience</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div class="feature-text">
+                <strong>Agile Methodology</strong>
+                <span>Flexible and iterative development approach</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div class="feature-text">
+                <strong>Quality Assurance</strong>
+                <span>Rigorous testing for flawless delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-card card-1">
+            <div class="card-icon">💻</div>
+            <div class="card-title">Clean Code</div>
+          </div>
+          <div class="visual-card card-2">
+            <div class="card-icon">🚀</div>
+            <div class="card-title">Fast Delivery</div>
+          </div>
+          <div class="visual-card card-3">
+            <div class="card-icon">🎯</div>
+            <div class="card-title">Precision</div>
+          </div>
+          <div class="visual-card card-4">
+            <div class="card-icon">⭐</div>
+            <div class="card-title">Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Why Choose Us</span>
+        <h2 class="section-title">What Sets Us Apart</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-number">01</div>
+          <h3>Proven Expertise</h3>
+          <p>Years of experience delivering successful projects across various industries and technologies.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">02</div>
+          <h3>Client-Centric Approach</h3>
+          <p>Your success is our priority. We work closely with you to understand and exceed your expectations.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">03</div>
+          <h3>Cutting-Edge Technology</h3>
+          <p>We leverage the latest tools and frameworks to build future-proof solutions.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">04</div>
+          <h3>Scalable Solutions</h3>
+          <p>Our applications are built to grow with your business, ensuring long-term value.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">05</div>
+          <h3>Timely Delivery</h3>
+          <p>We respect deadlines and ensure your project is delivered on time, every time.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">06</div>
+          <h3>Ongoing Support</h3>
+          <p>Our relationship doesn't end at launch. We provide continuous support and maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Amazing Together</h2>
+          <p class="contact-description">
+            Ready to start your next project? We'd love to hear from you. Get in touch with our team and let's discuss how we can help bring your vision to life.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:support@sudogrep.in" class="contact-value">support@sudogrep.in</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Website</div>
+                <a href="https://sudogrep.in" class="contact-value">www.sudogrep.in</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://play.google.com/store/apps/dev?id=7135905913091619860" target="_blank" class="social-link" aria-label="Google Play Store">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Apple App Store">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="software">Software Development</option>
+                <option value="mobile">Mobile App Development</option>
+                <option value="web">Website & Web App Development</option>
+                <option value="backend">Backend Development</option>
+                <option value="seo">SEO Services</option>
+                <option value="manual-testing">Manual Testing</option>
+                <option value="automation-testing">Automation Testing</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 SudoGrep. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="assets/logo_square.png" alt="SudoGrep Logo" class="logo-image">
+            <span class="logo-text">SudoGrep</span>
+          </div>
+          <p class="footer-tagline">Transforming ideas into exceptional digital solutions.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Services</h4>
+            <a href="#services">Software Development</a>
+            <a href="#services">Mobile Apps</a>
+            <a href="#services">Web Development</a>
+            <a href="#services">Backend Solutions</a>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SudoGrep. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
