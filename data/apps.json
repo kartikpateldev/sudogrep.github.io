@@ -1,0 +1,78 @@
+[
+  {
+    "name": "File Forge: Convert & Extract",
+    "slug": "file-forge",
+    "package_name": "dev.kartikpatel.fileforge",
+    "play_store_url": "https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge",
+    "icon": "assets/apps/file-forge/icon.webp",
+    "short_description": "Utility application to convert and extract files with ease directly on your Android device.",
+    "description": "File Forge is your ultimate mobile file conversion and extraction companion. It supports converting files between popular formats, viewing and editing EXIF metadata, generating QR and barcodes, extracting text using advanced OCR, and optimizing your documents locally.",
+    "features": [
+      "Universal image, video, and audio conversion",
+      "EXIF/GPS metadata viewer and editor",
+      "Document compression and PDF utilities",
+      "On-device OCR text extraction",
+      "Offline translation and transliteration tools",
+      "Quick QR code scanner and generator"
+    ],
+    "screenshots": [],
+    "status": "Live"
+  },
+  {
+    "name": "BillBuddy – Bill Tracker",
+    "slug": "billbuddy",
+    "package_name": "com.billreminder.bill_reminder",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder",
+    "icon": "assets/apps/billbuddy/icon.webp",
+    "short_description": "Smart bill reminder and payment tracker to help you stay organized and avoid late fees.",
+    "description": "BillBuddy is a comprehensive personal finance organizer that tracks recurring payments, credit card bills, rent, loans, and subscriptions. Featuring automated reminders, calendar sync, spending category graphs, and local backups, it helps you manage your expenses seamlessly.",
+    "features": [
+      "Unified tracking of EMIs, bills, and subscriptions",
+      "Smart upcoming reminders and notifications",
+      "Visual calendar interface for due dates",
+      "Borrow/Lend records tracker",
+      "SMS payment parsing engine",
+      "CSV and PDF data export"
+    ],
+    "screenshots": [],
+    "status": "Live"
+  },
+  {
+    "name": "Zip Connect - Node Puzzle",
+    "slug": "zip-connect",
+    "package_name": "in.sudogrep.zip_connect",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect",
+    "icon": "assets/apps/zip-connect/icon.webp",
+    "short_description": "A beautifully crafted puzzle game. Connect nodes, clear paths, and challenge your logic.",
+    "description": "Zip Connect brings a classic grid puzzle experience to your Android device. Guide nodes through path matching, clear multiple difficulty levels, and practice logical deduction in an offline-first premium puzzle environment.",
+    "features": [
+      "Hundreds of challenging node puzzles",
+      "Interactive levels with escalating difficulty",
+      "Minimalist visual design with smooth transitions",
+      "100% offline gameplay support",
+      "No intrusive tracking or ads",
+      "Quick level reset and help options"
+    ],
+    "screenshots": [],
+    "status": "Live"
+  },
+  {
+    "name": "Aarti Sangrah",
+    "slug": "aarti-sangrah",
+    "package_name": "com.kp.kartik.aarti",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti",
+    "icon": "assets/apps/aarti-sangrah/icon.webp",
+    "short_description": "A local, spiritual prayer list and Aarti collection app.",
+    "description": "Aarti Sangrah is a lightweight collection of traditional prayers and devotional lyrics. It organizes devotions by event, category, and daily routine, enabling quick access offline.",
+    "features": [
+      "Comprehensive local prayer list",
+      "Devotional lyrics categorized logically",
+      "Adjustable font sizing and reading modes",
+      "Full offline access without internet",
+      "Minimalistic user interface",
+      "Zero tracking or permissions"
+    ],
+    "screenshots": [],
+    "status": "Live"
+  }
+]

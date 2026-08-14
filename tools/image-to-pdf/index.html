@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Online Image to PDF Converter — SudoGrep</title>
+  <meta name="description" content="Convert multiple images (JPG, PNG, WebP) to a single PDF document online locally. Free offline image to PDF compiler. Zero server uploads.">
+  
+  <!-- Canonical & Styling -->
+  <link rel="canonical" href="https://sudogrep.in/tools/image-to-pdf/">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/navigation.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/tools.css">
+  
+  <!-- Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon / Meta Theme -->
+  <link rel="icon" type="image/png" href="/assets/logo_square.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sudogrep.in/tools/image-to-pdf/">
+  <meta property="og:title" content="Free Online Image to PDF Converter — SudoGrep">
+  <meta property="og:description" content="Convert multiple images (JPG, PNG, WebP) to a single PDF document online locally. Free offline image to PDF compiler. Zero server uploads.">
+  <meta property="og:image" content="https://sudogrep.in/assets/logo_square.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://sudogrep.in/tools/image-to-pdf/">
+  <meta name="twitter:title" content="Free Online Image to PDF Converter — SudoGrep">
+  <meta name="twitter:description" content="Convert multiple images (JPG, PNG, WebP) to a single PDF document online locally. Free offline image to PDF compiler. Zero server uploads.">
+  <meta name="twitter:image" content="https://sudogrep.in/assets/logo_square.png">
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image to PDF Converter",
+    "url": "https://sudogrep.in/tools/image-to-pdf/",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires HTML5 Canvas support",
+    "description": "Convert multiple images (JPG, PNG, WebP) to a single PDF document online locally. Free offline image to PDF compiler.",
+    "creator": {
+      "@type": "Organization",
+      "name": "SudoGrep"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sudogrep.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://sudogrep.in/tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Image to PDF",
+        "item": "https://sudogrep.in/tools/image-to-pdf/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="mainHeader">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/assets/logo_square.png" alt="SudoGrep Logo" class="logo-image" width="32" height="32">
+        <span>SudoGrep</span>
+      </a>
+      
+      <nav class="nav" id="mainNav">
+        <a href="/tools/" class="nav-link active">Tools</a>
+        <a href="/apps/" class="nav-link">Apps</a>
+        <a href="/ai-solutions/" class="nav-link">AI Solutions</a>
+        <a href="/services/" class="nav-link">Services</a>
+        <a href="/guides/" class="nav-link">Guides</a>
+        <a href="/about/" class="nav-link">About</a>
+      </nav>
+      
+      <a href="/contact/" class="btn btn-primary btn-cta-header">Build with us</a>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="tool-page-wrapper">
+      <div class="container">
+        
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="/tools/">Tools</a>
+          <span class="breadcrumb-separator">/</span>
+          <span aria-current="page">Image to PDF</span>
+        </nav>
+        
+        <div class="tool-header-block">
+          <span class="eyebrow">PDF COMPILER</span>
+          <h1 style="font-size: 2.25rem; font-weight: 800;">Free Image to PDF Converter</h1>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem; max-width: 600px;">Combine multiple JPG, PNG, and WebP images into a single document PDF offline. Drag items to reorder pages.</p>
+          <div class="tool-privacy-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span>Your files are processed in your browser and are not uploaded to our server.</span>
+          </div>
+        </div>
+
+        <div class="tool-card-container">
+          
+          <!-- File Drop Zone -->
+          <div class="drop-zone" id="dropZone">
+            <svg class="drop-zone-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><polyline points="9 15 12 12 15 15"></polyline></svg>
+            <span class="drop-zone-text">Drag and drop your images here, or <strong>browse files</strong></span>
+            <span class="drop-zone-subtext">Select multiple images (JPG, PNG, WebP)</span>
+            <input type="file" id="fileInput" class="file-input" accept="image/jpeg, image/png, image/webp" multiple>
+          </div>
+
+          <!-- Working Workspace -->
+          <div id="toolWorkspace" class="tool-workspace" style="display: none;">
+            
+            <!-- Left: Files Reordering List -->
+            <div>
+              <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="font-size: 1.15rem;">Selected Images</h3>
+                <button id="resetBtn" class="btn btn-secondary" style="display: none; font-size: 0.8rem; padding: 0.35rem 0.75rem;">Clear All</button>
+              </div>
+              <div class="pdf-file-list" id="pdfFileList">
+                <!-- Reorder cards populate here -->
+              </div>
+            </div>
+            
+            <!-- Right: PDF Output settings -->
+            <div class="workspace-controls-panel">
+              <h3 style="font-size: 1.15rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">PDF Settings</h3>
+              
+              <!-- Page Size -->
+              <div class="form-group">
+                <label for="pageSizeSelect">Page Size</label>
+                <select id="pageSizeSelect">
+                  <option value="fit">Fit to Image Size</option>
+                  <option value="a4">A4 (595 × 842 pt)</option>
+                  <option value="letter">US Letter (612 × 792 pt)</option>
+                </select>
+              </div>
+
+              <!-- Orientation -->
+              <div class="form-group">
+                <label for="orientationSelect">Page Orientation</label>
+                <select id="orientationSelect">
+                  <option value="portrait">Portrait</option>
+                  <option value="landscape">Landscape</option>
+                </select>
+              </div>
+
+              <!-- Image quality -->
+              <div class="control-slider-group">
+                <div class="slider-header-info">
+                  <span>Image Compression Quality</span>
+                  <span id="qualityValue">85%</span>
+                </div>
+                <input type="range" id="qualitySlider" class="control-slider-input" min="0.1" max="0.99" step="0.05" value="0.85">
+              </div>
+
+              <div id="pdfIndicator" style="display: none; background-color: var(--accent-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.9rem; font-weight: 600; color: var(--accent);">
+                Processing canvas outputs and compiling binary PDF bytes...
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+                <button type="button" id="generateBtn" class="btn btn-accent" style="width: 100%; padding: 0.9rem;">Generate PDF</button>
+                <button type="button" id="downloadBtn" class="btn btn-primary" style="display: none; width: 100%; padding: 0.9rem; background-color: var(--accent-green); color: var(--text-white);">Download Compiled PDF</button>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!-- Detailed Tool Guide Copy -->
+          <div class="tool-guide-copy">
+            <h2>Convert Multiple Image Formats to a Single PDF</h2>
+            <p>SudoGrep's free online image-to-pdf converter allows you to merge and compile multiple images of different formats (JPG, JPEG, PNG, and WebP) into a single, organized PDF document. All conversions and document packing are executed locally within your web browser using HTML5 Canvas rendering. <strong>Use Image to PDF when you need to combine different image formats or multiple images into a PDF. For a JPG/JPEG-specific workflow, use our <a href="/tools/jpg-to-pdf/">JPG to PDF converter</a>.</strong></p>
+            
+            <h3>Page Sizes, Orientation, and Aspect Ratios</h3>
+            <p>When generating your PDF document, you can configure several formatting parameters to match your layout requirements:</p>
+            <ul>
+              <li><strong>Fit to Image Size:</strong> Each page matches the exact pixel dimensions of the uploaded image. This preserves the original photo aspect ratio without adding borders or margins.</li>
+              <li><strong>A4 (Standard Document):</strong> Places each image onto an A4 page layout (595 × 842 points) with padding, scaling images down as needed.</li>
+              <li><strong>US Letter:</strong> Fits images into US Letter document sizes (612 × 792 points) centered with standard paddings.</li>
+              <li><strong>Orientation:</strong> Choose between <strong>Portrait</strong> or <strong>Landscape</strong> layout guides to orient pages correctly.</li>
+              <li><strong>Drag Reordering:</strong> Drag and drop the selected image cards in the list to rearrange the page sequence before compiler export.</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-block">
+              <div class="faq-item">
+                <div class="faq-question">How do I convert multiple images into a single PDF?</div>
+                <div class="faq-answer">Drag and drop your JPG, PNG, or WebP images into the upload zone, drag the list cards to arrange the page sequence, select your target page size (A4, Letter, or Fit to Image), and click Generate PDF.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">What is the difference between Image to PDF and JPG to PDF?</div>
+                <div class="faq-answer">Use Image to PDF when you need to combine different image formats or multiple images into a PDF. For a JPG/JPEG-specific workflow, use our JPG to PDF converter.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Which page sizes and layouts are supported?</div>
+                <div class="faq-answer">We support Fit to Image Size (page size matches image pixels), A4 standard printing pages, and US Letter. You can also specify Portrait or Landscape orientations.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Is my document compiled on a server?</div>
+                <div class="faq-answer">No. All binary streams, canvas rendering, and PDF document compilations are done locally inside your browser sandbox. SudoGrep never uploads your images.</div>
+              </div>
+            </div>
+            
+            <!-- Structured FAQ schema -->
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How do I convert multiple images into a single PDF?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Drag and drop your JPG, PNG, or WebP images into the upload zone, drag the list cards to arrange the page sequence, select your target page size (A4, Letter, or Fit to Image), and click Generate PDF."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the difference between Image to PDF and JPG to PDF?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use Image to PDF when you need to combine different image formats or multiple images into a PDF. For a JPG/JPEG-specific workflow, use our JPG to PDF converter."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Which page sizes and layouts are supported?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We support Fit to Image Size (page size matches image pixels), A4 standard printing pages, and US Letter. You can also specify Portrait or Landscape orientations."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is my document compiled on a server?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. All binary streams, canvas rendering, and PDF document compilations are done locally inside your browser sandbox. SudoGrep never uploads your images."
+                  }
+                }
+              ]
+            }
+            </script>
+            
+            <h2 style="margin-top: 2rem;">Related Tools & Guides</h2>
+            <ul>
+              <li><a href="/tools/jpg-to-pdf/">JPG to PDF Converter</a> — Dedicated JPG/JPEG compiling utility.</li>
+              <li><a href="/tools/image-compressor/">General Image Compressor</a> — Optimize file sizes before compiling.</li>
+              <li><a href="/guides/jpg-vs-png-vs-webp/">Choosing Image Formats: JPG vs PNG vs WebP</a> — Compare web formats.</li>
+              <li><a href="/guides/how-to-convert-png-to-pdf/">How to Convert PNG to PDF</a></li>
+              <li><a href="/guides/how-to-convert-multiple-images-to-pdf/">How to Convert Multiple Images to PDF</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <img src="/assets/logo_square.png" alt="SudoGrep Logo" class="logo-image" width="32" height="32">
+            <span>SudoGrep</span>
+          </a>
+          <p class="footer-tagline">Devoted to client-side computing, speed, and privacy-first digital products.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="/tools/">Free Utilities</a></li>
+            <li><a href="/apps/">Mobile Apps</a></li>
+            <li><a href="/guides/">Guides</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="/ai-solutions/">AI Solutions</a></li>
+            <li><a href="/services/">Mobile Apps</a></li>
+            <li><a href="/services/">Web Platforms</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About SudoGrep</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 SudoGrep. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/global.js"></script>
+  <script src="/js/tools/image-to-pdf.js"></script>
+</body>
+</html>
