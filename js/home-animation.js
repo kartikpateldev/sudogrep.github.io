@@ -35,15 +35,24 @@ document.addEventListener('DOMContentLoaded', () => {
     appIcons: container.querySelectorAll('.mini-app-icon')
   };
 
+  const connectionSvg = container.querySelector('.animation-connections');
+  const connLines = {
+    tl: { bg: container.querySelector('.conn-bg-line.conn-tl'), flow: container.querySelector('.conn-flow-line.conn-tl'), cardKey: 'compressor' },
+    tr: { bg: container.querySelector('.conn-bg-line.conn-tr'), flow: container.querySelector('.conn-flow-line.conn-tr'), cardKey: 'resizer' },
+    bl: { bg: container.querySelector('.conn-bg-line.conn-bl'), flow: container.querySelector('.conn-flow-line.conn-bl'), cardKey: 'pdf' },
+    br: { bg: container.querySelector('.conn-bg-line.conn-br'), flow: container.querySelector('.conn-flow-line.conn-br'), cardKey: 'ai' },
+    bc: { bg: container.querySelector('.conn-bg-line.conn-bc'), flow: container.querySelector('.conn-flow-line.conn-bc'), cardKey: 'apps' }
+  };
+
   // Define layout configurations for desktop and mobile
   const layouts = {
     mobile: {
-      emblem: { x: 0, y: -90, scale: 0.9, pFactor: 0.05 },
-      compressor: { x: -20, y: -30, scale: 0.8, pFactor: 0.08, hoverClass: 'hover-compressor' },
-      resizer: { x: 20, y: -10, scale: 0.8, pFactor: 0.08, hoverClass: 'hover-resizer' },
-      pdf: { x: -20, y: 15, scale: 0.8, pFactor: 0.08, hoverClass: 'hover-pdf' },
-      ai: { x: 20, y: 35, scale: 0.8, pFactor: 0.08, hoverClass: 'hover-ai' },
-      apps: { x: 0, y: 65, scale: 0.85, pFactor: 0.08, hoverClass: 'hover-apps' }
+      emblem: { x: 0, y: -20, scale: 0.85, pFactor: 0.05 },
+      compressor: { x: -85, y: -100, scale: 0.75, pFactor: 0.08, hoverClass: 'hover-compressor' },
+      resizer: { x: 85, y: -100, scale: 0.75, pFactor: 0.08, hoverClass: 'hover-resizer' },
+      pdf: { x: -85, y: 50, scale: 0.75, pFactor: 0.08, hoverClass: 'hover-pdf' },
+      ai: { x: 85, y: 50, scale: 0.75, pFactor: 0.08, hoverClass: 'hover-ai' },
+      apps: { x: 0, y: 95, scale: 0.75, pFactor: 0.08, hoverClass: 'hover-apps' }
     },
     desktop: {
       emblem: { x: 0, y: -5, scale: 1.0, pFactor: 0.03 },
@@ -57,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Maintain runtime animation states for each card
   const animationStates = {
-    emblem: { currentX: 0, currentY: 0, currentScale: 0.3, opacity: 0, hoverValue: 0, floatOffset: 0 },
+    emblem: { currentX: 0, currentY: 0, currentScale: 0.3, opacity: 0, hoverValue: 0, floatOffset: 0, delay: 0 },
     compressor: { currentX: 0, currentY: 0, currentScale: 0, opacity: 0, hoverValue: 0, floatOffset: 0, delay: 100, phase: 0 },
     resizer: { currentX: 0, currentY: 0, currentScale: 0, opacity: 0, hoverValue: 0, floatOffset: 0, delay: 250, phase: 1.5 },
     pdf: { currentX: 0, currentY: 0, currentScale: 0, opacity: 0, hoverValue: 0, floatOffset: 0, delay: 400, phase: 3 },
@@ -85,12 +94,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Set initial position layout statically if motion is disabled
   function initializeStaticLayout() {
-    const config = isMobile() ? layouts.mobile : layouts.desktop;
+    const isMob = isMobile();
+    const config = isMob ? layouts.mobile : layouts.desktop;
+    const containerWidth = container.clientWidth;
+    const baseWidth = isMob ? 340 : 520;
+    const layoutScale = Math.min(containerWidth / baseWidth, 1.0);
+
     Object.keys(config).forEach(key => {
       const cardEl = cards[key];
       if (!cardEl) return;
       const target = config[key];
-      cardEl.style.transform = `translate(-50%, -50%) translate(${target.x}px, ${target.y}px) scale(${target.scale})`;
+      const finalX = target.x * layoutScale;
+      const finalY = target.y * layoutScale;
+      const finalScale = target.scale * layoutScale;
+      cardEl.style.transform = `translate(-50%, -50%) translate(${finalX}px, ${finalY}px) scale(${finalScale})`;
       cardEl.style.opacity = '1';
       cardEl.style.pointerEvents = 'auto';
     });
@@ -143,11 +160,35 @@ document.addEventListener('DOMContentLoaded', () => {
   function tick() {
     const now = Date.now();
     const elapsed = now - startTime;
-    const config = isMobile() ? layouts.mobile : layouts.desktop;
+    const isMob = isMobile();
+    const config = isMob ? layouts.mobile : layouts.desktop;
+
+    // Get current container dimensions for scaling and lines
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+
+    // Compute dynamic scaling factor based on container width
+    const baseWidth = isMob ? 340 : 520;
+    const layoutScale = Math.min(containerWidth / baseWidth, 1.0);
+
+    // Update SVG viewBox to match the container client size dynamically
+    if (connectionSvg) {
+      connectionSvg.setAttribute('viewBox', `0 0 ${containerWidth} ${containerHeight}`);
+    }
 
     // 1. Smoothly interpolate overall mouse coordinates
     mouseCurrentX += (mouseTargetX - mouseCurrentX) * 0.08;
     mouseCurrentY += (mouseTargetY - mouseCurrentY) * 0.08;
+
+    // Object to store final rendering centers relative to container center
+    const centers = {
+      emblem: { x: 0, y: 0 },
+      compressor: { x: 0, y: 0 },
+      resizer: { x: 0, y: 0 },
+      pdf: { x: 0, y: 0 },
+      ai: { x: 0, y: 0 },
+      apps: { x: 0, y: 0 }
+    };
 
     // 2. Animate and update each card state
     Object.keys(animationStates).forEach(key => {
@@ -156,6 +197,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const cardEl = cards[key];
       if (!cardEl || !target) return;
 
+      // Scaled target position and scale factor
+      const scaledTargetX = target.x * layoutScale;
+      const scaledTargetY = target.y * layoutScale;
+      const baseScale = target.scale * layoutScale;
+
       // Handle Staggered Entry Animation on load
       if (elapsed > state.delay) {
         // Calculate progress of entry fade/slide
@@ -163,11 +209,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const ease = easeOutBack(entryProgress);
         
         state.opacity += (1 - state.opacity) * 0.1;
-        state.currentX = target.x * ease;
-        state.currentY = target.y * ease;
+        state.currentX = scaledTargetX * ease;
+        state.currentY = scaledTargetY * ease;
         
         // Target scale is adjusted depending on hover state
-        const targetScaleVal = hoveredCard === key ? (isMobile() ? target.scale * 1.1 : target.scale * 1.08) : target.scale;
+        const targetScaleVal = hoveredCard === key ? (isMob ? baseScale * 1.1 : baseScale * 1.08) : baseScale;
         state.currentScale += (targetScaleVal - state.currentScale) * 0.1;
       } else {
         // Center hidden state prior to entry trigger
@@ -181,19 +227,52 @@ document.addEventListener('DOMContentLoaded', () => {
       if (elapsed > 1000) {
         entryComplete = true;
         // Damping float amplitude to 0 on hover
-        const floatAmp = hoveredCard === key ? 0 : (key === 'emblem' ? 3 : 6);
+        const floatAmp = (hoveredCard === key ? 0 : (key === 'emblem' ? 3 : 6)) * layoutScale;
         const floatPeriod = key === 'emblem' ? 0.001 : 0.0015;
         state.floatOffset = Math.sin(now * floatPeriod + state.phase) * floatAmp;
       }
 
       // Calculate final coordinates including float & parallax shifts
-      const finalX = state.currentX + (mouseCurrentX * target.pFactor);
-      const finalY = state.currentY + state.floatOffset + (mouseCurrentY * target.pFactor);
+      const finalX = state.currentX + (mouseCurrentX * target.pFactor * layoutScale);
+      const finalY = state.currentY + state.floatOffset + (mouseCurrentY * target.pFactor * layoutScale);
 
       // Render styles
       cardEl.style.transform = `translate(-50%, -50%) translate(${finalX}px, ${finalY}px) scale(${state.currentScale})`;
       cardEl.style.opacity = state.opacity;
       cardEl.style.pointerEvents = state.opacity > 0.5 ? 'auto' : 'none';
+
+      // Save real-time center position relative to the container center
+      centers[key] = { x: finalX, y: finalY };
+    });
+
+    // 2.5 Update SVG connection lines dynamically
+    const cx = containerWidth / 2;
+    const cy = containerHeight / 2;
+    const emblemX = cx + centers.emblem.x;
+    const emblemY = cy + centers.emblem.y;
+
+    Object.keys(connLines).forEach(lineKey => {
+      const line = connLines[lineKey];
+      const cardCenter = centers[line.cardKey];
+      if (!cardCenter) return;
+
+      const x1 = emblemX;
+      const y1 = emblemY;
+      const x2 = cx + cardCenter.x;
+      const y2 = cy + cardCenter.y;
+
+      if (line.bg) {
+        line.bg.setAttribute('x1', x1);
+        line.bg.setAttribute('y1', y1);
+        line.bg.setAttribute('x2', x2);
+        line.bg.setAttribute('y2', y2);
+      }
+      if (line.flow) {
+        line.flow.setAttribute('x1', x1);
+        line.flow.setAttribute('y1', y1);
+        line.flow.setAttribute('x2', x2);
+        line.flow.setAttribute('y2', y2);
+      }
     });
 
     // 3. Update continuous micro previews within cards
