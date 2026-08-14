@@ -1,0 +1,407 @@
+/* ==========================================================================
+   SudoGrep CSS Design System — Client-Side Tools Components Layout
+   ========================================================================== */
+
+/* ===== TOOL CONTAINER ===== */
+.tool-page-wrapper {
+  padding: 120px 0 80px;
+  background-color: var(--bg-tinted);
+  min-height: calc(100vh - 70px);
+}
+
+.tool-card-container {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .tool-page-wrapper {
+    padding: 100px 0 60px;
+  }
+  .tool-card-container {
+    padding: 1.5rem;
+  }
+}
+
+.tool-header-block {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.tool-privacy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  background-color: var(--accent-green-subtle);
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  margin-top: 0.75rem;
+}
+
+.tool-privacy-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* ===== DROP ZONE ===== */
+.drop-zone {
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  background-color: var(--bg-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.drop-zone:hover,
+.drop-zone.dragover {
+  border-color: var(--accent);
+  background-color: var(--accent-subtle);
+}
+
+.drop-zone-icon {
+  color: var(--accent);
+}
+
+.drop-zone-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.drop-zone-subtext {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Hide raw file inputs */
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* ===== GRID CONTROL WORKSPACE ===== */
+.tool-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .tool-workspace {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.workspace-preview-panel {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  position: relative;
+}
+
+.preview-image-element {
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.workspace-controls-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Slider Controls */
+.control-slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.slider-header-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.control-slider-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border-color);
+  outline: none;
+  transition: background 0.15s ease;
+}
+
+.control-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.1s ease;
+}
+
+.control-slider-input::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Preset targets grid */
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.preset-btn {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.preset-btn:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-light);
+}
+
+.preset-btn.active {
+  background-color: var(--accent);
+  color: var(--text-white);
+  border-color: var(--accent);
+}
+
+/* Custom dimensions block */
+.dimensions-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* ===== METADATA GRID READOUT ===== */
+.metadata-readout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.metadata-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-white);
+}
+
+.metadata-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.metadata-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.15rem;
+}
+
+/* Reduction percentage indicator */
+.reduction-highlight-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.reduction-bar-fill {
+  height: 100%;
+  background-color: var(--accent-green);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* ===== MULTI-IMAGE PDF REORDER LIST ===== */
+.pdf-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.pdf-file-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-white);
+  gap: 1rem;
+  cursor: grab;
+  user-select: none;
+}
+
+.pdf-file-card:active {
+  cursor: grabbing;
+  opacity: 0.7;
+}
+
+.pdf-card-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.pdf-card-thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.pdf-card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-card-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+.pdf-card-size {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.pdf-card-delete {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  transition: color 0.15s ease;
+}
+
+.pdf-card-delete:hover {
+  color: #ef4444;
+}
+
+/* ===== TOOL DESCRIPTION COPY ===== */
+.tool-guide-copy {
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 3rem;
+}
+
+.tool-guide-copy h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tool-guide-copy h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.tool-guide-copy p,
+.tool-guide-copy ul {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.tool-guide-copy ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.tool-guide-copy ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ accordion styling */
+.faq-block {
+  margin-top: 3rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 0;
+}
+
+.faq-question {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

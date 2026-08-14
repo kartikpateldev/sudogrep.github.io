@@ -1,0 +1,5 @@
+# Ignore local Search Console credentials & environment files
+.env
+*credentials*.json
+*secret*.json
+*.csv

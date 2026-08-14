@@ -1,113 +1,81 @@
-# Contact Form Setup Guide
+# Contact Form Integration Guide
 
-## Overview
-The contact form is configured to send emails using PHP's `mail()` function. Here are the options to make it work:
+This document describes the design and integration of the contact form for SudoGrep.
 
-## Option 1: Using PHP on Your Server (Recommended for Production)
+---
 
-### Requirements:
-- Web server with PHP support (Apache, Nginx, etc.)
-- PHP mail configuration
+## 1. Current Architecture
 
-### Steps:
-1. Upload all files including `send-email.php` to your web server
-2. Ensure your server has PHP mail configured
-3. Update the email address in `send-email.php` (line 21):
-   ```php
-   $to = 'support@sudogrep.in'; // Change to your email
-   ```
-4. Test the form by submitting a message
+The contact form is configured to process and route user messages without a backend server using **Web3Forms**, a secure, client-side email routing service.
 
-### Server Configuration:
-Most shared hosting providers have PHP mail pre-configured. For VPS/dedicated servers, you may need to:
-- Install and configure a mail server (Postfix, Sendmail, etc.)
-- Or use SMTP with PHPMailer library
+*   **Frontend HTML**: Implemented identically on:
+    *   **Contact Page**: [contact/index.html](file:///Users/kt/workspace/portfolios/sudogrep.github.io/contact/index.html) (line 141)
+    *   **Homepage Section**: [index.html](file:///Users/kt/workspace/portfolios/sudogrep.github.io/index.html) (line 654)
+*   **Logic Handler**: Implemented sitewide in [js/global.js](file:///Users/kt/workspace/portfolios/sudogrep.github.io/js/global.js) (lines 84-176). It listens for form submissions, intercepts the request, disables the submit button, updates text states to `"Sending..."`, performs a client-side fetch, and displays styled inline success/failure alerts.
+*   **Routing Access Key**: Uses a public routing token (`d770a694-461b-4aae-89f8-1a2313c66e11`) mapped to `support@sudogrep.in` on the Web3Forms server.
 
-## Option 2: Using Third-Party Email Services
+---
 
-### FormSubmit.co (No Backend Required)
-1. Replace the form action in `index.html`:
-   ```html
-   <form action="https://formsubmit.co/support@sudogrep.in" method="POST">
-   ```
-2. Add hidden fields for customization:
-   ```html
-   <input type="hidden" name="_subject" value="New Contact Form Submission">
-   <input type="hidden" name="_captcha" value="false">
-   <input type="hidden" name="_next" value="https://sudogrep.in/thank-you.html">
-   ```
+## 2. Forms Fields Configuration
 
-### Formspree.io
-1. Sign up at https://formspree.io
-2. Create a new form and get your endpoint
-3. Update the form action:
-   ```html
-   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
+The form includes specific configuration parameters for Web3Forms:
 
-### EmailJS (Client-side JavaScript)
-1. Sign up at https://www.emailjs.com/
-2. Create an email service and template
-3. Replace the JavaScript fetch call with EmailJS SDK
-4. No PHP file needed
+```html
+<!-- Web3Forms Routing Configuration -->
+<input type="hidden" name="access_key" value="d770a694-461b-4aae-89f8-1a2313c66e11">
+<input type="hidden" name="subject" value="New SudoGrep Project Inquiry">
+<input type="hidden" name="from_name" value="SudoGrep Contact Form">
 
-## Option 3: Using Netlify Forms (If hosting on Netlify)
+<!-- Spam Honeypot Protection (Hidden from Users) -->
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+```
 
-1. Add `netlify` attribute to the form:
-   ```html
-   <form name="contact" method="POST" data-netlify="true">
-   ```
-2. Add a hidden input:
-   ```html
-   <input type="hidden" name="form-name" value="contact">
-   ```
-3. Deploy to Netlify - forms will work automatically
+### Parameter Explanations
+*   `access_key`: Mapped routing token identifying the destination email address.
+*   `subject`: Customize the subject line of emails sent to your inbox.
+*   `from_name`: Customize the sender name visible in your email client.
+*   `botcheck` (Honeypot): An invisible checkbox field. If a bot parses the HTML and checks it, the submission is automatically discarded as spam by Web3Forms.
 
-## Option 4: Using Google Apps Script
+---
 
-1. Create a Google Apps Script to receive form data
-2. Deploy as web app
-3. Update the fetch URL in `script.js` to your Apps Script URL
-4. No PHP needed
+## 3. Customizing the Recipient Email
 
-## Testing Locally
+To update where contact submissions are sent:
 
-For local testing without a mail server:
-1. The form will show an error (expected)
-2. Check browser console for form data
-3. Use a service like MailHog or Mailtrap for local email testing
+1.  Go to [Web3Forms](https://web3forms.com/) and register the target email (e.g. `your-email@domain.com`) to generate a new free access key.
+2.  Copy your new key.
+3.  Replace the `access_key` input value in both HTML files:
+    *   [contact/index.html](file:///Users/kt/workspace/portfolios/sudogrep.github.io/contact/index.html#L143)
+    *   [index.html](file:///Users/kt/workspace/portfolios/sudogrep.github.io/index.html#L656)
+4.  Commit the changes and deploy. No backend reconfiguration is required.
 
-## Current Setup
+---
 
-The website currently uses:
-- **Frontend**: HTML form with JavaScript validation
-- **Backend**: PHP script (`send-email.php`) that sends emails
-- **Email**: Sends to `support@sudogrep.in`
+## 4. Local Testing & Verification
 
-## Troubleshooting
+Because Web3Forms is client-side, the contact form can be tested locally:
 
-### Form doesn't send emails:
-1. Check if PHP mail is configured on your server
-2. Check spam folder
-3. Verify email address in `send-email.php`
-4. Check server error logs
+1.  Run a local HTTP server:
+    ```bash
+    python3 -m http.server 9090
+    ```
+2.  Open `http://localhost:9090/contact/` in your browser.
+3.  Fill out the form inputs and click **Send Message**.
+4.  Upon clicking send:
+    *   The submit button changes to `"Sending..."` and is disabled.
+    *   A network request is sent to `https://api.web3forms.com/submit`.
+    *   A success banner displays: *"Thanks — your message has been sent. We'll get back to you soon."*
+    *   The form inputs are cleared.
+    *   An email is delivered to the configured inbox.
 
-### 404 Error on submit:
-1. Ensure `send-email.php` is uploaded to the server
-2. Check file permissions (should be 644)
-3. Verify the file path in `script.js`
+---
 
-### CORS Errors:
-1. Ensure both HTML and PHP are on the same domain
-2. Or configure CORS headers properly in PHP
+## 5. Troubleshooting
 
-## Recommended Solution for GitHub Pages
+### Form fails to submit (Red Failure UI):
+1.  **Network connection**: Verify your device is connected to the internet (Web3Forms requires active network access).
+2.  **Access Key validity**: Make sure the Web3Forms key has not been deleted or deactivated.
+3.  **Honeypot trigger**: If testing programmatically, ensure your script is not checking the `botcheck` input field.
 
-Since GitHub Pages doesn't support PHP, use one of these:
-1. **FormSubmit.co** - Easiest, no signup required
-2. **Formspree.io** - Free tier available, good features
-3. **EmailJS** - Client-side only, no backend needed
-
-## Need Help?
-
-Contact: support@sudogrep.in
+### Stylesheet or UI glitches:
+*   The contact card structures, buttons, and alert animations reuse layouts in [css/home.css](file:///Users/kt/workspace/portfolios/sudogrep.github.io/css/home.css) and [css/components.css](file:///Users/kt/workspace/portfolios/sudogrep.github.io/css/components.css). Ensure these CSS sheets remain linked in headers.
