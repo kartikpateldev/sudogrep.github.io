@@ -37,6 +37,7 @@ def generate_favicons():
     png_specs = {
         "favicon-16x16.png": (16, 16),
         "favicon-32x32.png": (32, 32),
+        "favicon-48x48.png": (48, 48),
         "apple-touch-icon.png": (180, 180),
         "android-chrome-192x192.png": (192, 192),
         "android-chrome-512x512.png": (512, 512)

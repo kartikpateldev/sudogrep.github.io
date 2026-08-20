@@ -19,7 +19,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Favicon / Meta Theme -->
-  <link rel="icon" type="image/png" href="/assets/logo_square.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#ffffff">
   
   <!-- Open Graph / Facebook -->
@@ -78,7 +83,7 @@
       </a>
       
       <nav class="nav" id="mainNav">
-        <a href="/tools/" class="nav-link">Tools</a>
+        <a href="/tools/" class="nav-link">Free Tools</a>
         <a href="/apps/" class="nav-link active">Apps</a>
         <a href="/ai-solutions/" class="nav-link">AI Solutions</a>
         <a href="/services/" class="nav-link">Services</a>
@@ -190,17 +195,22 @@
               </a>
             </div>
           </div>
-          
-          <!-- KB SNAP COMING SOON CARD -->
-          <div class="card app-catalog-card" style="opacity: 0.85;">
-            <span class="card-badge card-badge-soon app-catalog-badge">Coming Soon</span>
-            <div class="app-catalog-icon-wrapper" style="background-color: var(--bg-tinted); display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          <div class="card app-catalog-card">
+            <div class="app-catalog-icon-wrapper">
+              <img src="/assets/apps/kb-snap/icon.webp" class="app-catalog-icon" alt="KB Snap icon" width="64" height="64" loading="lazy">
             </div>
             <div class="app-catalog-content">
               <h3 class="card-title">KB Snap</h3>
-              <p class="card-desc">An optimized image capture and storage categorization utility assistant, coming soon to the Google Play Store.</p>
-              <span class="btn btn-secondary" style="pointer-events: none; opacity: 0.6; align-self: flex-start;">Coming Soon</span>
+              <p class="card-desc">Compress photos and images to any target KB size for online forms and applications.</p>
+              <a href="https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en_IN" target="_blank" rel="noopener" class="google-play-btn" aria-label="Get KB Snap on Google Play">
+                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                </svg>
+                <div class="google-play-btn-text">
+                  <span class="google-play-btn-subtitle">GET IT ON</span>
+                  <span class="google-play-btn-title">Google Play</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>

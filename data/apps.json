@@ -74,5 +74,24 @@
     ],
     "screenshots": [],
     "status": "Live"
+  },
+  {
+    "name": "KB Snap",
+    "slug": "kb-snap",
+    "package_name": "in.sudogrep.kb_snap",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en_IN",
+    "icon": "assets/apps/kb-snap/icon.webp",
+    "short_description": "Compress photos and images to any target KB size for online forms and applications.",
+    "description": "KB Snap is a fast, offline-first image compression and resizing utility for Android. Easily compress photos to specific target KB sizes, scale or crop images, and prepare files for forms and portal uploads with complete client-side privacy.",
+    "features": [
+      "Compress photos to specific target KB sizes",
+      "Batch photo resizing and image scaling",
+      "Aspect ratio cropping for signature and passport photos",
+      "100% offline-first processing for absolute privacy",
+      "No server uploads, ads, or tracking",
+      "Clean, modern user interface"
+    ],
+    "screenshots": [],
+    "status": "Live"
   }
 ]
