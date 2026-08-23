@@ -96,8 +96,27 @@ document.addEventListener('DOMContentLoaded', function() {
         originalAspectRatio = originalImage.naturalWidth / originalImage.naturalHeight;
         
         isUpdatingInputs = true;
-        widthInput.value = originalImage.naturalWidth;
-        heightInput.value = originalImage.naturalHeight;
+        let targetW = originalImage.naturalWidth;
+        let targetH = originalImage.naturalHeight;
+        
+        const path = window.location.pathname;
+        if (path.includes('resize-image-for-passport')) {
+          targetW = 413;
+          targetH = 531;
+          lockAspectRatio.checked = false;
+          presetButtons.forEach(btn => {
+            if (btn.dataset.preset === 'passport') btn.classList.add('active');
+            else btn.classList.remove('active');
+          });
+        } else if (path.includes('resize-image-for-online-forms')) {
+          targetW = 350;
+          targetH = 450;
+          lockAspectRatio.checked = false;
+          presetButtons.forEach(btn => btn.classList.remove('active'));
+        }
+        
+        widthInput.value = targetW;
+        heightInput.value = targetH;
         if (percentageSlider) {
           percentageSlider.value = 100;
           percentageValue.textContent = '100%';

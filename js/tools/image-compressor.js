@@ -71,17 +71,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Pre-select 50KB if on the 50kb landing page
-  if (window.location.pathname.includes('compress-image-to-50kb')) {
+  // Pre-select target KB and format based on URL pathname
+  const path = window.location.pathname;
+  if (path.includes('compress-image-to-50kb') || path.includes('compress-jpg-to-50kb') || path.includes('compress-png-to-50kb')) {
     targetSizeKB = 50;
+  } else if (path.includes('compress-image-to-100kb')) {
+    targetSizeKB = 100;
+  } else if (path.includes('compress-image-to-200kb')) {
+    targetSizeKB = 200;
+  }
+
+  if (targetSizeKB) {
     presetButtons.forEach(btn => {
-      if (btn.dataset.size === '50') {
+      if (btn.dataset.size === targetSizeKB.toString()) {
         btn.classList.add('active');
       } else {
         btn.classList.remove('active');
       }
     });
     if (customTargetInput) customTargetInput.value = '';
+  }
+
+  // Pre-select format based on URL pathname
+  if (formatSelect) {
+    if (path.includes('to-png')) {
+      formatSelect.value = 'image/png';
+    } else if (path.includes('to-jpg')) {
+      formatSelect.value = 'image/jpeg';
+    } else if (path.includes('to-webp')) {
+      formatSelect.value = 'image/webp';
+    }
   }
 
   function handleFile(file) {
