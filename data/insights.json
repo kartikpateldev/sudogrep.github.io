@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "how-ai-agents-are-changing-software-development",
+    "title": "How AI Agents Are Changing Software Development | SudoGrep",
+    "description": "Discover how task-oriented autonomous AI agents are moving beyond autocomplete assistants to automate software engineering workflows.",
+    "h1": "How AI Agents Are Changing Software Development",
+    "category": "AI",
+    "read_time": "5 min read",
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-23"
+  },
+  {
+    "slug": "flutter-app-development-trends-2026",
+    "title": "Flutter App Development Trends in 2026 | SudoGrep",
+    "description": "Explore the top Flutter mobile engineering trends in 2026: WebAssembly (WASM), local-first databases, on-device AI integration, and riverpod patterns.",
+    "h1": "Flutter App Development Trends in 2026",
+    "category": "Mobile Development",
+    "read_time": "4 min read",
+    "date_published": "2026-08-22",
+    "date_modified": "2026-08-22"
+  },
+  {
+    "slug": "best-free-image-compression-tools",
+    "title": "Best Free Image Compression Tools (Offline & Online) | SudoGrep",
+    "description": "Compare the best free image compression tools. Find privacy-first client-side compressors, traditional cloud optimizers, and dev command-line tools.",
+    "h1": "Best Free Image Compression Tools",
+    "category": "Web Development",
+    "read_time": "5 min read",
+    "date_published": "2026-08-21",
+    "date_modified": "2026-08-21"
+  },
+  {
+    "slug": "how-to-compress-image-to-100kb",
+    "title": "How to Compress an Image to 100KB — Step-by-Step Guide",
+    "description": "Learn how to compress images to 100KB while maintaining legibility. Practical guide for scanned marksheets, ID cards, and certificate documents.",
+    "h1": "How to Compress an Image to 100KB",
+    "category": "Performance",
+    "read_time": "4 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-compress-image-to-20kb",
+    "title": "How to Compress an Image to 20KB — Step-by-Step Guide",
+    "description": "Learn how to compress images to 20KB or less for strict portal upload requirements. Step-by-step guide for digital signatures and small thumbnails.",
+    "h1": "How to Compress an Image to 20KB",
+    "category": "Performance",
+    "read_time": "4 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-compress-image-to-50kb",
+    "title": "How to Compress an Image to 50KB Online Free",
+    "description": "Learn step-by-step instructions to compress and shrink photos and signatures to exactly 50KB or less locally in your browser for online forms.",
+    "h1": "How to Compress an Image to 50KB",
+    "category": "Performance",
+    "read_time": "4 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-convert-multiple-images-to-pdf",
+    "title": "How to Convert Multiple Images to PDF — Complete Guide",
+    "description": "Learn how to combine multiple photos and images into a single PDF document online. Covers page ordering, page sizes, orientation, and mixing formats.",
+    "h1": "How to Convert Multiple Images to PDF",
+    "category": "Documents",
+    "read_time": "5 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-convert-png-to-pdf",
+    "title": "How to Convert PNG to PDF Online — Step-by-Step Guide",
+    "description": "Learn how to convert PNG images to PDF documents online in your browser. Covers transparency handling, page size selection, and multi-image workflows.",
+    "h1": "How to Convert PNG to PDF",
+    "category": "Documents",
+    "read_time": "4 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-reduce-image-size-without-losing-quality",
+    "title": "How to Reduce Image Size Without Losing Quality",
+    "description": "Understand lossy vs lossless compression, WebP encoding benefits, and dimension downscaling to reduce image file size without visible quality loss.",
+    "h1": "How to Reduce Image Size Without Losing Quality",
+    "category": "Performance",
+    "read_time": "6 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-reduce-jpg-file-size",
+    "title": "How to Reduce JPG File Size Without Losing Quality",
+    "description": "Learn how to reduce and compress JPG and JPEG image file sizes without losing visual quality. Explains pixel ratios, canvas downsampling, and encoding formats.",
+    "h1": "How to Reduce JPG File Size Without Quality Loss",
+    "category": "Optimization",
+    "read_time": "5 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "how-to-resize-image-to-specific-dimensions",
+    "title": "How to Resize an Image to Specific Dimensions — Pixel Guide",
+    "description": "Learn how to resize images to exact pixel width and height values. Understand aspect ratio locking, dimension scaling, and common standard sizes.",
+    "h1": "How to Resize an Image to Specific Dimensions",
+    "category": "Tools",
+    "read_time": "5 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "jpg-vs-png-vs-webp",
+    "title": "JPG vs PNG vs WebP: Choosing Web Image Formats",
+    "description": "Read a direct comparison of JPG, PNG, and WebP image formats. Learn which formats support transparency, provide the best compression, and load faster on the web.",
+    "h1": "JPG vs PNG vs WebP: Which Image Format to Use?",
+    "category": "Image Formats",
+    "read_time": "6 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  },
+  {
+    "slug": "resize-images-for-online-forms",
+    "title": "How to Resize an Image for Online Forms — Step-by-Step",
+    "description": "A step-by-step guide to crop, scale, and resize photographs and signatures to fit online application forms and passport requirements.",
+    "h1": "How to Resize an Image for Online Forms",
+    "category": "Tutorial",
+    "read_time": "4 min read",
+    "date_published": "2026-08-13",
+    "date_modified": "2026-08-14"
+  }
+]

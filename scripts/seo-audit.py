@@ -197,7 +197,7 @@ def audit():
     base_dir = "."
     for root, dirs, files in os.walk(base_dir):
         # Skip hidden and templates folders, and legacy app assets
-        dirs[:] = [d for d in dirs if not d.startswith(".") and d not in ("templates", "node_modules", "zip_connect", "file_forge")]
+        dirs[:] = [d for d in dirs if not d.startswith(".") and d not in ("templates", "node_modules", "zip_connect", "file_forge", "data")]
         for file in files:
             if file.endswith(".html"):
                 html_files.append(os.path.normpath(os.path.join(root, file)))
@@ -245,6 +245,10 @@ def audit():
 
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
+
+        # Skip redirect pages
+        if 'http-equiv="refresh"' in content or 'content="0; url=' in content:
+            continue
 
         parser = SEOParser(file_path)
         parser.feed(content)

@@ -1,0 +1,62 @@
+<p>Every pixel in an image carries colour, brightness, and saturation data. Image compression algorithms work by reducing the amount of data needed to represent each pixel. The key question is: how much data can be removed before the reduction becomes visually obvious?</p>
+
+          <h2>Lossy vs Lossless Compression Explained</h2>
+          <p>There are two fundamental approaches to compression:</p>
+          <ul>
+            <li><strong>Lossless compression</strong> (PNG, WebP lossless) encodes pixel data more efficiently without discarding any information. The decompressed image is pixel-perfect. However, the file size savings are limited — typically 10–30% for photographic content.</li>
+            <li><strong>Lossy compression</strong> (JPEG, WebP lossy) permanently discards imperceptible visual data. The human eye cannot distinguish a JPEG at quality 85% from the original in most scenarios. This enables 60–90% file size reductions while maintaining visually acceptable output.</li>
+          </ul>
+
+          <div class="article-callout">
+            <p><strong>Tool Access:</strong> SudoGrep's <a href="/image-compressor/">image compressor</a> lets you select either JPEG (lossy) or PNG (lossless) as the export format. You can also target a specific file size like 50KB or 200KB.</p>
+          </div>
+
+          <h2>How Dimension Resizing Helps Quality</h2>
+          <p>This is the most underutilised technique for quality-preserving compression. Consider a 4000×3000 pixel camera photo that you need to compress to 200KB. If you apply lossy compression directly, the algorithm must discard a large amount of data to hit 200KB, causing visible blocking artifacts.</p>
+          <p>Instead, if you first <a href="/image-resizer/">resize the image</a> to 1200×900 pixels (a 9× reduction in total pixel count), the 200KB budget now covers far fewer pixels — meaning each pixel can be encoded at higher quality. The result is a visually sharper image at the same file size.</p>
+          <p><strong>Rule of thumb:</strong> Always resize first, then compress.</p>
+
+          <h2>Format Recommendations by Use Case</h2>
+          <ul>
+            <li><strong>Photographs for web:</strong> Use WebP lossy for the best balance of quality and size. Fall back to JPEG for maximum compatibility with older browsers or portals.</li>
+            <li><strong>Logos and icons:</strong> Use SVG for vector graphics. Use PNG lossless or WebP lossless for raster icons with sharp edges or transparency.</li>
+            <li><strong>Screenshots and UI images:</strong> PNG lossless for exact-pixel precision. WebP lossless for smaller output.</li>
+            <li><strong>Portal uploads (signatures, passport photos):</strong> JPEG at quality 80–90% with reduced pixel dimensions (e.g., 400–600px wide).</li>
+          </ul>
+
+          <h2>WebP vs JPEG: Which Preserves More Quality?</h2>
+          <p>At identical file sizes, WebP achieves measurably better visual quality than JPEG. The WebP codec uses a more modern compression algorithm that better preserves edge sharpness and colour gradients. In tests, WebP files at a given kilobyte budget consistently score higher on structural similarity (SSIM) metrics than JPEG files at the same size. However, JPEG remains the most universally accepted format for portal uploads and older applications.</p>
+
+          <h2>PageSpeed and Web Performance Context</h2>
+          <p>For website images, Google's PageSpeed Insights flags oversized images as a major performance issue under the "Serve images in next-gen formats" and "Properly size images" recommendations. The recommended approach is to:</p>
+          <ul>
+            <li>Serve images at the exact pixel dimensions they will be displayed at — do not serve a 2000px image inside a 400px container.</li>
+            <li>Use WebP format (with JPEG/PNG fallback for older browsers).</li>
+            <li>Lazy-load images below the fold.</li>
+          </ul>
+
+          <!-- PROMO BANNER -->
+          <div class="tool-promo-box">
+            <h3 class="tool-promo-title">Compress Your Images Now</h3>
+            <p class="tool-promo-desc">Use SudoGrep's free browser-based compressor to reduce image sizes with selectable quality levels. No upload required.</p>
+            <a href="/image-compressor/" class="btn btn-accent" style="align-self: flex-start;">Open Image Compressor →</a>
+          </div>
+
+          <!-- FAQ SECTION -->
+          <section class="article-faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="article-faq-item">
+              <div class="faq-question">Can you compress an image without any quality loss?</div>
+              <div class="faq-answer">True lossless compression (via PNG or WebP lossless) reduces file size without any quality loss, but it typically cannot achieve the dramatic reductions that lossy compression offers. For significant size reduction, some minimal quality trade-off is usually necessary.</div>
+            </div>
+            
+            <div class="article-faq-item">
+              <div class="faq-question">Is WebP better than JPEG for quality preservation?</div>
+              <div class="faq-answer">At the same file size, WebP typically offers slightly better visual quality than JPEG due to a more efficient compression algorithm. However, JPEG remains more widely accepted by older portals and applications.</div>
+            </div>
+
+            <div class="article-faq-item">
+              <div class="faq-question">Does resizing help preserve quality during compression?</div>
+              <div class="faq-answer">Yes. Reducing pixel dimensions before compressing allows the encoder to use higher quality settings to hit the same file size target, resulting in a sharper final image than compressing a large image aggressively.</div>
+            </div>

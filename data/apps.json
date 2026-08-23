@@ -93,5 +93,27 @@
     ],
     "screenshots": [],
     "status": "Live"
+  },
+  {
+    "name": "Ghost Trap: Reveal the World",
+    "slug": "ghost-trap",
+    "package_name": "in.sudogrep.ghosttrap",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap",
+    "icon": "assets/apps/ghost-trap/icon.webp",
+    "short_description": "A tactical arcade puzzle game where players claim territory, avoid ghosts, and reveal famous landmarks from around the world.",
+    "description": "Ghost Trap is a territory-claiming arcade puzzle game featuring offline play, cloud save, power-ups, and optional purchases. Steer your avatar to fence off sections of the board, avoid wandering ghosts, and reveal famous global landmarks.",
+    "features": [
+      "Territory claiming gameplay",
+      "Strategic ghost avoidance",
+      "World landmark discovery",
+      "Progressive difficulty",
+      "Speeder, Frost and Freeze power-ups",
+      "Offline play",
+      "Cloud save",
+      "Reward system",
+      "Optional in-app purchases"
+    ],
+    "screenshots": [],
+    "status": "Live"
   }
 ]

@@ -1,0 +1,53 @@
+<p>A 20KB file size limit is one of the most challenging compression targets. At this size, only images with small pixel dimensions and simple content (such as a digital signature or a small icon) can remain legible. Understanding what is feasible at 20KB — and what is not — is the first step.</p>
+
+          <h2>Why Portals Require 20KB</h2>
+          <p>Online portals that enforce 20KB limits are typically storing a very large number of submissions simultaneously. Keeping each asset under 20KB significantly reduces total storage costs and speeds up bulk document download operations. Digital signature images are the most common candidate for this limit because a clean signature, when properly resized, naturally fits under 20KB as a JPEG.</p>
+
+          <div class="article-callout">
+            <p><strong>Use the Tool Directly:</strong> SudoGrep's <a href="/image-compressor/">image compressor</a> supports a custom 20KB target. Upload your image, select the 20KB preset, and download the result instantly — no server upload required.</p>
+          </div>
+
+          <h2>Step-by-Step Process</h2>
+          <ul>
+            <li><strong>Step 1: Crop unnecessary whitespace.</strong> Remove blank margins around signatures or unnecessary background from photos. Every pixel of empty space is wasted bytes.</li>
+            <li><strong>Step 2: Resize dimensions aggressively.</strong> For a signature, target 250–350 pixels wide. For a small photograph, target 200–300 pixels wide. Use our <a href="/image-resizer/">image resizer tool</a> to set the exact pixel width.</li>
+            <li><strong>Step 3: Convert to JPEG or WebP.</strong> PNG files are lossless and typically cannot reach 20KB for anything but the simplest white-background signatures. Switch to JPEG or WebP.</li>
+            <li><strong>Step 4: Apply the 20KB compression target.</strong> Use SudoGrep's <a href="/image-compressor/">image compressor</a>, select the 20KB preset, and download.</li>
+            <li><strong>Step 5: Verify the output.</strong> Check that the downloaded file is below 20KB and that the content remains legible before uploading to the portal.</li>
+          </ul>
+
+          <h2>What Is and Is Not Feasible at 20KB</h2>
+          <p>A simple black-on-white digital signature at 300×80 pixels can comfortably fit under 10KB as a JPEG. However, a full-color passport photograph at 400×500 pixels with complex skin tones will typically be 40–70KB at minimum before visible blocking artifacts appear. If your portal requires a passport photo at under 20KB, you may need to use a much smaller resolution — but the resulting quality may not meet photo ID standards. Check the portal's guidelines: they may have separate requirements for photos versus signatures.</p>
+
+          <h2>Format Impact at 20KB</h2>
+          <ul>
+            <li><strong>JPEG:</strong> The most effective format for reaching 20KB. Adjustable quality levels allow fine-grained control of the size-quality tradeoff.</li>
+            <li><strong>WebP:</strong> Modern format that achieves similar or better quality than JPEG at the same file size. Accepted by most modern browsers and upload portals.</li>
+            <li><strong>PNG:</strong> Lossless format. Cannot be quality-compressed. Only suitable for simple two-color signatures or icons where the raw file size is already very small.</li>
+          </ul>
+
+          <!-- PROMO BANNER -->
+          <div class="tool-promo-box">
+            <h3 class="tool-promo-title">Compress Your Image to 20KB Now</h3>
+            <p class="tool-promo-desc">Use SudoGrep's free local compressor with a 20KB preset. No upload. Instant result.</p>
+            <a href="/image-compressor/" class="btn btn-accent" style="align-self: flex-start;">Open Image Compressor →</a>
+          </div>
+
+          <!-- FAQ SECTION -->
+          <section class="article-faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="article-faq-item">
+              <div class="faq-question">Can I compress a photo to 20KB without making it unreadable?</div>
+              <div class="faq-answer">Yes, but only if you first reduce the image dimensions. Resize to approximately 200–300 pixels wide before compressing. A small, low-resolution image at 20KB can still be legible for portal review panels.</div>
+            </div>
+            
+            <div class="article-faq-item">
+              <div class="faq-question">Which format achieves 20KB most easily?</div>
+              <div class="faq-answer">JPEG and WebP are the best formats for reaching 20KB. PNG uses lossless compression and typically cannot reach such small sizes for photos or signatures.</div>
+            </div>
+
+            <div class="article-faq-item">
+              <div class="faq-question">Will my compressed image be accepted by portals?</div>
+              <div class="faq-answer">Most portals accept JPEG or PNG. Export as JPEG and verify the file size is below the portal's stated limit before uploading.</div>
+            </div>
