@@ -2603,7 +2603,11 @@
     "og_title": "SudoGrep Insights – AI, Flutter, Technology & Software",
     "og_description": "Explore SudoGrep Insights. Practical tutorials on AI agents, Flutter development, mobile app engineering, and privacy-first software.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "CollectionPage"
+    "schema_type": "CollectionPage",
+    "related_tools": [
+      "/free-tools/"
+    ],
+    "related_guides": []
   },
   "/insights/ai-agents-2026/": {
     "url": "/insights/ai-agents-2026/",

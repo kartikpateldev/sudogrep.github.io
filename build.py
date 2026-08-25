@@ -583,10 +583,34 @@ def build_site():
     insights_idx_html = insights_idx_html.replace("{{INSIGHTS_LISTINGS}}", blog_cards_str)
     insights_idx_html = inject_config_vars(insights_idx_html)
 
-    os.makedirs("insights", exist_ok=True)
-    with open("insights/index.html", "w", encoding="utf-8") as f:
-        f.write(insights_idx_html)
-    print("Insights landing page (insights/index.html) compiled.")
+    # 5c. Compile Backwards-Compatible Redirects for legacy tools paths
+    # These redirects ensure that old indexed search results pointing to /tools/... do not 404.
+    legacy_tools = [
+        ("", "/free-tools/"),
+        ("compress-image-to-50kb", "/compress-image-to-50kb/"),
+        ("image-compressor", "/image-compressor/"),
+        ("image-resizer", "/image-resizer/"),
+        ("image-to-pdf", "/image-to-pdf/"),
+        ("jpg-to-pdf", "/jpg-to-pdf/")
+    ]
+    for subpath, target_url in legacy_tools:
+        tools_dir = os.path.join("tools", subpath)
+        os.makedirs(tools_dir, exist_ok=True)
+        redirect_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={target_url}">
+  <link rel="canonical" href="https://sudogrep.in{target_url}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>
+</body>
+</html>"""
+        with open(os.path.join(tools_dir, "index.html"), "w", encoding="utf-8") as f:
+            f.write(redirect_html)
+    print("Legacy tools redirects compiled.")
 
     print("Site compilation complete. Ready for static deployment.")
 
