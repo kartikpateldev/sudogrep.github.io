@@ -2576,5 +2576,77 @@
     "og_description": "Compare the best free image compression tools. Find privacy-first client-side compressors, traditional cloud optimizers, and dev command-line tools.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
+  },
+  "/insights/": {
+    "url": "/insights/",
+    "title": "SudoGrep Insights – AI, Flutter, Technology & Software",
+    "description": "Explore SudoGrep Insights. Practical tutorials on AI agents, Flutter development, mobile app engineering, image optimization, and client-side privacy-first software.",
+    "h1": "SudoGrep Insights",
+    "primary_intent": "Insights landing page and technology blog hub",
+    "secondary_intents": [
+      "ai agent tutorials",
+      "flutter development guides",
+      "mobile app development tips"
+    ],
+    "primary_topic": "SudoGrep Insights",
+    "secondary_topics": [
+      "AI and software",
+      "Flutter and mobile development",
+      "image optimization"
+    ],
+    "search_variations": [
+      "sudogrep insights",
+      "sudogrep articles",
+      "sudogrep technology blog"
+    ],
+    "canonical": "https://sudogrep.in/insights/",
+    "og_title": "SudoGrep Insights – AI, Flutter, Technology & Software",
+    "og_description": "Explore SudoGrep Insights. Practical tutorials on AI agents, Flutter development, mobile app engineering, and privacy-first software.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "CollectionPage"
+  },
+  "/insights/ai-agents-2026/": {
+    "url": "/insights/ai-agents-2026/",
+    "title": "AI Agents in 2026: How They Work and What They Can Do | SudoGrep",
+    "description": "AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.",
+    "h1": "AI Agents in 2026: From Chatbots to AI That Actually Gets Things Done",
+    "primary_intent": "understand how ai agents work and what they can do in 2026",
+    "secondary_intents": [
+      "difference between chatbot and ai agent",
+      "ai agent tool computer use"
+    ],
+    "primary_topic": "AI Agents",
+    "secondary_topics": [
+      "agentic AI tools",
+      "autonomous computer use"
+    ],
+    "search_variations": [
+      "ai agents 2026",
+      "how do ai agents work"
+    ],
+    "target_entities": [
+      "AI agents",
+      "chatbot vs agent",
+      "agentic automation"
+    ],
+    "related_tools": [
+      "/free-tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/insights/"
+    ],
+    "primary_keywords": [
+      "ai agents in 2026"
+    ],
+    "secondary_keywords": [
+      "what is an ai agent",
+      "ai chatbot vs ai agent"
+    ],
+    "canonical": "https://sudogrep.in/insights/ai-agents-2026/",
+    "og_title": "AI Agents in 2026: How They Work and What They Can Do | SudoGrep",
+    "og_description": "AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
   }
 }

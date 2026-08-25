@@ -38,7 +38,7 @@ def generate_sitemap():
         if path == "/":
             changefreq = "daily"
             priority = "1.0"
-        elif path in ["/free-tools/", "/apps/", "/blog/", "/services/", "/ai-solutions/"]:
+        elif path in ["/free-tools/", "/apps/", "/blog/", "/insights/", "/services/", "/ai-solutions/"]:
             changefreq = "weekly"
             priority = "0.9"
         elif path in ["/about/", "/contact/"]:
@@ -47,7 +47,7 @@ def generate_sitemap():
         elif path in ["/privacy-policy.html", "/terms/"]:
             changefreq = "monthly"
             priority = "0.5"
-        elif path.startswith("/services/") or path.startswith("/apps/") or path.startswith("/blog/") or path.startswith("/tools/"):
+        elif path.startswith("/services/") or path.startswith("/apps/") or path.startswith("/blog/") or path.startswith("/tools/") or path.startswith("/insights/"):
             changefreq = "weekly"
             priority = "0.8"
         else:

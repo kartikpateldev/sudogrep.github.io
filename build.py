@@ -131,13 +131,14 @@ def build_site():
     # Helper to generate blog/insights card
     def generate_blog_card(post, is_home=False):
         heading_tag = "h3" if is_home else "h2"
+        prefix = post.get("path_prefix", "blog")
         return f"""          <div class="card guide-catalog-card">
             <span class="guide-card-meta">{post['category']} · {post['read_time']}</span>
             <{heading_tag} class="guide-card-title">
-              <a href="/blog/{post['slug']}/">{post['h1']}</a>
+              <a href="/{prefix}/{post['slug']}/">{post['h1']}</a>
             </{heading_tag}>
             <p class="guide-card-desc">{post['description']}</p>
-            <a href="/blog/{post['slug']}/" class="text-link" style="margin-top: auto;">Read Article →</a>
+            <a href="/{prefix}/{post['slug']}/" class="text-link" style="margin-top: auto;">Read Article →</a>
           </div>"""
 
     # 2. Compile Homepage (index.html)
@@ -437,7 +438,8 @@ def build_site():
         
     for post in insights:
         slug = post["slug"]
-        print(f"Compiling blog page for slug: {slug}")
+        prefix = post.get("path_prefix", "blog")
+        print(f"Compiling blog page for slug: {slug} under {prefix}")
         
         # Load body content
         content_path = f"data/blog_content/{slug}.html"
@@ -457,7 +459,7 @@ def build_site():
             "@graph": [
                 {
                     "@type": "BlogPosting",
-                    "@id": f"https://sudogrep.in/blog/{slug}/#post",
+                    "@id": f"https://sudogrep.in/{prefix}/{slug}/#post",
                     "headline": post["h1"],
                     "description": post["description"],
                     "datePublished": f"{post['date_published']}T12:00:00+05:30",
@@ -475,7 +477,7 @@ def build_site():
                             "url": "https://sudogrep.in/assets/logo_square.png"
                         }
                     },
-                    "mainEntityOfPage": f"https://sudogrep.in/blog/{slug}/"
+                    "mainEntityOfPage": f"https://sudogrep.in/{prefix}/{slug}/"
                 },
                 {
                     "@type": "BreadcrumbList",
@@ -490,13 +492,13 @@ def build_site():
                             "@type": "ListItem",
                             "position": 2,
                             "name": "Insights",
-                            "item": "https://sudogrep.in/blog/"
+                            "item": f"https://sudogrep.in/{prefix}/"
                         },
                         {
                             "@type": "ListItem",
                             "position": 3,
                             "name": post["h1"],
-                            "item": f"https://sudogrep.in/blog/{slug}/"
+                            "item": f"https://sudogrep.in/{prefix}/{slug}/"
                         }
                     ]
                 }
@@ -508,7 +510,7 @@ def build_site():
         pg_html = blog_detail_template
         pg_html = pg_html.replace("{{METADATA_TITLE}}", post["title"])
         pg_html = pg_html.replace("{{METADATA_DESCRIPTION}}", post["description"])
-        pg_html = pg_html.replace("{{CANONICAL_URL}}", f"https://sudogrep.in/blog/{slug}/")
+        pg_html = pg_html.replace("{{CANONICAL_URL}}", f"https://sudogrep.in/{prefix}/{slug}/")
         pg_html = pg_html.replace("{{OG_TITLE}}", post["title"])
         pg_html = pg_html.replace("{{OG_DESCRIPTION}}", post["description"])
         pg_html = pg_html.replace("{{BREADCRUMB_NAME}}", post["h1"])
@@ -523,7 +525,7 @@ def build_site():
         pg_html = inject_config_vars(pg_html)
         
         # Write
-        post_dir = os.path.join("blog", slug)
+        post_dir = os.path.join(prefix, slug)
         os.makedirs(post_dir, exist_ok=True)
         with open(os.path.join(post_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(pg_html)
@@ -536,12 +538,12 @@ def build_site():
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/blog/{slug}/">
-  <link rel="canonical" href="https://sudogrep.in/blog/{slug}/">
+  <meta http-equiv="refresh" content="0; url=/{prefix}/{slug}/">
+  <link rel="canonical" href="https://sudogrep.in/{prefix}/{slug}/">
   <title>Redirecting...</title>
 </head>
 <body>
-  <p>Redirecting to <a href="/blog/{slug}/">/blog/{slug}/</a>...</p>
+  <p>Redirecting to <a href="/{prefix}/{slug}/">/{prefix}/{slug}/</a>...</p>
 </body>
 </html>"""
         with open(os.path.join(old_guide_dir, "index.html"), "w", encoding="utf-8") as f:
@@ -565,6 +567,27 @@ def build_site():
         f.write(redirect_index_html)
         
     print(f"Generated landing pages and old redirects for {len(insights)} blog posts successfully.")
+
+    # 5b. Compile Insights Landing Page (/insights/index.html)
+    # This is the canonical URL that Google Search Console requires to return HTTP 200.
+    # /blog/ continues to serve articles; /insights/ is the brand landing page.
+    insights_index_template_path = "templates/insights_index.html"
+    if not os.path.exists(insights_index_template_path):
+        print(f"Error: Insights index template '{insights_index_template_path}' missing!", file=sys.stderr)
+        sys.exit(1)
+
+    with open(insights_index_template_path, 'r', encoding='utf-8') as f:
+        insights_idx_html = f.read()
+
+    # Reuse the same article cards that appear on /blog/
+    insights_idx_html = insights_idx_html.replace("{{INSIGHTS_LISTINGS}}", blog_cards_str)
+    insights_idx_html = inject_config_vars(insights_idx_html)
+
+    os.makedirs("insights", exist_ok=True)
+    with open("insights/index.html", "w", encoding="utf-8") as f:
+        f.write(insights_idx_html)
+    print("Insights landing page (insights/index.html) compiled.")
+
     print("Site compilation complete. Ready for static deployment.")
 
 if __name__ == "__main__":
