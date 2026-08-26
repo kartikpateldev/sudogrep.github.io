@@ -2652,5 +2652,53 @@
     "og_description": "AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
+  },
+  "/insights/will-ai-replace-jobs-bill-gates-2026/": {
+    "url": "/insights/will-ai-replace-jobs-bill-gates-2026/",
+    "title": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans | SudoGrep",
+    "description": "Will AI replace jobs? Bill Gates is calling for “human-reserved” work as AI becomes more capable. Here's what it could mean for workers, developers and businesses.",
+    "h1": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans",
+    "primary_intent": "understand if ai will replace jobs and bill gates comments on human-reserved jobs",
+    "secondary_intents": [
+      "will ai replace software developers",
+      "which jobs are safest from ai automation"
+    ],
+    "primary_topic": "AI and Jobs",
+    "secondary_topics": [
+      "future of work",
+      "AI automation"
+    ],
+    "search_variations": [
+      "will ai replace jobs",
+      "bill gates ai jobs",
+      "ai replacing jobs"
+    ],
+    "target_entities": [
+      "Bill Gates",
+      "AI automation",
+      "future of work"
+    ],
+    "related_tools": [
+      "/free-tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/insights/",
+      "/insights/ai-agents-2026/"
+    ],
+    "primary_keywords": [
+      "will ai replace jobs"
+    ],
+    "secondary_keywords": [
+      "ai replacing jobs",
+      "future of work",
+      "ai automation",
+      "bill gates on ai"
+    ],
+    "canonical": "https://sudogrep.in/insights/will-ai-replace-jobs-bill-gates-2026/",
+    "og_title": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans | SudoGrep",
+    "og_description": "Will AI replace jobs? Bill Gates is calling for “human-reserved” work as AI becomes more capable. Here's what it could mean for workers, developers and businesses.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
   }
 }

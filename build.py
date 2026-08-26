@@ -582,6 +582,10 @@ def build_site():
     # Reuse the same article cards that appear on /blog/
     insights_idx_html = insights_idx_html.replace("{{INSIGHTS_LISTINGS}}", blog_cards_str)
     insights_idx_html = inject_config_vars(insights_idx_html)
+    os.makedirs("insights", exist_ok=True)
+    with open("insights/index.html", "w", encoding="utf-8") as f:
+        f.write(insights_idx_html)
+    print("Insights landing page (insights/index.html) compiled.")
 
     # 5c. Compile Backwards-Compatible Redirects for legacy tools paths
     # These redirects ensure that old indexed search results pointing to /tools/... do not 404.
