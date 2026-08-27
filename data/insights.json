@@ -1,5 +1,16 @@
 [
   {
+    "slug": "browser-based-tools-private-no-upload",
+    "title": "Why Browser-Based Tools Are More Private in 2026 | SudoGrep",
+    "description": "Understand how client-side browser-based tools process files locally using WebAssembly, WebGPU, and Canvas without uploading them to remote servers.",
+    "h1": "Why Browser-Based Tools Are Becoming More Private in 2026: No Upload, No Server Processing",
+    "category": "Privacy",
+    "read_time": "8 min read",
+    "date_published": "2026-08-27",
+    "date_modified": "2026-08-27",
+    "path_prefix": "insights"
+  },
+  {
     "slug": "will-ai-replace-jobs-bill-gates-2026",
     "title": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans | SudoGrep",
     "description": "Will AI replace jobs? Bill Gates is calling for “human-reserved” work as AI becomes more capable. Here's what it could mean for workers, developers and businesses.",
