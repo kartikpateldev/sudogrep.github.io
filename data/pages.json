@@ -819,9 +819,9 @@
   },
   "/services/": {
     "url": "/services/",
-    "title": "Software Development Services \u2014 Custom Mobile, Web & AI Engineering | SudoGrep",
-    "description": "SudoGrep delivers custom software development services: cross-platform Flutter apps, responsive web platforms, AI integration, REST/GraphQL APIs, and cloud backends.",
-    "h1": "Build Better. Ship Faster. Scale Smarter.",
+    "title": "Software Development Services | SudoGrep",
+    "description": "SudoGrep builds mobile apps, web platforms, backend systems, and AI-powered products for businesses that need reliable software.",
+    "h1": "We build software that moves businesses forward.",
     "primary_intent": "software engineering services",
     "secondary_intents": [
       "mobile app development agency",
