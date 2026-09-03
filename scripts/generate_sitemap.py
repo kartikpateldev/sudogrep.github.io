@@ -24,10 +24,6 @@ def generate_sitemap():
     sorted_keys = sorted(pages_config.keys())
 
     for path in sorted_keys:
-        # Skip legacy guides redirects index or subpages
-        if path.startswith("/guides/"):
-            continue
-
         # Standardize URL
         url_loc = f"https://sudogrep.in{path}"
 
@@ -38,7 +34,7 @@ def generate_sitemap():
         if path == "/":
             changefreq = "daily"
             priority = "1.0"
-        elif path in ["/free-tools/", "/apps/", "/blog/", "/insights/", "/services/", "/ai-solutions/"]:
+        elif path in ["/free-tools/", "/apps/", "/blog/", "/insights/", "/guides/", "/services/", "/ai-solutions/"]:
             changefreq = "weekly"
             priority = "0.9"
         elif path in ["/about/", "/contact/"]:
@@ -47,7 +43,7 @@ def generate_sitemap():
         elif path in ["/privacy-policy.html", "/terms/"]:
             changefreq = "monthly"
             priority = "0.5"
-        elif path.startswith("/services/") or path.startswith("/apps/") or path.startswith("/blog/") or path.startswith("/tools/") or path.startswith("/insights/"):
+        elif path.startswith("/services/") or path.startswith("/apps/") or path.startswith("/blog/") or path.startswith("/guides/") or path.startswith("/insights/"):
             changefreq = "weekly"
             priority = "0.8"
         else:

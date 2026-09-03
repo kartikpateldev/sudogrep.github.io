@@ -206,8 +206,8 @@ def build_site():
                 ("/image-resizer/", "Image Resizer")
             ],
             "guides": [
-                ("/blog/how-to-compress-image-to-50kb/", "How to Compress Image to 50KB"),
-                ("/blog/resize-images-for-online-forms/", "Resizing Images for Online Forms")
+                ("/guides/how-to-compress-image-to-50kb/", "How to Compress Image to 50KB"),
+                ("/guides/how-to-resize-image-for-online-forms/", "Resizing Images for Online Forms")
             ],
             "faqs": [
                 ("How does KB Snap compress images?", "KB Snap uses on-device JPEG encoding algorithm that optimizes the image byte size without uploading it to any server. Everything happens locally on your smartphone."),
@@ -224,8 +224,8 @@ def build_site():
                 ("/image-converter/", "Image Converter")
             ],
             "guides": [
-                ("/blog/how-to-convert-png-to-pdf/", "How to Convert PNG to PDF"),
-                ("/blog/jpg-vs-png-vs-webp/", "JPG vs PNG vs WebP Guide")
+                ("/guides/how-to-convert-png-to-pdf/", "How to Convert PNG to PDF"),
+                ("/guides/jpg-vs-png-vs-webp/", "JPG vs PNG vs WebP Guide")
             ],
             "faqs": [
                 ("Can File Forge convert files offline?", "Yes, all document and file conversions are executed completely locally inside your Android device sandbox."),
@@ -530,11 +530,11 @@ def build_site():
         with open(os.path.join(post_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(pg_html)
             
-        # 7. Compile Backwards-Compatible Redirect for old guides
-        # Old guides live in /guides/[slug]/index.html
-        old_guide_dir = os.path.join("guides", slug)
-        os.makedirs(old_guide_dir, exist_ok=True)
-        redirect_html = f"""<!DOCTYPE html>
+        # 7. Compile Backwards-Compatible Redirect for old blog paths if hosted under guides/insights
+        if prefix != "blog":
+            old_blog_dir = os.path.join("blog", slug)
+            os.makedirs(old_blog_dir, exist_ok=True)
+            redirect_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -546,27 +546,52 @@ def build_site():
   <p>Redirecting to <a href="/{prefix}/{slug}/">/{prefix}/{slug}/</a>...</p>
 </body>
 </html>"""
-        with open(os.path.join(old_guide_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(redirect_html)
+            with open(os.path.join(old_blog_dir, "index.html"), "w", encoding="utf-8") as f:
+                f.write(redirect_html)
 
-    # Compile Backwards-Compatible Redirect for guides index page (/guides/index.html)
-    os.makedirs("guides", exist_ok=True)
-    redirect_index_html = """<!DOCTYPE html>
+    # Specific Phase 2 & Phase 4 301 Redirects for resolved cannibalization clusters
+    cannibalized_redirects = [
+        ("blog/resize-images-for-online-forms", "/guides/how-to-resize-image-for-online-forms/"),
+        ("guides/resize-images-for-online-forms", "/guides/how-to-resize-image-for-online-forms/"),
+        ("blog/how-to-reduce-jpg-file-size", "/guides/how-to-reduce-jpg-size/"),
+        ("guides/how-to-reduce-jpg-file-size", "/guides/how-to-reduce-jpg-size/"),
+    ]
+    for old_path, target_url in cannibalized_redirects:
+        os.makedirs(old_path, exist_ok=True)
+        redirect_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/blog/">
-  <link rel="canonical" href="https://sudogrep.in/blog/">
+  <meta http-equiv="refresh" content="0; url={target_url}">
+  <link rel="canonical" href="https://sudogrep.in{target_url}">
   <title>Redirecting...</title>
 </head>
 <body>
-  <p>Redirecting to <a href="/blog/">/blog/</a>...</p>
+  <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>
 </body>
 </html>"""
-    with open("guides/index.html", "w", encoding="utf-8") as f:
-        f.write(redirect_index_html)
+        with open(os.path.join(old_path, "index.html"), "w", encoding="utf-8") as f:
+            f.write(redirect_html)
+
+    # Compile Guides Catalog Page (/guides/index.html)
+    guides_index_template_path = "templates/blog_index.html"
+    if os.path.exists(guides_index_template_path):
+        with open(guides_index_template_path, 'r', encoding='utf-8') as f:
+            guides_idx_html = f.read()
         
-    print(f"Generated landing pages and old redirects for {len(insights)} blog posts successfully.")
+        guide_posts = [p for p in insights if p.get("path_prefix", "blog") == "guides"]
+        guide_cards = [generate_blog_card(post, is_home=False) for post in guide_posts]
+        guides_idx_html = guides_idx_html.replace("{{BLOG_LISTINGS}}", "\n".join(guide_cards))
+        guides_idx_html = guides_idx_html.replace("<title>Blog &amp; Insights — SudoGrep</title>", "<title>Free How-To Guides &amp; Tutorials — SudoGrep</title>")
+        guides_idx_html = guides_idx_html.replace("https://sudogrep.in/blog/", "https://sudogrep.in/guides/")
+        guides_idx_html = inject_config_vars(guides_idx_html)
+        
+        os.makedirs("guides", exist_ok=True)
+        with open("guides/index.html", "w", encoding="utf-8") as f:
+            f.write(guides_idx_html)
+        print("Guides catalog (guides/index.html) compiled.")
+
+    print(f"Generated landing pages and old redirects for {len(insights)} posts successfully.")
 
     # 5b. Compile Insights Landing Page (/insights/index.html)
     # This is the canonical URL that Google Search Console requires to return HTTP 200.

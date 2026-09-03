@@ -56,71 +56,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sudogrep.in/blog/best-free-image-compression-tools/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/flutter-app-development-trends-2026/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-ai-agents-are-changing-software-development/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-compress-image-to-100kb/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-compress-image-to-20kb/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-compress-image-to-50kb/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-convert-multiple-images-to-pdf/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-convert-png-to-pdf/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-reduce-image-size-without-losing-quality/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-reduce-jpg-file-size/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/how-to-resize-image-to-specific-dimensions/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/jpg-vs-png-vs-webp/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sudogrep.in/blog/resize-images-for-online-forms/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://sudogrep.in/compress-image-to-100kb/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -156,6 +91,61 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://sudogrep.in/guides/best-free-image-compression-tools/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-compress-image-to-100kb/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-compress-image-to-20kb/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-compress-image-to-50kb/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-convert-multiple-images-to-pdf/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-convert-png-to-pdf/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-reduce-image-size-without-losing-quality/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-reduce-jpg-size/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-resize-image-for-online-forms/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/how-to-resize-image-to-specific-dimensions/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/guides/jpg-vs-png-vs-webp/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sudogrep.in/image-compressor/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -187,6 +177,16 @@
   </url>
   <url>
     <loc>https://sudogrep.in/insights/browser-based-tools-private-no-upload/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/insights/flutter-app-development-trends-2026/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sudogrep.in/insights/how-ai-agents-are-changing-software-development/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,0 +1,120 @@
+<p>Whether you are filling out government portal forms, passport applications, visa requests, job applications, or university admissions, online upload fields almost always enforce strict image rules: <strong>"Photo must be exactly 3.5cm x 4.5cm or 413x531 pixels, and signature must be under 50KB."</strong></p>
+
+<p>Uploading an unedited camera photo or raw screenshot will result in instant rejection errors. To ensure your form submission succeeds on the first attempt, you must adjust pixel dimensions, maintain proportional aspect ratios, and manage file weights properly.</p>
+
+<div class="article-callout">
+  <p><strong>Quick Tool Access:</strong> Need to prepare your photo or signature right now? Use SudoGrep's free <a href="/image-resizer/">Image Resizer</a> to set exact pixel dimensions. Everything processes 100% locally in your web browser with zero server uploads. If your form also requires a strict kilobyte limit, use our <a href="/compress-image-to-50kb/">50KB Image Compressor</a>.</p>
+</div>
+
+<h2>Step 1: Understand Pixels vs Kilobytes (KB)</h2>
+<p>One of the most common reasons form uploads fail is confusing <strong>dimensions</strong> with <strong>file weight</strong>:</p>
+<ul>
+  <li><strong>Pixel Dimensions (Width x Height):</strong> The grid resolution of the image (for example, 413x531 pixels). Dimensions control how big the picture looks on screen or paper.</li>
+  <li><strong>File Size / Weight (KB or MB):</strong> The amount of storage disk space the file consumes (for example, 45KB). File size controls how fast the server uploads your submission.</li>
+</ul>
+<p>Resizing an image's pixel dimensions down naturally reduces its KB file weight because there are fewer total pixels to store. However, if your image is already small in pixels but still exceeds the form's KB limit, you must apply file compression.</p>
+
+<h2>Step 2: Crop First to Protect Aspect Ratio</h2>
+<p>Before changing pixel dimensions, crop the photo to match the requested proportions (aspect ratio). For example, a standard passport photo has a vertical portrait aspect ratio (7:9 ratio). If you force a wide landscape selfie into a 413x531 pixel portrait box without cropping first, your face will appear stretched and squished.</p>
+
+<h2>Step 3: Common Online Form Specifications & Examples</h2>
+<p>Most official upload portals require one of these standard sizes:</p>
+
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem;">
+  <thead>
+    <tr style="background: var(--bg-tertiary, #1f2937); text-align: left;">
+      <th style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">Upload Type</th>
+      <th style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">Target Pixel Dimensions</th>
+      <th style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">Typical Weight Limit</th>
+      <th style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">Best Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);"><strong>Passport / Visa Photo</strong></td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">413 x 531 px (3.5 x 4.5 cm)</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">20KB – 100KB</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">JPG / JPEG</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);"><strong>Digital Signature Scan</strong></td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">300 x 80 px or 140 x 60 px</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">10KB – 50KB</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">JPG or PNG</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);"><strong>Government ID / Marksheet</strong></td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">1000 x 1400 px</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">100KB – 300KB</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">JPG or PDF</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);"><strong>Exam Portal Profile Pic</strong></td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">200 x 200 px or 400 x 400 px</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">50KB max</td>
+      <td style="padding: 0.75rem; border: 1px solid var(--border-color, #374151);">JPG</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Step 4: Step-by-Step Instructions to Resize Your Photo</h2>
+<ol>
+  <li><strong>Open the Tool:</strong> Launch the <a href="/image-resizer/">SudoGrep Image Resizer</a> or select our <a href="/resize-image-for-online-forms/">Resize for Online Forms Preset</a>.</li>
+  <li><strong>Upload Image:</strong> Drag and drop your photograph or signature image. Because the tool operates client-side in WebAssembly/HTML5 Canvas, your files never leave your device.</li>
+  <li><strong>Set Target Dimensions:</strong> Type your exact width and height in pixels (e.g. 413 for width and 531 for height). Toggle "Lock Aspect Ratio" if you only want to change width while preserving proportions.</li>
+  <li><strong>Export & Check File Size:</strong> Download your resized photo. If the form also requires the file to be under 50KB, pass the image through our <a href="/compress-image-to-50kb/">50KB Image Compressor</a>.</li>
+</ol>
+
+<h2>How to Handle File Formats (JPG vs PNG vs PDF)</h2>
+<p>Most application portals specify allowed file extensions in their upload guidelines:</p>
+<ul>
+  <li><strong>JPG / JPEG:</strong> The universally accepted format for color photographs and signatures. Offers efficient compression for scanned images. See our guide on <a href="/guides/how-to-reduce-jpg-size/">how to reduce JPG file size</a> for more details.</li>
+  <li><strong>PNG:</strong> Great for crisp digital signatures with transparent or pure white backgrounds. If your form requires JPG, use our <a href="/png-to-jpg/">PNG to JPG Converter</a>.</li>
+  <li><strong>PDF:</strong> Used for multi-page documents, certificates, and marksheets. You can convert image scans to PDF using our <a href="/image-to-pdf/">Image to PDF Converter</a>.</li>
+</ul>
+
+<!-- PROMO BANNER -->
+<div class="tool-promo-box">
+  <h3 class="tool-promo-title">Resize Photos for Online Forms Instantly</h3>
+  <p class="tool-promo-desc">Ready to fix your image dimensions? Use SudoGrep's free client-side image resizer. Fast, accurate pixel adjustments with complete privacy.</p>
+  <a href="/image-resizer/" class="btn btn-accent" style="align-self: flex-start;">Open Image Resizer →</a>
+</div>
+
+<!-- FAQ SECTION -->
+<section class="article-faq">
+  <h2>Frequently Asked Questions</h2>
+  
+  <div class="article-faq-item">
+    <div class="faq-question">How do I resize a photo for an online application form without losing quality?</div>
+    <div class="faq-answer">To maintain sharpness, first crop your photo to the target aspect ratio, then downscale the pixel dimensions using SudoGrep's Image Resizer. Downscaling larger camera photos to standard form dimensions (such as 413x531 pixels) actually keeps the image crisp without blurriness.</div>
+  </div>
+  
+  <div class="article-faq-item">
+    <div class="faq-question">What is the difference between image dimensions (pixels) and file size (KB)?</div>
+    <div class="faq-answer">Pixel dimensions measure visual width and height (resolution), whereas file size in kilobytes measures disk space weight. Online forms often enforce both a maximum pixel resolution and a maximum file size limit.</div>
+  </div>
+
+  <div class="article-faq-item">
+    <div class="faq-question">Why does my photo stretch or distort when I resize it?</div>
+    <div class="faq-answer">Distortion happens when you force an image into new width and height values that do not match its original proportions. Always crop the photo to the target aspect ratio first or lock the aspect ratio setting during resizing.</div>
+  </div>
+
+  <div class="article-faq-item">
+    <div class="faq-question">How do I crop and resize a signature scan for forms?</div>
+    <div class="faq-answer">Crop closely around the signature line to remove excess white space, then set the width to 300px and height to 80px in the Image Resizer. If the signature file exceeds 50KB, use SudoGrep's 50KB compressor tool.</div>
+  </div>
+
+  <div class="article-faq-item">
+    <div class="faq-question">Are my personal form documents uploaded to any server?</div>
+    <div class="faq-answer">No. All SudoGrep web tools process your images entirely inside your browser using HTML5 Canvas and WebAssembly. Your photos, IDs, and signatures are never sent to external servers.</div>
+  </div>
+</section>
+
+<footer class="article-footer">
+  <div class="article-tags">
+    <span class="article-tag">Image Dimensions</span>
+    <span class="article-tag">Online Forms</span>
+    <span class="article-tag">Passport Photo</span>
+    <span class="article-tag">Signature Crop</span>
+  </div>
+</footer>
