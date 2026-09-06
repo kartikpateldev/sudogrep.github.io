@@ -4,34 +4,23 @@
     "page_type": "brand",
     "primary_intent": "brand landing page and development hub",
     "primary_topic": "SudoGrep software and utilities",
-    "primary_keyword": "sudogrep",
+    "primary_keyword": "sudogrep software",
     "secondary_keywords": [
-      "sudogrep software",
-      "sudogrep ai",
-      "custom software engineering"
+      "custom software engineering",
+      "mobile app developers",
+      "on-device web tools"
     ],
-    "search_variations": [
-      "sudogrep",
-      "sudogrep software",
-      "sudogrep systems",
-      "sudo grep"
-    ],
-    "target_entities": [
-      "SudoGrep",
-      "software development",
-      "on-device tools",
-      "client-side processing"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "brand overview",
-      "app showcase",
-      "services summary",
-      "tools highlight"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/image-resizer/",
-      "/image-to-pdf/"
+      "/tools/image-compressor/",
+      "/tools/image-resizer/",
+      "/tools/image-to-pdf/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
@@ -40,479 +29,198 @@
     "cannibalization_with": []
   },
   {
-    "url": "/free-tools/",
-    "page_type": "directory",
+    "url": "/tools/",
+    "page_type": "tool",
     "primary_intent": "free online tools directory",
     "primary_topic": "web utilities",
     "primary_keyword": "free online tools",
     "secondary_keywords": [
       "browser utilities",
-      "offline web tools",
-      "privacy focused tools"
+      "offline web tools"
     ],
-    "search_variations": [
-      "free web tools",
-      "online utility tools",
-      "browser calculators"
-    ],
-    "target_entities": [
-      "web utilities",
-      "file tools",
-      "browser apps"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "tools directory listing",
-      "privacy statement",
-      "category descriptions"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/image-resizer/",
-      "/image-to-pdf/",
-      "/jpg-to-pdf/"
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-resizer/",
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
-      "/guides/resize-images-for-online-forms/"
+      "/guides/how-to-resize-image-for-online-forms/"
     ],
     "cannibalization_with": []
   },
   {
-    "url": "/image-compressor/",
+    "url": "/tools/image-compressor/",
     "page_type": "tool",
-    "primary_intent": "compress images online to a custom target file size",
+    "primary_intent": "compress image online",
     "primary_topic": "Image Compression",
     "primary_keyword": "image compressor",
     "secondary_keywords": [
       "compress image online",
       "reduce image size",
-      "compress JPG",
-      "compress PNG",
-      "compress WebP"
+      "compress jpg online"
     ],
-    "search_variations": [
-      "image compressor",
-      "compress image online",
-      "reduce image size",
-      "compress JPG",
-      "compress PNG",
-      "reduce image file size"
-    ],
-    "target_entities": [
-      "image compressor",
-      "JPEG",
-      "PNG",
-      "WebP",
-      "file size",
-      "pixels",
-      "dimensions"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "what the tool does",
-      "who it is useful for",
-      "supported formats",
-      "how compression works",
-      "step-by-step instructions",
-      "quality considerations",
-      "lossy vs lossless explanation",
-      "privacy statement",
-      "common problems and solutions",
-      "FAQ",
-      "related tools and guides"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/compress-image-to-50kb/",
-      "/image-resizer/",
-      "/image-to-pdf/"
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-resizer/"
     ],
     "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-jpg-file-size/",
-      "/guides/jpg-vs-png-vs-webp/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
-    ],
-    "cannibalization_with": [
-      "/compress-image-to-50kb/"
-    ]
-  },
-  {
-    "url": "/compress-image-to-50kb/",
-    "page_type": "tool",
-    "primary_intent": "compress an image to exactly 50KB or less for online forms and portals",
-    "primary_topic": "Target Image Compression",
-    "primary_keyword": "compress image to 50kb",
-    "secondary_keywords": [
-      "image compressor to 50kb",
-      "reduce image to 50kb",
-      "jpg to 50kb",
-      "image under 50kb"
-    ],
-    "search_variations": [
-      "compress image to 50KB",
-      "reduce image to 50KB",
-      "photo to 50KB",
-      "signature to 50KB",
-      "JPG to 50KB",
-      "signature compressor 50kb"
-    ],
-    "target_entities": [
-      "50KB compressor",
-      "signature",
-      "passport photo",
-      "online portals",
-      "admission form",
-      "document compliance"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "who it is useful for",
-      "supported formats",
-      "how the algorithm works",
-      "step-by-step instructions",
-      "target size explanation",
-      "when to resize dimensions first",
-      "quality considerations",
-      "privacy statement",
-      "common problems and solutions",
-      "FAQ",
-      "related tools and guides"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/image-resizer/",
-      "/image-to-pdf/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/resize-images-for-online-forms/"
-    ],
-    "cannibalization_with": [
-      "/image-compressor/",
-      "/guides/how-to-compress-image-to-50kb/"
-    ]
-  },
-  {
-    "url": "/image-resizer/",
-    "page_type": "tool",
-    "primary_intent": "resize image dimensions by pixels or percentage online",
-    "primary_topic": "Image Resizing",
-    "primary_keyword": "image resizer",
-    "secondary_keywords": [
-      "resize image online",
-      "resize photo",
-      "image size changer",
-      "resize image dimensions"
-    ],
-    "search_variations": [
-      "image resizer",
-      "resize image online",
-      "resize photo",
-      "image size changer",
-      "resize image dimensions"
-    ],
-    "target_entities": [
-      "image resizer",
-      "pixels",
-      "aspect ratio",
-      "width",
-      "height",
-      "dimensions"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "who it is useful for",
-      "supported formats",
-      "how resizing works",
-      "pixels vs file size distinction",
-      "step-by-step instructions",
-      "aspect ratio explanation",
-      "common passport/signature dimensions",
-      "privacy statement",
-      "common problems and solutions",
-      "FAQ",
-      "related tools and guides"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/image-to-pdf/"
-    ],
-    "related_guides": [
-      "/guides/resize-images-for-online-forms/",
-      "/guides/how-to-resize-image-to-specific-dimensions/",
-      "/guides/jpg-vs-png-vs-webp/"
+      "/guides/how-to-reduce-jpg-size/",
+      "/guides/how-to-reduce-image-size-without-losing-quality/",
+      "/guides/best-free-image-compression-tools/"
     ],
     "cannibalization_with": []
   },
   {
-    "url": "/image-to-pdf/",
+    "url": "/tools/compress-image-to-50kb/",
     "page_type": "tool",
-    "primary_intent": "convert multiple images of mixed formats to a single PDF document",
+    "primary_intent": "compress image to 50kb",
+    "primary_topic": "Target Size Compression",
+    "primary_keyword": "compress image to 50kb",
+    "secondary_keywords": [
+      "compress jpg to 50kb",
+      "photo under 50kb",
+      "compress image to 20kb"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/image-resizer/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/how-to-compress-image-to-20kb/",
+      "/guides/how-to-compress-image-to-100kb/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/tools/image-resizer/",
+    "page_type": "tool",
+    "primary_intent": "resize image online",
+    "primary_topic": "Image Resizing",
+    "primary_keyword": "resize image online",
+    "secondary_keywords": [
+      "image resizer",
+      "change image pixels",
+      "resize photo dimensions"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-resize-image-to-specific-dimensions/",
+      "/guides/how-to-resize-image-for-online-forms/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/tools/image-to-pdf/",
+    "page_type": "tool",
+    "primary_intent": "convert image to pdf",
     "primary_topic": "PDF Conversion",
     "primary_keyword": "image to pdf",
     "secondary_keywords": [
-      "convert images to pdf",
-      "convert photos to pdf",
-      "merge pictures into pdf",
-      "multiple images to pdf"
+      "convert image to pdf",
+      "photos to pdf",
+      "png to pdf converter"
     ],
-    "search_variations": [
-      "image to pdf",
-      "convert images to pdf",
-      "convert photos to pdf",
-      "merge pictures into pdf",
-      "image to pdf creator"
-    ],
-    "target_entities": [
-      "image to pdf converter",
-      "A4",
-      "Letter",
-      "orientation",
-      "margins",
-      "aspect ratio"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "what the tool does",
-      "who it is useful for",
-      "supported formats",
-      "how PDF compilation works",
-      "page size options",
-      "step-by-step instructions",
-      "drag reordering explanation",
-      "privacy statement",
-      "common problems and solutions",
-      "FAQ",
-      "related tools and guides"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/jpg-to-pdf/",
-      "/image-compressor/"
+      "/tools/jpg-to-pdf/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/",
-      "/guides/how-to-convert-png-to-pdf/",
-      "/guides/how-to-convert-multiple-images-to-pdf/"
-    ],
-    "cannibalization_with": [
-      "/jpg-to-pdf/"
-    ]
-  },
-  {
-    "url": "/jpg-to-pdf/",
-    "page_type": "tool",
-    "primary_intent": "convert JPG and JPEG files specifically to PDF documents",
-    "primary_topic": "JPG to PDF Conversion",
-    "primary_keyword": "jpg to pdf",
-    "secondary_keywords": [
-      "convert jpg to pdf",
-      "jpg to pdf converter",
-      "jpeg to pdf",
-      "convert jpeg to pdf"
-    ],
-    "search_variations": [
-      "jpg to pdf",
-      "convert jpg to pdf",
-      "jpg to pdf converter",
-      "jpeg to pdf",
-      "convert jpeg to pdf",
-      "jpg images to pdf"
-    ],
-    "target_entities": [
-      "JPG to PDF",
-      "JPEG",
-      "receipts",
-      "scanned documents",
-      "PDF download"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "who it is useful for",
-      "how it differs from general image-to-pdf",
-      "how PDF compilation works",
-      "page size options",
-      "step-by-step instructions",
-      "privacy statement",
-      "common problems and solutions",
-      "FAQ",
-      "related tools and guides"
-    ],
-    "related_tools": [
-      "/image-to-pdf/",
-      "/image-compressor/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/",
-      "/guides/how-to-convert-multiple-images-to-pdf/"
-    ],
-    "cannibalization_with": [
-      "/image-to-pdf/"
-    ]
-  },
-  {
-    "url": "/guides/",
-    "page_type": "directory",
-    "primary_intent": "guides and how-to articles directory",
-    "primary_topic": "Web Tutorials",
-    "primary_keyword": "sudogrep guides",
-    "secondary_keywords": [
-      "image compression tutorials",
-      "web performance tutorials",
-      "format comparison guides"
-    ],
-    "search_variations": [
-      "sudogrep guides",
-      "free tutorials",
-      "how to resize guides"
-    ],
-    "target_entities": [
-      "guides",
-      "tutorials",
-      "web performance",
-      "file sizes"
-    ],
-    "content_requirements": [
-      "guide cards listing",
-      "category descriptions",
-      "links to all guides"
-    ],
-    "related_tools": [
-      "/free-tools/",
-      "/image-compressor/",
-      "/image-resizer/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-jpg-file-size/",
-      "/guides/resize-images-for-online-forms/",
-      "/guides/jpg-vs-png-vs-webp/",
-      "/guides/how-to-compress-image-to-20kb/",
-      "/guides/how-to-compress-image-to-100kb/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/",
-      "/guides/how-to-resize-image-to-specific-dimensions/",
       "/guides/how-to-convert-png-to-pdf/",
       "/guides/how-to-convert-multiple-images-to-pdf/"
     ],
     "cannibalization_with": []
   },
   {
-    "url": "/guides/how-to-compress-image-to-50kb/",
-    "page_type": "guide",
-    "primary_intent": "step-by-step informational guide on how to compress an image to 50KB",
-    "primary_topic": "Informational Sizing Guide",
-    "primary_keyword": "how to compress image to 50kb",
+    "url": "/tools/jpg-to-pdf/",
+    "page_type": "tool",
+    "primary_intent": "jpg to pdf",
+    "primary_topic": "JPG PDF Conversion",
+    "primary_keyword": "jpg to pdf",
     "secondary_keywords": [
-      "how to reduce photo size to 50kb",
-      "compress photo to 50kb",
-      "reduce signature to 50kb"
+      "convert jpg to pdf",
+      "jpeg to pdf converter",
+      "save jpg as pdf"
     ],
-    "search_variations": [
-      "how to compress image to 50kb",
-      "how to reduce photo size to 50kb",
-      "shrink signature to 50kb online free"
-    ],
-    "target_entities": [
-      "50KB image guide",
-      "signature",
-      "passport photo",
-      "online portal",
-      "compression steps"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "step-by-step process",
-      "when to resize first",
-      "quality tradeoffs",
-      "FAQ",
-      "link to compress-image-to-50kb tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/compress-image-to-50kb/",
-      "/image-compressor/"
+      "/tools/image-to-pdf/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
-      "/guides/resize-images-for-online-forms/",
-      "/guides/jpg-vs-png-vs-webp/"
+      "/guides/how-to-convert-png-to-pdf/",
+      "/guides/how-to-convert-multiple-images-to-pdf/"
     ],
-    "cannibalization_with": [
-      "/compress-image-to-50kb/"
-    ]
+    "cannibalization_with": []
   },
   {
-    "url": "/guides/how-to-reduce-jpg-file-size/",
+    "url": "/guides/",
     "page_type": "guide",
-    "primary_intent": "informational guide explaining how to reduce JPG file size without quality loss",
-    "primary_topic": "JPG Optimization Guide",
-    "primary_keyword": "how to reduce jpg size",
+    "primary_intent": "educational tutorial hub",
+    "primary_topic": "Guides & Tutorials",
+    "primary_keyword": "how-to guides",
     "secondary_keywords": [
-      "reduce jpg file size",
-      "compress jpeg quality loss",
-      "jpg size reduction"
+      "image editing tutorials",
+      "pdf conversion tutorial"
     ],
-    "search_variations": [
-      "how to reduce jpg size",
-      "reduce jpg file size",
-      "decrease jpeg size without quality loss"
-    ],
-    "target_entities": [
-      "JPG compression guide",
-      "JPEG",
-      "pixel density",
-      "visual quality",
-      "canvas element"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "JPEG quality mechanics",
-      "chroma subsampling explanation",
-      "canvas downsampling technique",
-      "when to downscale dimensions first",
-      "FAQ",
-      "link to image compressor tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": [
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
-    ]
-  },
-  {
-    "url": "/guides/resize-images-for-online-forms/",
-    "page_type": "guide",
-    "primary_intent": "step-by-step guide for resizing images and photos to fit online form requirements",
-    "primary_topic": "Online Portal Sizing Guide",
-    "primary_keyword": "resize image for online forms",
-    "secondary_keywords": [
-      "how to resize passport size photo",
-      "crop photo online forms",
-      "resize signature for web forms"
-    ],
-    "search_variations": [
-      "resize image for online forms",
-      "how to resize passport size photo",
-      "crop photo online forms"
-    ],
-    "target_entities": [
-      "online form resizing guide",
-      "passport dimensions",
-      "signature crop",
-      "upload limits"
-    ],
-    "content_requirements": [
-      "common dimension requirements list",
-      "pixels vs KB distinction",
-      "aspect ratio locking",
-      "step-by-step instructions",
-      "FAQ",
-      "link to image-resizer tool"
-    ],
-    "related_tools": [
-      "/image-resizer/",
-      "/compress-image-to-50kb/"
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-resizer/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
@@ -521,408 +229,552 @@
     "cannibalization_with": []
   },
   {
-    "url": "/guides/jpg-vs-png-vs-webp/",
+    "url": "/guides/how-to-compress-image-to-50kb/",
     "page_type": "guide",
-    "primary_intent": "comparison guide for JPG, PNG, and WebP image formats",
-    "primary_topic": "Image Formats Comparison",
-    "primary_keyword": "jpg vs png vs webp",
+    "primary_intent": "learn how to compress image to 50kb for online forms",
+    "primary_topic": "50KB Image Compression Guide",
+    "primary_keyword": "how to compress image to 50kb",
     "secondary_keywords": [
-      "image format comparison",
-      "png vs jpeg",
-      "webp vs png",
-      "lossy vs lossless format"
+      "compress image to 50kb guide",
+      "reduce photo size to 50kb tutorial"
     ],
-    "search_variations": [
-      "jpg vs png vs webp",
-      "image format comparison",
-      "should i use webp or png"
-    ],
-    "target_entities": [
-      "image formats",
-      "transparency",
-      "lossless compression",
-      "JPEG",
-      "PNG",
-      "WebP"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "format feature comparison table",
-      "transparency support",
-      "compression ratios",
-      "browser support",
-      "when to use each format",
-      "FAQ",
-      "link to image compressor tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/image-resizer/"
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
-      "/guides/how-to-reduce-jpg-file-size/"
+      "/guides/how-to-compress-image-to-20kb/",
+      "/guides/how-to-compress-image-to-100kb/"
     ],
     "cannibalization_with": []
   },
   {
     "url": "/guides/how-to-compress-image-to-20kb/",
     "page_type": "guide",
-    "primary_intent": "step-by-step guide on compressing an image to 20KB for strict portal requirements",
-    "primary_topic": "Ultra-Small Image Compression Guide",
+    "primary_intent": "learn how to compress image to 20kb for digital signature uploads",
+    "primary_topic": "20KB Image Compression Guide",
     "primary_keyword": "how to compress image to 20kb",
     "secondary_keywords": [
-      "compress image to 20kb",
-      "reduce image to 20kb",
-      "image under 20kb"
+      "compress signature to 20kb",
+      "reduce image to 20kb online"
     ],
-    "search_variations": [
-      "how to compress image to 20kb",
-      "compress photo to 20kb",
-      "reduce image size to 20kb",
-      "image compressor to 20kb"
-    ],
-    "target_entities": [
-      "20KB image guide",
-      "digital signature",
-      "tiny thumbnail",
-      "portal upload",
-      "lossy encoding"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "why portals require 20KB",
-      "step-by-step process with dimension guidance",
-      "format choice impact",
-      "when 20KB is feasible vs when quality breaks",
-      "FAQ",
-      "link to image-compressor tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/"
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
+      "/guides/how-to-compress-image-to-100kb/"
     ],
-    "cannibalization_with": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ]
+    "cannibalization_with": []
   },
   {
     "url": "/guides/how-to-compress-image-to-100kb/",
     "page_type": "guide",
-    "primary_intent": "step-by-step guide on compressing an image to 100KB while preserving legibility",
-    "primary_topic": "100KB Image Compression Guide",
+    "primary_intent": "learn how to compress scanned documents and images to 100kb",
+    "primary_topic": "100KB Document Optimization",
     "primary_keyword": "how to compress image to 100kb",
     "secondary_keywords": [
-      "compress image to 100kb",
-      "reduce photo to 100kb",
-      "image under 100kb"
+      "compress jpg to 100kb",
+      "reduce document image size to 100kb"
     ],
-    "search_variations": [
-      "how to compress image to 100kb",
-      "compress image to 100kb",
-      "reduce image to 100kb",
-      "image compressor 100kb"
-    ],
-    "target_entities": [
-      "100KB image guide",
-      "marksheet scan",
-      "ID card photo",
-      "certificate scan",
-      "scanned document"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "who needs 100KB limits",
-      "step-by-step process",
-      "format comparison at 100KB",
-      "FAQ",
-      "link to image-compressor tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/image-to-pdf/"
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
+      "/guides/how-to-compress-image-to-20kb/"
     ],
-    "cannibalization_with": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ]
+    "cannibalization_with": []
+  },
+  {
+    "url": "/guides/how-to-reduce-jpg-size/",
+    "page_type": "guide",
+    "primary_intent": "learn how to reduce jpg file size without visual quality loss",
+    "primary_topic": "JPG Compression Tutorial",
+    "primary_keyword": "how to reduce jpg file size",
+    "secondary_keywords": [
+      "compress jpg without quality loss",
+      "reduce jpeg size online"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-reduce-image-size-without-losing-quality/",
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "cannibalization_with": []
   },
   {
     "url": "/guides/how-to-reduce-image-size-without-losing-quality/",
     "page_type": "guide",
-    "primary_intent": "comprehensive guide on reducing image file size while minimizing quality loss",
-    "primary_topic": "Lossless and Near-Lossless Image Optimization",
-    "primary_keyword": "reduce image size without losing quality",
+    "primary_intent": "learn techniques for reducing image size without losing quality",
+    "primary_topic": "Image Quality Optimization",
+    "primary_keyword": "how to reduce image size without losing quality",
     "secondary_keywords": [
-      "compress image without quality loss",
-      "optimize image for web",
-      "lossy vs lossless compression"
+      "reduce image file size guide",
+      "compress image quality guide"
     ],
-    "search_variations": [
-      "reduce image size without losing quality",
-      "compress image without losing quality",
-      "how to reduce image size without quality loss",
-      "optimize images for web"
-    ],
-    "target_entities": [
-      "image optimization",
-      "lossy compression",
-      "lossless compression",
-      "WebP",
-      "JPEG quality",
-      "pixel density"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "lossy vs lossless compression explained",
-      "when resizing helps quality-size ratio",
-      "format recommendations by use case",
-      "PageSpeed context",
-      "WebP benefits",
-      "FAQ",
-      "link to image-compressor tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-compressor/"
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
     ],
     "related_guides": [
-      "/guides/how-to-reduce-jpg-file-size/",
-      "/guides/jpg-vs-png-vs-webp/"
+      "/guides/how-to-reduce-jpg-size/",
+      "/guides/best-free-image-compression-tools/"
     ],
-    "cannibalization_with": [
-      "/guides/how-to-reduce-jpg-file-size/"
-    ]
+    "cannibalization_with": []
   },
   {
     "url": "/guides/how-to-resize-image-to-specific-dimensions/",
     "page_type": "guide",
-    "primary_intent": "guide for resizing images to precise pixel dimension requirements",
-    "primary_topic": "Precise Image Dimension Resizing Guide",
+    "primary_intent": "learn how to resize image to specific pixel dimensions",
+    "primary_topic": "Image Resizing Tutorial",
     "primary_keyword": "how to resize image to specific dimensions",
     "secondary_keywords": [
-      "resize image to exact pixels",
-      "change image dimensions online",
-      "resize image width height"
+      "resize image pixels guide",
+      "change image dimensions tutorial"
     ],
-    "search_variations": [
-      "how to resize image to specific dimensions",
-      "resize image to exact pixels",
-      "change image dimensions",
-      "resize image width height"
-    ],
-    "target_entities": [
-      "image dimensions",
-      "pixels",
-      "width",
-      "height",
-      "aspect ratio",
-      "downscaling"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "common exact dimension requirements",
-      "understanding pixels vs physical size",
-      "aspect ratio math",
-      "step-by-step pixel resize instructions",
-      "FAQ",
-      "link to image-resizer tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-resizer/"
+      "/tools/image-resizer/",
+      "/tools/compress-image-to-50kb/"
     ],
     "related_guides": [
-      "/guides/resize-images-for-online-forms/",
+      "/guides/how-to-resize-image-for-online-forms/",
+      "/guides/how-to-reduce-jpg-size/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/guides/how-to-resize-image-for-online-forms/",
+    "page_type": "guide",
+    "primary_intent": "learn how to resize photos and signatures for online job/exam application forms",
+    "primary_topic": "Online Form Image Resizing",
+    "primary_keyword": "how to resize image for online forms",
+    "secondary_keywords": [
+      "resize photo for online form",
+      "passport photo size resizer guide"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-resizer/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-resize-image-to-specific-dimensions/",
       "/guides/how-to-compress-image-to-50kb/"
     ],
-    "cannibalization_with": [
-      "/guides/resize-images-for-online-forms/"
-    ]
+    "cannibalization_with": []
   },
   {
     "url": "/guides/how-to-convert-png-to-pdf/",
     "page_type": "guide",
-    "primary_intent": "guide for converting PNG images to PDF documents",
+    "primary_intent": "learn how to convert png image files into pdf documents",
     "primary_topic": "PNG to PDF Conversion Guide",
     "primary_keyword": "how to convert png to pdf",
     "secondary_keywords": [
-      "png to pdf",
-      "convert png to pdf online",
-      "png image to pdf"
+      "convert png to pdf guide",
+      "png image to pdf tutorial"
     ],
-    "search_variations": [
-      "how to convert png to pdf",
-      "png to pdf",
-      "convert png to pdf online",
-      "png image to pdf"
-    ],
-    "target_entities": [
-      "PNG to PDF",
-      "transparency",
-      "screenshot",
-      "vector graphics",
-      "PDF compilation"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "why PNG-to-PDF differs from JPG-to-PDF",
-      "transparency handling",
-      "step-by-step instructions",
-      "page size advice",
-      "FAQ",
-      "link to image-to-pdf tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-to-pdf/"
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
     "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/",
-      "/guides/how-to-convert-multiple-images-to-pdf/"
+      "/guides/how-to-convert-multiple-images-to-pdf/",
+      "/guides/jpg-vs-png-vs-webp/"
     ],
-    "cannibalization_with": [
-      "/guides/how-to-convert-multiple-images-to-pdf/"
-    ]
+    "cannibalization_with": []
   },
   {
     "url": "/guides/how-to-convert-multiple-images-to-pdf/",
     "page_type": "guide",
-    "primary_intent": "guide for combining multiple images of different formats into a single PDF",
-    "primary_topic": "Multi-Image PDF Compilation Guide",
+    "primary_intent": "learn how to combine multiple images into a single pdf file",
+    "primary_topic": "Multi-Image PDF Creation",
     "primary_keyword": "how to convert multiple images to pdf",
     "secondary_keywords": [
-      "multiple images to pdf",
-      "combine photos into pdf",
-      "merge images into pdf"
+      "combine multiple photos into one pdf",
+      "merge images to pdf guide"
     ],
-    "search_variations": [
-      "how to convert multiple images to pdf",
-      "multiple images to pdf",
-      "combine photos into pdf",
-      "merge images into pdf",
-      "photos to pdf"
-    ],
-    "target_entities": [
-      "multiple images to PDF",
-      "drag reordering",
-      "page sequence",
-      "A4 layout",
-      "document compilation"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "step-by-step multi-image PDF process",
-      "page ordering guidance",
-      "page size and orientation advice",
-      "mixing formats note",
-      "FAQ",
-      "link to image-to-pdf tool"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/image-to-pdf/"
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
     "related_guides": [
       "/guides/how-to-convert-png-to-pdf/",
       "/guides/jpg-vs-png-vs-webp/"
     ],
-    "cannibalization_with": [
-      "/guides/how-to-convert-png-to-pdf/"
-    ]
+    "cannibalization_with": []
   },
   {
-    "url": "/apps/",
-    "page_type": "directory",
-    "primary_intent": "mobile applications portfolio display",
-    "primary_topic": "Mobile Applications",
-    "primary_keyword": "sudogrep apps",
+    "url": "/guides/jpg-vs-png-vs-webp/",
+    "page_type": "guide",
+    "primary_intent": "compare jpg png webp image formats for web development",
+    "primary_topic": "Image Format Comparison",
+    "primary_keyword": "jpg vs png vs webp",
     "secondary_keywords": [
-      "sudogrep mobile apps",
-      "android utilities",
-      "privacy first mobile applications"
+      "which image format to use",
+      "webp vs jpg comparison"
     ],
-    "search_variations": [
-      "sudogrep apps",
-      "sudogrep mobile apps",
-      "sudogrep play store apps"
-    ],
-    "target_entities": [
-      "mobile applications",
-      "Google Play Store",
-      "Android",
-      "FileForge",
-      "Zip Connect"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "app showcase cards",
-      "play store links",
-      "app descriptions"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/free-tools/",
-      "/image-compressor/"
+      "/tools/image-compressor/",
+      "/tools/image-resizer/"
     ],
     "related_guides": [
-      "/guides/"
+      "/guides/how-to-reduce-jpg-size/",
+      "/guides/how-to-reduce-image-size-without-losing-quality/"
     ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/guides/best-free-image-compression-tools/",
+    "page_type": "guide",
+    "primary_intent": "find best free image compression tools online and offline",
+    "primary_topic": "Image Compression Tools List",
+    "primary_keyword": "best free image compression tools",
+    "secondary_keywords": [
+      "top image compressor software",
+      "offline image compression tools"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-reduce-image-size-without-losing-quality/",
+      "/guides/how-to-reduce-jpg-size/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/blog/",
+    "page_type": "directory",
+    "primary_intent": "brand blog directory",
+    "primary_topic": "Software Development Blog",
+    "primary_keyword": "sudogrep blog",
+    "secondary_keywords": [
+      "software development articles",
+      "mobile app engineering blog"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/insights/",
+    "page_type": "editorial",
+    "primary_intent": "brand engineering insights hub",
+    "primary_topic": "Software Architecture & Trends",
+    "primary_keyword": "sudogrep insights",
+    "secondary_keywords": [
+      "engineering tech articles",
+      "software architecture insights"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/insights/ai-agents-2026/",
+    "page_type": "editorial",
+    "primary_intent": "understand how ai agents work and what they can do in 2026",
+    "primary_topic": "AI Agents",
+    "primary_keyword": "ai agents in 2026",
+    "secondary_keywords": [
+      "what is an ai agent",
+      "ai chatbot vs ai agent"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/insights/browser-based-tools-private-no-upload/",
+    "page_type": "editorial",
+    "primary_intent": "understand client side privacy and local browser processing benefits",
+    "primary_topic": "Client-Side Computing",
+    "primary_keyword": "browser based tools privacy",
+    "secondary_keywords": [
+      "local browser processing security",
+      "no upload file tools privacy"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/best-free-image-compression-tools/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/insights/flutter-app-development-trends-2026/",
+    "page_type": "editorial",
+    "primary_intent": "explore flutter app development trends in 2026",
+    "primary_topic": "Flutter Mobile Engineering",
+    "primary_keyword": "flutter app development trends 2026",
+    "secondary_keywords": [
+      "flutter 2026 architecture",
+      "flutter mobile engineering trends"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/insights/how-ai-agents-are-changing-software-development/",
+    "page_type": "editorial",
+    "primary_intent": "understand ai agent impact on software development",
+    "primary_topic": "AI Engineering",
+    "primary_keyword": "how ai agents change software development",
+    "secondary_keywords": [
+      "ai agents software engineering",
+      "autonomous coding agents 2026"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/insights/will-ai-replace-jobs-bill-gates-2026/",
+    "page_type": "editorial",
+    "primary_intent": "read bill gates insights on ai replacement of human jobs",
+    "primary_topic": "AI Automation & Work",
+    "primary_keyword": "will ai replace jobs bill gates",
+    "secondary_keywords": [
+      "bill gates ai job prediction 2026",
+      "human reserved jobs ai"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
     "cannibalization_with": []
   },
   {
     "url": "/about/",
-    "page_type": "brand",
-    "primary_intent": "about company information and values",
-    "primary_topic": "Brand Identity",
+    "page_type": "directory",
+    "primary_intent": "company background and engineering philosophy",
+    "primary_topic": "SudoGrep Organization",
     "primary_keyword": "about sudogrep",
     "secondary_keywords": [
-      "sudogrep mission",
-      "sudogrep values",
-      "client side processing software"
+      "sudogrep company profile",
+      "privacy first software studio"
     ],
-    "search_variations": [
-      "about sudogrep",
-      "sudogrep team",
-      "why sudogrep"
-    ],
-    "target_entities": [
-      "SudoGrep",
-      "privacy",
-      "client-side execution",
-      "engineering team"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "company mission",
-      "technology principles",
-      "engineering values"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/free-tools/"
+      "/tools/image-compressor/"
     ],
-    "related_guides": [
-      "/guides/"
-    ],
+    "related_guides": [],
     "cannibalization_with": []
   },
   {
     "url": "/contact/",
-    "page_type": "service",
-    "primary_intent": "contact and lead collection for custom software projects",
-    "primary_topic": "Contact Details",
+    "page_type": "directory",
+    "primary_intent": "contact company for business inquiries or support",
+    "primary_topic": "SudoGrep Contact",
     "primary_keyword": "contact sudogrep",
     "secondary_keywords": [
-      "build with sudogrep",
-      "hire developers",
-      "custom software development"
+      "sudogrep email support",
+      "book software engineering call"
     ],
-    "search_variations": [
-      "contact sudogrep",
-      "build with sudogrep",
-      "hire developers"
-    ],
-    "target_entities": [
-      "SudoGrep support",
-      "project proposal",
-      "consultation",
-      "email address"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "contact form",
-      "email address",
-      "project inquiry guidance"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/privacy-policy.html",
+    "page_type": "directory",
+    "primary_intent": "read user privacy commitments and data handling policies",
+    "primary_topic": "Data Privacy",
+    "primary_keyword": "sudogrep privacy policy",
+    "secondary_keywords": [
+      "on-device file privacy guarantee",
+      "no tracking browser tools policy"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/terms/",
+    "page_type": "directory",
+    "primary_intent": "read legal terms of service for software tools and mobile apps",
+    "primary_topic": "Terms of Service",
+    "primary_keyword": "sudogrep terms of service",
+    "secondary_keywords": [
+      "sudogrep legal terms",
+      "software usage conditions"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [],
     "related_guides": [],
@@ -931,761 +783,63 @@
   {
     "url": "/services/",
     "page_type": "service",
-    "primary_intent": "custom software engineering and development services",
-    "primary_topic": "Custom Development Services",
-    "primary_keyword": "software development services",
+    "primary_intent": "hire software engineering development agency",
+    "primary_topic": "Software Engineering Services",
+    "primary_keyword": "software engineering services",
     "secondary_keywords": [
-      "mobile app development",
-      "web application engineering",
-      "custom API integrations"
+      "custom app development services",
+      "software development studio"
     ],
-    "search_variations": [
-      "software development services",
-      "mobile app development",
-      "hire mobile app engineers"
-    ],
-    "target_entities": [
-      "software engineering",
-      "Flutter",
-      "responsive web",
-      "API backend",
-      "custom development"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "services overview",
-      "technology stack",
-      "engagement model"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [
-      "/free-tools/"
+      "/tools/image-compressor/"
     ],
-    "related_guides": [],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/ai-solutions/",
-    "page_type": "service",
-    "primary_intent": "custom AI development and integration services",
-    "primary_topic": "AI Solutions & Integrations",
-    "primary_keyword": "custom ai solutions",
-    "secondary_keywords": [
-      "ai integration services",
-      "ai agent development",
-      "retrieval augmented generation"
-    ],
-    "search_variations": [
-      "custom ai solutions",
-      "ai integration services",
-      "enterprise ai integration"
-    ],
-    "target_entities": [
-      "AI engineering",
-      "LLMs",
-      "RAG systems",
-      "intelligent agents",
-      "custom AI integrations"
-    ],
-    "content_requirements": [
-      "AI services overview",
-      "RAG systems description",
-      "autonomous agents description"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/privacy-policy.html",
-    "page_type": "legal",
-    "primary_intent": "legal privacy policy and data handling disclosure",
-    "primary_topic": "Legal Privacy",
-    "primary_keyword": "sudogrep privacy policy",
-    "secondary_keywords": [
-      "data protection",
-      "local processing policy",
-      "privacy commitment"
-    ],
-    "search_variations": [
-      "sudogrep privacy policy",
-      "sudogrep user privacy",
-      "data safety"
-    ],
-    "target_entities": [
-      "privacy terms",
-      "GDPR compliance",
-      "local storage data safety",
-      "data security"
-    ],
-    "content_requirements": [
-      "data handling policy",
-      "local processing guarantee",
-      "contact information"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/compress-image-to-100kb/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for compress image to 100kb",
-    "primary_topic": "Compress Image to 100KB Online",
-    "primary_keyword": "compress image to 100kb",
-    "secondary_keywords": [
-      "reduce image to 100kb",
-      "image under 100kb",
-      "photo under 100kb",
-      "reduce photo size to 100kb"
-    ],
-    "search_variations": [
-      "compress image to 100kb",
-      "reduce image to 100kb",
-      "image under 100kb",
-      "photo under 100kb",
-      "reduce photo size to 100kb"
-    ],
-    "target_entities": [
-      "Compress Image to 100KB Online",
-      "compress image to 100kb"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-image-to-200kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/compress-image-to-200kb/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for compress image to 200kb",
-    "primary_topic": "Compress Image to 200KB Online",
-    "primary_keyword": "compress image to 200kb",
-    "secondary_keywords": [
-      "reduce image to 200kb",
-      "image under 200kb",
-      "photo under 200kb",
-      "reduce photo size to 200kb"
-    ],
-    "search_variations": [
-      "compress image to 200kb",
-      "reduce image to 200kb",
-      "image under 200kb",
-      "photo under 200kb",
-      "reduce photo size to 200kb"
-    ],
-    "target_entities": [
-      "Compress Image to 200KB Online",
-      "compress image to 200kb"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-image-to-100kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/compress-jpg-to-50kb/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for compress jpg to 50kb",
-    "primary_topic": "Compress JPG to 50KB Online",
-    "primary_keyword": "compress jpg to 50kb",
-    "secondary_keywords": [
-      "reduce jpg to 50kb",
-      "jpg under 50kb",
-      "photo to 50kb jpg",
-      "compress photo to 50kb"
-    ],
-    "search_variations": [
-      "compress jpg to 50kb",
-      "reduce jpg to 50kb",
-      "jpg under 50kb",
-      "photo to 50kb jpg",
-      "compress photo to 50kb"
-    ],
-    "target_entities": [
-      "Compress JPG to 50KB Online",
-      "compress jpg to 50kb"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-png-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-reduce-jpg-file-size/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/compress-png-to-50kb/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for compress png to 50kb",
-    "primary_topic": "Compress PNG to 50KB Online",
-    "primary_keyword": "compress png to 50kb",
-    "secondary_keywords": [
-      "reduce png to 50kb",
-      "png under 50kb",
-      "signature transparent 50kb",
-      "compress photo to 50kb png"
-    ],
-    "search_variations": [
-      "compress png to 50kb",
-      "reduce png to 50kb",
-      "png under 50kb",
-      "signature transparent 50kb",
-      "compress photo to 50kb png"
-    ],
-    "target_entities": [
-      "Compress PNG to 50KB Online",
-      "compress png to 50kb"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-jpg-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/resize-image-for-online-forms/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for resize image for online forms",
-    "primary_topic": "Resize Image for Online Forms",
-    "primary_keyword": "resize image for online forms",
-    "secondary_keywords": [
-      "resize photo for forms",
-      "crop signature online",
-      "resize signature online",
-      "passport photo forms"
-    ],
-    "search_variations": [
-      "resize image for online forms",
-      "resize photo for forms",
-      "crop signature online",
-      "resize signature online",
-      "passport photo forms"
-    ],
-    "target_entities": [
-      "Resize Image for Online Forms",
-      "resize image for online forms"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-resizer/",
-      "/resize-image-for-passport/"
-    ],
-    "related_guides": [
-      "/guides/resize-images-for-online-forms/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/resize-image-for-passport/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for resize image for passport",
-    "primary_topic": "Resize Image for Passport",
-    "primary_keyword": "resize image for passport",
-    "secondary_keywords": [
-      "resize passport photo",
-      "passport photo dimensions",
-      "passport size photo px",
-      "indian passport size photo online"
-    ],
-    "search_variations": [
-      "resize image for passport",
-      "resize passport photo",
-      "passport photo dimensions",
-      "passport size photo px",
-      "indian passport size photo online"
-    ],
-    "target_entities": [
-      "Resize Image for Passport",
-      "resize image for passport"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-resizer/",
-      "/resize-image-for-online-forms/"
-    ],
-    "related_guides": [
-      "/guides/resize-images-for-online-forms/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/image-converter/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for image converter",
-    "primary_topic": "Image Format Converter",
-    "primary_keyword": "image converter",
-    "secondary_keywords": [
-      "convert images online",
-      "png to jpg converter",
-      "jpg to png converter",
-      "webp to jpg converter"
-    ],
-    "search_variations": [
-      "image converter",
-      "convert images online",
-      "png to jpg converter",
-      "jpg to png converter",
-      "webp to jpg converter"
-    ],
-    "target_entities": [
-      "Image Format Converter",
-      "image converter"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/jpg-to-png/",
-      "/png-to-jpg/",
-      "/webp-to-jpg/",
-      "/jpg-to-webp/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/jpg-to-png/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for jpg to png",
-    "primary_topic": "JPG to PNG Converter",
-    "primary_keyword": "jpg to png",
-    "secondary_keywords": [
-      "convert jpg to png",
-      "jpeg to png online",
-      "turn jpg into png",
-      "scanned jpg converter"
-    ],
-    "search_variations": [
-      "jpg to png",
-      "convert jpg to png",
-      "jpeg to png online",
-      "turn jpg into png",
-      "scanned jpg converter"
-    ],
-    "target_entities": [
-      "JPG to PNG Converter",
-      "jpg to png"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/png-to-jpg/",
-      "/webp-to-jpg/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/png-to-jpg/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for png to jpg",
-    "primary_topic": "PNG to JPG Converter",
-    "primary_keyword": "png to jpg",
-    "secondary_keywords": [
-      "convert png to jpg",
-      "png to jpeg online",
-      "turn png into jpg",
-      "scanned png converter"
-    ],
-    "search_variations": [
-      "png to jpg",
-      "convert png to jpg",
-      "png to jpeg online",
-      "turn png into jpg",
-      "scanned png converter"
-    ],
-    "target_entities": [
-      "PNG to JPG Converter",
-      "png to jpg"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/jpg-to-png/",
-      "/jpg-to-webp/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/webp-to-jpg/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for webp to jpg",
-    "primary_topic": "WebP to JPG Converter",
-    "primary_keyword": "webp to jpg",
-    "secondary_keywords": [
-      "convert webp to jpg",
-      "webp to jpeg online",
-      "turn webp into jpg",
-      "webp file converter"
-    ],
-    "search_variations": [
-      "webp to jpg",
-      "convert webp to jpg",
-      "webp to jpeg online",
-      "turn webp into jpg",
-      "webp file converter"
-    ],
-    "target_entities": [
-      "WebP to JPG Converter",
-      "webp to jpg"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/jpg-to-webp/",
-      "/png-to-jpg/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/jpg-to-webp/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for jpg to webp",
-    "primary_topic": "JPG to WebP Converter",
-    "primary_keyword": "jpg to webp",
-    "secondary_keywords": [
-      "convert jpg to webp",
-      "jpeg to webp online",
-      "turn jpg into webp",
-      "compress to webp"
-    ],
-    "search_variations": [
-      "jpg to webp",
-      "convert jpg to webp",
-      "jpeg to webp online",
-      "turn jpg into webp",
-      "compress to webp"
-    ],
-    "target_entities": [
-      "JPG to WebP Converter",
-      "jpg to webp"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/webp-to-jpg/",
-      "/jpg-to-png/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/apps/kb-snap/",
-    "page_type": "tool",
-    "primary_intent": "Provide custom solution or preselected settings for photo compressor app",
-    "primary_topic": "KB Snap",
-    "primary_keyword": "photo compressor app",
-    "secondary_keywords": [
-      "image compressor Android",
-      "compress image to 50KB app",
-      "reduce image KB",
-      "compress photo for online forms"
-    ],
-    "search_variations": [
-      "photo compressor app",
-      "image compressor Android",
-      "compress image to 50KB app",
-      "reduce image KB",
-      "compress photo for online forms"
-    ],
-    "target_entities": [
-      "KB Snap",
-      "photo compressor app"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/compress-image-to-50kb/",
-      "/image-compressor/",
-      "/image-resizer/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/resize-images-for-online-forms/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/apps/file-forge/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for file converter app",
-    "primary_topic": "File Forge",
-    "primary_keyword": "file converter app",
-    "secondary_keywords": [
-      "file forge conversion",
-      "ocr text extractor Android",
-      "exif editor mobile",
-      "offline file optimizer"
-    ],
-    "search_variations": [
-      "file converter app",
-      "file forge conversion",
-      "ocr text extractor Android",
-      "exif editor mobile",
-      "offline file optimizer"
-    ],
-    "target_entities": [
-      "File Forge",
-      "file converter app"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/image-to-pdf/",
-      "/jpg-to-pdf/",
-      "/image-converter/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/apps/billbuddy/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for bill tracker app",
-    "primary_topic": "BillBuddy",
-    "primary_keyword": "bill tracker app",
-    "secondary_keywords": [
-      "bill reminder Android",
-      "payment planner mobile",
-      "emi record keeper",
-      "subscription organizer"
-    ],
-    "search_variations": [
-      "bill tracker app",
-      "bill reminder Android",
-      "payment planner mobile",
-      "emi record keeper",
-      "subscription organizer"
-    ],
-    "target_entities": [
-      "BillBuddy",
-      "bill tracker app"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/guides/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/apps/zip-connect/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for logic puzzle game",
-    "primary_topic": "Zip Connect",
-    "primary_keyword": "logic puzzle game",
-    "secondary_keywords": [
-      "node connector puzzle",
-      "offline puzzle game",
-      "ad-free logic puzzle",
-      "minimalist puzzle game"
-    ],
-    "search_variations": [
-      "logic puzzle game",
-      "node connector puzzle",
-      "offline puzzle game",
-      "ad-free logic puzzle",
-      "minimalist puzzle game"
-    ],
-    "target_entities": [
-      "Zip Connect",
-      "logic puzzle game"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/guides/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/apps/aarti-sangrah/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for spiritual prayers app",
-    "primary_topic": "Aarti Sangrah",
-    "primary_keyword": "spiritual prayers app",
-    "secondary_keywords": [
-      "devotional lyrics online",
-      "aarti offline reader",
-      "prayer lists local",
-      "lightweight aarti collection"
-    ],
-    "search_variations": [
-      "spiritual prayers app",
-      "devotional lyrics online",
-      "aarti offline reader",
-      "prayer lists local",
-      "lightweight aarti collection"
-    ],
-    "target_entities": [
-      "Aarti Sangrah",
-      "spiritual prayers app"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/guides/"
-    ],
-    "cannibalization_with": []
-  },
-  {
-    "url": "/services/flutter-development/",
-    "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for flutter development services",
-    "primary_topic": "Flutter Development",
-    "primary_keyword": "flutter development services",
-    "secondary_keywords": [
-      "custom flutter apps",
-      "hire flutter engineers",
-      "cross platform application development",
-      "dart mobile engineering"
-    ],
-    "search_variations": [
-      "flutter development services",
-      "custom flutter apps",
-      "hire flutter engineers",
-      "cross platform application development",
-      "dart mobile engineering"
-    ],
-    "target_entities": [
-      "Flutter Development",
-      "flutter development services"
-    ],
-    "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
-    ],
-    "related_tools": [],
     "related_guides": [],
     "cannibalization_with": []
   },
   {
     "url": "/services/mobile-app-development/",
     "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for mobile app development services",
-    "primary_topic": "Mobile App Development",
+    "primary_intent": "hire mobile app development company for android and ios",
+    "primary_topic": "Mobile Development",
     "primary_keyword": "mobile app development services",
     "secondary_keywords": [
-      "android app development",
-      "ios app development",
-      "hire app developers",
-      "custom smartphone applications"
+      "ios and android development services",
+      "custom mobile app developers"
     ],
-    "search_variations": [
-      "mobile app development services",
-      "android app development",
-      "ios app development",
-      "hire app developers",
-      "custom smartphone applications"
-    ],
-    "target_entities": [
-      "Mobile App Development",
-      "mobile app development services"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/services/flutter-development/",
+    "page_type": "service",
+    "primary_intent": "hire flutter app development experts",
+    "primary_topic": "Flutter App Engineering",
+    "primary_keyword": "flutter development services",
+    "secondary_keywords": [
+      "cross platform flutter app development",
+      "hire flutter app developers"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [],
     "related_guides": [],
@@ -1694,30 +848,19 @@
   {
     "url": "/services/ai-development/",
     "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for custom ai solutions",
-    "primary_topic": "AI Development",
-    "primary_keyword": "custom ai solutions",
+    "primary_intent": "hire custom AI agent and LLM development engineers",
+    "primary_topic": "AI Software Engineering",
+    "primary_keyword": "ai development services",
     "secondary_keywords": [
-      "ai integration services",
-      "ai agent development",
-      "intelligent computing",
-      "large language models integration"
+      "custom ai agent developers",
+      "local llm integration agency"
     ],
-    "search_variations": [
-      "custom ai solutions",
-      "ai integration services",
-      "ai agent development",
-      "intelligent computing",
-      "large language models integration"
-    ],
-    "target_entities": [
-      "AI Development",
-      "custom ai solutions"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [],
     "related_guides": [],
@@ -1726,56 +869,209 @@
   {
     "url": "/services/rag-development/",
     "page_type": "service",
-    "primary_intent": "Provide custom solution or preselected settings for rag development services",
-    "primary_topic": "RAG Development",
+    "primary_intent": "hire RAG document search system developers",
+    "primary_topic": "Retrieval-Augmented Generation",
     "primary_keyword": "rag development services",
     "secondary_keywords": [
-      "retrieval augmented generation",
-      "vector search engineering",
-      "semantic search systems",
-      "pinecone pgvector configuration"
+      "retrieval augmented generation developers",
+      "custom vector search pipeline"
     ],
-    "search_variations": [
-      "rag development services",
-      "retrieval augmented generation",
-      "vector search engineering",
-      "semantic search systems",
-      "pinecone pgvector configuration"
-    ],
-    "target_entities": [
-      "RAG Development",
-      "rag development services"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "what the tool does",
-      "FAQ",
-      "step-by-step instructions"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [],
     "related_guides": [],
     "cannibalization_with": []
   },
   {
-    "url": "/terms/",
-    "page_type": "legal",
-    "primary_intent": "legal terms and usage rules",
-    "primary_topic": "Terms",
-    "primary_keyword": "terms of service",
+    "url": "/ai-solutions/",
+    "page_type": "directory",
+    "primary_intent": "explore custom AI software solutions and agent capabilities",
+    "primary_topic": "AI Products & Solutions",
+    "primary_keyword": "ai solutions sudogrep",
     "secondary_keywords": [
-      "usage rules"
+      "autonomous ai agent software",
+      "on-device ai tools studio"
     ],
-    "search_variations": [
-      "terms of service",
-      "sudogrep terms"
-    ],
-    "target_entities": [
-      "terms"
-    ],
+    "search_variations": [],
+    "target_entities": [],
     "content_requirements": [
-      "usage terms",
-      "contact email"
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
     ],
     "related_tools": [],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/",
+    "page_type": "app",
+    "primary_intent": "browse sudogrep android mobile apps catalog",
+    "primary_topic": "Android Mobile Apps",
+    "primary_keyword": "sudogrep android apps",
+    "secondary_keywords": [
+      "privacy focused mobile apps",
+      "offline android utility apps"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/aarti-sangrah/",
+    "page_type": "app",
+    "primary_intent": "download aarti sangrah android application",
+    "primary_topic": "Spiritual Devotional App",
+    "primary_keyword": "aarti sangrah app",
+    "secondary_keywords": [
+      "offline devotional app android",
+      "aarti sangrah download"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/billbuddy/",
+    "page_type": "app",
+    "primary_intent": "download billbuddy bill tracker app for android",
+    "primary_topic": "Expense & Bill Tracker",
+    "primary_keyword": "billbuddy app",
+    "secondary_keywords": [
+      "bill reminder app android",
+      "offline expense tracker app"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/file-forge/",
+    "page_type": "app",
+    "primary_intent": "download file forge converter app for android",
+    "primary_topic": "Offline File Utility",
+    "primary_keyword": "file forge app",
+    "secondary_keywords": [
+      "offline file converter android",
+      "local ocr text extractor"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
+    ],
+    "related_guides": [
+      "/guides/how-to-convert-png-to-pdf/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/ghost-trap/",
+    "page_type": "app",
+    "primary_intent": "download ghost trap android puzzle game",
+    "primary_topic": "Arcade Puzzle Game",
+    "primary_keyword": "ghost trap game",
+    "secondary_keywords": [
+      "offline arcade puzzle android",
+      "ghost trap game download"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/kb-snap/",
+    "page_type": "app",
+    "primary_intent": "download kb snap photo compressor app for android",
+    "primary_topic": "Mobile Photo Compression",
+    "primary_keyword": "kb snap app",
+    "secondary_keywords": [
+      "offline photo compressor android",
+      "compress image to 50kb app"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/"
+    ],
+    "cannibalization_with": []
+  },
+  {
+    "url": "/apps/zip-connect/",
+    "page_type": "app",
+    "primary_intent": "download zip connect offline logic puzzle game for android",
+    "primary_topic": "Logic Puzzle Game",
+    "primary_keyword": "zip connect game",
+    "secondary_keywords": [
+      "offline logic puzzle android",
+      "ad free node connect puzzle"
+    ],
+    "search_variations": [],
+    "target_entities": [],
+    "content_requirements": [
+      "high visual clarity",
+      "local privacy",
+      "clear structure"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
     "related_guides": [],
     "cannibalization_with": []
   }

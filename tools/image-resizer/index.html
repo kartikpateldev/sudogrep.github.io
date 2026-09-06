@@ -2,11 +2,406 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/image-resizer/">
-  <link rel="canonical" href="https://sudogrep.in/image-resizer/">
-  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resize Images Online — Change Image Dimensions & Pixels</title>
+  <meta name="description" content="Resize image width and height in pixels or percentage online. Fast, secure browser-based image resizer with aspect ratio locking and zero server uploads.">
+  
+  <!-- Canonical & Styling -->
+  <link rel="canonical" href="https://sudogrep.in/tools/image-resizer/">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/navigation.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/tools.css">
+  
+  <!-- Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon / Meta Theme -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sudogrep.in/tools/image-resizer/">
+  <meta property="og:title" content="Resize Images Online — Change Image Dimensions & Pixels">
+  <meta property="og:description" content="Resize image width and height in pixels or percentage online. Fast, secure browser-based image resizer with aspect ratio locking and zero server uploads.">
+  <meta property="og:image" content="https://sudogrep.in/assets/logo_square.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://sudogrep.in/tools/image-resizer/">
+  <meta name="twitter:title" content="Resize Images Online — Change Image Dimensions & Pixels">
+  <meta name="twitter:description" content="Resize image width and height in pixels or percentage online. Fast, secure browser-based image resizer with aspect ratio locking and zero server uploads.">
+  <meta name="twitter:image" content="https://sudogrep.in/assets/logo_square.png">
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld\+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sudogrep.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://sudogrep.in/tools/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Resize Images Online",
+      "item": "https://sudogrep.in/tools/image-resizer/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Resize Images Online",
+  "url": "https://sudogrep.in/tools/image-resizer/",
+  "description": "Resize image width and height in pixels or percentage online. Fast, secure browser-based image resizer with aspect ratio locking and zero server uploads.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sudogrep.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://sudogrep.in/tools/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Resize Images Online",
+      "item": "https://sudogrep.in/tools/image-resizer/"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="/image-resizer/">/image-resizer/</a>...</p>
+
+  <!-- HEADER -->
+  <header class="header" id="mainHeader">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/assets/logo_square.png" alt="SudoGrep Logo" class="logo-image" width="32" height="32">
+        <span>SudoGrep</span>
+      </a>
+      
+      <nav class="nav" id="mainNav">
+        <a href="/tools/" class="nav-link active">Free Tools</a>
+        <a href="/apps/" class="nav-link">Apps</a>
+        <a href="/ai-solutions/" class="nav-link">AI Solutions</a>
+        <a href="/services/" class="nav-link">Services</a>
+        <a href="/blog/" class="nav-link">Insights</a>
+        <a href="/about/" class="nav-link">About</a>
+      </nav>
+      
+      <a href="/contact/" class="btn btn-primary btn-cta-header">Build with us</a>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="tool-page-wrapper">
+      <div class="container">
+        
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="/tools/">Free Tools</a>
+          <span class="breadcrumb-separator">/</span>
+          <span aria-current="page">Resize Images Online</span>
+        </nav>
+        
+        <div class="tool-header-block">
+          <span class="eyebrow">IMAGE RESIZER</span>
+          <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">Resize Images Online</h1>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem; max-width: 600px;">Adjust pixel dimensions of JPEG, PNG, and WebP images. Crop to standard ratios or resize by custom percentage.</p>
+          <div class="tool-privacy-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span>Your image is processed in your browser and is not uploaded to our server.</span>
+          </div>
+        </div>
+
+        <div class="tool-card-container">
+          
+          <!-- File Drop Zone -->
+          <div class="drop-zone" id="dropZone">
+            <svg class="drop-zone-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" fill="none"></rect><path d="M21 15V9a2 2 0 0 0-2-2h-6M3 9v6a2 2 0 0 0 2 2h6"></path><polyline points="10 14 14 10 18 14"></polyline></svg>
+            <span class="drop-zone-text">Drag and drop your image here, or <strong>browse files</strong></span>
+            <span class="drop-zone-subtext">Supports JPG, JPEG, PNG, and WebP</span>
+            <input type="file" id="fileInput" class="file-input" accept="image/jpeg, image/png, image/webp">
+          </div>
+
+          <!-- Working Workspace -->
+          <div id="toolWorkspace" class="tool-workspace" style="display: none;">
+            
+            <!-- Left: Preview Column -->
+            <div class="workspace-preview-panel">
+              <span id="resizeIndicator" style="display: none; position: absolute; background-color: rgba(255,255,255,0.8); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; color: var(--accent); box-shadow: var(--shadow-sm); z-index: 5;">Resizing...</span>
+              <img id="previewImage" class="preview-image-element" alt="Resized Preview">
+            </div>
+            
+            <!-- Right: Settings & Controls -->
+            <div class="workspace-controls-panel">
+              <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="font-size: 1.15rem;" id="originalName">image.jpg</h3>
+                <button id="resetBtn" class="btn btn-secondary" style="display: none; font-size: 0.8rem; padding: 0.35rem 0.75rem;">Reset</button>
+              </div>
+              
+              <!-- Presets -->
+              <div class="control-slider-group">
+                <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Dimension Presets</label>
+                <div class="preset-grid" style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));">
+                  <button type="button" class="preset-btn" data-preset="passport">Passport Photo</button>
+                  <button type="button" class="preset-btn" data-preset="web-hd">Website HD (720p)</button>
+                  <button type="button" class="preset-btn" data-preset="insta-square">Insta Square</button>
+                  <button type="button" class="preset-btn" data-preset="fb-cover">FB Cover</button>
+                </div>
+              </div>
+
+              <!-- Pixel Sizing -->
+              <div class="dimensions-block">
+                <div class="form-group">
+                  <label for="widthInput">Width (px)</label>
+                  <input type="number" id="widthInput" placeholder="Width">
+                </div>
+                <div class="form-group">
+                  <label for="heightInput">Height (px)</label>
+                  <input type="number" id="heightInput" placeholder="Height">
+                </div>
+              </div>
+              
+              <!-- Aspect Ratio Constraint -->
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="checkbox" id="lockAspectRatio" checked style="width: auto; cursor: pointer;">
+                <label for="lockAspectRatio" style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); cursor: pointer;">Maintain Aspect Ratio</label>
+              </div>
+
+              <!-- Percentage Sizing -->
+              <div class="control-slider-group">
+                <div class="slider-header-info">
+                  <span>Resize by Percentage</span>
+                  <span id="percentageValue">100%</span>
+                </div>
+                <input type="range" id="percentageSlider" class="control-slider-input" min="1" max="200" value="100">
+              </div>
+              
+              <!-- Output Settings -->
+              <div class="form-group">
+                <label for="formatSelect">Output Format</label>
+                <select id="formatSelect">
+                  <option value="image/jpeg">Export to JPEG</option>
+                  <option value="image/png">Export to PNG</option>
+                  <option value="image/webp">Export to WebP</option>
+                </select>
+              </div>
+
+              <!-- Quality -->
+              <div class="control-slider-group">
+                <div class="slider-header-info">
+                  <span>Output Quality</span>
+                  <span id="qualityValue">85%</span>
+                </div>
+                <input type="range" id="qualitySlider" class="control-slider-input" min="0.05" max="0.99" step="0.05" value="0.85">
+              </div>
+
+              <!-- Metadata readouts -->
+              <div class="metadata-readout-grid">
+                <div class="metadata-item">
+                  <div class="metadata-label">Original Size</div>
+                  <div class="metadata-value" id="origSizeVal">0 KB</div>
+                </div>
+                <div class="metadata-item">
+                  <div class="metadata-label">Resized Size</div>
+                  <div class="metadata-value" id="compSizeVal">0 KB</div>
+                </div>
+                <div class="metadata-item" style="grid-column: span 2;">
+                  <div class="metadata-label">Resized Dimensions</div>
+                  <div class="metadata-value" id="dimensionsVal">0 × 0 px</div>
+                </div>
+              </div>
+
+              <!-- Action buttons -->
+              <div style="margin-top: 1rem; width: 100%;">
+                <button type="button" id="downloadBtn" class="btn btn-accent" style="width: 100%; padding: 0.9rem;">Download Resized Image</button>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!-- Detailed Tool Guide Copy -->
+          <div class="tool-guide-copy">
+            <h2>Local Browser Image Resizing</h2>
+            <p>SudoGrep's free online image resizer helps you scale and adjust the width and height of JPEG, PNG, and WebP images. It is important to note the difference between resizing and compression: Resizing changes image dimensions (modifying the width and height pixels), while compression primarily reduces file size in kilobytes without altering the pixel counts. If you need to make the file size smaller for a portal, you can run it through our <a href="/tools/image-compressor/">image compressor</a> after resizing.</p>
+            
+            <h3>Pixels, Percentage, and Aspect-Ratio Locking</h3>
+            <p>Our resizer allows you to scale dimensions using exact pixel parameters (width and height) or via percentage sliders. We highly recommend keeping the <strong>Aspect Ratio Lock</strong> active. Locking the aspect ratio maintains proportions, ensuring the image does not stretch, warp, or squash during scale transforms. This is essential for digital passport photos and document scans.</p>
+
+            <h3>Resizing Signatures and Photos for Online Forms</h3>
+            <p>Many official portals and application forms require specific dimension inputs (like 3.5cm x 4.5cm, which is roughly 413 x 531 pixels for passport photos, and 140 x 60 pixels for signatures). When preparing assets:</p>
+            <ul>
+              <li>Check the form's exact pixel requirements first.</li>
+              <li>Use exact pixel inputs and keep the aspect ratio locked to preserve proportions.</li>
+              <li>Export to JPEG to maintain compliance with online form portals.</li>
+              <li>If the portal also imposes a strict file weight limit, check out our <a href="/tools/compress-image-to-50kb/">50KB image compressor</a>.</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-block">
+              <div class="faq-item">
+                <div class="faq-question">What is the difference between resizing and compression?</div>
+                <div class="faq-answer">Resizing changes image dimensions (modifying width and height pixels), while compression primarily reduces file size (kilobytes) without changing the pixel counts.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">What is Aspect Ratio Lock?</div>
+                <div class="faq-answer">It is a constraint that ensures when you modify the width, the height calculates automatically based on the original width-to-height ratio to prevent pixel stretching or distortion.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">How do I resize a signature for online forms?</div>
+                <div class="faq-answer">Select your signature image, crop any white space if needed, enter the portal's target pixels (e.g. 140px x 60px), check the aspect ratio lock, and download.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Are my images private?</div>
+                <div class="faq-answer">Yes. All canvas scaling operations are executed locally in your web browser. No data is uploaded to SudoGrep.</div>
+              </div>
+            </div>
+            
+            <!-- Structured FAQ schema -->
+            
+            <h2 style="margin-top: 2rem;">Related Tools & Guides</h2>
+            <ul>
+              <li><a href="/tools/image-compressor/">General Image Compressor</a> — Adjust kilobytes and size ratios.</li>
+              <li><a href="/tools/compress-image-to-50kb/">Compress Image to 50KB Preset Tool</a> — Preselected preset for admissions.</li>
+              <li><a href="/guides/resize-images-for-online-forms/">Step-by-Step: Resizing Images for Online Application Forms</a></li>
+              <li><a href="/guides/how-to-resize-image-to-specific-dimensions/">How to Resize an Image to Specific Dimensions</a></li>
+              <li><a href="/guides/jpg-vs-png-vs-webp/">Choosing Image Formats: JPG vs PNG vs WebP</a></li>
+              <li><a href="/guides/how-to-reduce-jpg-file-size/">How to Reduce JPG File Sizes Without Quality Degradation</a></li>
+            </ul>
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  
+            <h2>Related Tools &amp; Guides</h2>
+            <ul>
+                <li><a href="/tools/image-compressor/">Free Image Compressor Online</a> — Compress JPG, PNG, and WebP images to your desired file size directly in your browser.</li>
+                <li><a href="/tools/compress-image-to-50kb/">Compress Image to 50KB Online</a> — Compress images to 50KB, 20KB, 100KB, or 200KB online for official portals and forms.</li>
+                <li><a href="/guides/how-to-resize-image-to-specific-dimensions/">How to Resize an Image to Specific Dimensions</a> — Learn how to resize images to exact pixel width and height values.</li>
+                <li><a href="/guides/how-to-resize-image-for-online-forms/">How to Resize an Image for Online Forms</a> — A step-by-step guide to crop, scale, and resize photographs and signatures to fit online application forms and passport requirements.</li>
+            </ul>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <img src="/assets/logo_square.png" alt="SudoGrep Logo" class="logo-image" width="32" height="32">
+            <span>SudoGrep</span>
+          </a>
+                    <p class="footer-tagline">Devoted to client-side computing, speed, and privacy-first digital products.</p>
+          <div class="footer-social-links" style="display: flex; gap: 1rem; margin-top: 1rem; align-items: center;">
+            <a href="https://www.reddit.com/user/SudoGrep_27/" target="_blank" rel="noopener" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="Reddit Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.33 13.67c-.42.42-1.07.42-1.48 0L12 13.81l-1.85 1.85c-.41.41-1.07.41-1.48 0-.41-.41-.41-1.07 0-1.48l1.85-1.85-1.85-1.85c-.41-.41-.41-1.07 0-1.48.41-.41 1.07-.41 1.48 0L12 11.16l1.85-1.85c.41-.41 1.07-.41 1.48 0 .41.41.41 1.07 0 1.48L13.48 12l1.85 1.85c.42.41.42 1.07 0 1.48z"/></svg>
+              <span>Reddit</span>
+            </a>
+            <a href="https://wa.me/917977440556?text=Hi%20SudoGrep%2C%20I%27d%20like%20to%20discuss%20a%20software%20project." target="_blank" rel="noopener" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="WhatsApp Chat">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+            <a href="mailto:support@sudogrep.in" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="Email Support">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="/tools/">Free Utilities</a></li>
+            <li><a href="/apps/">Mobile Apps</a></li>
+            <li><a href="/blog/">Insights</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="/ai-solutions/">AI Solutions</a></li>
+            <li><a href="/services/">Mobile Apps</a></li>
+            <li><a href="/services/">Web Platforms</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About SudoGrep</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 SudoGrep. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917977440556?text=Hi%20SudoGrep%2C%20I%27d%20like%20to%20discuss%20a%20software%20project." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </a>
+  <script src="/js/global.js"></script>
+  <script src="/js/tools/image-resizer.js"></script>
 </body>
 </html>

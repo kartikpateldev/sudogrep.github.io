@@ -1,2546 +1,692 @@
 {
   "/": {
     "url": "/",
-    "title": "SudoGrep \u2014 Free Online Tools, Software & AI Solutions",
+    "title": "SudoGrep — Free Online Tools, Software & AI Solutions",
     "description": "Free online tools, privacy-first apps and practical software solutions by SudoGrep. Compress images, resize photos, convert files and explore useful AI-powered tools.",
     "h1": "Free Online Tools, Privacy-First Apps & AI Solutions",
     "primary_intent": "brand landing page and development hub",
-    "secondary_intents": [
-      "custom software engineering",
-      "mobile app developers",
-      "on-device web tools"
-    ],
     "primary_topic": "SudoGrep software and utilities",
     "secondary_topics": [
       "mobile apps",
       "custom AI integrations",
       "free web tools"
     ],
-    "search_variations": [
-      "sudogrep",
-      "sudogrep software",
-      "sudogrep systems",
-      "sudo grep"
-    ],
-    "target_entities": [
-      "SudoGrep",
-      "software development",
-      "on-device tools",
-      "client-side processing"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/image-resizer/",
-      "/image-to-pdf/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/",
-      "/apps/",
-      "/services/",
-      "/ai-solutions/"
-    ],
     "primary_keywords": [
-      "sudogrep",
-      "sudogrep software",
-      "sudogrep ai"
+      "sudogrep software"
     ],
     "secondary_keywords": [
       "custom software engineering",
       "mobile app developers",
       "on-device web tools"
     ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/image-resizer/",
+      "/tools/image-to-pdf/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "recommended_internal_links": [
+      "/tools/",
+      "/apps/",
+      "/services/",
+      "/ai-solutions/"
+    ],
     "canonical": "https://sudogrep.in/",
-    "og_title": "SudoGrep \u2014 Free Online Tools, Software & AI Solutions",
+    "og_title": "SudoGrep — Free Online Tools, Software & AI Solutions",
     "og_description": "Free online tools, privacy-first apps and practical software solutions by SudoGrep. Compress images, resize photos, convert files and explore useful AI-powered tools.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebSite"
   },
-  "/free-tools/": {
-    "url": "/free-tools/",
-    "title": "Free Online Web Utilities & Tools \u2014 SudoGrep",
+  "/tools/": {
+    "url": "/tools/",
+    "title": "Free Online Web Utilities & Tools — SudoGrep",
     "description": "Explore fast, privacy-focused online web tools by SudoGrep. Compress images, resize dimensions, and compile PDFs completely in your browser.",
     "h1": "Free Web Utilities",
     "primary_intent": "free online tools directory",
-    "secondary_intents": [
-      "browser utility tools",
-      "client-side file converters",
-      "no upload file tools"
-    ],
     "primary_topic": "web utilities",
     "secondary_topics": [
       "image compression",
       "PDF conversion",
       "image dimensions resizing"
     ],
-    "search_variations": [
-      "free web tools",
-      "online utility tools",
-      "browser calculators"
-    ],
-    "target_entities": [
-      "web utilities",
-      "file tools",
-      "browser apps"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/image-resizer/",
-      "/image-to-pdf/",
-      "/jpg-to-pdf/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-resize-image-for-online-forms/"
-    ],
-    "recommended_internal_links": [
-      "/image-compressor/",
-      "/image-resizer/",
-      "/image-to-pdf/"
-    ],
     "primary_keywords": [
-      "free online tools",
+      "free online tools"
+    ],
+    "secondary_keywords": [
       "browser utilities",
       "offline web tools"
     ],
-    "secondary_keywords": [
-      "privacy focused tools",
-      "client side converters",
-      "image tools online"
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-resizer/",
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
-    "canonical": "https://sudogrep.in/free-tools/",
-    "og_title": "Free Online Web Utilities & Tools \u2014 SudoGrep",
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/how-to-resize-image-for-online-forms/"
+    ],
+    "recommended_internal_links": [
+      "/apps/",
+      "/guides/",
+      "/services/"
+    ],
+    "canonical": "https://sudogrep.in/tools/",
+    "og_title": "Free Online Web Utilities & Tools — SudoGrep",
     "og_description": "Explore fast, privacy-focused online web tools by SudoGrep. Compress images, resize dimensions, and compile PDFs completely in your browser.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "CollectionPage"
+    "schema_type": "WebPage"
   },
-  "/image-compressor/": {
-    "url": "/image-compressor/",
-    "title": "Image Compressor \u2013 Compress Images to KB Online",
-    "description": "Compress JPG, PNG and WebP images to a target file size directly in your browser. Fast local compression with zero server uploads.",
-    "h1": "Free Image Compressor",
-    "primary_intent": "Compress images online",
-    "secondary_intents": [
-      "reduce image size",
-      "compress JPG",
-      "compress PNG",
-      "compress WebP",
-      "reduce image KB online"
-    ],
+  "/tools/image-compressor/": {
+    "url": "/tools/image-compressor/",
+    "title": "Free Image Compressor — Compress JPG, PNG & WebP Online",
+    "description": "Compress JPG, PNG, and WebP images to your desired file size directly in your browser. Fast local processing with complete privacy and zero server uploads.",
+    "h1": "Free Image Compressor Online",
+    "primary_intent": "compress image online",
     "primary_topic": "Image Compression",
     "secondary_topics": [
-      "JPEG optimization",
-      "PNG transparency optimization",
-      "WebP converter"
+      "JPG Compression",
+      "PNG Compression",
+      "WebP Optimization",
+      "Client-Side Processing"
     ],
-    "search_variations": [
-      "image compressor",
+    "primary_keywords": [
+      "image compressor"
+    ],
+    "secondary_keywords": [
       "compress image online",
       "reduce image size",
-      "compress JPG",
-      "compress PNG",
-      "compress WebP",
-      "reduce image file size"
-    ],
-    "target_entities": [
-      "image compressor",
-      "JPEG",
-      "PNG",
-      "WebP",
-      "file size",
-      "pixels",
-      "dimensions"
+      "compress jpg online"
     ],
     "related_tools": [
-      "/compress-image-to-50kb/",
-      "/image-resizer/",
-      "/image-to-pdf/"
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-resizer/"
     ],
     "related_guides": [
       "/guides/how-to-reduce-jpg-size/",
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
+      "/guides/how-to-reduce-image-size-without-losing-quality/",
+      "/guides/best-free-image-compression-tools/"
     ],
     "recommended_internal_links": [
-      "/compress-image-to-50kb/",
-      "/image-resizer/",
-      "/guides/how-to-reduce-jpg-size/"
+      "/tools/",
+      "/guides/",
+      "/apps/kb-snap/"
     ],
-    "primary_keywords": [
-      "image compressor",
-      "compress image online",
-      "reduce image size"
-    ],
-    "secondary_keywords": [
-      "compress JPG",
-      "compress PNG",
-      "compress WebP",
-      "reduce image KB",
-      "image compressor to specific KB"
-    ],
-    "canonical": "https://sudogrep.in/image-compressor/",
-    "og_title": "Image Compressor \u2013 Compress Images to KB Online",
-    "og_description": "Compress JPG, PNG and WebP images to a target file size directly in your browser. Fast local compression with zero server uploads.",
+    "canonical": "https://sudogrep.in/tools/image-compressor/",
+    "og_title": "Free Image Compressor — Compress JPG, PNG & WebP Online",
+    "og_description": "Compress JPG, PNG, and WebP images to your desired file size directly in your browser. Fast local processing with complete privacy and zero server uploads.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebApplication"
   },
-  "/compress-image-to-50kb/": {
-    "url": "/compress-image-to-50kb/",
-    "title": "Compress Image to 50KB Online Free \u2014 SudoGrep",
-    "description": "Compress image to exactly 50KB or less online locally. Preselected 50KB image compressor for online forms, admissions, and portals. Zero server uploads.",
-    "h1": "Compress Image to 50KB",
-    "primary_intent": "Compress an image to exactly/under 50KB",
-    "secondary_intents": [
-      "signature compressor 50kb",
-      "passport size photo 50kb online",
-      "photo compressor under 50kb"
-    ],
-    "primary_topic": "Target Image Compression",
+  "/tools/compress-image-to-50kb/": {
+    "url": "/tools/compress-image-to-50kb/",
+    "title": "Compress Image to 50KB Online — JPG, PNG & WebP",
+    "description": "Compress images to 50KB, 20KB, 100KB, or 200KB online for official portals and forms. Fast client-side image size reduction with zero server uploads.",
+    "h1": "Compress Image to 50KB Online",
+    "primary_intent": "compress image to 50kb",
+    "primary_topic": "Target Size Compression",
     "secondary_topics": [
-      "online forms signature",
-      "admission photo sizing",
-      "portal document upload"
+      "20KB Image Compression",
+      "50KB Photo Reducer",
+      "100KB Document Optimization",
+      "Form Upload Limits"
     ],
-    "search_variations": [
-      "compress image to 50KB",
-      "reduce image to 50KB",
-      "photo to 50KB",
-      "signature to 50KB",
-      "JPG to 50KB",
-      "resize photo to 50kb online",
-      "signature compressor 50kb"
+    "primary_keywords": [
+      "compress image to 50kb"
     ],
-    "target_entities": [
-      "50KB compressor",
-      "signature",
-      "passport photo",
-      "online portals",
-      "admission form",
-      "document compliance"
+    "secondary_keywords": [
+      "compress jpg to 50kb",
+      "photo under 50kb",
+      "compress image to 20kb"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/image-resizer/",
-      "/image-to-pdf/"
+      "/tools/image-compressor/",
+      "/tools/image-resizer/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-resize-image-for-online-forms/"
+      "/guides/how-to-compress-image-to-20kb/",
+      "/guides/how-to-compress-image-to-100kb/"
     ],
     "recommended_internal_links": [
-      "/image-compressor/",
-      "/guides/how-to-compress-image-to-50kb/"
+      "/tools/",
+      "/guides/",
+      "/apps/kb-snap/"
     ],
-    "primary_keywords": [
-      "compress image to 50kb",
-      "image compressor to 50kb"
-    ],
-    "secondary_keywords": [
-      "reduce image to 50kb",
-      "jpg to 50kb",
-      "image under 50kb",
-      "photo under 50kb"
-    ],
-    "canonical": "https://sudogrep.in/compress-image-to-50kb/",
-    "og_title": "Compress Image to 50KB Online Free \u2014 SudoGrep",
-    "og_description": "Compress image to exactly 50KB or less online locally. Preselected 50KB image compressor for online forms, admissions, and portals. Zero server uploads.",
+    "canonical": "https://sudogrep.in/tools/compress-image-to-50kb/",
+    "og_title": "Compress Image to 50KB Online — JPG, PNG & WebP",
+    "og_description": "Compress images to 50KB, 20KB, 100KB, or 200KB online for official portals and forms. Fast client-side image size reduction with zero server uploads.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebApplication"
   },
-  "/image-resizer/": {
-    "url": "/image-resizer/",
-    "title": "Free Online Image Resizer \u2014 Resize JPG, PNG, WebP",
-    "description": "Resize image dimensions by pixels or percentage online locally. Free resizer for Instagram, website HD, and passport photos. Zero server uploads.",
-    "h1": "Free Image Resizer",
-    "primary_intent": "Resize image dimensions online",
-    "secondary_intents": [
-      "change photo pixels online",
-      "picture dimension scale",
-      "crop image online forms"
-    ],
+  "/tools/image-resizer/": {
+    "url": "/tools/image-resizer/",
+    "title": "Resize Images Online — Change Image Dimensions & Pixels",
+    "description": "Resize image width and height in pixels or percentage online. Fast, secure browser-based image resizer with aspect ratio locking and zero server uploads.",
+    "h1": "Resize Images Online",
+    "primary_intent": "resize image online",
     "primary_topic": "Image Resizing",
     "secondary_topics": [
-      "pixel dimensions",
-      "aspect ratio locking",
-      "percentage scale"
-    ],
-    "search_variations": [
-      "image resizer",
-      "resize image online",
-      "resize photo",
-      "image size changer",
-      "resize image dimensions",
-      "crop image online"
-    ],
-    "target_entities": [
-      "image resizer",
-      "pixels",
-      "aspect ratio",
-      "width",
-      "height",
-      "dimensions"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/image-to-pdf/"
-    ],
-    "related_guides": [
-      "/guides/how-to-resize-image-for-online-forms/",
-      "/guides/how-to-resize-image-to-specific-dimensions/"
-    ],
-    "recommended_internal_links": [
-      "/image-compressor/",
-      "/guides/how-to-resize-image-for-online-forms/"
+      "Dimension Downscaling",
+      "Pixel Height and Width",
+      "Aspect Ratio Scaling",
+      "Form Image Formatting"
     ],
     "primary_keywords": [
-      "image resizer",
       "resize image online"
     ],
     "secondary_keywords": [
-      "resize photo",
-      "image size changer",
-      "resize image dimensions",
-      "crop image online"
+      "image resizer",
+      "change image pixels",
+      "resize photo dimensions"
     ],
-    "canonical": "https://sudogrep.in/image-resizer/",
-    "og_title": "Free Online Image Resizer \u2014 Resize JPG, PNG, WebP",
-    "og_description": "Resize image dimensions by pixels or percentage online locally. Free resizer for Instagram, website HD, and passport photos. Zero server uploads.",
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-resize-image-to-specific-dimensions/",
+      "/guides/how-to-resize-image-for-online-forms/"
+    ],
+    "recommended_internal_links": [
+      "/tools/",
+      "/guides/",
+      "/apps/kb-snap/"
+    ],
+    "canonical": "https://sudogrep.in/tools/image-resizer/",
+    "og_title": "Resize Images Online — Change Image Dimensions & Pixels",
+    "og_description": "Resize image width and height in pixels or percentage online. Fast, secure browser-based image resizer with aspect ratio locking and zero server uploads.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebApplication"
   },
-  "/image-to-pdf/": {
-    "url": "/image-to-pdf/",
-    "title": "Free Online Image to PDF Converter \u2014 SudoGrep",
-    "description": "Convert multiple images (JPG, PNG, WebP) to a single PDF document online locally. Free offline image to PDF compiler. Zero server uploads.",
-    "h1": "Free Image to PDF Converter",
-    "primary_intent": "Convert multiple images to PDF",
-    "secondary_intents": [
-      "combine png jpg to pdf",
-      "offline image to pdf maker",
-      "merge pictures into pdf"
-    ],
+  "/tools/image-to-pdf/": {
+    "url": "/tools/image-to-pdf/",
+    "title": "Image to PDF Converter — JPG & PNG to PDF Online",
+    "description": "Convert JPG, PNG, and WebP images to PDF documents online. Combine multiple photos into a single clean PDF file securely inside your browser.",
+    "h1": "Image to PDF Converter",
+    "primary_intent": "convert image to pdf",
     "primary_topic": "PDF Conversion",
     "secondary_topics": [
-      "multi-format image converter",
-      "page orientation setting",
-      "A4 letter layout"
-    ],
-    "search_variations": [
-      "image to pdf",
-      "convert images to pdf",
-      "convert photos to pdf",
-      "merge pictures into pdf",
-      "image to pdf creator"
-    ],
-    "target_entities": [
-      "image to pdf converter",
-      "A4",
-      "Letter",
-      "orientation",
-      "margins",
-      "aspect ratio"
-    ],
-    "related_tools": [
-      "/jpg-to-pdf/",
-      "/image-compressor/"
-    ],
-    "related_guides": [
-      "/guides/how-to-convert-png-to-pdf/",
-      "/guides/how-to-convert-multiple-images-to-pdf/"
-    ],
-    "recommended_internal_links": [
-      "/jpg-to-pdf/",
-      "/image-compressor/"
-    ],
-    "primary_keywords": [
-      "image to pdf",
-      "convert images to pdf"
-    ],
-    "secondary_keywords": [
-      "convert photos to pdf",
-      "merge pictures into pdf",
-      "image to pdf creator"
-    ],
-    "canonical": "https://sudogrep.in/image-to-pdf/",
-    "og_title": "Free Online Image to PDF Converter \u2014 SudoGrep",
-    "og_description": "Convert multiple images (JPG, PNG, WebP) to a single PDF document online locally. Free offline image to PDF compiler. Zero server uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/jpg-to-pdf/": {
-    "url": "/jpg-to-pdf/",
-    "title": "Free Online JPG to PDF Converter (JPEG to PDF)",
-    "description": "Convert JPG and JPEG files to PDF documents online locally. Free offline JPG to PDF compiler. Zero server uploads. Fits pages with correct aspect ratios.",
-    "h1": "Free JPG to PDF Converter",
-    "primary_intent": "Convert JPG to PDF document",
-    "secondary_intents": [
-      "jpeg to pdf online",
-      "turn jpg into pdf online",
-      "scanned jpeg to pdf converter"
-    ],
-    "primary_topic": "JPG to PDF Conversion",
-    "secondary_topics": [
-      "receipt to pdf conversion",
-      "scanned documents compiling",
-      "document preservation"
-    ],
-    "search_variations": [
-      "jpg to pdf",
-      "convert jpg to pdf",
-      "jpg to pdf converter",
-      "jpeg to pdf",
-      "convert jpeg to pdf",
-      "jpg images to pdf"
-    ],
-    "target_entities": [
       "JPG to PDF",
-      "JPEG",
-      "receipts",
-      "scanned documents",
-      "PDF download"
+      "PNG to PDF",
+      "Combine Images to PDF",
+      "Client-Side Document Creation"
+    ],
+    "primary_keywords": [
+      "image to pdf"
+    ],
+    "secondary_keywords": [
+      "convert image to pdf",
+      "photos to pdf",
+      "png to pdf converter"
     ],
     "related_tools": [
-      "/image-to-pdf/",
-      "/image-compressor/"
+      "/tools/jpg-to-pdf/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
       "/guides/how-to-convert-png-to-pdf/",
       "/guides/how-to-convert-multiple-images-to-pdf/"
     ],
     "recommended_internal_links": [
-      "/image-to-pdf/",
-      "/image-compressor/"
+      "/tools/",
+      "/guides/",
+      "/apps/file-forge/"
     ],
-    "primary_keywords": [
-      "jpg to pdf",
-      "convert jpg to pdf"
-    ],
-    "secondary_keywords": [
-      "jpg to pdf converter",
-      "jpeg to pdf",
-      "convert jpeg to pdf",
-      "jpg images to pdf"
-    ],
-    "canonical": "https://sudogrep.in/jpg-to-pdf/",
-    "og_title": "Free Online JPG to PDF Converter (JPEG to PDF)",
-    "og_description": "Convert JPG and JPEG files to PDF documents online locally. Free offline JPG to PDF compiler. Zero server uploads. Fits pages with correct aspect ratios.",
+    "canonical": "https://sudogrep.in/tools/image-to-pdf/",
+    "og_title": "Image to PDF Converter — JPG & PNG to PDF Online",
+    "og_description": "Convert JPG, PNG, and WebP images to PDF documents online. Combine multiple photos into a single clean PDF file securely inside your browser.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebApplication"
   },
-  "/apps/": {
-    "url": "/apps/",
-    "title": "Mobile Applications Portfolio \u2014 SudoGrep",
-    "description": "Explore published Android mobile applications by SudoGrep. High quality utilities with on-device computing and zero server tracking.",
-    "h1": "Mobile Applications",
-    "primary_intent": "mobile applications portfolio display",
-    "secondary_intents": [
-      "sudogrep android applications",
-      "play store utility apps",
-      "privacy first mobile applications"
-    ],
-    "primary_topic": "Mobile Applications",
+  "/tools/jpg-to-pdf/": {
+    "url": "/tools/jpg-to-pdf/",
+    "title": "JPG to PDF Converter — Convert JPG Photos to PDF",
+    "description": "Convert JPG and JPEG photos to PDF documents online in seconds. Free browser-based converter with page ordering, orientation settings, and zero server uploads.",
+    "h1": "JPG to PDF Converter",
+    "primary_intent": "jpg to pdf",
+    "primary_topic": "JPG PDF Conversion",
     "secondary_topics": [
-      "Android utilities",
-      "local storage file managers",
-      "Google Play Store"
-    ],
-    "search_variations": [
-      "sudogrep apps",
-      "sudogrep mobile apps",
-      "sudogrep play store apps"
-    ],
-    "target_entities": [
-      "mobile applications",
-      "Google Play Store",
-      "Android",
-      "FileForge",
-      "Zip Connect"
-    ],
-    "related_tools": [
-      "/free-tools/",
-      "/image-compressor/"
-    ],
-    "related_guides": [
-      "/blog/"
-    ],
-    "recommended_internal_links": [
-      "/about/",
-      "/contact/",
-      "/services/"
+      "JPEG to PDF",
+      "Photo Document Conversion",
+      "Page Margins and Sizes"
     ],
     "primary_keywords": [
-      "sudogrep apps",
-      "sudogrep mobile apps"
+      "jpg to pdf"
     ],
     "secondary_keywords": [
-      "android utilities",
-      "privacy first mobile applications",
-      "on-device computing apps"
+      "convert jpg to pdf",
+      "jpeg to pdf converter",
+      "save jpg as pdf"
     ],
-    "canonical": "https://sudogrep.in/apps/",
-    "og_title": "Mobile Applications Portfolio \u2014 SudoGrep",
-    "og_description": "Explore published Android mobile applications by SudoGrep. High quality utilities with on-device computing and zero server tracking.",
+    "related_tools": [
+      "/tools/image-to-pdf/",
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/how-to-convert-png-to-pdf/",
+      "/guides/how-to-convert-multiple-images-to-pdf/"
+    ],
+    "recommended_internal_links": [
+      "/tools/",
+      "/guides/",
+      "/apps/file-forge/"
+    ],
+    "canonical": "https://sudogrep.in/tools/jpg-to-pdf/",
+    "og_title": "JPG to PDF Converter — Convert JPG Photos to PDF",
+    "og_description": "Convert JPG and JPEG photos to PDF documents online in seconds. Free browser-based converter with page ordering, orientation settings, and zero server uploads.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "CollectionPage"
+    "schema_type": "WebApplication"
+  },
+  "/guides/": {
+    "url": "/guides/",
+    "title": "Free How-To Guides & Tutorials — SudoGrep",
+    "description": "Step-by-step guides on image compression, file conversion, photo resizing, and digital document workflows by SudoGrep.",
+    "h1": "Free How-To Guides & Tutorials",
+    "primary_intent": "educational tutorial hub",
+    "primary_topic": "Guides & Tutorials",
+    "secondary_topics": [
+      "Image Compression",
+      "Resizing",
+      "PDF Conversion"
+    ],
+    "primary_keywords": [
+      "how-to guides"
+    ],
+    "secondary_keywords": [
+      "image editing tutorials",
+      "pdf conversion tutorial"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-resizer/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/how-to-resize-image-to-specific-dimensions/"
+    ],
+    "recommended_internal_links": [
+      "/tools/",
+      "/insights/"
+    ],
+    "canonical": "https://sudogrep.in/guides/",
+    "og_title": "Free How-To Guides & Tutorials — SudoGrep",
+    "og_description": "Step-by-step guides on image compression, file conversion, photo resizing, and digital document workflows by SudoGrep.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "WebPage"
   },
   "/guides/how-to-compress-image-to-50kb/": {
     "url": "/guides/how-to-compress-image-to-50kb/",
-    "title": "How to Compress an Image to 50KB Online Free",
+    "title": "How to Compress an Image to 50KB Online Free | SudoGrep",
     "description": "Learn step-by-step instructions to compress and shrink photos and signatures to exactly 50KB or less locally in your browser for online forms.",
     "h1": "How to Compress an Image to 50KB",
-    "primary_intent": "How to compress image to 50KB guide",
-    "secondary_intents": [
-      "reduce photo size to 50kb instructions",
-      "shrink signature to 50kb tutorial",
-      "photo compression steps"
-    ],
-    "primary_topic": "Informational Sizing Guide",
+    "primary_intent": "learn how to compress image to 50kb for online forms",
+    "primary_topic": "50KB Image Compression Guide",
     "secondary_topics": [
-      "online forms submission",
-      "signature crop guidelines",
-      "quality tradeoffs"
-    ],
-    "search_variations": [
-      "how to compress image to 50kb",
-      "how to reduce photo size to 50kb",
-      "shrink signature to 50kb online free"
-    ],
-    "target_entities": [
-      "50KB image guide",
-      "signature",
-      "passport photo",
-      "online portal",
-      "compression steps"
-    ],
-    "related_tools": [
-      "/compress-image-to-50kb/",
-      "/image-compressor/"
-    ],
-    "related_guides": [
-      "/guides/how-to-resize-image-for-online-forms/",
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/compress-image-to-50kb/",
-      "/guides/how-to-resize-image-for-online-forms/"
+      "Online Form Submissions",
+      "Signature Crop and Compress",
+      "Browser Local Compression"
     ],
     "primary_keywords": [
-      "how to compress image to 50kb",
-      "how to reduce photo size to 50kb"
+      "how to compress image to 50kb"
     ],
     "secondary_keywords": [
-      "compress photo to 50kb",
-      "image to 50kb guide",
-      "reduce signature to 50kb"
+      "compress image to 50kb guide",
+      "reduce photo size to 50kb tutorial"
+    ],
+    "related_tools": [
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-20kb/",
+      "/guides/how-to-compress-image-to-100kb/"
+    ],
+    "recommended_internal_links": [
+      "/tools/compress-image-to-50kb/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/how-to-compress-image-to-50kb/",
-    "og_title": "How to Compress an Image to 50KB Online Free",
+    "og_title": "How to Compress an Image to 50KB Online Free | SudoGrep",
     "og_description": "Learn step-by-step instructions to compress and shrink photos and signatures to exactly 50KB or less locally in your browser for online forms.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
-  "/guides/how-to-reduce-jpg-size/": {
-    "url": "/guides/how-to-reduce-jpg-size/",
-    "title": "How to Reduce JPG File Size Without Losing Quality",
-    "description": "Learn how to reduce and compress JPG and JPEG image file sizes without losing visual quality. Explains pixel ratios, canvas downsampling, and encoding formats.",
-    "h1": "How to Reduce JPG File Size Without Quality Loss",
-    "primary_intent": "How to reduce JPG file size guide",
-    "secondary_intents": [
-      "compress jpeg quality loss tips",
-      "optimize jpeg bytes tutorial",
-      "make jpg smaller clear details"
-    ],
-    "primary_topic": "JPG Optimization Guide",
-    "secondary_topics": [
-      "chroma subsampling explanation",
-      "canvas downsampling",
-      "pixel aspect ratios"
-    ],
-    "search_variations": [
-      "how to reduce jpg size",
-      "reduce jpg file size",
-      "decrease jpeg size without quality loss"
-    ],
-    "target_entities": [
-      "JPG compression guide",
-      "JPEG",
-      "pixel density",
-      "visual quality",
-      "canvas element"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/image-compressor/",
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "primary_keywords": [
-      "how to reduce JPG size",
-      "reduce JPG file size",
-      "compress JPG"
-    ],
-    "secondary_keywords": [
-      "compress jpeg quality loss",
-      "jpg size reduction",
-      "downsample photo format"
-    ],
-    "canonical": "https://sudogrep.in/guides/how-to-reduce-jpg-size/",
-    "og_title": "How to Reduce JPG File Size Without Losing Quality",
-    "og_description": "Learn how to reduce and compress JPG and JPEG image file sizes without losing visual quality. Explains pixel ratios, canvas downsampling, and encoding formats.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "BlogPosting"
-  },
-  "/guides/how-to-resize-image-for-online-forms/": {
-    "url": "/guides/how-to-resize-image-for-online-forms/",
-    "title": "How to Resize an Image for Online Forms \u2014 Step-by-Step",
-    "description": "A step-by-step guide to crop, scale, and resize photographs and signatures to fit online application forms and passport requirements.",
-    "h1": "How to Resize an Image for Online Forms",
-    "primary_intent": "How to resize image for online forms guide",
-    "secondary_intents": [
-      "how to resize passport size photo instructions",
-      "crop signature for web forms help",
-      "portal dimensions requirements"
-    ],
-    "primary_topic": "Online Portal Sizing Guide",
-    "secondary_topics": [
-      "aspect ratio locking",
-      "dimension scaling",
-      "pixels vs KB difference"
-    ],
-    "search_variations": [
-      "resize image for online forms",
-      "how to resize passport size photo",
-      "crop photo online forms"
-    ],
-    "target_entities": [
-      "online form resizing guide",
-      "passport dimensions",
-      "signature crop",
-      "upload limits"
-    ],
-    "related_tools": [
-      "/image-resizer/",
-      "/compress-image-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "recommended_internal_links": [
-      "/image-resizer/",
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "primary_keywords": [
-      "resize image for online forms",
-      "resize photo for online form",
-      "resize image to specific dimensions"
-    ],
-    "secondary_keywords": [
-      "crop photo online forms",
-      "resize signature for web forms",
-      "form picture requirements"
-    ],
-    "canonical": "https://sudogrep.in/guides/how-to-resize-image-for-online-forms/",
-    "og_title": "How to Resize an Image for Online Forms \u2014 Step-by-Step",
-    "og_description": "A step-by-step guide to crop, scale, and resize photographs and signatures to fit online application forms and passport requirements.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "BlogPosting"
-  },
-  "/guides/jpg-vs-png-vs-webp/": {
-    "url": "/guides/jpg-vs-png-vs-webp/",
-    "title": "JPG vs PNG vs WebP: Choosing Web Image Formats",
-    "description": "Read a direct comparison of JPG, PNG, and WebP image formats. Learn which formats support transparency, provide the best compression, and load faster on the web.",
-    "h1": "JPG vs PNG vs WebP: Which Image Format to Use?",
-    "primary_intent": "JPG vs PNG vs WebP comparison guide",
-    "secondary_intents": [
-      "best web image formats help",
-      "png vs jpeg transparency comparison",
-      "lossy vs lossless format differences"
-    ],
-    "primary_topic": "Image Formats Comparison",
-    "secondary_topics": [
-      "alpha transparency channel",
-      "modern compression standard",
-      "web loading performance"
-    ],
-    "search_variations": [
-      "jpg vs png vs webp",
-      "image format comparison",
-      "should i use webp or png"
-    ],
-    "target_entities": [
-      "image formats",
-      "transparency",
-      "lossless compression",
-      "JPEG",
-      "PNG",
-      "WebP"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/image-resizer/"
-    ],
-    "related_guides": [
-      "/guides/how-to-reduce-jpg-size/"
-    ],
-    "recommended_internal_links": [
-      "/image-compressor/",
-      "/image-resizer/"
-    ],
-    "primary_keywords": [
-      "jpg vs png vs webp",
-      "image format comparison"
-    ],
-    "secondary_keywords": [
-      "png vs jpeg",
-      "webp vs png",
-      "best web image formats",
-      "lossy vs lossless format"
-    ],
-    "canonical": "https://sudogrep.in/guides/jpg-vs-png-vs-webp/",
-    "og_title": "JPG vs PNG vs WebP: Choosing Web Image Formats",
-    "og_description": "Read a direct comparison of JPG, PNG, and WebP image formats. Learn which formats support transparency, provide the best compression, and load faster on the web.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "BlogPosting"
-  },
-  "/about/": {
-    "url": "/about/",
-    "title": "About SudoGrep \u2014 Our Principles & Values",
-    "description": "Learn about SudoGrep. We are committed to engineering fast digital products, custom AI applications, and client-side privacy-first web utilities.",
-    "h1": "About SudoGrep",
-    "primary_intent": "about company information",
-    "secondary_intents": [
-      "sudogrep mission",
-      "client side processing architecture explanation",
-      "engineering principles"
-    ],
-    "primary_topic": "Brand Identity",
-    "secondary_topics": [
-      "technology principles",
-      "local first computing",
-      "development agency values"
-    ],
-    "search_variations": [
-      "about sudogrep",
-      "sudogrep team",
-      "why sudogrep"
-    ],
-    "target_entities": [
-      "SudoGrep",
-      "privacy",
-      "client-side execution",
-      "engineering team"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/blog/"
-    ],
-    "recommended_internal_links": [
-      "/contact/",
-      "/services/",
-      "/ai-solutions/"
-    ],
-    "primary_keywords": [
-      "about sudogrep",
-      "sudogrep mission"
-    ],
-    "secondary_keywords": [
-      "sudogrep values",
-      "client side processing software",
-      "engineering principles"
-    ],
-    "canonical": "https://sudogrep.in/about/",
-    "og_title": "About SudoGrep \u2014 Our Principles & Values",
-    "og_description": "Learn about SudoGrep. We are committed to engineering fast digital products, custom AI applications, and client-side privacy-first web utilities.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "AboutPage"
-  },
-  "/contact/": {
-    "url": "/contact/",
-    "title": "Contact SudoGrep \u2014 Start Your Development Project",
-    "description": "Get in touch with SudoGrep. Inquire about custom Flutter mobile engineering, responsive web platforms, cloud backends, and secure AI agent integrations.",
-    "h1": "Build With SudoGrep",
-    "primary_intent": "contact and lead collection",
-    "secondary_intents": [
-      "request engineering consultation",
-      "hire custom software developers",
-      "sudogrep support email"
-    ],
-    "primary_topic": "Contact Details",
-    "secondary_topics": [
-      "project proposal submission",
-      "software agency contact",
-      "support inquiry"
-    ],
-    "search_variations": [
-      "contact sudogrep",
-      "build with sudogrep",
-      "hire developers"
-    ],
-    "target_entities": [
-      "SudoGrep support",
-      "project proposal",
-      "consultation",
-      "email address"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/services/",
-      "/ai-solutions/",
-      "/about/"
-    ],
-    "primary_keywords": [
-      "contact sudogrep",
-      "build with sudogrep"
-    ],
-    "secondary_keywords": [
-      "hire developers",
-      "custom software development",
-      "request engineering consultation"
-    ],
-    "canonical": "https://sudogrep.in/contact/",
-    "og_title": "Contact SudoGrep \u2014 Start Your Development Project",
-    "og_description": "Get in touch with SudoGrep. Inquire about custom Flutter mobile engineering, responsive web platforms, cloud backends, and secure AI agent integrations.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "ContactPage"
-  },
-  "/services/": {
-    "url": "/services/",
-    "title": "Software Development Services | SudoGrep",
-    "description": "SudoGrep builds mobile apps, web platforms, backend systems, and AI-powered products for businesses that need reliable software.",
-    "h1": "We build software that moves businesses forward.",
-    "primary_intent": "software engineering services",
-    "secondary_intents": [
-      "mobile app development agency",
-      "web application engineering services",
-      "custom API integration solutions"
-    ],
-    "primary_topic": "Custom Development Services",
-    "secondary_topics": [
-      "Flutter cross-platform apps",
-      "GPU-accelerated web interfaces",
-      "cloud infrastructure setup"
-    ],
-    "search_variations": [
-      "software development services",
-      "mobile app development",
-      "hire mobile app engineers"
-    ],
-    "target_entities": [
-      "software engineering",
-      "Flutter",
-      "responsive web",
-      "API backend",
-      "custom development"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/ai-solutions/",
-      "/contact/",
-      "/about/"
-    ],
-    "primary_keywords": [
-      "software development services",
-      "custom software development",
-      "mobile app development services",
-      "Flutter development services",
-      "web application development",
-      "AI development services",
-      "backend development services",
-      "API development services",
-      "custom software development company"
-    ],
-    "secondary_keywords": [
-      "web application engineering",
-      "custom API integrations",
-      "flutter app agency"
-    ],
-    "canonical": "https://sudogrep.in/services/",
-    "og_title": "Software Development Services \u2014 Custom Mobile, Web & AI Engineering | SudoGrep",
-    "og_description": "SudoGrep delivers custom software development services: cross-platform Flutter apps, responsive web platforms, AI integration, REST/GraphQL APIs, and cloud backends.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "Service"
-  },
-  "/ai-solutions/": {
-    "url": "/ai-solutions/",
-    "title": "Custom AI Solutions & Intelligent Systems \u2014 SudoGrep",
-    "description": "SudoGrep develops context-aware AI integrations, Retrieval-Augmented Generation (RAG) databases, and autonomous AI agents for modern businesses.",
-    "h1": "Intelligent AI Systems & custom integrations.",
-    "primary_intent": "ai development and integration services",
-    "secondary_intents": [
-      "custom ai integration services",
-      "ai agent development help",
-      "retrieval augmented generation database solutions"
-    ],
-    "primary_topic": "AI Solutions & Integrations",
-    "secondary_topics": [
-      "Retrieval-Augmented Generation (RAG)",
-      "autonomous AI agents",
-      "on-device AI execution"
-    ],
-    "search_variations": [
-      "custom ai solutions",
-      "ai integration services",
-      "enterprise ai integration"
-    ],
-    "target_entities": [
-      "AI engineering",
-      "LLMs",
-      "RAG systems",
-      "intelligent agents",
-      "custom AI integrations"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/services/",
-      "/contact/",
-      "/about/"
-    ],
-    "primary_keywords": [
-      "custom ai solutions and systems",
-      "ai integration services"
-    ],
-    "secondary_keywords": [
-      "ai agent development",
-      "retrieval augmented generation",
-      "enterprise ai integration",
-      "rag systems"
-    ],
-    "canonical": "https://sudogrep.in/ai-solutions/",
-    "og_title": "Custom AI Solutions & Intelligent Systems \u2014 SudoGrep",
-    "og_description": "Custom AI Solutions & Intelligent Systems \u2014 SudoGrep",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "Service"
-  },
   "/guides/how-to-compress-image-to-20kb/": {
     "url": "/guides/how-to-compress-image-to-20kb/",
-    "title": "How to Compress an Image to 20KB \u2014 Step-by-Step Guide",
+    "title": "How to Compress an Image to 20KB — Step-by-Step Guide | SudoGrep",
     "description": "Learn how to compress images to 20KB or less for strict portal upload requirements. Step-by-step guide for digital signatures and small thumbnails.",
     "h1": "How to Compress an Image to 20KB",
-    "primary_intent": "step-by-step guide on compressing an image to 20KB for strict portal requirements",
-    "secondary_intents": [
-      "compress signature to 20kb tutorial",
-      "reduce photo to 20kb instructions",
-      "image under 20kb how to"
-    ],
-    "primary_topic": "Ultra-Small Image Compression Guide",
+    "primary_intent": "learn how to compress image to 20kb for digital signature uploads",
+    "primary_topic": "20KB Image Compression Guide",
     "secondary_topics": [
-      "digital signature optimization",
-      "portal upload compliance",
-      "lossy encoding trade-offs"
+      "Signature Image Compression",
+      "20KB Upload Limits",
+      "Downsampling Pixels"
     ],
-    "search_variations": [
-      "how to compress image to 20kb",
-      "compress photo to 20kb",
-      "reduce image size to 20kb",
-      "image compressor to 20kb"
+    "primary_keywords": [
+      "how to compress image to 20kb"
     ],
-    "target_entities": [
-      "20KB image guide",
-      "digital signature",
-      "tiny thumbnail",
-      "portal upload",
-      "lossy encoding"
+    "secondary_keywords": [
+      "compress signature to 20kb",
+      "reduce image to 20kb online"
     ],
     "related_tools": [
-      "/image-compressor/"
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
+      "/guides/how-to-compress-image-to-100kb/"
     ],
     "recommended_internal_links": [
-      "/image-compressor/",
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "primary_keywords": [
-      "how to compress image to 20kb",
-      "compress image to 20kb"
-    ],
-    "secondary_keywords": [
-      "reduce image to 20kb",
-      "image under 20kb",
-      "compress signature to 20kb"
+      "/tools/compress-image-to-50kb/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/how-to-compress-image-to-20kb/",
-    "og_title": "How to Compress an Image to 20KB \u2014 Step-by-Step Guide",
+    "og_title": "How to Compress an Image to 20KB — Step-by-Step Guide | SudoGrep",
     "og_description": "Learn how to compress images to 20KB or less for strict portal upload requirements. Step-by-step guide for digital signatures and small thumbnails.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
   "/guides/how-to-compress-image-to-100kb/": {
     "url": "/guides/how-to-compress-image-to-100kb/",
-    "title": "How to Compress an Image to 100KB \u2014 Step-by-Step Guide",
+    "title": "How to Compress an Image to 100KB — Step-by-Step Guide | SudoGrep",
     "description": "Learn how to compress images to 100KB while maintaining legibility. Practical guide for scanned marksheets, ID cards, and certificate documents.",
     "h1": "How to Compress an Image to 100KB",
-    "primary_intent": "step-by-step guide on compressing an image to 100KB while preserving legibility",
-    "secondary_intents": [
-      "reduce scanned document to 100kb tutorial",
-      "compress certificate scan to 100kb",
-      "photo under 100kb how to"
-    ],
-    "primary_topic": "100KB Image Compression Guide",
+    "primary_intent": "learn how to compress scanned documents and images to 100kb",
+    "primary_topic": "100KB Document Optimization",
     "secondary_topics": [
-      "scanned document optimization",
-      "ID card photo compression",
-      "quality preservation at 100KB"
-    ],
-    "search_variations": [
-      "how to compress image to 100kb",
-      "compress image to 100kb",
-      "reduce image to 100kb",
-      "image compressor 100kb"
-    ],
-    "target_entities": [
-      "100KB image guide",
-      "marksheet scan",
-      "ID card photo",
-      "certificate scan",
-      "scanned document"
-    ],
-    "related_tools": [
-      "/image-compressor/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-reduce-image-size-without-losing-quality/"
-    ],
-    "recommended_internal_links": [
-      "/image-compressor/",
-      "/guides/how-to-compress-image-to-50kb/"
+      "Marksheet Compression",
+      "ID Card Uploads",
+      "Legibility Retention"
     ],
     "primary_keywords": [
       "how to compress image to 100kb"
     ],
     "secondary_keywords": [
-      "reduce photo to 100kb",
-      "image under 100kb",
-      "compress scanned document to 100kb"
+      "compress jpg to 100kb",
+      "reduce document image size to 100kb"
+    ],
+    "related_tools": [
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/how-to-compress-image-to-20kb/"
+    ],
+    "recommended_internal_links": [
+      "/tools/compress-image-to-50kb/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/how-to-compress-image-to-100kb/",
-    "og_title": "How to Compress an Image to 100KB \u2014 Step-by-Step Guide",
+    "og_title": "How to Compress an Image to 100KB — Step-by-Step Guide | SudoGrep",
     "og_description": "Learn how to compress images to 100KB while maintaining legibility. Practical guide for scanned marksheets, ID cards, and certificate documents.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
+  },
+  "/guides/how-to-reduce-jpg-size/": {
+    "url": "/guides/how-to-reduce-jpg-size/",
+    "title": "How to Reduce JPG File Size Without Losing Quality | SudoGrep",
+    "description": "Learn how to reduce and compress JPG and JPEG image file sizes without losing visual quality. Explains pixel ratios, canvas downsampling, and EXIF stripping.",
+    "h1": "How to Reduce JPG File Size Without Quality Loss",
+    "primary_intent": "learn how to reduce jpg file size without visual quality loss",
+    "primary_topic": "JPG Compression Tutorial",
+    "secondary_topics": [
+      "JPEG Chroma Subsampling",
+      "Canvas Downsampling",
+      "EXIF Metadata Stripping"
+    ],
+    "primary_keywords": [
+      "how to reduce jpg file size"
+    ],
+    "secondary_keywords": [
+      "compress jpg without quality loss",
+      "reduce jpeg size online"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-reduce-image-size-without-losing-quality/",
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "recommended_internal_links": [
+      "/tools/image-compressor/",
+      "/guides/"
+    ],
+    "canonical": "https://sudogrep.in/guides/how-to-reduce-jpg-size/",
+    "og_title": "How to Reduce JPG File Size Without Losing Quality | SudoGrep",
+    "og_description": "Learn how to reduce and compress JPG and JPEG image file sizes without losing visual quality. Explains pixel ratios, canvas downsampling, and EXIF stripping.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
   "/guides/how-to-reduce-image-size-without-losing-quality/": {
     "url": "/guides/how-to-reduce-image-size-without-losing-quality/",
-    "title": "How to Reduce Image Size Without Losing Quality",
+    "title": "How to Reduce Image Size Without Losing Quality | SudoGrep",
     "description": "Understand lossy vs lossless compression, WebP encoding benefits, and dimension downscaling to reduce image file size without visible quality loss.",
     "h1": "How to Reduce Image Size Without Losing Quality",
-    "primary_intent": "comprehensive guide on reducing image file size while minimizing quality loss",
-    "secondary_intents": [
-      "compress image without quality degradation tutorial",
-      "optimize images for web performance",
-      "lossy vs lossless encoding explainer"
-    ],
-    "primary_topic": "Lossless and Near-Lossless Image Optimization",
+    "primary_intent": "learn techniques for reducing image size without losing quality",
+    "primary_topic": "Image Quality Optimization",
     "secondary_topics": [
-      "lossy vs lossless compression",
-      "WebP encoding advantages",
-      "PageSpeed image optimization"
+      "Lossy vs Lossless Compression",
+      "WebP Encoding Benefits",
+      "Dimension Downscaling"
     ],
-    "search_variations": [
-      "reduce image size without losing quality",
-      "compress image without losing quality",
-      "how to reduce image size without quality loss",
-      "optimize images for web"
+    "primary_keywords": [
+      "how to reduce image size without losing quality"
     ],
-    "target_entities": [
-      "image optimization",
-      "lossy compression",
-      "lossless compression",
-      "WebP",
-      "JPEG quality",
-      "pixel density"
+    "secondary_keywords": [
+      "reduce image file size guide",
+      "compress image quality guide"
     ],
     "related_tools": [
-      "/image-compressor/"
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
     ],
     "related_guides": [
       "/guides/how-to-reduce-jpg-size/",
-      "/guides/jpg-vs-png-vs-webp/"
+      "/guides/best-free-image-compression-tools/"
     ],
     "recommended_internal_links": [
-      "/image-compressor/",
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "primary_keywords": [
-      "reduce image size without losing quality",
-      "compress image without quality loss"
-    ],
-    "secondary_keywords": [
-      "optimize image for web",
-      "lossy vs lossless compression",
-      "webp image optimization"
+      "/tools/image-compressor/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/how-to-reduce-image-size-without-losing-quality/",
-    "og_title": "How to Reduce Image Size Without Losing Quality",
+    "og_title": "How to Reduce Image Size Without Losing Quality | SudoGrep",
     "og_description": "Understand lossy vs lossless compression, WebP encoding benefits, and dimension downscaling to reduce image file size without visible quality loss.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
   "/guides/how-to-resize-image-to-specific-dimensions/": {
     "url": "/guides/how-to-resize-image-to-specific-dimensions/",
-    "title": "How to Resize an Image to Specific Dimensions \u2014 Pixel Guide",
+    "title": "How to Resize an Image to Specific Dimensions | SudoGrep",
     "description": "Learn how to resize images to exact pixel width and height values. Understand aspect ratio locking, dimension scaling, and common standard sizes.",
     "h1": "How to Resize an Image to Specific Dimensions",
-    "primary_intent": "guide for resizing images to precise pixel dimension requirements",
-    "secondary_intents": [
-      "resize image to exact pixels tutorial",
-      "change image width and height online",
-      "aspect ratio dimension guide"
-    ],
-    "primary_topic": "Precise Image Dimension Resizing Guide",
+    "primary_intent": "learn how to resize image to specific pixel dimensions",
+    "primary_topic": "Image Resizing Tutorial",
     "secondary_topics": [
-      "aspect ratio mathematics",
-      "pixel vs physical size distinction",
-      "standard dimension reference"
+      "Pixel Width and Height",
+      "Aspect Ratio Locking",
+      "Browser Downscaling"
     ],
-    "search_variations": [
-      "how to resize image to specific dimensions",
-      "resize image to exact pixels",
-      "change image dimensions",
-      "resize image width height"
+    "primary_keywords": [
+      "how to resize image to specific dimensions"
     ],
-    "target_entities": [
-      "image dimensions",
-      "pixels",
-      "width",
-      "height",
-      "aspect ratio",
-      "downscaling"
+    "secondary_keywords": [
+      "resize image pixels guide",
+      "change image dimensions tutorial"
     ],
     "related_tools": [
-      "/image-resizer/"
+      "/tools/image-resizer/",
+      "/tools/compress-image-to-50kb/"
     ],
     "related_guides": [
       "/guides/how-to-resize-image-for-online-forms/",
+      "/guides/how-to-reduce-jpg-size/"
+    ],
+    "recommended_internal_links": [
+      "/tools/image-resizer/",
+      "/guides/"
+    ],
+    "canonical": "https://sudogrep.in/guides/how-to-resize-image-to-specific-dimensions/",
+    "og_title": "How to Resize an Image to Specific Dimensions — Pixel Guide | SudoGrep",
+    "og_description": "Learn how to resize images to exact pixel width and height values. Understand aspect ratio locking, dimension scaling, and common standard sizes.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
+  },
+  "/guides/how-to-resize-image-for-online-forms/": {
+    "url": "/guides/how-to-resize-image-for-online-forms/",
+    "title": "How to Resize an Image for Online Forms — Step-by-Step | SudoGrep",
+    "description": "A step-by-step guide to crop, scale, and resize photographs and signatures to fit online application forms and passport requirements.",
+    "h1": "How to Resize an Image for Online Forms",
+    "primary_intent": "learn how to resize photos and signatures for online job/exam application forms",
+    "primary_topic": "Online Form Image Resizing",
+    "secondary_topics": [
+      "Passport Photo Dimensions",
+      "Signature Crop Presets",
+      "KB Size Limits"
+    ],
+    "primary_keywords": [
+      "how to resize image for online forms"
+    ],
+    "secondary_keywords": [
+      "resize photo for online form",
+      "passport photo size resizer guide"
+    ],
+    "related_tools": [
+      "/tools/image-resizer/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-resize-image-to-specific-dimensions/",
       "/guides/how-to-compress-image-to-50kb/"
     ],
     "recommended_internal_links": [
-      "/image-resizer/",
-      "/guides/how-to-resize-image-for-online-forms/"
+      "/tools/image-resizer/",
+      "/guides/"
     ],
-    "primary_keywords": [
-      "how to resize image to specific dimensions",
-      "resize image to exact pixels"
-    ],
-    "secondary_keywords": [
-      "change image dimensions online",
-      "resize image width height",
-      "image dimension guide"
-    ],
-    "canonical": "https://sudogrep.in/guides/how-to-resize-image-to-specific-dimensions/",
-    "og_title": "How to Resize an Image to Specific Dimensions \u2014 Pixel Guide",
-    "og_description": "Learn how to resize images to exact pixel width and height values. Understand aspect ratio locking, dimension scaling, and common standard sizes.",
+    "canonical": "https://sudogrep.in/guides/how-to-resize-image-for-online-forms/",
+    "og_title": "How to Resize an Image for Online Forms — Step-by-Step | SudoGrep",
+    "og_description": "A step-by-step guide to crop, scale, and resize photographs and signatures to fit online application forms and passport requirements.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
   "/guides/how-to-convert-png-to-pdf/": {
     "url": "/guides/how-to-convert-png-to-pdf/",
-    "title": "How to Convert PNG to PDF Online \u2014 Step-by-Step Guide",
+    "title": "How to Convert PNG to PDF Online — Step-by-Step Guide | SudoGrep",
     "description": "Learn how to convert PNG images to PDF documents online in your browser. Covers transparency handling, page size selection, and multi-image workflows.",
     "h1": "How to Convert PNG to PDF",
-    "primary_intent": "guide for converting PNG images to PDF documents",
-    "secondary_intents": [
-      "png to pdf online conversion tutorial",
-      "convert screenshot to pdf guide",
-      "transparent image to pdf instructions"
-    ],
+    "primary_intent": "learn how to convert png image files into pdf documents",
     "primary_topic": "PNG to PDF Conversion Guide",
     "secondary_topics": [
-      "PNG transparency handling in PDF",
-      "screenshot to PDF workflow",
-      "page size selection for PDF"
-    ],
-    "search_variations": [
-      "how to convert png to pdf",
-      "png to pdf",
-      "convert png to pdf online",
-      "png image to pdf"
-    ],
-    "target_entities": [
-      "PNG to PDF",
-      "transparency",
-      "screenshot",
-      "vector graphics",
-      "PDF compilation"
-    ],
-    "related_tools": [
-      "/image-to-pdf/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/",
-      "/guides/how-to-convert-multiple-images-to-pdf/"
-    ],
-    "recommended_internal_links": [
-      "/image-to-pdf/",
-      "/guides/how-to-convert-multiple-images-to-pdf/"
+      "PNG Transparency in PDF",
+      "Page Layout Selection",
+      "Client-Side PDF Compiler"
     ],
     "primary_keywords": [
-      "how to convert png to pdf",
-      "png to pdf"
+      "how to convert png to pdf"
     ],
     "secondary_keywords": [
-      "convert png to pdf online",
-      "png image to pdf",
-      "png transparent to pdf"
+      "convert png to pdf guide",
+      "png image to pdf tutorial"
+    ],
+    "related_tools": [
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
+    ],
+    "related_guides": [
+      "/guides/how-to-convert-multiple-images-to-pdf/",
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "recommended_internal_links": [
+      "/tools/image-to-pdf/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/how-to-convert-png-to-pdf/",
-    "og_title": "How to Convert PNG to PDF Online \u2014 Step-by-Step Guide",
+    "og_title": "How to Convert PNG to PDF Online — Step-by-Step Guide | SudoGrep",
     "og_description": "Learn how to convert PNG images to PDF documents online in your browser. Covers transparency handling, page size selection, and multi-image workflows.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
   "/guides/how-to-convert-multiple-images-to-pdf/": {
     "url": "/guides/how-to-convert-multiple-images-to-pdf/",
-    "title": "How to Convert Multiple Images to PDF \u2014 Complete Guide",
+    "title": "How to Convert Multiple Images to PDF — Complete Guide | SudoGrep",
     "description": "Learn how to combine multiple photos and images into a single PDF document online. Covers page ordering, page sizes, orientation, and mixing formats.",
     "h1": "How to Convert Multiple Images to PDF",
-    "primary_intent": "guide for combining multiple images of different formats into a single PDF",
-    "secondary_intents": [
-      "merge photos into pdf tutorial",
-      "combine jpg png into pdf guide",
-      "multi-page pdf from images instructions"
-    ],
-    "primary_topic": "Multi-Image PDF Compilation Guide",
+    "primary_intent": "learn how to combine multiple images into a single pdf file",
+    "primary_topic": "Multi-Image PDF Creation",
     "secondary_topics": [
-      "page sequence ordering",
-      "A4 and Letter page layout",
-      "portrait vs landscape orientation"
+      "Combine Photos to PDF",
+      "Page Order Rearranging",
+      "Multi-Page Document Compiler"
     ],
-    "search_variations": [
-      "how to convert multiple images to pdf",
-      "multiple images to pdf",
-      "combine photos into pdf",
-      "merge images into pdf",
-      "photos to pdf"
+    "primary_keywords": [
+      "how to convert multiple images to pdf"
     ],
-    "target_entities": [
-      "multiple images to PDF",
-      "drag reordering",
-      "page sequence",
-      "A4 layout",
-      "document compilation"
+    "secondary_keywords": [
+      "combine multiple photos into one pdf",
+      "merge images to pdf guide"
     ],
     "related_tools": [
-      "/image-to-pdf/"
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
     "related_guides": [
       "/guides/how-to-convert-png-to-pdf/",
       "/guides/jpg-vs-png-vs-webp/"
     ],
     "recommended_internal_links": [
-      "/image-to-pdf/",
-      "/guides/how-to-convert-png-to-pdf/"
-    ],
-    "primary_keywords": [
-      "how to convert multiple images to pdf",
-      "multiple images to pdf"
-    ],
-    "secondary_keywords": [
-      "combine photos into pdf",
-      "merge images into pdf",
-      "photos to pdf"
+      "/tools/image-to-pdf/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/how-to-convert-multiple-images-to-pdf/",
-    "og_title": "How to Convert Multiple Images to PDF \u2014 Complete Guide",
+    "og_title": "How to Convert Multiple Images to PDF — Complete Guide | SudoGrep",
     "og_description": "Learn how to combine multiple photos and images into a single PDF document online. Covers page ordering, page sizes, orientation, and mixing formats.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
-  "/privacy-policy.html": {
-    "url": "/privacy-policy.html",
-    "title": "Privacy Policy \u2013 SudoGrep | Data & Privacy",
-    "description": "Privacy Policy for SudoGrep - Software, AI & Free Online Tools. Learn about how we handle, process, and protect your privacy locally.",
-    "h1": "Privacy Policy",
-    "primary_intent": "legal privacy guidelines",
-    "secondary_intents": [
-      "sudogrep user privacy terms",
-      "on-device data processing legal guidelines",
-      "local storage cookies policy"
-    ],
-    "primary_topic": "Legal Privacy",
+  "/guides/jpg-vs-png-vs-webp/": {
+    "url": "/guides/jpg-vs-png-vs-webp/",
+    "title": "JPG vs PNG vs WebP: Choosing Web Image Formats | SudoGrep",
+    "description": "Read a direct comparison of JPG, PNG, and WebP image formats. Learn which formats support transparency, provide the best compression, and load faster on the web.",
+    "h1": "JPG vs PNG vs WebP: Which Image Format to Use?",
+    "primary_intent": "compare jpg png webp image formats for web development",
+    "primary_topic": "Image Format Comparison",
     "secondary_topics": [
-      "data protection rules",
-      "local processing guarantees",
-      "zero server storage terms"
-    ],
-    "search_variations": [
-      "sudogrep privacy policy",
-      "sudogrep user privacy",
-      "data safety"
-    ],
-    "target_entities": [
-      "privacy terms",
-      "GDPR compliance",
-      "local storage data safety",
-      "data security"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/",
-      "/contact/"
+      "Alpha Transparency Support",
+      "Compression Ratio Comparison",
+      "Web Performance"
     ],
     "primary_keywords": [
-      "sudogrep privacy policy"
+      "jpg vs png vs webp"
     ],
     "secondary_keywords": [
-      "data protection",
-      "local processing policy",
-      "privacy commitment"
-    ],
-    "canonical": "https://sudogrep.in/privacy-policy.html",
-    "og_title": "Privacy Policy \u2013 SudoGrep | Data & Privacy",
-    "og_description": "Privacy Policy for SudoGrep - Software, AI & Free Online Tools. Learn about how we handle, process, and protect your privacy locally.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebPage"
-  },
-  "/compress-image-to-100kb/": {
-    "url": "/compress-image-to-100kb/",
-    "title": "Compress Image to 100KB Online Free | SudoGrep",
-    "description": "Compress image to exactly 100KB or less online locally. Preselected 100KB image compressor for certificates, portals, and web forms. Zero uploads.",
-    "h1": "Compress Image to 100KB Online",
-    "primary_intent": "Preconfigured preset for Compress Image to 100KB Online",
-    "secondary_intents": [
-      "reduce image to 100kb",
-      "image under 100kb",
-      "photo under 100kb"
-    ],
-    "primary_topic": "Compress Image to 100KB Online",
-    "secondary_topics": [
-      "reduce photo size to 100kb"
-    ],
-    "search_variations": [
-      "compress image to 100kb",
-      "reduce image to 100kb",
-      "image under 100kb",
-      "photo under 100kb",
-      "reduce photo size to 100kb"
-    ],
-    "target_entities": [
-      "Compress Image to 100KB Online",
-      "compress image to 100kb"
+      "which image format to use",
+      "webp vs jpg comparison"
     ],
     "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-image-to-200kb/"
+      "/tools/image-compressor/",
+      "/tools/image-resizer/"
     ],
     "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
+      "/guides/how-to-reduce-jpg-size/",
+      "/guides/how-to-reduce-image-size-without-losing-quality/"
     ],
     "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "compress image to 100kb online"
-    ],
-    "secondary_keywords": [
-      "reduce image to 100kb",
-      "image under 100kb",
-      "photo under 100kb",
-      "reduce photo size to 100kb"
-    ],
-    "canonical": "https://sudogrep.in/compress-image-to-100kb/",
-    "og_title": "Compress Image to 100KB Online Free | SudoGrep",
-    "og_description": "Compress image to exactly 100KB or less online locally. Preselected 100KB image compressor for certificates, portals, and web forms. Zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/compress-image-to-200kb/": {
-    "url": "/compress-image-to-200kb/",
-    "title": "Compress Image to 200KB Online Free | SudoGrep",
-    "description": "Compress image to exactly 200KB or less online locally. Preselected 200KB image compressor for high resolution documents and portal forms. Zero uploads.",
-    "h1": "Compress Image to 200KB Online",
-    "primary_intent": "Preconfigured preset for Compress Image to 200KB Online",
-    "secondary_intents": [
-      "reduce image to 200kb",
-      "image under 200kb",
-      "photo under 200kb"
-    ],
-    "primary_topic": "Compress Image to 200KB Online",
-    "secondary_topics": [
-      "reduce photo size to 200kb"
-    ],
-    "search_variations": [
-      "compress image to 200kb",
-      "reduce image to 200kb",
-      "image under 200kb",
-      "photo under 200kb",
-      "reduce photo size to 200kb"
-    ],
-    "target_entities": [
-      "Compress Image to 200KB Online",
-      "compress image to 200kb"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-image-to-100kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "compress image to 200kb"
-    ],
-    "secondary_keywords": [
-      "reduce image to 200kb",
-      "image under 200kb",
-      "photo under 200kb",
-      "reduce photo size to 200kb"
-    ],
-    "canonical": "https://sudogrep.in/compress-image-to-200kb/",
-    "og_title": "Compress Image to 200KB Online Free | SudoGrep",
-    "og_description": "Compress image to exactly 200KB or less online locally. Preselected 200KB image compressor for high resolution documents and portal forms. Zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/compress-jpg-to-50kb/": {
-    "url": "/compress-jpg-to-50kb/",
-    "title": "Compress JPG to 50KB Online Free | SudoGrep",
-    "description": "Compress JPG and JPEG photos to exactly 50KB or less online. Preselected 50KB JPG compressor for signature and portal uploads. Zero uploads.",
-    "h1": "Compress JPG to 50KB Online",
-    "primary_intent": "Preconfigured preset for Compress JPG to 50KB Online",
-    "secondary_intents": [
-      "reduce jpg to 50kb",
-      "jpg under 50kb",
-      "photo to 50kb jpg"
-    ],
-    "primary_topic": "Compress JPG to 50KB Online",
-    "secondary_topics": [
-      "compress photo to 50kb"
-    ],
-    "search_variations": [
-      "compress jpg to 50kb",
-      "reduce jpg to 50kb",
-      "jpg under 50kb",
-      "photo to 50kb jpg",
-      "compress photo to 50kb"
-    ],
-    "target_entities": [
-      "Compress JPG to 50KB Online",
-      "compress jpg to 50kb"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-png-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-reduce-jpg-size/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "compress jpg to 50kb"
-    ],
-    "secondary_keywords": [
-      "reduce jpg to 50kb",
-      "jpg under 50kb",
-      "photo to 50kb jpg",
-      "compress photo to 50kb"
-    ],
-    "canonical": "https://sudogrep.in/compress-jpg-to-50kb/",
-    "og_title": "Compress JPG to 50KB Online Free | SudoGrep",
-    "og_description": "Compress JPG and JPEG photos to exactly 50KB or less online. Preselected 50KB JPG compressor for signature and portal uploads. Zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/compress-png-to-50kb/": {
-    "url": "/compress-png-to-50kb/",
-    "title": "Compress PNG to 50KB Online Free | SudoGrep",
-    "description": "Compress PNG images to exactly 50KB or less online locally in your browser. Preselected 50KB PNG compressor. Zero server uploads.",
-    "h1": "Compress PNG to 50KB Online",
-    "primary_intent": "Preconfigured preset for Compress PNG to 50KB Online",
-    "secondary_intents": [
-      "reduce png to 50kb",
-      "png under 50kb",
-      "signature transparent 50kb"
-    ],
-    "primary_topic": "Compress PNG to 50KB Online",
-    "secondary_topics": [
-      "compress photo to 50kb png"
-    ],
-    "search_variations": [
-      "compress png to 50kb",
-      "reduce png to 50kb",
-      "png under 50kb",
-      "signature transparent 50kb",
-      "compress photo to 50kb png"
-    ],
-    "target_entities": [
-      "Compress PNG to 50KB Online",
-      "compress png to 50kb"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/compress-jpg-to-50kb/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "compress png to 50kb"
-    ],
-    "secondary_keywords": [
-      "reduce png to 50kb",
-      "png under 50kb",
-      "signature transparent 50kb",
-      "compress photo to 50kb png"
-    ],
-    "canonical": "https://sudogrep.in/compress-png-to-50kb/",
-    "og_title": "Compress PNG to 50KB Online Free | SudoGrep",
-    "og_description": "Compress PNG images to exactly 50KB or less online locally in your browser. Preselected 50KB PNG compressor. Zero server uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/resize-image-for-online-forms/": {
-    "url": "/resize-image-for-online-forms/",
-    "title": "Resize Image for Online Forms Online Free | SudoGrep",
-    "description": "Resize photo and signature dimensions specifically for online application forms and web portals. Lock aspect ratios and resize locally.",
-    "h1": "Resize Image for Online Forms",
-    "primary_intent": "Preconfigured preset for Resize Image for Online Forms",
-    "secondary_intents": [
-      "resize photo for forms",
-      "crop signature online",
-      "resize signature online"
-    ],
-    "primary_topic": "Resize Image for Online Forms",
-    "secondary_topics": [
-      "passport photo forms"
-    ],
-    "search_variations": [
-      "resize image for online forms",
-      "resize photo for forms",
-      "crop signature online",
-      "resize signature online",
-      "passport photo forms"
-    ],
-    "target_entities": [
-      "Resize Image for Online Forms",
-      "resize image for online forms"
-    ],
-    "related_tools": [
-      "/image-resizer/",
-      "/resize-image-for-passport/"
-    ],
-    "related_guides": [
-      "/guides/how-to-resize-image-for-online-forms/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "resize image for online forms online"
-    ],
-    "secondary_keywords": [
-      "resize photo for forms",
-      "crop signature online",
-      "resize signature online",
-      "passport photo forms"
-    ],
-    "canonical": "https://sudogrep.in/resize-image-for-online-forms/",
-    "og_title": "Resize Image for Online Forms Online Free | SudoGrep",
-    "og_description": "Resize photo and signature dimensions specifically for online application forms and web portals. Lock aspect ratios and resize locally.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/resize-image-for-passport/": {
-    "url": "/resize-image-for-passport/",
-    "title": "Resize Image for Passport Size Photo Online Free | SudoGrep",
-    "description": "Resize photo dimensions specifically to standard passport photo sizes (413 x 531 pixels) online locally in your browser. Zero uploads.",
-    "h1": "Resize Image for Passport",
-    "primary_intent": "Preconfigured preset for Resize Image for Passport",
-    "secondary_intents": [
-      "resize passport photo",
-      "passport photo dimensions",
-      "passport size photo px"
-    ],
-    "primary_topic": "Resize Image for Passport",
-    "secondary_topics": [
-      "indian passport size photo online"
-    ],
-    "search_variations": [
-      "resize image for passport",
-      "resize passport photo",
-      "passport photo dimensions",
-      "passport size photo px",
-      "indian passport size photo online"
-    ],
-    "target_entities": [
-      "Resize Image for Passport",
-      "resize image for passport"
-    ],
-    "related_tools": [
-      "/image-resizer/",
-      "/resize-image-for-online-forms/"
-    ],
-    "related_guides": [
-      "/guides/how-to-resize-image-for-online-forms/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "resize image for passport"
-    ],
-    "secondary_keywords": [
-      "resize passport photo",
-      "passport photo dimensions",
-      "passport size photo px",
-      "indian passport size photo online"
-    ],
-    "canonical": "https://sudogrep.in/resize-image-for-passport/",
-    "og_title": "Resize Image for Passport Size Photo Online Free | SudoGrep",
-    "og_description": "Resize photo dimensions specifically to standard passport photo sizes (413 x 531 pixels) online locally in your browser. Zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/image-converter/": {
-    "url": "/image-converter/",
-    "title": "Image Converter Online Free \u2014 Convert JPG, PNG, WebP | SudoGrep",
-    "description": "Convert JPG, PNG and WebP formats fully locally in your web browser. No files are uploaded to our servers, ensuring absolute privacy.",
-    "h1": "Image Format Converter",
-    "primary_intent": "Preconfigured preset for Image Format Converter",
-    "secondary_intents": [
-      "convert images online",
-      "png to jpg converter",
-      "jpg to png converter"
-    ],
-    "primary_topic": "Image Format Converter",
-    "secondary_topics": [
-      "webp to jpg converter"
-    ],
-    "search_variations": [
-      "image converter",
-      "convert images online",
-      "png to jpg converter",
-      "jpg to png converter",
-      "webp to jpg converter"
-    ],
-    "target_entities": [
-      "Image Format Converter",
-      "image converter"
-    ],
-    "related_tools": [
-      "/jpg-to-png/",
-      "/png-to-jpg/",
-      "/webp-to-jpg/",
-      "/jpg-to-webp/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "image converter"
-    ],
-    "secondary_keywords": [
-      "convert images online",
-      "png to jpg converter",
-      "jpg to png converter",
-      "webp to jpg converter"
-    ],
-    "canonical": "https://sudogrep.in/image-converter/",
-    "og_title": "Image Converter Online Free \u2014 Convert JPG, PNG, WebP | SudoGrep",
-    "og_description": "Convert JPG, PNG and WebP formats fully locally in your web browser. No files are uploaded to our servers, ensuring absolute privacy.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "CollectionPage"
-  },
-  "/jpg-to-png/": {
-    "url": "/jpg-to-png/",
-    "title": "JPG to PNG Converter Online Free | SudoGrep",
-    "description": "Convert JPG and JPEG images to PNG format online locally in your browser. Maintain quality, transparent layers, and export instantly with zero uploads.",
-    "h1": "JPG to PNG Converter",
-    "primary_intent": "Preconfigured preset for JPG to PNG Converter",
-    "secondary_intents": [
-      "convert jpg to png",
-      "jpeg to png online",
-      "turn jpg into png"
-    ],
-    "primary_topic": "JPG to PNG Converter",
-    "secondary_topics": [
-      "scanned jpg converter"
-    ],
-    "search_variations": [
-      "jpg to png",
-      "convert jpg to png",
-      "jpeg to png online",
-      "turn jpg into png",
-      "scanned jpg converter"
-    ],
-    "target_entities": [
-      "JPG to PNG Converter",
-      "jpg to png"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/png-to-jpg/",
-      "/webp-to-jpg/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "jpg to png"
-    ],
-    "secondary_keywords": [
-      "convert jpg to png",
-      "jpeg to png online",
-      "turn jpg into png",
-      "scanned jpg converter"
-    ],
-    "canonical": "https://sudogrep.in/jpg-to-png/",
-    "og_title": "JPG to PNG Converter Online Free | SudoGrep",
-    "og_description": "Convert JPG and JPEG images to PNG format online locally in your browser. Maintain quality, transparent layers, and export instantly with zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/png-to-jpg/": {
-    "url": "/png-to-jpg/",
-    "title": "PNG to JPG Converter Online Free | SudoGrep",
-    "description": "Convert PNG images to JPG format online locally in your browser. Standardize signatures, reduce size, and export instantly with zero uploads.",
-    "h1": "PNG to JPG Converter",
-    "primary_intent": "Preconfigured preset for PNG to JPG Converter",
-    "secondary_intents": [
-      "convert png to jpg",
-      "png to jpeg online",
-      "turn png into jpg"
-    ],
-    "primary_topic": "PNG to JPG Converter",
-    "secondary_topics": [
-      "scanned png converter"
-    ],
-    "search_variations": [
-      "png to jpg",
-      "convert png to jpg",
-      "png to jpeg online",
-      "turn png into jpg",
-      "scanned png converter"
-    ],
-    "target_entities": [
-      "PNG to JPG Converter",
-      "png to jpg"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/jpg-to-png/",
-      "/jpg-to-webp/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "png to jpg"
-    ],
-    "secondary_keywords": [
-      "convert png to jpg",
-      "png to jpeg online",
-      "turn png into jpg",
-      "scanned png converter"
-    ],
-    "canonical": "https://sudogrep.in/png-to-jpg/",
-    "og_title": "PNG to JPG Converter Online Free | SudoGrep",
-    "og_description": "Convert PNG images to JPG format online locally in your browser. Standardize signatures, reduce size, and export instantly with zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/webp-to-jpg/": {
-    "url": "/webp-to-jpg/",
-    "title": "WebP to JPG Converter Online Free | SudoGrep",
-    "description": "Convert WebP images to JPG format online locally in your browser. Support older browsers, reduce size, and export instantly with zero uploads.",
-    "h1": "WebP to JPG Converter",
-    "primary_intent": "Preconfigured preset for WebP to JPG Converter",
-    "secondary_intents": [
-      "convert webp to jpg",
-      "webp to jpeg online",
-      "turn webp into jpg"
-    ],
-    "primary_topic": "WebP to JPG Converter",
-    "secondary_topics": [
-      "webp file converter"
-    ],
-    "search_variations": [
-      "webp to jpg",
-      "convert webp to jpg",
-      "webp to jpeg online",
-      "turn webp into jpg",
-      "webp file converter"
-    ],
-    "target_entities": [
-      "WebP to JPG Converter",
-      "webp to jpg"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/jpg-to-webp/",
-      "/png-to-jpg/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "webp to jpg"
-    ],
-    "secondary_keywords": [
-      "convert webp to jpg",
-      "webp to jpeg online",
-      "turn webp into jpg",
-      "webp file converter"
-    ],
-    "canonical": "https://sudogrep.in/webp-to-jpg/",
-    "og_title": "WebP to JPG Converter Online Free | SudoGrep",
-    "og_description": "Convert WebP images to JPG format online locally in your browser. Support older browsers, reduce size, and export instantly with zero uploads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/jpg-to-webp/": {
-    "url": "/jpg-to-webp/",
-    "title": "JPG to WebP Converter Online Free | SudoGrep",
-    "description": "Convert JPG and JPEG images to WebP format online locally in your browser. Modern format, high compression ratios, and instant downloads.",
-    "h1": "JPG to WebP Converter",
-    "primary_intent": "Preconfigured preset for JPG to WebP Converter",
-    "secondary_intents": [
-      "convert jpg to webp",
-      "jpeg to webp online",
-      "turn jpg into webp"
-    ],
-    "primary_topic": "JPG to WebP Converter",
-    "secondary_topics": [
-      "compress to webp"
-    ],
-    "search_variations": [
-      "jpg to webp",
-      "convert jpg to webp",
-      "jpeg to webp online",
-      "turn jpg into webp",
-      "compress to webp"
-    ],
-    "target_entities": [
-      "JPG to WebP Converter",
-      "jpg to webp"
-    ],
-    "related_tools": [
-      "/image-converter/",
-      "/webp-to-jpg/",
-      "/jpg-to-png/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "jpg to webp"
-    ],
-    "secondary_keywords": [
-      "convert jpg to webp",
-      "jpeg to webp online",
-      "turn jpg into webp",
-      "compress to webp"
-    ],
-    "canonical": "https://sudogrep.in/jpg-to-webp/",
-    "og_title": "JPG to WebP Converter Online Free | SudoGrep",
-    "og_description": "Convert JPG and JPEG images to WebP format online locally in your browser. Modern format, high compression ratios, and instant downloads.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebApplication"
-  },
-  "/apps/kb-snap/": {
-    "url": "/apps/kb-snap/",
-    "title": "KB Snap \u2014 Photo Compressor Android App | SudoGrep",
-    "description": "Download KB Snap for Android. Compress photos, scale signature assets, and reduce image sizes to 50KB offline with complete data privacy.",
-    "h1": "KB Snap",
-    "primary_intent": "Preconfigured preset for KB Snap",
-    "secondary_intents": [
-      "image compressor Android",
-      "compress image to 50KB app",
-      "reduce image KB"
-    ],
-    "primary_topic": "KB Snap",
-    "secondary_topics": [
-      "compress photo for online forms"
-    ],
-    "search_variations": [
-      "photo compressor app",
-      "image compressor Android",
-      "compress image to 50KB app",
-      "reduce image KB",
-      "compress photo for online forms"
-    ],
-    "target_entities": [
-      "KB Snap",
-      "photo compressor app"
-    ],
-    "related_tools": [
-      "/compress-image-to-50kb/",
-      "/image-compressor/",
-      "/image-resizer/"
-    ],
-    "related_guides": [
-      "/guides/how-to-compress-image-to-50kb/",
-      "/guides/how-to-resize-image-for-online-forms/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "photo compressor app"
-    ],
-    "secondary_keywords": [
-      "image compressor Android",
-      "compress image to 50KB app",
-      "reduce image KB",
-      "compress photo for online forms"
-    ],
-    "canonical": "https://sudogrep.in/apps/kb-snap/",
-    "og_title": "KB Snap \u2014 Photo Compressor Android App | SudoGrep",
-    "og_description": "Download KB Snap for Android. Compress photos, scale signature assets, and reduce image sizes to 50KB offline with complete data privacy.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "SoftwareApplication"
-  },
-  "/apps/file-forge/": {
-    "url": "/apps/file-forge/",
-    "title": "File Forge \u2014 Offline File Converter & Extractor | SudoGrep",
-    "description": "Download File Forge for Android. Convert image and document formats, extract text via on-device OCR, and view metadata locally and securely.",
-    "h1": "File Forge",
-    "primary_intent": "Preconfigured preset for File Forge",
-    "secondary_intents": [
-      "file forge conversion",
-      "ocr text extractor Android",
-      "exif editor mobile"
-    ],
-    "primary_topic": "File Forge",
-    "secondary_topics": [
-      "offline file optimizer"
-    ],
-    "search_variations": [
-      "file converter app",
-      "file forge conversion",
-      "ocr text extractor Android",
-      "exif editor mobile",
-      "offline file optimizer"
-    ],
-    "target_entities": [
-      "File Forge",
-      "file converter app"
-    ],
-    "related_tools": [
-      "/image-to-pdf/",
-      "/jpg-to-pdf/",
-      "/image-converter/"
-    ],
-    "related_guides": [
-      "/guides/jpg-vs-png-vs-webp/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "file converter app"
-    ],
-    "secondary_keywords": [
-      "file forge conversion",
-      "ocr text extractor Android",
-      "exif editor mobile",
-      "offline file optimizer"
-    ],
-    "canonical": "https://sudogrep.in/apps/file-forge/",
-    "og_title": "File Forge \u2014 Offline File Converter & Extractor | SudoGrep",
-    "og_description": "Download File Forge for Android. Convert image and document formats, extract text via on-device OCR, and view metadata locally and securely.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "SoftwareApplication"
-  },
-  "/apps/billbuddy/": {
-    "url": "/apps/billbuddy/",
-    "title": "BillBuddy \u2014 Bill Reminder & Payment Tracker | SudoGrep",
-    "description": "Download BillBuddy for Android. Track EMIs, manage subscriptions, set payment notifications, and export expense reports locally and securely.",
-    "h1": "BillBuddy",
-    "primary_intent": "Preconfigured preset for BillBuddy",
-    "secondary_intents": [
-      "bill reminder Android",
-      "payment planner mobile",
-      "emi record keeper"
-    ],
-    "primary_topic": "BillBuddy",
-    "secondary_topics": [
-      "subscription organizer"
-    ],
-    "search_variations": [
-      "bill tracker app",
-      "bill reminder Android",
-      "payment planner mobile",
-      "emi record keeper",
-      "subscription organizer"
-    ],
-    "target_entities": [
-      "BillBuddy",
-      "bill tracker app"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/blog/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "bill tracker app"
-    ],
-    "secondary_keywords": [
-      "bill reminder Android",
-      "payment planner mobile",
-      "emi record keeper",
-      "subscription organizer"
-    ],
-    "canonical": "https://sudogrep.in/apps/billbuddy/",
-    "og_title": "BillBuddy \u2014 Bill Reminder & Payment Tracker | SudoGrep",
-    "og_description": "Download BillBuddy for Android. Track EMIs, manage subscriptions, set payment notifications, and export expense reports locally and securely.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "SoftwareApplication"
-  },
-  "/apps/zip-connect/": {
-    "url": "/apps/zip-connect/",
-    "title": "Zip Connect \u2014 Offline Logic Puzzle Game | SudoGrep",
-    "description": "Download Zip Connect for Android. Enjoy a clean, ad-free logic node puzzle game offline with beautiful transitions and no tracking.",
-    "h1": "Zip Connect",
-    "primary_intent": "Preconfigured preset for Zip Connect",
-    "secondary_intents": [
-      "node connector puzzle",
-      "offline puzzle game",
-      "ad-free logic puzzle"
-    ],
-    "primary_topic": "Zip Connect",
-    "secondary_topics": [
-      "minimalist puzzle game"
-    ],
-    "search_variations": [
-      "logic puzzle game",
-      "node connector puzzle",
-      "offline puzzle game",
-      "ad-free logic puzzle",
-      "minimalist puzzle game"
-    ],
-    "target_entities": [
-      "Zip Connect",
-      "logic puzzle game"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/blog/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "logic puzzle game"
-    ],
-    "secondary_keywords": [
-      "node connector puzzle",
-      "offline puzzle game",
-      "ad-free logic puzzle",
-      "minimalist puzzle game"
-    ],
-    "canonical": "https://sudogrep.in/apps/zip-connect/",
-    "og_title": "Zip Connect \u2014 Offline Logic Puzzle Game | SudoGrep",
-    "og_description": "Download Zip Connect for Android. Enjoy a clean, ad-free logic node puzzle game offline with beautiful transitions and no tracking.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "SoftwareApplication"
-  },
-  "/apps/aarti-sangrah/": {
-    "url": "/apps/aarti-sangrah/",
-    "title": "Aarti Sangrah \u2014 Spiritual Devotional Prayers App | SudoGrep",
-    "description": "Download Aarti Sangrah for Android. Access a collection of spiritual prayers and traditional lyrics completely offline with an adjustable UI.",
-    "h1": "Aarti Sangrah",
-    "primary_intent": "Preconfigured preset for Aarti Sangrah",
-    "secondary_intents": [
-      "devotional lyrics online",
-      "aarti offline reader",
-      "prayer lists local"
-    ],
-    "primary_topic": "Aarti Sangrah",
-    "secondary_topics": [
-      "lightweight aarti collection"
-    ],
-    "search_variations": [
-      "spiritual prayers app",
-      "devotional lyrics online",
-      "aarti offline reader",
-      "prayer lists local",
-      "lightweight aarti collection"
-    ],
-    "target_entities": [
-      "Aarti Sangrah",
-      "spiritual prayers app"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/blog/"
-    ],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "spiritual prayers app"
-    ],
-    "secondary_keywords": [
-      "devotional lyrics online",
-      "aarti offline reader",
-      "prayer lists local",
-      "lightweight aarti collection"
-    ],
-    "canonical": "https://sudogrep.in/apps/aarti-sangrah/",
-    "og_title": "Aarti Sangrah \u2014 Spiritual Devotional Prayers App | SudoGrep",
-    "og_description": "Download Aarti Sangrah for Android. Access a collection of spiritual prayers and traditional lyrics completely offline with an adjustable UI.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "SoftwareApplication"
-  },
-  "/services/flutter-development/": {
-    "url": "/services/flutter-development/",
-    "title": "Custom Flutter App Development Services | SudoGrep",
-    "description": "SudoGrep provides professional cross-platform Flutter application engineering, delivering fluid native layouts and high-performance offline runtimes.",
-    "h1": "Flutter Development",
-    "primary_intent": "Preconfigured preset for Flutter Development",
-    "secondary_intents": [
-      "custom flutter apps",
-      "hire flutter engineers",
-      "cross platform application development"
-    ],
-    "primary_topic": "Flutter Development",
-    "secondary_topics": [
-      "dart mobile engineering"
-    ],
-    "search_variations": [
-      "flutter development services",
-      "custom flutter apps",
-      "hire flutter engineers",
-      "cross platform application development",
-      "dart mobile engineering"
-    ],
-    "target_entities": [
-      "Flutter Development",
-      "flutter development services"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "flutter development services"
-    ],
-    "secondary_keywords": [
-      "custom flutter apps",
-      "hire flutter engineers",
-      "cross platform application development",
-      "dart mobile engineering"
-    ],
-    "canonical": "https://sudogrep.in/services/flutter-development/",
-    "og_title": "Custom Flutter App Development Services | SudoGrep",
-    "og_description": "SudoGrep provides professional cross-platform Flutter application engineering, delivering fluid native layouts and high-performance offline runtimes.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "Service"
-  },
-  "/services/mobile-app-development/": {
-    "url": "/services/mobile-app-development/",
-    "title": "Mobile App Development Services for Android & iOS | SudoGrep",
-    "description": "SudoGrep engineers secure, high-performance mobile applications with client-side computational capabilities, offline databases, and slick designs.",
-    "h1": "Mobile App Development",
-    "primary_intent": "Preconfigured preset for Mobile App Development",
-    "secondary_intents": [
-      "android app development",
-      "ios app development",
-      "hire app developers"
-    ],
-    "primary_topic": "Mobile App Development",
-    "secondary_topics": [
-      "custom smartphone applications"
-    ],
-    "search_variations": [
-      "mobile app development services",
-      "android app development",
-      "ios app development",
-      "hire app developers",
-      "custom smartphone applications"
-    ],
-    "target_entities": [
-      "Mobile App Development",
-      "mobile app development services"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "mobile app development services"
-    ],
-    "secondary_keywords": [
-      "android app development",
-      "ios app development",
-      "hire app developers",
-      "custom smartphone applications"
-    ],
-    "canonical": "https://sudogrep.in/services/mobile-app-development/",
-    "og_title": "Mobile App Development Services for Android & iOS | SudoGrep",
-    "og_description": "SudoGrep engineers secure, high-performance mobile applications with client-side computational capabilities, offline databases, and slick designs.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "Service"
-  },
-  "/services/ai-development/": {
-    "url": "/services/ai-development/",
-    "title": "Custom AI Integration & Development Services | SudoGrep",
-    "description": "SudoGrep designs custom AI workflow integrations, local classification systems, and custom LLM interfaces optimized for privacy and speed.",
-    "h1": "AI Development",
-    "primary_intent": "Preconfigured preset for AI Development",
-    "secondary_intents": [
-      "ai integration services",
-      "ai agent development",
-      "intelligent computing"
-    ],
-    "primary_topic": "AI Development",
-    "secondary_topics": [
-      "large language models integration"
-    ],
-    "search_variations": [
-      "custom ai solutions",
-      "ai integration services",
-      "ai agent development",
-      "intelligent computing",
-      "large language models integration"
-    ],
-    "target_entities": [
-      "AI Development",
-      "custom ai solutions"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "custom ai integration services"
-    ],
-    "secondary_keywords": [
-      "ai integration services",
-      "ai agent development",
-      "intelligent computing",
-      "large language models integration"
-    ],
-    "canonical": "https://sudogrep.in/services/ai-development/",
-    "og_title": "Custom AI Integration & Development Services | SudoGrep",
-    "og_description": "SudoGrep designs custom AI workflow integrations, local classification systems, and custom LLM interfaces optimized for privacy and speed.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "Service"
-  },
-  "/services/rag-development/": {
-    "url": "/services/rag-development/",
-    "title": "RAG Development & Vector Search Engineering | SudoGrep",
-    "description": "SudoGrep engineers Retrieval Augmented Generation (RAG) pipelines, integrating vector databases and semantic indexing for highly contextual AI results.",
-    "h1": "RAG Development",
-    "primary_intent": "Preconfigured preset for RAG Development",
-    "secondary_intents": [
-      "retrieval augmented generation",
-      "vector search engineering",
-      "semantic search systems"
-    ],
-    "primary_topic": "RAG Development",
-    "secondary_topics": [
-      "pinecone pgvector configuration"
-    ],
-    "search_variations": [
-      "rag development services",
-      "retrieval augmented generation",
-      "vector search engineering",
-      "semantic search systems",
-      "pinecone pgvector configuration"
-    ],
-    "target_entities": [
-      "RAG Development",
-      "rag development services"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "rag development services"
-    ],
-    "secondary_keywords": [
-      "retrieval augmented generation",
-      "vector search engineering",
-      "semantic search systems",
-      "pinecone pgvector configuration"
-    ],
-    "canonical": "https://sudogrep.in/services/rag-development/",
-    "og_title": "RAG Development & Vector Search Engineering | SudoGrep",
-    "og_description": "SudoGrep engineers Retrieval Augmented Generation (RAG) pipelines, integrating vector databases and semantic indexing for highly contextual AI results.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "Service"
-  },
-  "/terms/": {
-    "url": "/terms/",
-    "title": "Terms of Service and Website Usage Rules \u2014 SudoGrep",
-    "description": "Read SudoGrep's Terms of Service. Learn about our local browser utility usage rules, licensing terms, and liability limits.",
-    "h1": "Terms of Service",
-    "primary_intent": "legal terms of service",
-    "secondary_intents": [
-      "terms of service",
-      "usage rules"
-    ],
-    "primary_topic": "Terms",
-    "secondary_topics": [
-      "rules"
-    ],
-    "search_variations": [
-      "terms of service",
-      "sudogrep terms"
-    ],
-    "target_entities": [
-      "terms"
-    ],
-    "related_tools": [],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/free-tools/"
-    ],
-    "primary_keywords": [
-      "terms of service"
-    ],
-    "secondary_keywords": [
-      "usage rules"
-    ],
-    "canonical": "https://sudogrep.in/terms/",
-    "og_title": "Terms of Service and Website Usage Rules \u2014 SudoGrep",
-    "og_description": "Read SudoGrep's Terms of Service. Learn about our local browser utility usage rules, licensing terms, and liability limits.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "WebPage"
-  },
-  "/apps/ghost-trap/": {
-    "url": "/apps/ghost-trap/",
-    "title": "Ghost Trap \u2014 Tactical Arcade Puzzle Android Game | SudoGrep",
-    "description": "Download Ghost Trap for Android. A territory-claiming arcade puzzle game featuring offline play, cloud save, powerups and landmarks.",
-    "h1": "Ghost Trap: Reveal the World",
-    "primary_intent": "Preconfigured preset for Ghost Trap",
-    "secondary_intents": [
-      "ghost trap apk download",
-      "territory arcade game",
-      "offline puzzle game"
-    ],
-    "primary_topic": "Ghost Trap Game",
-    "secondary_topics": [
-      "mobile arcade puzzle"
-    ],
-    "search_variations": [
-      "ghost trap puzzle game",
-      "claim territory game",
-      "reveal global landmarks game"
-    ],
-    "target_entities": [
-      "Ghost Trap",
-      "arcade game"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [
-      "/blog/"
-    ],
-    "recommended_internal_links": [
-      "/apps/"
-    ],
-    "primary_keywords": [
-      "ghost trap arcade game"
-    ],
-    "secondary_keywords": [
-      "territory claiming gameplay",
-      "offline puzzle game"
-    ],
-    "canonical": "https://sudogrep.in/apps/ghost-trap/",
-    "og_title": "Ghost Trap \u2014 Tactical Arcade Puzzle Android Game | SudoGrep",
-    "og_description": "Download Ghost Trap for Android. A territory-claiming arcade puzzle game featuring offline play, cloud save, powerups and landmarks.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "SoftwareApplication"
-  },
-  "/blog/": {
-    "url": "/blog/",
-    "title": "Insights, Tech Trends & Technical Guides \u2014 SudoGrep",
-    "description": "Explore SudoGrep Insights. Practical developer tutorials, tech trends, AI agent developments, mobile application updates, and client-side privacy-first web guides.",
-    "h1": "Insights & Articles",
-    "primary_intent": "Insights directory and technology blog",
-    "secondary_intents": [
-      "mobile app development tips",
-      "on-device web guides",
-      "ai tools tutorial"
-    ],
-    "primary_topic": "SudoGrep Insights",
-    "secondary_topics": [
-      "software engineering",
-      "mobile development",
-      "artificial intelligence"
-    ],
-    "search_variations": [
-      "sudogrep insights",
-      "sudogrep blog",
-      "sudogrep guides"
-    ],
-    "target_entities": [
-      "Insights",
-      "tutorials"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/"
-    ],
-    "primary_keywords": [
-      "sudogrep insights"
-    ],
-    "secondary_keywords": [
-      "technical guides",
-      "mobile app trends"
-    ],
-    "canonical": "https://sudogrep.in/blog/",
-    "og_title": "Insights, Tech Trends & Technical Guides \u2014 SudoGrep",
-    "og_description": "Explore SudoGrep Insights. Practical developer tutorials, tech trends, AI agent developments, mobile application updates, and client-side privacy-first web guides.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "CollectionPage"
-  },
-  "/insights/how-ai-agents-are-changing-software-development/": {
-    "url": "/insights/how-ai-agents-are-changing-software-development/",
-    "title": "How AI Agents Are Changing Software Development | SudoGrep",
-    "description": "Discover how task-oriented autonomous AI agents are moving beyond autocomplete assistants to automate software engineering workflows.",
-    "h1": "How AI Agents Are Changing Software Development",
-    "primary_intent": "understand ai agent impact on software development",
-    "secondary_intents": [
-      "ai agent developer tools",
-      "autonomous coding agents"
-    ],
-    "primary_topic": "AI Agents",
-    "secondary_topics": [
-      "software engineering automation",
-      "agentic workflows"
-    ],
-    "search_variations": [
-      "ai agents software development",
-      "autonomous ai coders"
-    ],
-    "target_entities": [
-      "AI agents",
-      "software engineering",
-      "agentic coding"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/blog/"
-    ],
-    "primary_keywords": [
-      "ai agents software development"
-    ],
-    "secondary_keywords": [
-      "autonomous coding agents",
-      "agentic AI"
-    ],
-    "canonical": "https://sudogrep.in/insights/how-ai-agents-are-changing-software-development/",
-    "og_title": "How AI Agents Are Changing Software Development | SudoGrep",
-    "og_description": "Discover how task-oriented autonomous AI agents are moving beyond autocomplete assistants to automate software engineering workflows.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "BlogPosting"
-  },
-  "/insights/flutter-app-development-trends-2026/": {
-    "url": "/insights/flutter-app-development-trends-2026/",
-    "title": "Flutter App Development Trends in 2026 | SudoGrep",
-    "description": "Explore the top Flutter mobile engineering trends in 2026: WebAssembly (WASM), local-first databases, on-device AI integration, and riverpod patterns.",
-    "h1": "Flutter App Development Trends in 2026",
-    "primary_intent": "discover flutter mobile engineering trends in 2026",
-    "secondary_intents": [
-      "flutter webassembly WASM",
-      "on-device AI integration"
-    ],
-    "primary_topic": "Flutter Mobile Trends",
-    "secondary_topics": [
-      "local-first databases",
-      "riverpod patterns"
-    ],
-    "search_variations": [
-      "flutter trends 2026",
-      "flutter mobile development 2026"
-    ],
-    "target_entities": [
-      "Flutter",
-      "WASM",
-      "local-first",
-      "on-device AI"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/blog/"
-    ],
-    "primary_keywords": [
-      "flutter trends 2026"
-    ],
-    "secondary_keywords": [
-      "flutter mobile development",
-      "riverpod pattern"
-    ],
-    "canonical": "https://sudogrep.in/insights/flutter-app-development-trends-2026/",
-    "og_title": "Flutter App Development Trends in 2026 | SudoGrep",
-    "og_description": "Explore the top Flutter mobile engineering trends in 2026: WebAssembly (WASM), local-first databases, on-device AI integration, and riverpod patterns.",
+      "/tools/image-compressor/",
+      "/guides/"
+    ],
+    "canonical": "https://sudogrep.in/guides/jpg-vs-png-vs-webp/",
+    "og_title": "JPG vs PNG vs WebP: Choosing Web Image Formats | SudoGrep",
+    "og_description": "Read a direct comparison of JPG, PNG, and WebP image formats. Learn which formats support transparency, provide the best compression, and load faster on the web.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
@@ -2549,39 +695,31 @@
     "title": "Best Free Image Compression Tools (Offline & Online) | SudoGrep",
     "description": "Compare the best free image compression tools. Find privacy-first client-side compressors, traditional cloud optimizers, and dev command-line tools.",
     "h1": "Best Free Image Compression Tools",
-    "primary_intent": "compare the best free image compression tools",
-    "secondary_intents": [
-      "privacy-first client-side compressor",
-      "free online image optimizer"
-    ],
-    "primary_topic": "Image Compression Tools",
+    "primary_intent": "find best free image compression tools online and offline",
+    "primary_topic": "Image Compression Tools List",
     "secondary_topics": [
-      "local offline compressor",
-      "cloud image compression"
-    ],
-    "search_variations": [
-      "best free image compression tools",
-      "free image compressors online"
-    ],
-    "target_entities": [
-      "image compression",
-      "offline tools",
-      "online optimizers"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/blog/"
+      "Browser Local Compressors",
+      "CLI Image Optimizers",
+      "Privacy First Tools"
     ],
     "primary_keywords": [
       "best free image compression tools"
     ],
     "secondary_keywords": [
-      "free image compressors",
-      "offline image tools"
+      "top image compressor software",
+      "offline image compression tools"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-reduce-image-size-without-losing-quality/",
+      "/guides/how-to-reduce-jpg-size/"
+    ],
+    "recommended_internal_links": [
+      "/tools/image-compressor/",
+      "/guides/"
     ],
     "canonical": "https://sudogrep.in/guides/best-free-image-compression-tools/",
     "og_title": "Best Free Image Compression Tools (Offline & Online) | SudoGrep",
@@ -2589,37 +727,79 @@
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
+  "/blog/": {
+    "url": "/blog/",
+    "title": "SudoGrep Insights & Software Articles",
+    "description": "Articles, engineering insights and technical updates on client-side software, mobile app development, performance optimization, and AI tools.",
+    "h1": "SudoGrep Insights Hub",
+    "primary_intent": "brand blog directory",
+    "primary_topic": "Software Development Blog",
+    "secondary_topics": [
+      "Mobile Development",
+      "Client-side Computing",
+      "AI Engineering"
+    ],
+    "primary_keywords": [
+      "sudogrep blog"
+    ],
+    "secondary_keywords": [
+      "software development articles",
+      "mobile app engineering blog"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/",
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "recommended_internal_links": [
+      "/insights/",
+      "/guides/",
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/blog/",
+    "og_title": "Blog & Insights — SudoGrep",
+    "og_description": "Articles, engineering insights and technical updates on client-side software, mobile app development, performance optimization, and AI tools.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "Blog"
+  },
   "/insights/": {
     "url": "/insights/",
-    "title": "SudoGrep Insights \u2013 AI, Flutter, Technology & Software",
-    "description": "Explore SudoGrep Insights. Practical tutorials on AI agents, Flutter development, mobile app engineering, image optimization, and client-side privacy-first software.",
+    "title": "Engineering Insights & Tech Articles — SudoGrep",
+    "description": "In-depth engineering insights, client-side computing architecture, and software development trends curated by SudoGrep.",
     "h1": "SudoGrep Insights",
-    "primary_intent": "Insights landing page and technology blog hub",
-    "secondary_intents": [
-      "ai agent tutorials",
-      "flutter development guides",
-      "mobile app development tips"
-    ],
-    "primary_topic": "SudoGrep Insights",
+    "primary_intent": "brand engineering insights hub",
+    "primary_topic": "Software Architecture & Trends",
     "secondary_topics": [
-      "AI and software",
-      "Flutter and mobile development",
-      "image optimization"
+      "Client-Side Privacy",
+      "AI Agents",
+      "Flutter 2026"
     ],
-    "search_variations": [
-      "sudogrep insights",
-      "sudogrep articles",
-      "sudogrep technology blog"
+    "primary_keywords": [
+      "sudogrep insights"
+    ],
+    "secondary_keywords": [
+      "engineering tech articles",
+      "software architecture insights"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/jpg-vs-png-vs-webp/"
+    ],
+    "recommended_internal_links": [
+      "/blog/",
+      "/services/",
+      "/apps/"
     ],
     "canonical": "https://sudogrep.in/insights/",
-    "og_title": "SudoGrep Insights \u2013 AI, Flutter, Technology & Software",
-    "og_description": "Explore SudoGrep Insights. Practical tutorials on AI agents, Flutter development, mobile app engineering, and privacy-first software.",
+    "og_title": "Engineering Insights & Tech Articles — SudoGrep",
+    "og_description": "In-depth engineering insights, client-side computing architecture, and software development trends curated by SudoGrep.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "CollectionPage",
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": []
+    "schema_type": "WebPage"
   },
   "/insights/ai-agents-2026/": {
     "url": "/insights/ai-agents-2026/",
@@ -2627,30 +807,10 @@
     "description": "AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.",
     "h1": "AI Agents in 2026: From Chatbots to AI That Actually Gets Things Done",
     "primary_intent": "understand how ai agents work and what they can do in 2026",
-    "secondary_intents": [
-      "difference between chatbot and ai agent",
-      "ai agent tool computer use"
-    ],
     "primary_topic": "AI Agents",
     "secondary_topics": [
       "agentic AI tools",
       "autonomous computer use"
-    ],
-    "search_variations": [
-      "ai agents 2026",
-      "how do ai agents work"
-    ],
-    "target_entities": [
-      "AI agents",
-      "chatbot vs agent",
-      "agentic automation"
-    ],
-    "related_tools": [
-      "/free-tools/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/insights/"
     ],
     "primary_keywords": [
       "ai agents in 2026"
@@ -2659,57 +819,16 @@
       "what is an ai agent",
       "ai chatbot vs ai agent"
     ],
-    "canonical": "https://sudogrep.in/insights/ai-agents-2026/",
-    "og_title": "AI Agents in 2026: How They Work and What They Can Do | SudoGrep",
-    "og_description": "AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.",
-    "og_image": "https://sudogrep.in/assets/logo_square.png",
-    "schema_type": "BlogPosting"
-  },
-  "/insights/will-ai-replace-jobs-bill-gates-2026/": {
-    "url": "/insights/will-ai-replace-jobs-bill-gates-2026/",
-    "title": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans | SudoGrep",
-    "description": "Will AI replace jobs? Bill Gates is calling for \u201chuman-reserved\u201d work as AI becomes more capable. Here's what it could mean for workers, developers and businesses.",
-    "h1": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans",
-    "primary_intent": "understand if ai will replace jobs and bill gates comments on human-reserved jobs",
-    "secondary_intents": [
-      "will ai replace software developers",
-      "which jobs are safest from ai automation"
-    ],
-    "primary_topic": "AI and Jobs",
-    "secondary_topics": [
-      "future of work",
-      "AI automation"
-    ],
-    "search_variations": [
-      "will ai replace jobs",
-      "bill gates ai jobs",
-      "ai replacing jobs"
-    ],
-    "target_entities": [
-      "Bill Gates",
-      "AI automation",
-      "future of work"
-    ],
     "related_tools": [
-      "/free-tools/"
+      "/tools/"
     ],
     "related_guides": [],
     "recommended_internal_links": [
-      "/insights/",
-      "/insights/ai-agents-2026/"
+      "/insights/"
     ],
-    "primary_keywords": [
-      "will ai replace jobs"
-    ],
-    "secondary_keywords": [
-      "ai replacing jobs",
-      "future of work",
-      "ai automation",
-      "bill gates on ai"
-    ],
-    "canonical": "https://sudogrep.in/insights/will-ai-replace-jobs-bill-gates-2026/",
-    "og_title": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans | SudoGrep",
-    "og_description": "Will AI replace jobs? Bill Gates is calling for \u201chuman-reserved\u201d work as AI becomes more capable. Here's what it could mean for workers, developers and businesses.",
+    "canonical": "https://sudogrep.in/insights/ai-agents-2026/",
+    "og_title": "AI Agents in 2026: How They Work and What They Can Do | SudoGrep",
+    "og_description": "AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
   },
@@ -2718,61 +837,679 @@
     "title": "Why Browser-Based Tools Are More Private in 2026 | SudoGrep",
     "description": "Understand how client-side browser-based tools process files locally using WebAssembly, WebGPU, and Canvas without uploading them to remote servers.",
     "h1": "Why Browser-Based Tools Are Becoming More Private in 2026: No Upload, No Server Processing",
-    "primary_intent": "understand if online tools process files without upload and is it better for privacy",
-    "secondary_intents": [
-      "how does client side processing work",
-      "difference between client side processing and server side processing"
-    ],
-    "primary_topic": "Privacy-First Web Apps",
+    "primary_intent": "understand client side privacy and local browser processing benefits",
+    "primary_topic": "Client-Side Computing",
     "secondary_topics": [
-      "WebAssembly and Canvas APIs",
-      "client-side processing"
-    ],
-    "search_variations": [
-      "no upload file tools",
-      "process files locally in browser",
-      "client side file processing"
-    ],
-    "target_entities": [
-      "WebAssembly",
-      "Canvas API",
-      "WebGPU",
-      "browser privacy"
-    ],
-    "related_tools": [
-      "/image-compressor/",
-      "/compress-image-to-50kb/",
-      "/image-to-pdf/"
-    ],
-    "related_guides": [],
-    "recommended_internal_links": [
-      "/insights/",
-      "/insights/will-ai-replace-jobs-bill-gates-2026/",
-      "/insights/ai-agents-2026/"
+      "WebAssembly Security",
+      "WebGPU Local AI",
+      "Canvas File Processing"
     ],
     "primary_keywords": [
-      "browser based tools"
+      "browser based tools privacy"
     ],
     "secondary_keywords": [
-      "browser-based file processing",
-      "client-side processing",
-      "local file processing",
-      "no upload tools",
-      "private online tools",
-      "image compression in browser",
-      "PDF processing in browser",
-      "WebAssembly",
-      "Canvas API",
-      "browser privacy",
-      "online file privacy",
-      "local processing vs server processing",
-      "AI in the browser",
-      "WebGPU"
+      "local browser processing security",
+      "no upload file tools privacy"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/best-free-image-compression-tools/"
+    ],
+    "recommended_internal_links": [
+      "/insights/"
     ],
     "canonical": "https://sudogrep.in/insights/browser-based-tools-private-no-upload/",
     "og_title": "Why Browser-Based Tools Are More Private in 2026 | SudoGrep",
     "og_description": "Understand how client-side browser-based tools process files locally using WebAssembly, WebGPU, and Canvas without uploading them to remote servers.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "BlogPosting"
+  },
+  "/insights/flutter-app-development-trends-2026/": {
+    "url": "/insights/flutter-app-development-trends-2026/",
+    "title": "Flutter App Development Trends in 2026 | SudoGrep",
+    "description": "Explore the top Flutter mobile engineering trends in 2026: WebAssembly (WASM), local-first databases, on-device AI integration, and riverpod patterns.",
+    "h1": "Flutter App Development Trends in 2026",
+    "primary_intent": "explore flutter app development trends in 2026",
+    "primary_topic": "Flutter Mobile Engineering",
+    "secondary_topics": [
+      "Flutter WASM",
+      "Local-First Mobile Architecture",
+      "On-Device Machine Learning"
+    ],
+    "primary_keywords": [
+      "flutter app development trends 2026"
+    ],
+    "secondary_keywords": [
+      "flutter 2026 architecture",
+      "flutter mobile engineering trends"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/flutter-development/"
+    ],
+    "canonical": "https://sudogrep.in/insights/flutter-app-development-trends-2026/",
+    "og_title": "Flutter App Development Trends in 2026 | SudoGrep",
+    "og_description": "Explore the top Flutter mobile engineering trends in 2026: WebAssembly (WASM), local-first databases, on-device AI integration, and riverpod patterns.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
+  },
+  "/insights/how-ai-agents-are-changing-software-development/": {
+    "url": "/insights/how-ai-agents-are-changing-software-development/",
+    "title": "How AI Agents Are Changing Software Development | SudoGrep",
+    "description": "Discover how task-oriented autonomous AI agents are moving beyond autocomplete assistants to automate software engineering workflows.",
+    "h1": "How AI Agents Are Changing Software Development",
+    "primary_intent": "understand ai agent impact on software development",
+    "primary_topic": "AI Engineering",
+    "secondary_topics": [
+      "Autonomous Coding Agents",
+      "Dev Workflow Automation",
+      "LLM Agent Tools"
+    ],
+    "primary_keywords": [
+      "how ai agents change software development"
+    ],
+    "secondary_keywords": [
+      "ai agents software engineering",
+      "autonomous coding agents 2026"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/ai-development/"
+    ],
+    "canonical": "https://sudogrep.in/insights/how-ai-agents-are-changing-software-development/",
+    "og_title": "How AI Agents Are Changing Software Development | SudoGrep",
+    "og_description": "Discover how task-oriented autonomous AI agents are moving beyond autocomplete assistants to automate software engineering workflows.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
+  },
+  "/insights/will-ai-replace-jobs-bill-gates-2026/": {
+    "url": "/insights/will-ai-replace-jobs-bill-gates-2026/",
+    "title": "Will AI Replace Jobs? Bill Gates on AI & Work | SudoGrep",
+    "description": "Will AI replace jobs? Bill Gates is calling for “human-reserved” work as AI becomes more capable. Here's what it could mean for workers and businesses.",
+    "h1": "Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans",
+    "primary_intent": "read bill gates insights on ai replacement of human jobs",
+    "primary_topic": "AI Automation & Work",
+    "secondary_topics": [
+      "Human Reserved Work",
+      "Future of Coding Jobs",
+      "AI Economic Impact"
+    ],
+    "primary_keywords": [
+      "will ai replace jobs bill gates"
+    ],
+    "secondary_keywords": [
+      "bill gates ai job prediction 2026",
+      "human reserved jobs ai"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/insights/"
+    ],
+    "canonical": "https://sudogrep.in/insights/will-ai-replace-jobs-bill-gates-2026/",
+    "og_title": "Will AI Replace Jobs? Bill Gates on AI & Work | SudoGrep",
+    "og_description": "Will AI replace jobs? Bill Gates is calling for “human-reserved” work as AI becomes more capable. Here's what it could mean for workers and businesses.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "BlogPosting"
+  },
+  "/about/": {
+    "url": "/about/",
+    "title": "About SudoGrep — Software Studio & Tool Developers",
+    "description": "Learn about SudoGrep's mission: building privacy-first client-side web tools, offline mobile applications, and intelligent custom software.",
+    "h1": "About SudoGrep",
+    "primary_intent": "company background and engineering philosophy",
+    "primary_topic": "SudoGrep Organization",
+    "secondary_topics": [
+      "Client-Side Privacy",
+      "Offline First Architecture",
+      "Open Software Standards"
+    ],
+    "primary_keywords": [
+      "about sudogrep"
+    ],
+    "secondary_keywords": [
+      "sudogrep company profile",
+      "privacy first software studio"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/contact/",
+      "/services/",
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/about/",
+    "og_title": "About SudoGrep — Software Studio & Tool Developers",
+    "og_description": "Learn about SudoGrep's mission: building privacy-first client-side web tools, offline mobile applications, and intelligent custom software.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "AboutPage"
+  },
+  "/contact/": {
+    "url": "/contact/",
+    "title": "Contact SudoGrep — Get in Touch & Book a Consultation",
+    "description": "Contact the SudoGrep software engineering team for project inquiries, custom software development, mobile apps, or support questions.",
+    "h1": "Contact SudoGrep",
+    "primary_intent": "contact company for business inquiries or support",
+    "primary_topic": "SudoGrep Contact",
+    "secondary_topics": [
+      "Project Consultation",
+      "Technical Support",
+      "Software Engineering Contact"
+    ],
+    "primary_keywords": [
+      "contact sudogrep"
+    ],
+    "secondary_keywords": [
+      "sudogrep email support",
+      "book software engineering call"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/",
+      "/about/"
+    ],
+    "canonical": "https://sudogrep.in/contact/",
+    "og_title": "Contact SudoGrep — Get in Touch & Book a Consultation",
+    "og_description": "Contact the SudoGrep software engineering team for project inquiries, custom software development, mobile apps, or support questions.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "ContactPage"
+  },
+  "/privacy-policy.html": {
+    "url": "/privacy-policy.html",
+    "title": "Privacy Policy — SudoGrep Privacy Commitments",
+    "description": "Read SudoGrep's official privacy policy. Learn how our browser tools run 100% on-device with zero tracking cookies and zero remote file uploads.",
+    "h1": "Privacy Policy",
+    "primary_intent": "read user privacy commitments and data handling policies",
+    "primary_topic": "Data Privacy",
+    "secondary_topics": [
+      "Zero Remote Uploads",
+      "Client-Side Processing Security",
+      "No Analytics Tracking"
+    ],
+    "primary_keywords": [
+      "sudogrep privacy policy"
+    ],
+    "secondary_keywords": [
+      "on-device file privacy guarantee",
+      "no tracking browser tools policy"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/terms/",
+      "/about/"
+    ],
+    "canonical": "https://sudogrep.in/privacy-policy.html",
+    "og_title": "Privacy Policy — SudoGrep Privacy Commitments",
+    "og_description": "Read SudoGrep's official privacy policy. Learn how our browser tools run 100% on-device with zero tracking cookies and zero remote file uploads.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "WebPage"
+  },
+  "/terms/": {
+    "url": "/terms/",
+    "title": "Terms of Service — SudoGrep Legal Conditions",
+    "description": "Review the terms of service and usage conditions for SudoGrep software applications, online web tools, and digital products.",
+    "h1": "Terms of Service",
+    "primary_intent": "read legal terms of service for software tools and mobile apps",
+    "primary_topic": "Terms of Service",
+    "secondary_topics": [
+      "Software Usage Terms",
+      "Licensing Rights",
+      "User Responsibility"
+    ],
+    "primary_keywords": [
+      "sudogrep terms of service"
+    ],
+    "secondary_keywords": [
+      "sudogrep legal terms",
+      "software usage conditions"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/privacy-policy.html",
+      "/about/"
+    ],
+    "canonical": "https://sudogrep.in/terms/",
+    "og_title": "Terms of Service — SudoGrep Legal Conditions",
+    "og_description": "Review the terms of service and usage conditions for SudoGrep software applications, online web tools, and digital products.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "WebPage"
+  },
+  "/services/": {
+    "url": "/services/",
+    "title": "Software Engineering Services — SudoGrep",
+    "description": "Custom software engineering services by SudoGrep. We build high-performance mobile apps, AI solutions, WebAssembly tools, and full-stack systems.",
+    "h1": "Software Engineering Services",
+    "primary_intent": "hire software engineering development agency",
+    "primary_topic": "Software Engineering Services",
+    "secondary_topics": [
+      "Mobile App Engineering",
+      "AI System Integration",
+      "Web Architecture"
+    ],
+    "primary_keywords": [
+      "software engineering services"
+    ],
+    "secondary_keywords": [
+      "custom app development services",
+      "software development studio"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/mobile-app-development/",
+      "/services/ai-development/",
+      "/services/flutter-development/"
+    ],
+    "canonical": "https://sudogrep.in/services/",
+    "og_title": "Software Engineering Services — SudoGrep",
+    "og_description": "Custom software engineering services by SudoGrep. We build high-performance mobile apps, AI solutions, WebAssembly tools, and full-stack systems.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "Service"
+  },
+  "/services/mobile-app-development/": {
+    "url": "/services/mobile-app-development/",
+    "title": "Mobile App Development Services — Android & iOS | SudoGrep",
+    "description": "Native and cross-platform mobile application development services. Offline-first architectures, on-device AI models, and smooth 60fps UIs.",
+    "h1": "Mobile App Development Services",
+    "primary_intent": "hire mobile app development company for android and ios",
+    "primary_topic": "Mobile Development",
+    "secondary_topics": [
+      "Android Apps",
+      "iOS App Development",
+      "Flutter Cross-Platform"
+    ],
+    "primary_keywords": [
+      "mobile app development services"
+    ],
+    "secondary_keywords": [
+      "ios and android development services",
+      "custom mobile app developers"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/flutter-development/",
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/services/mobile-app-development/",
+    "og_title": "Mobile App Development Services — Android & iOS | SudoGrep",
+    "og_description": "Native and cross-platform mobile application development services. Offline-first architectures, on-device AI models, and smooth 60fps UIs.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "Service"
+  },
+  "/services/flutter-development/": {
+    "url": "/services/flutter-development/",
+    "title": "Flutter Development Services — Cross-Platform Apps | SudoGrep",
+    "description": "Build high-performance Flutter mobile and desktop apps with SudoGrep. Native performance, responsive design, state management, and clean code.",
+    "h1": "Flutter App Development Services",
+    "primary_intent": "hire flutter app development experts",
+    "primary_topic": "Flutter App Engineering",
+    "secondary_topics": [
+      "Flutter Mobile Apps",
+      "Flutter Web WASM",
+      "Riverpod Architecture"
+    ],
+    "primary_keywords": [
+      "flutter development services"
+    ],
+    "secondary_keywords": [
+      "cross platform flutter app development",
+      "hire flutter app developers"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/mobile-app-development/",
+      "/insights/flutter-app-development-trends-2026/"
+    ],
+    "canonical": "https://sudogrep.in/services/flutter-development/",
+    "og_title": "Flutter Development Services — Cross-Platform Apps | SudoGrep",
+    "og_description": "Build high-performance Flutter mobile and desktop apps with SudoGrep. Native performance, responsive design, state management, and clean code.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "Service"
+  },
+  "/services/ai-development/": {
+    "url": "/services/ai-development/",
+    "title": "AI Development Services — On-Device & Cloud AI | SudoGrep",
+    "description": "Custom AI development services. We build autonomous AI agents, local RAG pipelines, LLM integrations, and privacy-first machine learning tools.",
+    "h1": "AI Development Services",
+    "primary_intent": "hire custom AI agent and LLM development engineers",
+    "primary_topic": "AI Software Engineering",
+    "secondary_topics": [
+      "Autonomous AI Agents",
+      "Local RAG Systems",
+      "On-Device ML Models"
+    ],
+    "primary_keywords": [
+      "ai development services"
+    ],
+    "secondary_keywords": [
+      "custom ai agent developers",
+      "local llm integration agency"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/rag-development/",
+      "/ai-solutions/"
+    ],
+    "canonical": "https://sudogrep.in/services/ai-development/",
+    "og_title": "AI Development Services — On-Device & Cloud AI | SudoGrep",
+    "og_description": "Custom AI development services. We build autonomous AI agents, local RAG pipelines, LLM integrations, and privacy-first machine learning tools.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "Service"
+  },
+  "/services/rag-development/": {
+    "url": "/services/rag-development/",
+    "title": "RAG Development Services — AI Retrieval Pipelines | SudoGrep",
+    "description": "Custom Retrieval-Augmented Generation (RAG) system development. Build private vector databases, document search pipelines, and enterprise LLMs.",
+    "h1": "RAG System Development Services",
+    "primary_intent": "hire RAG document search system developers",
+    "primary_topic": "Retrieval-Augmented Generation",
+    "secondary_topics": [
+      "Vector Search Databases",
+      "Enterprise Document AI",
+      "Private LLM Embeddings"
+    ],
+    "primary_keywords": [
+      "rag development services"
+    ],
+    "secondary_keywords": [
+      "retrieval augmented generation developers",
+      "custom vector search pipeline"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/ai-development/",
+      "/ai-solutions/"
+    ],
+    "canonical": "https://sudogrep.in/services/rag-development/",
+    "og_title": "RAG Development Services — Retrieval Augmented Generation | SudoGrep",
+    "og_description": "Custom Retrieval-Augmented Generation (RAG) system development. Build private vector databases, document search pipelines, and enterprise LLMs.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "Service"
+  },
+  "/ai-solutions/": {
+    "url": "/ai-solutions/",
+    "title": "AI Solutions & Autonomous Agents — SudoGrep",
+    "description": "Explore SudoGrep's specialized AI solutions: task-oriented autonomous agents, client-side ML tools, RAG knowledge bases, and smart developer utilities.",
+    "h1": "AI Solutions & Autonomous Agents",
+    "primary_intent": "explore custom AI software solutions and agent capabilities",
+    "primary_topic": "AI Products & Solutions",
+    "secondary_topics": [
+      "Task Oriented AI Agents",
+      "Client-Side Machine Learning",
+      "Knowledge Base RAG"
+    ],
+    "primary_keywords": [
+      "ai solutions sudogrep"
+    ],
+    "secondary_keywords": [
+      "autonomous ai agent software",
+      "on-device ai tools studio"
+    ],
+    "related_tools": [],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/services/ai-development/",
+      "/insights/ai-agents-2026/"
+    ],
+    "canonical": "https://sudogrep.in/ai-solutions/",
+    "og_title": "AI Solutions & Autonomous Agents — SudoGrep",
+    "og_description": "Explore SudoGrep's specialized AI solutions: task-oriented autonomous agents, client-side ML tools, RAG knowledge bases, and smart developer utilities.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "WebPage"
+  },
+  "/apps/": {
+    "url": "/apps/",
+    "title": "Android Apps & Utilities Catalog — SudoGrep",
+    "description": "Browse privacy-first Android apps built by SudoGrep. Explore file converters, offline utilities, expense trackers, and logic puzzle games on Google Play.",
+    "h1": "Published Android Applications",
+    "primary_intent": "browse sudogrep android mobile apps catalog",
+    "primary_topic": "Android Mobile Apps",
+    "secondary_topics": [
+      "Offline Android Utilities",
+      "Privacy First Apps",
+      "Google Play Showcase"
+    ],
+    "primary_keywords": [
+      "sudogrep android apps"
+    ],
+    "secondary_keywords": [
+      "privacy focused mobile apps",
+      "offline android utility apps"
+    ],
+    "related_tools": [
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/kb-snap/",
+      "/apps/file-forge/",
+      "/apps/billbuddy/"
+    ],
+    "canonical": "https://sudogrep.in/apps/",
+    "og_title": "Android Apps & Utilities Catalog — SudoGrep",
+    "og_description": "Browse privacy-first Android apps built by SudoGrep. Explore file converters, offline utilities, expense trackers, and logic puzzle games on Google Play.",
+    "og_image": "https://sudogrep.in/assets/logo_square.png",
+    "schema_type": "CollectionPage"
+  },
+  "/apps/aarti-sangrah/": {
+    "url": "/apps/aarti-sangrah/",
+    "title": "Aarti Sangrah — Spiritual Devotional Prayers App | SudoGrep",
+    "description": "Download Aarti Sangrah for Android. Access a collection of spiritual prayers and traditional lyrics completely offline with an adjustable UI.",
+    "h1": "Aarti Sangrah",
+    "primary_intent": "download aarti sangrah android application",
+    "primary_topic": "Spiritual Devotional App",
+    "secondary_topics": [
+      "Offline Prayer Collection",
+      "Adjustable Font Reader",
+      "Zero Permissions App"
+    ],
+    "primary_keywords": [
+      "aarti sangrah app"
+    ],
+    "secondary_keywords": [
+      "offline devotional app android",
+      "aarti sangrah download"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/aarti-sangrah/",
+    "og_title": "Aarti Sangrah — Spiritual Devotional Prayers App | SudoGrep",
+    "og_description": "Download Aarti Sangrah for Android. Access a collection of spiritual prayers and traditional lyrics completely offline with an adjustable UI.",
+    "og_image": "https://sudogrep.in/assets/apps/aarti_sangrah_icon.png",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/billbuddy/": {
+    "url": "/apps/billbuddy/",
+    "title": "BillBuddy — Bill Reminder & Payment Tracker | SudoGrep",
+    "description": "Download BillBuddy for Android. Track EMIs, manage subscriptions, set payment notifications, and export expense reports locally and securely.",
+    "h1": "BillBuddy",
+    "primary_intent": "download billbuddy bill tracker app for android",
+    "primary_topic": "Expense & Bill Tracker",
+    "secondary_topics": [
+      "Local Storage Financial Logs",
+      "EMI Payment Reminders",
+      "PDF Expense Reports"
+    ],
+    "primary_keywords": [
+      "billbuddy app"
+    ],
+    "secondary_keywords": [
+      "bill reminder app android",
+      "offline expense tracker app"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/billbuddy/",
+    "og_title": "BillBuddy — Bill Reminder & Payment Tracker | SudoGrep",
+    "og_description": "Download BillBuddy for Android. Track EMIs, manage subscriptions, set payment notifications, and export expense reports locally and securely.",
+    "og_image": "https://sudogrep.in/assets/apps/billbuddy_icon.png",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/file-forge/": {
+    "url": "/apps/file-forge/",
+    "title": "File Forge — Offline File Converter & Extractor | SudoGrep",
+    "description": "Download File Forge for Android. Convert image and document formats, extract text via on-device OCR, and view metadata locally and securely.",
+    "h1": "File Forge",
+    "primary_intent": "download file forge converter app for android",
+    "primary_topic": "Offline File Utility",
+    "secondary_topics": [
+      "On-Device OCR Text Scanner",
+      "Local Image Document Converter",
+      "Zero Cloud Uploads"
+    ],
+    "primary_keywords": [
+      "file forge app"
+    ],
+    "secondary_keywords": [
+      "offline file converter android",
+      "local ocr text extractor"
+    ],
+    "related_tools": [
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
+    ],
+    "related_guides": [
+      "/guides/how-to-convert-png-to-pdf/"
+    ],
+    "recommended_internal_links": [
+      "/apps/",
+      "/tools/image-to-pdf/"
+    ],
+    "canonical": "https://sudogrep.in/apps/file-forge/",
+    "og_title": "File Forge — Offline File Converter & Extractor | SudoGrep",
+    "og_description": "Download File Forge for Android. Convert image and document formats, extract text via on-device OCR, and view metadata locally and securely.",
+    "og_image": "https://sudogrep.in/assets/apps/file_forge_icon.png",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/ghost-trap/": {
+    "url": "/apps/ghost-trap/",
+    "title": "Ghost Trap — Tactical Arcade Puzzle Android Game | SudoGrep",
+    "description": "Download Ghost Trap for Android. A territory-claiming arcade puzzle game featuring offline play, cloud save, powerups and landmarks.",
+    "h1": "Ghost Trap",
+    "primary_intent": "download ghost trap android puzzle game",
+    "primary_topic": "Arcade Puzzle Game",
+    "secondary_topics": [
+      "Offline Campaign Levels",
+      "Territory Claiming Gameplay",
+      "Google Play Games Save"
+    ],
+    "primary_keywords": [
+      "ghost trap game"
+    ],
+    "secondary_keywords": [
+      "offline arcade puzzle android",
+      "ghost trap game download"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/ghost-trap/",
+    "og_title": "Ghost Trap — Tactical Arcade Puzzle Android Game | SudoGrep",
+    "og_description": "Download Ghost Trap for Android. A territory-claiming arcade puzzle game featuring offline play, cloud save, powerups and landmarks.",
+    "og_image": "https://sudogrep.in/assets/apps/ghost_trap_icon.png",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/kb-snap/": {
+    "url": "/apps/kb-snap/",
+    "title": "KB Snap — Photo Compressor Android App | SudoGrep",
+    "description": "Download KB Snap for Android. Compress photos, scale signature assets, and reduce image sizes to 50KB offline with complete data privacy.",
+    "h1": "KB Snap",
+    "primary_intent": "download kb snap photo compressor app for android",
+    "primary_topic": "Mobile Photo Compression",
+    "secondary_topics": [
+      "Batch Image Compression",
+      "On-Device JPEG Optimizer",
+      "Aspect Ratio Cropping"
+    ],
+    "primary_keywords": [
+      "kb snap app"
+    ],
+    "secondary_keywords": [
+      "offline photo compressor android",
+      "compress image to 50kb app"
+    ],
+    "related_tools": [
+      "/tools/compress-image-to-50kb/",
+      "/tools/image-compressor/"
+    ],
+    "related_guides": [
+      "/guides/how-to-compress-image-to-50kb/"
+    ],
+    "recommended_internal_links": [
+      "/apps/",
+      "/tools/compress-image-to-50kb/"
+    ],
+    "canonical": "https://sudogrep.in/apps/kb-snap/",
+    "og_title": "KB Snap — Photo Compressor Android App | SudoGrep",
+    "og_description": "Download KB Snap for Android. Compress photos, scale signature assets, and reduce image sizes to 50KB offline with complete data privacy.",
+    "og_image": "https://sudogrep.in/assets/apps/kb_snap_icon.png",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/zip-connect/": {
+    "url": "/apps/zip-connect/",
+    "title": "Zip Connect — Offline Logic Puzzle Game | SudoGrep",
+    "description": "Download Zip Connect for Android. Enjoy a clean, ad-free logic node puzzle game offline with beautiful transitions and no tracking.",
+    "h1": "Zip Connect",
+    "primary_intent": "download zip connect offline logic puzzle game for android",
+    "primary_topic": "Logic Puzzle Game",
+    "secondary_topics": [
+      "Offline Node Puzzles",
+      "Ad-Free Gaming",
+      "Zero User Tracking"
+    ],
+    "primary_keywords": [
+      "zip connect game"
+    ],
+    "secondary_keywords": [
+      "offline logic puzzle android",
+      "ad free node connect puzzle"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/zip-connect/",
+    "og_title": "Zip Connect — Offline Logic Puzzle Game | SudoGrep",
+    "og_description": "Download Zip Connect for Android. Enjoy a clean, ad-free logic node puzzle game offline with beautiful transitions and no tracking.",
+    "og_image": "https://sudogrep.in/assets/apps/zip_connect_icon.png",
+    "schema_type": "SoftwareApplication"
   }
 }

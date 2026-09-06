@@ -8,12 +8,12 @@
           </ul>
 
           <div class="article-callout">
-            <p><strong>Tool Access:</strong> SudoGrep's <a href="/image-compressor/">image compressor</a> lets you select either JPEG (lossy) or PNG (lossless) as the export format. You can also target a specific file size like 50KB or 200KB.</p>
+            <p><strong>Tool Access:</strong> SudoGrep's <a href="/tools/image-compressor/">image compressor</a> lets you select either JPEG (lossy) or PNG (lossless) as the export format. You can also target a specific file size like 50KB or 200KB.</p>
           </div>
 
           <h2>How Dimension Resizing Helps Quality</h2>
           <p>This is the most underutilised technique for quality-preserving compression. Consider a 4000×3000 pixel camera photo that you need to compress to 200KB. If you apply lossy compression directly, the algorithm must discard a large amount of data to hit 200KB, causing visible blocking artifacts.</p>
-          <p>Instead, if you first <a href="/image-resizer/">resize the image</a> to 1200×900 pixels (a 9× reduction in total pixel count), the 200KB budget now covers far fewer pixels — meaning each pixel can be encoded at higher quality. The result is a visually sharper image at the same file size.</p>
+          <p>Instead, if you first <a href="/tools/image-resizer/">resize the image</a> to 1200×900 pixels (a 9× reduction in total pixel count), the 200KB budget now covers far fewer pixels — meaning each pixel can be encoded at higher quality. The result is a visually sharper image at the same file size.</p>
           <p><strong>Rule of thumb:</strong> Always resize first, then compress.</p>
 
           <h2>Format Recommendations by Use Case</h2>
@@ -39,7 +39,7 @@
           <div class="tool-promo-box">
             <h3 class="tool-promo-title">Compress Your Images Now</h3>
             <p class="tool-promo-desc">Use SudoGrep's free browser-based compressor to reduce image sizes with selectable quality levels. No upload required.</p>
-            <a href="/image-compressor/" class="btn btn-accent" style="align-self: flex-start;">Open Image Compressor →</a>
+            <a href="/tools/image-compressor/" class="btn btn-accent" style="align-self: flex-start;">Open Image Compressor →</a>
           </div>
 
           <!-- FAQ SECTION -->
@@ -60,3 +60,14 @@
               <div class="faq-question">Does resizing help preserve quality during compression?</div>
               <div class="faq-answer">Yes. Reducing pixel dimensions before compressing allows the encoder to use higher quality settings to hit the same file size target, resulting in a sharper final image than compressing a large image aggressively.</div>
             </div>
+
+          <!-- RELATED TOOLS AND GUIDES -->
+          <section class="related-resources" style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+            <h3>Related Web Tools & Guides</h3>
+            <ul>
+                <li><a href="/tools/image-compressor/">Free Image Compressor Online</a> — Compress JPG, PNG, and WebP images to your desired file size directly in your browser.</li>
+                <li><a href="/tools/compress-image-to-50kb/">Compress Image to 50KB Online</a> — Compress images to 50KB, 20KB, 100KB, or 200KB online for official portals and forms.</li>
+                <li><a href="/guides/how-to-reduce-jpg-size/">How to Reduce JPG File Size Without Quality Loss</a> — Learn how to reduce and compress JPG and JPEG image file sizes without losing visual quality.</li>
+                <li><a href="/guides/best-free-image-compression-tools/">Best Free Image Compression Tools</a> — Compare the best free image compression tools.</li>
+            </ul>
+          </section>

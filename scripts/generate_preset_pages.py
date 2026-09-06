@@ -4,7 +4,7 @@ import json
 import re
 
 def generate_pages():
-    print("Generating preconfigured SEO pages...")
+    print("Generating preconfigured SEO pages & tools architecture...")
     
     # Load configuration
     with open("data/pages.json", "r", encoding="utf-8") as f:
@@ -26,7 +26,7 @@ def generate_pages():
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Free Tools",
-                    "item": "https://sudogrep.in/free-tools/"
+                    "item": "https://sudogrep.in/tools/"
                 },
                 {
                     "@type": "ListItem",
@@ -60,6 +60,10 @@ def generate_pages():
 
     # Helper to update head tags and related link blocks
     def compile_page(base_file, url, custom_modifications=None):
+        if not os.path.exists(base_file):
+            print(f"Warning: Base file '{base_file}' not found!")
+            return
+
         with open(base_file, "r", encoding="utf-8") as f:
             html = f.read()
             
@@ -94,15 +98,12 @@ def generate_pages():
                 html = html[:breadcrumb_idx] + f'<span aria-current="page">{h1}</span>' + html[breadcrumb_end + len('</span>'):]
                 
         # Replace H1 heading in main section
-        # Finds <h1 class="..."> or <h1 style="...">
-        html = re.sub(r'<h1.*?>.*?</h1>', f'<h1 style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">{h1}</h1>', html)
+        html = re.sub(r'<h1.*?>.*?</h1>', f'<h1 style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">{h1}</h1>', html, count=1)
         
         # Replace JSON-LD schema blocks in head
         head_end = html.find('</head>')
         if head_end != -1:
-            # strip old application/ld+json tags in head
             html = re.sub(r'\s*<script type="application/ld+json">.*?</script>', '', html, flags=re.DOTALL)
-            # Re-locate head_end since length changed
             head_end = html.find('</head>')
             schemas_html = get_schemas_html(url, title, desc, h1, schema_type)
             html = html[:head_end] + schemas_html + "\n" + html[head_end:]
@@ -141,7 +142,7 @@ def generate_pages():
             flags=re.DOTALL
         )
 
-        # Match Related Tools & Guides combined section and replace (for compress presets)
+        # Match Related Tools & Guides combined section and replace
         html = re.sub(
             r'<h2>Related Tools &amp; Guides</h2>\s*<ul>.*?</ul>', 
             f'<h2>Related Tools &amp; Guides</h2>\n            <ul>\n{tools_list_html}{guides_list_html}            </ul>', 
@@ -159,134 +160,48 @@ def generate_pages():
         
         with open(os.path.join(dest_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(html)
-        print(f"Generated and aligned: {url}")
+        print(f"Generated canonical page: {url}")
 
-    # Custom modification rules
-    
-    # 1. 100KB modifications
-    def mod_100kb(h):
-        h = h.replace('value="50"', 'value="100"')
-        h = h.replace('fifty kilobytes', 'one hundred kilobytes')
-        h = h.replace('under 50KB', 'under 100KB')
-        h = h.replace('50KB', '100KB').replace("50kb", "100kb")
-        return h
-        
-    compile_page("compress-image-to-50kb/index.html", "/compress-image-to-100kb/", mod_100kb)
+    # 1. Compile primary tool pages
+    compile_page("tools/image-compressor/index.html", "/tools/image-compressor/")
+    compile_page("tools/compress-image-to-50kb/index.html", "/tools/compress-image-to-50kb/")
+    compile_page("tools/image-resizer/index.html", "/tools/image-resizer/")
+    compile_page("tools/image-to-pdf/index.html", "/tools/image-to-pdf/")
+    compile_page("tools/jpg-to-pdf/index.html", "/tools/jpg-to-pdf/")
 
-    # 2. 200KB modifications
-    def mod_200kb(h):
-        h = h.replace('value="50"', 'value="200"')
-        h = h.replace('fifty kilobytes', 'two hundred kilobytes')
-        h = h.replace('under 50KB', 'under 200KB')
-        h = h.replace('50KB', '200KB').replace("50kb", "200kb")
-        h = h.replace('/guides/how-to-compress-image-to-200kb/', '/guides/how-to-compress-image-to-50kb/')
-        return h
-        
-    compile_page("compress-image-to-50kb/index.html", "/compress-image-to-200kb/", mod_200kb)
+    # 2. Generate 301 static redirects for legacy preset/converter paths
+    preset_redirects = [
+        ("compress-image-to-100kb", "/tools/compress-image-to-50kb/"),
+        ("compress-image-to-200kb", "/tools/compress-image-to-50kb/"),
+        ("compress-jpg-to-50kb", "/tools/compress-image-to-50kb/"),
+        ("compress-png-to-50kb", "/tools/compress-image-to-50kb/"),
+        ("resize-image-for-online-forms", "/guides/how-to-resize-image-for-online-forms/"),
+        ("resize-image-for-passport", "/guides/how-to-resize-image-for-online-forms/"),
+        ("image-converter", "/tools/image-compressor/"),
+        ("jpg-to-png", "/tools/image-compressor/"),
+        ("png-to-jpg", "/tools/image-compressor/"),
+        ("webp-to-jpg", "/tools/image-compressor/"),
+        ("jpg-to-webp", "/tools/image-compressor/")
+    ]
+    for dir_path, target_url in preset_redirects:
+        os.makedirs(dir_path, exist_ok=True)
+        redirect_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={target_url}">
+  <link rel="canonical" href="https://sudogrep.in{target_url}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>
+  <script>window.location.replace('{target_url}');</script>
+</body>
+</html>"""
+        with open(os.path.join(dir_path, "index.html"), "w", encoding="utf-8") as f:
+            f.write(redirect_html)
 
-    # 3. Compress JPG to 50KB modifications
-    def mod_jpg50(h):
-        h = h.replace('<option value="image/jpeg">Convert to JPEG</option>', '<option value="image/jpeg" selected>Convert to JPEG</option>')
-        h = h.replace('Compress Image to 50KB', 'Compress JPG to 50KB')
-        return h
-        
-    compile_page("compress-image-to-50kb/index.html", "/compress-jpg-to-50kb/", mod_jpg50)
-
-    # 4. Compress PNG to 50KB modifications
-    def mod_png50(h):
-        h = h.replace('<option value="image/jpeg">Convert to JPEG</option>\n                  <option value="image/png">Convert to PNG (Lossless)</option>', '<option value="image/jpeg">Convert to JPEG</option>\n                  <option value="image/png" selected>Convert to PNG (Lossless)</option>')
-        h = h.replace('Compress Image to 50KB', 'Compress PNG to 50KB')
-        return h
-        
-    compile_page("compress-image-to-50kb/index.html", "/compress-png-to-50kb/", mod_png50)
-
-    # 5. Resize Image for Online Forms
-    compile_page("image-resizer/index.html", "/resize-image-for-online-forms/")
-
-    # 6. Resize Image for Passport
-    compile_page("image-resizer/index.html", "/resize-image-for-passport/")
-
-    # 7. Image Converter
-    def mod_converter_hub(h):
-        # We will replace the entire grid-3 items in converter hub
-        custom_grid = """          <!-- JPG to PNG Card -->
-          <div class="card">
-            <span class="card-badge card-badge-live app-catalog-badge">Live</span>
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-            </div>
-            <h3 class="card-title">JPG to PNG Converter</h3>
-            <p class="card-desc">Convert JPG images to PNG format locally. Excellent for screenshots and high contrast design files.</p>
-            <a href="/jpg-to-png/" class="btn btn-primary" style="align-self: flex-start; margin-top: auto;">Open Converter</a>
-          </div>
-
-          <!-- PNG to JPG Card -->
-          <div class="card">
-            <span class="card-badge card-badge-live app-catalog-badge">Live</span>
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-            </div>
-            <h3 class="card-title">PNG to JPG Converter</h3>
-            <p class="card-desc">Convert PNG images to JPG format locally. Standardize photo assets and signature files for forms.</p>
-            <a href="/png-to-jpg/" class="btn btn-primary" style="align-self: flex-start; margin-top: auto;">Open Converter</a>
-          </div>
-
-          <!-- WebP to JPG Card -->
-          <div class="card">
-            <span class="card-badge card-badge-live app-catalog-badge">Live</span>
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-            </div>
-            <h3 class="card-title">WebP to JPG Converter</h3>
-            <p class="card-desc">Convert modern WebP format images to widely compatible JPG format locally in your browser.</p>
-            <a href="/webp-to-jpg/" class="btn btn-primary" style="align-self: flex-start; margin-top: auto;">Open Converter</a>
-          </div>
-
-          <!-- JPG to WebP Card -->
-          <div class="card">
-            <span class="card-badge card-badge-live app-catalog-badge">Live</span>
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-            </div>
-            <h3 class="card-title">JPG to WebP Converter</h3>
-            <p class="card-desc">Convert JPG images to the modern WebP format. Achieve high visual quality at much smaller sizes.</p>
-            <a href="/jpg-to-webp/" class="btn btn-primary" style="align-self: flex-start; margin-top: auto;">Open Converter</a>
-          </div>"""
-        
-        idx = h.find('<div class="grid-3">')
-        if idx != -1:
-            closing_idx = h.find('</div>\n      </div>\n    </section>', idx)
-            if closing_idx != -1:
-                h = h[:idx] + '<div class="grid-3">\n' + custom_grid + '\n        ' + h[closing_idx:]
-        return h
-        
-    compile_page("free-tools/index.html", "/image-converter/", mod_converter_hub)
-
-    # 8. JPG to PNG
-    def mod_j2p(h):
-        h = h.replace('<option value="image/jpeg">Convert to JPEG</option>', '<option value="image/png" selected>Convert to PNG (Lossless)</option>')
-        return h
-    compile_page("image-compressor/index.html", "/jpg-to-png/", mod_j2p)
-
-    # 9. PNG to JPG
-    def mod_p2j(h):
-        h = h.replace('<option value="image/jpeg">Convert to JPEG</option>', '<option value="image/jpeg" selected>Convert to JPEG</option>')
-        return h
-    compile_page("image-compressor/index.html", "/png-to-jpg/", mod_p2j)
-
-    # 10. WebP to JPG
-    def mod_w2j(h):
-        h = h.replace('<option value="image/jpeg">Convert to JPEG</option>', '<option value="image/jpeg" selected>Convert to JPEG</option>')
-        return h
-    compile_page("image-compressor/index.html", "/webp-to-jpg/", mod_w2j)
-
-    # 11. JPG to WebP
-    def mod_j2w(h):
-        h = h.replace('<option value="image/jpeg">Convert to JPEG</option>', '<option value="image/webp" selected>Convert to WebP</option>')
-        return h
-    compile_page("image-compressor/index.html", "/jpg-to-webp/", mod_j2w)
-
-    print("All preset pages generated successfully.")
+    print("All canonical tool pages and preset redirects generated successfully.")
 
 if __name__ == "__main__":
     generate_pages()

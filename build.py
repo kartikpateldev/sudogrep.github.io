@@ -612,19 +612,28 @@ def build_site():
         f.write(insights_idx_html)
     print("Insights landing page (insights/index.html) compiled.")
 
-    # 5c. Compile Backwards-Compatible Redirects for legacy tools paths
-    # These redirects ensure that old indexed search results pointing to /tools/... do not 404.
+    # 5c. Compile Backwards-Compatible Redirects for legacy root tool paths
+    # These redirects ensure that old indexed search results pointing to /image-compressor/ redirect to /tools/image-compressor/.
     legacy_tools = [
-        ("", "/free-tools/"),
-        ("compress-image-to-50kb", "/compress-image-to-50kb/"),
-        ("image-compressor", "/image-compressor/"),
-        ("image-resizer", "/image-resizer/"),
-        ("image-to-pdf", "/image-to-pdf/"),
-        ("jpg-to-pdf", "/jpg-to-pdf/")
+        ("image-compressor", "/tools/image-compressor/"),
+        ("compress-image-to-50kb", "/tools/compress-image-to-50kb/"),
+        ("image-resizer", "/tools/image-resizer/"),
+        ("image-to-pdf", "/tools/image-to-pdf/"),
+        ("jpg-to-pdf", "/tools/jpg-to-pdf/"),
+        ("compress-jpg-to-50kb", "/tools/compress-image-to-50kb/"),
+        ("compress-png-to-50kb", "/tools/compress-image-to-50kb/"),
+        ("compress-image-to-100kb", "/tools/compress-image-to-50kb/"),
+        ("compress-image-to-200kb", "/tools/compress-image-to-50kb/"),
+        ("image-converter", "/tools/image-compressor/"),
+        ("jpg-to-png", "/tools/image-compressor/"),
+        ("png-to-jpg", "/tools/image-compressor/"),
+        ("webp-to-jpg", "/tools/image-compressor/"),
+        ("jpg-to-webp", "/tools/image-compressor/"),
+        ("resize-image-for-online-forms", "/guides/how-to-resize-image-for-online-forms/"),
+        ("resize-image-for-passport", "/guides/how-to-resize-image-for-online-forms/")
     ]
-    for subpath, target_url in legacy_tools:
-        tools_dir = os.path.join("tools", subpath)
-        os.makedirs(tools_dir, exist_ok=True)
+    for old_path, target_url in legacy_tools:
+        os.makedirs(old_path, exist_ok=True)
         redirect_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -635,11 +644,12 @@ def build_site():
 </head>
 <body>
   <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>
+  <script>window.location.replace('{target_url}');</script>
 </body>
 </html>"""
-        with open(os.path.join(tools_dir, "index.html"), "w", encoding="utf-8") as f:
+        with open(os.path.join(old_path, "index.html"), "w", encoding="utf-8") as f:
             f.write(redirect_html)
-    print("Legacy tools redirects compiled.")
+    print("Legacy root tools redirects compiled.")
 
     print("Site compilation complete. Ready for static deployment.")
 

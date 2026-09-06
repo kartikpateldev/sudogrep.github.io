@@ -123,6 +123,20 @@ def align_static_pages():
             html = html.replace(old_footer_guide_alt, new_footer_guide_alt)
             modified = True
 
+        # Tool link canonicalization replacements:
+        tool_replacements = [
+            ('href="/image-compressor/"', 'href="/tools/image-compressor/"'),
+            ('href="/compress-image-to-50kb/"', 'href="/tools/compress-image-to-50kb/"'),
+            ('href="/image-resizer/"', 'href="/tools/image-resizer/"'),
+            ('href="/image-to-pdf/"', 'href="/tools/image-to-pdf/"'),
+            ('href="/jpg-to-pdf/"', 'href="/tools/jpg-to-pdf/"'),
+            ('href="/free-tools/"', 'href="/tools/"')
+        ]
+        for old_tool_link, new_tool_link in tool_replacements:
+            if old_tool_link in html and 'canonical' not in html[max(0, html.find(old_tool_link)-50):html.find(old_tool_link)]:
+                html = html.replace(old_tool_link, new_tool_link)
+                modified = True
+
         # Aarti and others related guide links:
         old_rel_guides = 'href="/guides/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ How-To Guides Hub</a>'
         new_rel_guides = 'href="/blog/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ SudoGrep Insights Hub</a>'
