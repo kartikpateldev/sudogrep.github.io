@@ -574,7 +574,7 @@ def build_site():
             f.write(redirect_html)
 
     # Compile Guides Catalog Page (/guides/index.html)
-    guides_index_template_path = "templates/blog_index.html"
+    guides_index_template_path = "templates/guides_index.html"
     if os.path.exists(guides_index_template_path):
         with open(guides_index_template_path, 'r', encoding='utf-8') as f:
             guides_idx_html = f.read()
@@ -582,8 +582,6 @@ def build_site():
         guide_posts = [p for p in insights if p.get("path_prefix", "blog") == "guides"]
         guide_cards = [generate_blog_card(post, is_home=False) for post in guide_posts]
         guides_idx_html = guides_idx_html.replace("{{BLOG_LISTINGS}}", "\n".join(guide_cards))
-        guides_idx_html = guides_idx_html.replace("<title>Blog &amp; Insights — SudoGrep</title>", "<title>Free How-To Guides &amp; Tutorials — SudoGrep</title>")
-        guides_idx_html = guides_idx_html.replace("https://sudogrep.in/blog/", "https://sudogrep.in/guides/")
         guides_idx_html = inject_config_vars(guides_idx_html)
         
         os.makedirs("guides", exist_ok=True)

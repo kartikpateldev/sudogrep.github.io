@@ -246,8 +246,8 @@ def audit():
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        # Skip redirect pages
-        if 'http-equiv="refresh"' in content or 'content="0; url=' in content:
+        # Skip redirect and noindex pages
+        if 'http-equiv="refresh"' in content or 'content="0; url=' in content or 'noindex' in content.lower():
             continue
 
         parser = SEOParser(file_path)

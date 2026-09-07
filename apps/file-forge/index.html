@@ -45,34 +45,50 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "File Forge",
-  "url": "https://sudogrep.in/apps/file-forge/",
-  "description": "Download File Forge for Android. Convert image and document formats, extract text via on-device OCR, and view metadata locally and securely."
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://sudogrep.in/"
+      "@type": "SoftwareApplication",
+      "@id": "https://sudogrep.in/apps/file-forge/#application",
+      "name": "File Forge: Convert & Extract",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilityApplication",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge",
+      "description": "File Forge is your ultimate mobile file conversion and extraction companion. It supports converting files between popular formats, viewing and editing EXIF metadata, generating QR and barcodes, extracting text using advanced OCR, and optimizing your documents locally.",
+      "softwareVersion": "1.0",
+      "aggregateRating": null,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SudoGrep",
+        "url": "https://sudogrep.in"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Apps",
-      "item": "https://sudogrep.in/apps/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "File Forge",
-      "item": "https://sudogrep.in/apps/file-forge/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sudogrep.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://sudogrep.in/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "File Forge: Convert & Extract",
+          "item": "https://sudogrep.in/apps/file-forge/"
+        }
+      ]
     }
   ]
 }
@@ -89,7 +105,7 @@
       </a>
       
       <nav class="nav" id="mainNav">
-        <a href="/tools/" class="nav-link">Free Tools</a>
+        <a href="/free-tools/" class="nav-link">Free Tools</a>
         <a href="/apps/" class="nav-link active">Apps</a>
         <a href="/ai-solutions/" class="nav-link">AI Solutions</a>
         <a href="/services/" class="nav-link">Services</a>
@@ -235,8 +251,8 @@
           <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 2rem; border-radius: 16px;">
             <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">Related Web Tools</h3>
             <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                            <li style="margin-bottom: 0.5rem;"><a href="/tools/image-to-pdf/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ Image to PDF Converter</a></li>
-              <li style="margin-bottom: 0.5rem;"><a href="/tools/jpg-to-pdf/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ JPG to PDF Converter</a></li>
+                            <li style="margin-bottom: 0.5rem;"><a href="/image-to-pdf/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ Image to PDF Converter</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="/jpg-to-pdf/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ JPG to PDF Converter</a></li>
               <li style="margin-bottom: 0.5rem;"><a href="/image-converter/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ Image Converter</a></li>
 
             </ul>
@@ -284,7 +300,7 @@
         <div class="footer-column">
           <h4>Products</h4>
           <ul>
-            <li><a href="/tools/">Free Utilities</a></li>
+            <li><a href="/free-tools/">Free Utilities</a></li>
             <li><a href="/apps/">Mobile Apps</a></li>
             <li><a href="/blog/">Insights</a></li>
           </ul>

@@ -45,34 +45,50 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "BillBuddy",
-  "url": "https://sudogrep.in/apps/billbuddy/",
-  "description": "Download BillBuddy for Android. Track EMIs, manage subscriptions, set payment notifications, and export expense reports locally and securely."
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://sudogrep.in/"
+      "@type": "SoftwareApplication",
+      "@id": "https://sudogrep.in/apps/billbuddy/#application",
+      "name": "BillBuddy \u2013 Bill Tracker",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilityApplication",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder",
+      "description": "BillBuddy is a comprehensive personal finance organizer that tracks recurring payments, credit card bills, rent, loans, and subscriptions. Featuring automated reminders, calendar sync, spending category graphs, and local backups, it helps you manage your expenses seamlessly.",
+      "softwareVersion": "1.0",
+      "aggregateRating": null,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SudoGrep",
+        "url": "https://sudogrep.in"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Apps",
-      "item": "https://sudogrep.in/apps/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "BillBuddy",
-      "item": "https://sudogrep.in/apps/billbuddy/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sudogrep.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://sudogrep.in/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BillBuddy \u2013 Bill Tracker",
+          "item": "https://sudogrep.in/apps/billbuddy/"
+        }
+      ]
     }
   ]
 }
@@ -89,7 +105,7 @@
       </a>
       
       <nav class="nav" id="mainNav">
-        <a href="/tools/" class="nav-link">Free Tools</a>
+        <a href="/free-tools/" class="nav-link">Free Tools</a>
         <a href="/apps/" class="nav-link active">Apps</a>
         <a href="/ai-solutions/" class="nav-link">AI Solutions</a>
         <a href="/services/" class="nav-link">Services</a>
@@ -231,7 +247,7 @@
           <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 2rem; border-radius: 16px;">
             <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">Related Web Tools</h3>
             <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                            <li style="margin-bottom: 0.5rem;"><a href="/tools/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ Free Online Utilities</a></li>
+                            <li style="margin-bottom: 0.5rem;"><a href="/free-tools/" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ Free Online Utilities</a></li>
 
             </ul>
           </div>
@@ -277,7 +293,7 @@
         <div class="footer-column">
           <h4>Products</h4>
           <ul>
-            <li><a href="/tools/">Free Utilities</a></li>
+            <li><a href="/free-tools/">Free Utilities</a></li>
             <li><a href="/apps/">Mobile Apps</a></li>
             <li><a href="/blog/">Insights</a></li>
           </ul>
