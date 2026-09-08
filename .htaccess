@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^aarti_app/?$ aarti_sangrah.html [NC,L] 
+RewriteRule ^(en|hi)$ index.$1.html [NC,L]
