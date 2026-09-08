@@ -5,7 +5,9 @@
       "namespace": "android_app",
       "package_name": "com.kp.kartik.aarti",
       "sha256_cert_fingerprints": [
-        "<YOUR_SHA256_CERT_FINGERPRINT>"
+        "9B:5E:A4:B5:88:EC:4C:BB:AD:8C:4B:2F:6A:CE:B0:44:8A:3E:1B:EE:38:96:2B:58:07:3A:E2:E5:44:0A:2C:57",
+        "8C:5E:FB:A7:98:5F:FE:9F:6A:06:60:A8:43:7C:E8:1C:D0:51:84:7F:48:BA:E5:00:98:72:64:4C:42:C0:A0:D3",
+        "EC:CE:D8:11:CC:39:DB:BC:34:74:20:75:FD:C1:6F:96:EC:B9:40:07:E8:F8:30:60:A1:56:9D:5F:AB:04:85:CA"
       ]
     }
   }
