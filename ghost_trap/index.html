@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>GhostTrap — Coming Soon</title>
 <meta name="description" content="GhostTrap is coming soon to iOS.">
-<meta name="theme-color" content="#0f0c29">
+<meta name="theme-color" content="#0b0821">
 
 <!-- Apple mobile web app metadata -->
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,7 +16,28 @@
 <meta property="og:title" content="GhostTrap — Coming Soon">
 <meta property="og:description" content="GhostTrap is coming soon to iOS.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="./assets/app-icon.png">
+<meta property="og:image" content="./app_icon.png">
+
+<script>
+  // Run as early as possible (before CSS/body paint) so non-iOS visitors
+  // never see any UI or the background image while redirecting.
+  (function () {
+    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap";
+    var ua = navigator.userAgent || navigator.vendor || "";
+
+    var isAndroid = /Android/i.test(ua);
+    var isClassicIOS = /iPad|iPhone|iPod/i.test(ua) && !window.MSStream;
+    var isModernIPadOS =
+      navigator.platform === "MacIntel" &&
+      navigator.maxTouchPoints &&
+      navigator.maxTouchPoints > 1;
+    var isIOS = isClassicIOS || isModernIPadOS;
+
+    if (!isIOS) {
+      window.location.replace(PLAY_STORE_URL);
+    }
+  })();
+</script>
 
 <style>
   * {
@@ -35,22 +56,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    background-color: #0b0821;
     color: #ffffff;
     padding: 24px;
+  }
+
+  body.ios-bg {
+    background-image: url("./home_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .card {
     width: 100%;
     max-width: 420px;
     text-align: center;
-    padding: 40px 28px 36px;
+    padding: 36px 28px 34px;
     border-radius: 28px;
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    background: rgba(10, 6, 32, 0.55);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    box-shadow:
+      0 0 40px rgba(0, 255, 255, 0.12),
+      0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff2ea6, #7a2bff);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 22px;
+    box-shadow: 0 0 18px rgba(255, 46, 166, 0.55);
   }
 
   .app-icon {
@@ -58,50 +103,51 @@
     height: 112px;
     border-radius: 26px;
     object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    box-shadow:
+      0 0 30px rgba(0, 255, 255, 0.35),
+      0 10px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.08);
   }
 
   .app-name {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 0 12px;
-    letter-spacing: 0.3px;
-  }
-
-  .badge {
-    display: inline-block;
-    padding: 6px 16px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.14);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #ffd479;
-    margin-bottom: 18px;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 10px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #4bf5ff, #ff6ad5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .tagline {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14.5px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .coming-soon-heading {
+    font-size: 18px;
+    font-weight: 700;
     margin: 0 0 10px;
-    color: #ffffff;
+    color: #4bf5ff;
+    text-shadow: 0 0 12px rgba(75, 245, 255, 0.6);
   }
 
   .message {
     font-size: 14px;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.7);
     margin: 0;
   }
 
   @media (min-width: 600px) {
     .card {
       max-width: 460px;
-      padding: 48px 36px 44px;
+      padding: 44px 36px 40px;
     }
 
     .app-icon {
@@ -114,46 +160,32 @@
 <body>
 
 <div class="card" id="ios-coming-soon" style="display:none;">
-  <img class="app-icon" src="./assets/app-icon.png" alt="GhostTrap app icon">
-  <h1 class="app-name">GhostTrap</h1>
   <span class="badge">Coming Soon</span>
-  <p class="tagline">GhostTrap is coming soon to iOS.</p>
+  <img class="app-icon" src="./app_icon.png" alt="GhostTrap app icon">
+  <h1 class="app-name">Ghost Trap: Reveal the World</h1>
+  <p class="tagline">Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!</p>
+  <p class="coming-soon-heading">GhostTrap is coming soon to iOS.</p>
   <p class="message">We're working on bringing GhostTrap to iOS. Stay tuned!</p>
 </div>
 
 <script>
   (function () {
-    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap";
-
+    // By the time we reach here, the head script has already redirected
+    // Android/desktop visitors away. Only iOS visitors remain, so just
+    // reveal the coming-soon card and its background.
     var ua = navigator.userAgent || navigator.vendor || "";
-
-    var isAndroid = /Android/i.test(ua);
-
-    // Classic iOS UA check (iPhone/iPad/iPod).
     var isClassicIOS = /iPad|iPhone|iPod/i.test(ua) && !window.MSStream;
-
-    // Modern iPadOS (13+) reports as "Macintosh" in the UA but is touch-capable
-    // and lacks the standard desktop indicators, so detect via touch + platform.
     var isModernIPadOS =
       navigator.platform === "MacIntel" &&
       navigator.maxTouchPoints &&
       navigator.maxTouchPoints > 1;
 
-    var isIOS = isClassicIOS || isModernIPadOS;
-
-    function showIOSComingSoon() {
+    if (isClassicIOS || isModernIPadOS) {
+      document.body.classList.add("ios-bg");
       var el = document.getElementById("ios-coming-soon");
       if (el) {
         el.style.display = "block";
       }
-    }
-
-    if (isAndroid) {
-      window.location.replace(PLAY_STORE_URL);
-    } else if (isIOS) {
-      showIOSComingSoon();
-    } else {
-      window.location.replace(PLAY_STORE_URL);
     }
   })();
 </script>
