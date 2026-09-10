@@ -110,6 +110,6 @@ Warning: it's addictive 😂 A few people who already tried it can't stop playin
 
 📲 Download it free: https://sudogrep.in/ghost_trap
 
-⭐ If you enjoy it, please leave a rating/review - it genuinely helps me improve the game 🔁 Share it with friends/family who'd enjoy a good puzzle game 🚀 Check out more apps under SudoGrep too — and more games coming soon!
+⭐ If you enjoy it, please leave a rating/review - it genuinely helps me improve the game 🔁 Share it with friends/family who'd enjoy a good puzzle game 🚀 Check out more apps under SudoGrep(https://sudogrep.in/play_store) too — and more games coming soon!
 
 Try it and let me know what you think 👇 https://sudogrep.in/ghost_trap
