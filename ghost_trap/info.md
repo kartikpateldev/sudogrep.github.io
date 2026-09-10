@@ -97,3 +97,19 @@ Clean dark theme interface with neon accents. Intuitive touch controls. Satisfyi
 Start your journey in India with the iconic Taj Mahal, then unlock stages across Japan, France, USA, Australia, and beyond.
 
 Can you master every landmark and conquer the world? 🌍
+
+
+
+## Text to share on social media:
+
+Sharing something personal 🙏 — I built a mobile game myself and it's finally live: Ghost Trap 👻🌍
+
+The idea: draw paths to claim territory on a grid while ghosts chase you down. Every level you clear reveals a piece of a real-world landmark hiding underneath - Taj Mahal, Statue of Liberty, Mount Fuji, and many more across different countries. It's genuinely free to play - no pay-to-win nonsense, no annoying wait timers.
+
+Warning: it's addictive 😂 A few people who already tried it can't stop playing.
+
+📲 Download it free: https://sudogrep.in/ghost_trap
+
+⭐ If you enjoy it, please leave a rating/review - it genuinely helps me improve the game 🔁 Share it with friends/family who'd enjoy a good puzzle game 🚀 Check out more apps under SudoGrep too — and more games coming soon!
+
+Try it and let me know what you think 👇 https://sudogrep.in/ghost_trap
