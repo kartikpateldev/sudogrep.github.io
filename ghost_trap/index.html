@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>GhostTrap — Coming Soon</title>
+<meta name="description" content="GhostTrap is coming soon to iOS.">
+<meta name="theme-color" content="#0f0c29">
+
+<!-- Apple mobile web app metadata -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GhostTrap">
+
+<!-- Open Graph metadata -->
+<meta property="og:title" content="GhostTrap — Coming Soon">
+<meta property="og:description" content="GhostTrap is coming soon to iOS.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./assets/app-icon.png">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #ffffff;
+    padding: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    padding: 40px 28px 36px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .app-icon {
+    width: 112px;
+    height: 112px;
+    border-radius: 26px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .app-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffd479;
+    margin-bottom: 18px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #ffffff;
+  }
+
+  .message {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+
+  @media (min-width: 600px) {
+    .card {
+      max-width: 460px;
+      padding: 48px 36px 44px;
+    }
+
+    .app-icon {
+      width: 128px;
+      height: 128px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card" id="ios-coming-soon" style="display:none;">
+  <img class="app-icon" src="./assets/app-icon.png" alt="GhostTrap app icon">
+  <h1 class="app-name">GhostTrap</h1>
+  <span class="badge">Coming Soon</span>
+  <p class="tagline">GhostTrap is coming soon to iOS.</p>
+  <p class="message">We're working on bringing GhostTrap to iOS. Stay tuned!</p>
+</div>
+
+<script>
+  (function () {
+    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap";
+
+    var ua = navigator.userAgent || navigator.vendor || "";
+
+    var isAndroid = /Android/i.test(ua);
+
+    // Classic iOS UA check (iPhone/iPad/iPod).
+    var isClassicIOS = /iPad|iPhone|iPod/i.test(ua) && !window.MSStream;
+
+    // Modern iPadOS (13+) reports as "Macintosh" in the UA but is touch-capable
+    // and lacks the standard desktop indicators, so detect via touch + platform.
+    var isModernIPadOS =
+      navigator.platform === "MacIntel" &&
+      navigator.maxTouchPoints &&
+      navigator.maxTouchPoints > 1;
+
+    var isIOS = isClassicIOS || isModernIPadOS;
+
+    function showIOSComingSoon() {
+      var el = document.getElementById("ios-coming-soon");
+      if (el) {
+        el.style.display = "block";
+      }
+    }
+
+    if (isAndroid) {
+      window.location.replace(PLAY_STORE_URL);
+    } else if (isIOS) {
+      showIOSComingSoon();
+    } else {
+      window.location.replace(PLAY_STORE_URL);
+    }
+  })();
+</script>
+
+</body>
+</html>
