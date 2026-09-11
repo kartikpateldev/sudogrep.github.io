@@ -151,7 +151,23 @@
     font-size: 14px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
-    margin: 0;
+    margin: 0 0 24px;
+  }
+
+  .play-store-button {
+    display: inline-block;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .play-store-button:active {
+    transform: scale(0.97);
+    opacity: 0.85;
+  }
+
+  .play-store-badge {
+    display: block;
+    height: 54px;
+    width: auto;
   }
 
   @media (min-width: 600px) {
@@ -176,6 +192,9 @@
   <p class="tagline">Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!</p>
   <p class="coming-soon-heading">Ghost Trap is coming soon to iOS.</p>
   <p class="message">We're working on bringing Ghost Trap to iOS. Stay tuned!</p>
+  <a class="play-store-button" href="https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap" target="_blank" rel="noopener">
+    <img class="play-store-badge" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+  </a>
 </div>
 
 <script>
