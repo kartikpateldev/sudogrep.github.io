@@ -107,6 +107,8 @@
             </a>
           </div>
         </div>
+
+        {{FEATURE_GRAPHIC_BANNER}}
       </div>
     </section>
 
@@ -117,7 +119,7 @@
           <!-- Left Column -->
           <div>
             <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">About the App</h2>
-            <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem; margin-bottom: 2rem;">{{APP_DESCRIPTION}}</p>
+            <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem; margin-bottom: 2rem; white-space: pre-line;">{{APP_DESCRIPTION}}</p>
             
             <h2 style="font-size: 1.75rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.25rem; color: var(--text-primary);">Key Features</h2>
             <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
@@ -139,12 +141,16 @@
                   <span style="font-weight: 600; color: var(--text-primary);">Android</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-secondary);">Play Store Downloads</span>
+                  <span style="font-weight: 600; color: var(--text-primary);">{{APP_INSTALLS}}</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
                   <span style="color: var(--text-secondary);">Privacy</span>
-                  <span style="font-weight: 600; color: var(--accent); color: var(--accent-purple);">On-Device Only</span>
+                  <span style="font-weight: 600; color: var(--accent-purple);">On-Device First</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
                   <span style="color: var(--text-secondary);">Google Play Status</span>
-                  <span style="font-weight: 600; color: #10b981;">Active</span>
+                  <span style="font-weight: 600; color: #10b981;">Active on Play Store</span>
                 </div>
               </div>
             </div>
@@ -152,6 +158,9 @@
         </div>
       </div>
     </section>
+
+    <!-- SCREENSHOTS SHOWCASE -->
+    {{APP_SCREENSHOTS_GALLERY}}
 
     <!-- PRIVACY HIGHLIGHT SECTION (TINTED) -->
     <section class="home-section-tinted">

@@ -379,6 +379,30 @@ def build_site():
         }
         schema_str = f'<script type="application/ld+json">\n{json.dumps(schema_json, indent=2)}\n  </script>'
 
+        # Generate Feature Graphic Banner HTML
+        feature_banner_html = ""
+        if app.get("feature_graphic") and os.path.exists(app["feature_graphic"]):
+            feature_banner_html = f'''        <div class="app-feature-hero" style="margin-top: 2.5rem;">
+          <img src="/{app["feature_graphic"]}" alt="{app["name"]} Feature Graphic" class="app-feature-banner" loading="lazy">
+        </div>'''
+
+        # Generate Screenshot Showcase Gallery HTML
+        screenshots_html = ""
+        if app.get("screenshots"):
+            valid_shots = [s for s in app["screenshots"] if os.path.exists(s)]
+            if valid_shots:
+                cards_str = "\n".join([f'            <div class="app-screenshot-card"><img src="/{s}" alt="{app["name"]} screenshot" class="app-screenshot-img" loading="lazy"></div>' for s in valid_shots])
+                screenshots_html = f'''    <section class="home-section-tinted" style="padding: 3rem 0;">
+      <div class="container">
+        <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); text-align: center;">App Showcase & Screenshots</h2>
+        <div class="app-screenshots-container">
+{cards_str}
+        </div>
+      </div>
+    </section>'''
+
+        installs_str = app.get("installs") or "10+"
+
         # Replace placeholders
         pg_html = detail_template
         pg_html = pg_html.replace("{{METADATA_TITLE}}", app_title)
@@ -394,6 +418,9 @@ def build_site():
         pg_html = pg_html.replace("{{BREADCRUMB_NAME}}", app["name"])
         pg_html = pg_html.replace("{{APP_DESCRIPTION}}", app["description"])
         pg_html = pg_html.replace("{{APP_FEATURES}}", features_html)
+        pg_html = pg_html.replace("{{FEATURE_GRAPHIC_BANNER}}", feature_banner_html)
+        pg_html = pg_html.replace("{{APP_SCREENSHOTS_GALLERY}}", screenshots_html)
+        pg_html = pg_html.replace("{{APP_INSTALLS}}", installs_str)
         pg_html = pg_html.replace("{{FAQ_SECTION}}", faq_html)
         pg_html = pg_html.replace("{{RELATED_TOOLS}}", tools_html)
         pg_html = pg_html.replace("{{RELATED_GUIDES}}", guides_html)
@@ -652,4 +679,11 @@ def build_site():
     print("Site compilation complete. Ready for static deployment.")
 
 if __name__ == "__main__":
+    if "--sync" in sys.argv:
+        try:
+            from scripts.sync_play_store_apps import sync_play_store
+            sync_play_store()
+        except Exception as e:
+            print(f"Warning: Could not sync Play Store apps: {e}", file=sys.stderr)
     build_site()
+

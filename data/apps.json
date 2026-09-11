@@ -1,31 +1,13 @@
 [
   {
-    "name": "File Forge: Convert & Extract",
-    "slug": "file-forge",
-    "package_name": "dev.kartikpatel.fileforge",
-    "play_store_url": "https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge",
-    "icon": "assets/apps/file-forge/icon.webp",
-    "short_description": "Utility application to convert and extract files with ease directly on your Android device.",
-    "description": "File Forge is your ultimate mobile file conversion and extraction companion. It supports converting files between popular formats, viewing and editing EXIF metadata, generating QR and barcodes, extracting text using advanced OCR, and optimizing your documents locally.",
-    "features": [
-      "Universal image, video, and audio conversion",
-      "EXIF/GPS metadata viewer and editor",
-      "Document compression and PDF utilities",
-      "On-device OCR text extraction",
-      "Offline translation and transliteration tools",
-      "Quick QR code scanner and generator"
-    ],
-    "screenshots": [],
-    "status": "Live"
-  },
-  {
-    "name": "BillBuddy – Bill Tracker",
+    "name": "BillBuddy - Bills & Budget",
     "slug": "billbuddy",
     "package_name": "com.billreminder.bill_reminder",
-    "play_store_url": "https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder&hl=en&gl=us",
     "icon": "assets/apps/billbuddy/icon.webp",
-    "short_description": "Smart bill reminder and payment tracker to help you stay organized and avoid late fees.",
-    "description": "BillBuddy is a comprehensive personal finance organizer that tracks recurring payments, credit card bills, rent, loans, and subscriptions. Featuring automated reminders, calendar sync, spending category graphs, and local backups, it helps you manage your expenses seamlessly.",
+    "feature_graphic": "assets/apps/billbuddy/feature_graphic.webp",
+    "short_description": "Track bills, manage budgets, split expenses & understand spending.",
+    "description": "BillBuddy: Bills & Budget\r\n\r\nStay on top of bills, manage your budget, understand your spending, and keep shared money organized — all in one place.\r\n\r\nNo spreadsheets. No scattered reminders. Just a clearer way to see what you owe, what's coming next, and where your money is going.\r\n\r\n🧾 YOUR BILLS, ORGANIZED\r\n\r\nKeep every important payment in one place.\r\n\r\nTrack rent, EMI payments, credit cards, electricity, water, gas, internet, mobile bills, insurance, loans, subscriptions and other recurring expenses.\r\n\r\n• Add bills with amount, category and due date\r\n• Track upcoming, paid and overdue bills\r\n• Set payment reminders\r\n• Create recurring bills\r\n• Record payment methods and payment history\r\n\r\n📅 NEVER LOSE TRACK OF DUE DATES\r\n\r\nUse the calendar to see your payment schedule at a glance.\r\n\r\n• View upcoming payments\r\n• Find overdue bills\r\n• Check bills by date\r\n• Add bills from the calendar\r\n• Keep your monthly payment schedule organized\r\n\r\nKnow what needs your attention before the due date arrives.\r\n\r\n💰 MANAGE YOUR MONTHLY BUDGET\r\n\r\nKeep an eye on your monthly spending with a simple budget overview.\r\n\r\nSee your bills, spending and remaining budget in one place, helping you stay aware of your finances throughout the month.\r\n\r\n📊 UNDERSTAND YOUR SPENDING\r\n\r\nGo beyond bill reminders with useful spending insights.\r\n\r\nExplore:\r\n\r\n• Spending trends\r\n• Category breakdowns\r\n• Monthly summaries\r\n• Payment history\r\n• Interactive charts\r\n\r\nSee where your money goes and understand how your spending changes over time.\r\n\r\n🔄 KEEP RECURRING PAYMENTS ORGANIZED\r\n\r\nRent. EMIs. Insurance. Utilities. Subscriptions.\r\n\r\nCreate recurring bills and keep their schedules organized so you always know when the next payment is coming.\r\n\r\n🤝 SPLIT SHARED EXPENSES\r\n\r\nSharing expenses shouldn't require spreadsheets or scattered messages.\r\n\r\nTrack shared bills with friends, family or roommates, monitor outstanding amounts and keep settlements organized.\r\n\r\n💸 BORROW & LEND\r\n\r\nKeep track of money you've borrowed or lent.\r\n\r\n• See money you've lent\r\n• See money you've borrowed\r\n• Track outstanding balances\r\n• Add due dates and payment details\r\n\r\nKeep personal lending and borrowing records organized in one place.\r\n\r\n➕ ADD BILLS YOUR WAY\r\n\r\nAdd bills using the available entry, scanning and import options in BillBuddy.\r\n\r\nSave the important details and keep your payments organized from one place.\r\n\r\n🌍 MULTI-CURRENCY SUPPORT\r\n\r\nManage bills and expenses using multiple currencies, including INR, USD, EUR and GBP.\r\n\r\nChoose your preferred currency and personalize your financial experience.\r\n\r\n📄 EXPORT, IMPORT & REPORTS\r\n\r\nKeep your financial records accessible.\r\n\r\n• Export bill data as CSV\r\n• Import existing bill data\r\n• Generate PDF reports\r\n• Organize reports by payment status\r\n\r\n🔐 PERSONALIZE YOUR EXPERIENCE\r\n\r\nBillBuddy supports:\r\n\r\n• Google and Email sign-in\r\n• Currency preferences\r\n• Language preferences\r\n• Profile settings\r\n• Dark Mode and Light Mode\r\n• Multi-language support\r\n\r\nEVERYTHING FOR EVERYDAY MONEY\r\n\r\nBills — Know what needs to be paid.\r\nBudget — Keep track of your monthly spending.\r\nInsights — Understand where your money goes.\r\nCalendar — See your payment schedule.\r\nSplits — Organize shared expenses.\r\nBorrow & Lend — Track money between you and others.\r\nReports — Keep your financial records accessible.\r\n\r\nKNOW WHAT YOU OWE. KNOW WHERE YOUR MONEY GOES.\r\n\r\nBillBuddy makes everyday money management simpler.\r\n\r\nTrack your bills. Manage your budget. Understand your spending. Stay organized.",
     "features": [
       "Unified tracking of EMIs, bills, and subscriptions",
       "Smart upcoming reminders and notifications",
@@ -34,36 +16,27 @@
       "SMS payment parsing engine",
       "CSV and PDF data export"
     ],
-    "screenshots": [],
-    "status": "Live"
-  },
-  {
-    "name": "Zip Connect - Node Puzzle",
-    "slug": "zip-connect",
-    "package_name": "in.sudogrep.zip_connect",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect",
-    "icon": "assets/apps/zip-connect/icon.webp",
-    "short_description": "A beautifully crafted puzzle game. Connect nodes, clear paths, and challenge your logic.",
-    "description": "Zip Connect brings a classic grid puzzle experience to your Android device. Guide nodes through path matching, clear multiple difficulty levels, and practice logical deduction in an offline-first premium puzzle environment.",
-    "features": [
-      "Hundreds of challenging node puzzles",
-      "Interactive levels with escalating difficulty",
-      "Minimalist visual design with smooth transitions",
-      "100% offline gameplay support",
-      "No intrusive tracking or ads",
-      "Quick level reset and help options"
+    "screenshots": [
+      "assets/apps/billbuddy/screenshots/screen_1.webp",
+      "assets/apps/billbuddy/screenshots/screen_2.webp",
+      "assets/apps/billbuddy/screenshots/screen_3.webp",
+      "assets/apps/billbuddy/screenshots/screen_4.webp",
+      "assets/apps/billbuddy/screenshots/screen_5.webp"
     ],
-    "screenshots": [],
+    "score": null,
+    "installs": "10+",
+    "developer": "SudoGrep",
     "status": "Live"
   },
   {
-    "name": "Aarti Sangrah",
+    "name": "Aarti Sangrah: Daily Prayers",
     "slug": "aarti-sangrah",
     "package_name": "com.kp.kartik.aarti",
-    "play_store_url": "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti&hl=en&gl=us",
     "icon": "assets/apps/aarti-sangrah/icon.webp",
-    "short_description": "A local, spiritual prayer list and Aarti collection app.",
-    "description": "Aarti Sangrah is a lightweight collection of traditional prayers and devotional lyrics. It organizes devotions by event, category, and daily routine, enabling quick access offline.",
+    "feature_graphic": "assets/apps/aarti-sangrah/feature_graphic.webp",
+    "short_description": "300+ Aartis, Mantras, Chalisas & custom pooja playlists for your daily worship.",
+    "description": "Aarti Sangrah is a comprehensive Hindu devotional app designed to bring over 300 sacred prayers, Aartis, Chalisas, Mantras, and Stotrams directly to your smartphone. Whether performing morning puja, observing festival fasts, or seeking spiritual peace, Aarti Sangrah helps you organize and read sacred scriptures effortlessly in a clean, distraction-free environment.\r\n\r\nOrganize your devotional routine with custom Pooja Playlists. Create personalized sequences for Ganesh Chaturthi, Navratri, Diwali, or daily morning prayers. Arrange your Aartis in exact worship order, reorder them with drag-and-drop ease, and share your playlists with family and friends via direct web and app links.\r\n\r\nKey Features of Aarti Sangrah:\r\n\r\n• 300+ Sacred Devotional Texts: Access a vast collection of Aartis, Ashtakams, Mantras, Chalisas, Stotrams, Bhajans, Kathas, and Shlokas.\r\n\r\n• Custom Pooja Playlists: Create, edit, and reorder prayer lists for festivals and daily worship routines. Sequence your prayers step-by-step.\r\n\r\n• Multi-Language Support: Read devotional text seamlessly in 13 Indian languages, including English, Hindi, Marathi, Gujarati, Bengali, Assamese, Kannada, Malayalam, Odia, Punjabi, Tamil, Telugu, and Urdu.\r\n\r\n• Categorized by Deity & Festival: Easily browse prayers dedicated to Lord Ganesha, Lord Krishna, Lord Shiva, Goddess Durga, Lord Rama, Hanuman Ji, Goddess Laxmi, and Surya Dev. Filter by major occasions such as Diwali, Navratri, Ganesh Chaturthi, Janmashtami, and Maha Shivratri.\r\n\r\n• Customizable Reading Experience: Adjust font sizes (14pt to 32pt) for comfortable reading during rituals. Navigate smoothly between prayers with simple swipes.\r\n\r\n• Smart Search & Instant Filters: Quickly search by prayer title, deity name, festival, or language with real-time suggestions and search history.\r\n\r\n• Audio Aarti Support: Listen to selected audio Aartis directly within the app for a complete prayer experience.\r\n\r\n• Offline Reading & Sync: Access cached prayers offline during worship. Sign in with Google to save and sync your favorite Aartis across devices.\r\n\r\nAarti Sangrah eliminates the need to carry physical prayer books or browse multiple websites during puja. Designed with clear typography, warm devotional aesthetics, and intuitive controls, Aarti Sangrah makes everyday worship simple, meaningful, and accessible.\r\n\r\nDownload Aarti Sangrah today to bring sacred prayers and personalized worship routines to your daily life.",
     "features": [
       "Comprehensive local prayer list",
       "Devotional lyrics categorized logically",
@@ -72,36 +45,57 @@
       "Minimalistic user interface",
       "Zero tracking or permissions"
     ],
-    "screenshots": [],
+    "screenshots": [
+      "assets/apps/aarti-sangrah/screenshots/screen_1.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_2.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_3.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_4.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_5.webp"
+    ],
+    "score": null,
+    "installs": "100+",
+    "developer": "SudoGrep",
     "status": "Live"
   },
   {
-    "name": "KB Snap",
-    "slug": "kb-snap",
-    "package_name": "in.sudogrep.kb_snap",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en_IN",
-    "icon": "assets/apps/kb-snap/icon.webp",
-    "short_description": "Compress photos and images to any target KB size for online forms and applications.",
-    "description": "KB Snap is a fast, offline-first image compression and resizing utility for Android. Easily compress photos to specific target KB sizes, scale or crop images, and prepare files for forms and portal uploads with complete client-side privacy.",
+    "name": "File Forge: Convert & Extract",
+    "slug": "file-forge",
+    "package_name": "dev.kartikpatel.fileforge",
+    "play_store_url": "https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge&hl=en&gl=us",
+    "icon": "assets/apps/file-forge/icon.webp",
+    "feature_graphic": "assets/apps/file-forge/feature_graphic.webp",
+    "short_description": "Convert, compress & edit media files! Extract metadata, text, PDFs & scan QR.",
+    "description": "Meet File Forge, your ultimate all-in-one utility app for handling files effortlessly! Whether you need to convert formats, compress file sizes, extract important metadata, or perform advanced document and media editing, File Forge is the only tool you need.\r\n\r\n🚀 Key Features:\r\n\r\n🔄 Universal File Conversion • Images: Convert to PDF, JPEG, PNG, GIF, and WebP. • Videos: Convert to MP4, AVI, MKV, MOV, and WMV. • Audio: Convert to MP3, WAV, AAC, FLAC, and M4A.\r\n\r\n🗜 Compression & File Sizing • Quickly reduce the file size of your images, videos, and audio without losing quality. Optimize files to save storage space or to quickly share them on the internet!\r\n\r\n✂️ Image & Video Editing (New!) • Need a quick adjustment? Easily crop your images to perfection or trim your videos to keep only your favorite moments.\r\n\r\n📄 PDF & Document Utilities (New!) • Images to PDF: Conveniently merge multiple images into a single, clean PDF document. • Extract Images from PDF: Instantly pull all images out of any PDF file. • Extract Text (OCR): Identify, grab, and copy text directly from images and documents!\r\n\r\n🌐 Translation & Transliteration • Use our built-in text translation and transliteration to instantly convert extracted text and break down language barriers.\r\n\r\n📊 Metadata Viewer & Editor (EXIF/GPS) • Dig deep into your media! View, modify, or delete metadata (EXIF, GPS, IPTC, XMP) for your photos, videos, and audio clips. Experience it with real-world location mapping!\r\n\r\n🔍 Barcode & QR Scanner • Generate custom QR codes and Barcodes, or scan existing ones instantly with our lightning-fast built-in scanner.\r\n\r\n✨ Packed with Extras! • 📋 Seamless Copying: Instantly copy extracted text, QR scans, or metadata to your clipboard. • 📂 Open on Save: Open files immediately after saving them right from the prompt. • 🌙 Dark Mode: Easy on the eyes for night-time productivity. • 🌎 Multi-lingual Support: Available in multiple languages for global accessibility. • 📤 Save & Share: Export your edited and converted files seamlessly to your device or share them on any app.\r\n\r\nDownload File Forge today and unlock an entire suite of powerful tools right in your pocket. Say goodbye to downloading multiple cluttered apps for basic file tasks!",
     "features": [
-      "Compress photos to specific target KB sizes",
-      "Batch photo resizing and image scaling",
-      "Aspect ratio cropping for signature and passport photos",
-      "100% offline-first processing for absolute privacy",
-      "No server uploads, ads, or tracking",
-      "Clean, modern user interface"
+      "Universal image, video, and audio conversion",
+      "EXIF/GPS metadata viewer and editor",
+      "Document compression and PDF utilities",
+      "On-device OCR text extraction",
+      "Offline translation and transliteration tools",
+      "Quick QR code scanner and generator"
     ],
-    "screenshots": [],
+    "screenshots": [
+      "assets/apps/file-forge/screenshots/screen_1.webp",
+      "assets/apps/file-forge/screenshots/screen_2.webp",
+      "assets/apps/file-forge/screenshots/screen_3.webp",
+      "assets/apps/file-forge/screenshots/screen_4.webp",
+      "assets/apps/file-forge/screenshots/screen_5.webp",
+      "assets/apps/file-forge/screenshots/screen_6.webp"
+    ],
+    "score": null,
+    "installs": "100+",
+    "developer": "SudoGrep",
     "status": "Live"
   },
   {
     "name": "Ghost Trap: Reveal the World",
     "slug": "ghost-trap",
     "package_name": "in.sudogrep.ghosttrap",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap&hl=en&gl=us",
     "icon": "assets/apps/ghost-trap/icon.webp",
-    "short_description": "A tactical arcade puzzle game where players claim territory, avoid ghosts, and reveal famous landmarks from around the world.",
-    "description": "Ghost Trap is a territory-claiming arcade puzzle game featuring offline play, cloud save, power-ups, and optional purchases. Steer your avatar to fence off sections of the board, avoid wandering ghosts, and reveal famous global landmarks.",
+    "feature_graphic": "assets/apps/ghost-trap/feature_graphic.webp",
+    "short_description": "Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!",
+    "description": "🎮 Claim territory, outsmart ghosts, and reveal stunning world landmarks in Ghost Trap – a tactical arcade puzzle game that challenges your spatial strategy and quick thinking.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🎯 HOW TO PLAY\r\n\r\nNavigate Champ across the grid, carving paths to claim territory while avoiding bouncing ghosts. Claim 80%+ of each level to reveal breathtaking images of famous landmarks from around the world.\r\n\r\nEach completed level brings you closer to mastering entire countries – from the Taj Mahal in India to Mount Fuji in Japan.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n⚡ CORE GAMEPLAY\r\n\r\n🗺️ Territory Claiming\r\nDraw paths from safe zones into unclaimed territory. Connect back to safety to claim the enclosed area. But watch out – if a ghost touches your path before you finish, you lose a life!\r\n\r\n💪 Strategic Power-Ups\r\n• 🚀 Speeder – Move twice as fast for 30 seconds\r\n• 🥶 Frost – Slow down ghosts by 50% for 30 seconds\r\n• 🧊 Freeze – Stop all ghosts completely for 60 seconds\r\n\r\n📈 Progressive Challenge\r\n30 levels per stage with increasing difficulty. Early levels ease you in with 3 slow ghosts, while later levels challenge you with 8 fast-moving enemies.\r\n\r\n🌍 World Exploration\r\nJourney across countries and continents. Each stage represents a different nation with 30 unique landmarks to discover. Complete all levels to unlock the next country and earn bonus rewards.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n✨ KEY FEATURES\r\n\r\n❤️ Fair Lives System\r\nStart with 5 lives. Lives regenerate automatically – 1 life every 30 minutes. No pressure, no forced waiting. Play at your own pace.\r\n\r\n🎁 Generous Rewards\r\nEarn coins, power-ups, and infinity lives passes by completing levels. Collect rewards in your Reward Box and claim them whenever you want.\r\n\r\n📴 Offline Play\r\nPlay anywhere, anytime – no internet required. Your progress syncs automatically when you reconnect.\r\n\r\n☁️ Cloud Save\r\nLink your Google account to back up your progress and play across multiple devices. Never lose your achievements.\r\n\r\n💎 Optional Purchases\r\nRemove ads permanently, buy coin packs, or unlock infinity lives passes. All purchases are optional – enjoy the full game for free.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🎮 GAME CONTENT\r\n\r\n✓ Multiple stages representing countries worldwide\r\n✓ 30 levels per stage featuring famous landmarks\r\n✓ Progressive difficulty that rewards skill improvement\r\n✓ Reward Box system for claiming earned bonuses\r\n✓ In-game store with optional purchases\r\n✓ Settings and customization including sound controls\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n💯 WHY PLAYERS LOVE GHOST TRAP\r\n\r\n🧠 Pure Logic Gameplay\r\nNo random chance. No pay-to-win mechanics. Success depends entirely on your spatial strategy and timing.\r\n\r\n🏛️ Beautiful Landmark Reveals\r\nEach level completion unveils a stunning high-definition image of a world-famous place. It's part puzzle, part discovery.\r\n\r\n⏱️ Smooth Progression\r\nFair life regeneration means you're never stuck waiting. Watch rewarded ads to earn extra lives, coins, or power-ups if you want to keep playing.\r\n\r\n✨ Polished Experience\r\nClean dark theme interface with neon accents. Intuitive touch controls. Satisfying confetti celebrations when you win.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n👥 PERFECT FOR\r\n\r\n✓ Fans of classic arcade games like Xonix, Qix, and Jezzball\r\n✓ Puzzle enthusiasts who enjoy spatial strategy\r\n✓ Players who want fair free-to-play games\r\n✓ Anyone who loves discovering world landmarks\r\n✓ Casual gamers looking for quick sessions\r\n✓ Hardcore players seeking challenging levels\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🌟 DOWNLOAD NOW\r\n\r\nStart your journey in India with the iconic Taj Mahal, then unlock stages across Japan, France, USA, Australia, and beyond.\r\n\r\nCan you master every landmark and conquer the world? 🌍",
     "features": [
       "Territory claiming gameplay",
       "Strategic ghost avoidance",
@@ -113,7 +107,98 @@
       "Reward system",
       "Optional in-app purchases"
     ],
-    "screenshots": [],
+    "screenshots": [
+      "assets/apps/ghost-trap/screenshots/screen_1.webp",
+      "assets/apps/ghost-trap/screenshots/screen_2.webp",
+      "assets/apps/ghost-trap/screenshots/screen_3.webp",
+      "assets/apps/ghost-trap/screenshots/screen_4.webp",
+      "assets/apps/ghost-trap/screenshots/screen_5.webp"
+    ],
+    "score": null,
+    "installs": "1+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Image Compressor: MB to KB",
+    "slug": "kb-snap",
+    "package_name": "in.sudogrep.kb_snap",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en&gl=us",
+    "icon": "assets/apps/kb-snap/icon.webp",
+    "feature_graphic": "assets/apps/kb-snap/feature_graphic.webp",
+    "short_description": "Compress photos, Images to any KB size for forms, uploads and applications.",
+    "description": "KB Snap makes it easy to compress photos to the exact file size you need.\r\n\r\nNeed a photo under 20 KB, 50 KB, 100 KB or 200 KB?\r\n\r\nSelect your photo, choose the target size, and KB Snap optimizes it automatically.\r\n\r\nPerfect for:\r\n\r\n• Online forms\r\n• Government applications\r\n• Exam applications\r\n• Job applications\r\n• ID and document uploads\r\n• Websites with photo size limits\r\n• Any upload requiring a specific KB limit\r\n\r\nFEATURES\r\n\r\n✓ Compress photos to a target KB size\r\n✓ 20 KB, 50 KB, 100 KB, 200 KB, 500 KB and 1 MB presets\r\n✓ Custom target size\r\n✓ Maintains image aspect ratio\r\n✓ Shows original and final file size\r\n✓ Save compressed photos to your gallery\r\n✓ Share compressed photos instantly\r\n✓ Works directly on your device\r\n✓ No cloud upload required\r\n\r\nKB Snap is designed to make photo size reduction fast and simple.\r\n\r\nYour photos are processed locally on your device.",
+    "features": [
+      "Compress photos to specific target KB sizes",
+      "Batch photo resizing and image scaling",
+      "Aspect ratio cropping for signature and passport photos",
+      "100% offline-first processing for absolute privacy",
+      "No server uploads, ads, or tracking",
+      "Clean, modern user interface"
+    ],
+    "screenshots": [
+      "assets/apps/kb-snap/screenshots/screen_1.webp",
+      "assets/apps/kb-snap/screenshots/screen_2.webp",
+      "assets/apps/kb-snap/screenshots/screen_3.webp"
+    ],
+    "score": null,
+    "installs": "1+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Zip Connect: Number Puzzle",
+    "slug": "zip-connect",
+    "package_name": "in.sudogrep.zip_connect",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect&hl=en&gl=us",
+    "icon": "assets/apps/zip-connect/icon.webp",
+    "feature_graphic": "assets/apps/zip-connect/feature_graphic.webp",
+    "short_description": "Connect numbers, fill every cell and solve relaxing logic puzzles.",
+    "description": "Connect numbers, fill every cell and solve relaxing logic puzzles.\r\n\r\nZip Connect is a number puzzle game where you connect numbers in order and complete the entire grid with one continuous path. Start with simple puzzles and use logic, planning and careful moves to solve increasingly challenging levels.\r\n\r\nHOW TO PLAY\r\n\r\nStart at number 1 and connect the numbers in sequence.\r\n\r\n• Connect numbers in the correct order\r\n• Move horizontally or vertically\r\n• Don't skip numbers\r\n• Don't cross your path\r\n• Fill every cell of the grid\r\n• Complete the path to solve the puzzle\r\n\r\nEASY TO LEARN, HARD TO MASTER\r\n\r\nThe rules are simple, but solving every grid requires careful planning. Find the right path, avoid dead ends and think ahead before making your next move.\r\n\r\nPROGRESS THROUGH PUZZLES\r\n\r\nBegin with easier number puzzles and gradually take on more challenging grids. Every completed level helps you improve your logic and problem-solving skills.\r\n\r\nUSE HINTS WHEN YOU'RE STUCK\r\n\r\nCan't find the next move? Use a hint to get guidance and continue solving difficult puzzles.\r\n\r\nEARN XP AND REWARDS\r\n\r\nComplete puzzles and earn XP as you progress. Keep solving levels, improve your rank and challenge yourself to go further.\r\n\r\nRELAXING PUZZLE EXPERIENCE\r\n\r\nZip Connect is designed for players who enjoy calm, focused gameplay. Solve a quick puzzle during a break or spend longer sessions working through challenging levels.\r\n\r\nPLAY OFFLINE\r\n\r\nEnjoy your puzzles wherever you are. Gameplay is available offline, so you can keep solving without an internet connection.\r\n\r\nWHY PLAY ZIP CONNECT?\r\n\r\n• Number and logic puzzles\r\n• Connect numbers in sequence\r\n• Grid-based path puzzles\r\n• Increasing difficulty\r\n• Helpful hint system\r\n• XP and progression\r\n• Relaxing gameplay\r\n• Offline puzzle gameplay\r\n• Suitable for quick sessions or longer challenges\r\n\r\nIf you enjoy number puzzles, logic games, brain puzzles and grid challenges, Zip Connect gives you a simple rule with increasingly challenging paths to solve.",
+    "features": [
+      "Hundreds of challenging node puzzles",
+      "Interactive levels with escalating difficulty",
+      "Minimalist visual design with smooth transitions",
+      "100% offline gameplay support",
+      "No intrusive tracking or ads",
+      "Quick level reset and help options"
+    ],
+    "screenshots": [
+      "assets/apps/zip-connect/screenshots/screen_1.webp",
+      "assets/apps/zip-connect/screenshots/screen_2.webp",
+      "assets/apps/zip-connect/screenshots/screen_3.webp",
+      "assets/apps/zip-connect/screenshots/screen_4.webp"
+    ],
+    "score": null,
+    "installs": "0+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Zip Connect Plus:Number Puzzle",
+    "slug": "zip-connect-plus",
+    "package_name": "in.sudogrep.zip_connect_free",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect_free&hl=en&gl=us",
+    "icon": "assets/apps/zip-connect-plus/icon.webp",
+    "feature_graphic": "assets/apps/zip-connect-plus/feature_graphic.webp",
+    "short_description": "Connect numbers, complete paths, and solve relaxing logic puzzles.",
+    "description": "Connect. Think. Complete the path.\r\n\r\nZip Connect is a relaxing and challenging logic puzzle game where you connect numbered nodes in the correct order and create a complete path across the grid.\r\n\r\nStart with simple puzzles and gradually take on larger, more challenging boards. Every puzzle is easy to understand, but finding the perfect path becomes increasingly satisfying.\r\n\r\nWHAT YOU CAN DO\r\n\r\n• Connect numbers in the correct order\r\n• Create a complete path across the grid\r\n• Solve hundreds of logic puzzles\r\n• Progress through increasingly challenging levels\r\n• Take on daily challenges\r\n• Use hints when you get stuck\r\n• Track your puzzle progress and statistics\r\n• Earn XP and rewards as you play\r\n• Customize your puzzle experience\r\n• Play at your own pace\r\n\r\nA SIMPLE PUZZLE WITH DEPTH\r\n\r\nThe rules are simple: connect the nodes in order and complete the entire grid.\r\n\r\nBut as the puzzles become harder, you'll need to think ahead, plan your route, and make every move count.\r\n\r\nWhether you enjoy number puzzles, logic games, brain teasers, or relaxing offline games, Zip Connect gives you a simple puzzle experience that becomes more challenging as you progress.\r\n\r\nPLAY YOUR WAY\r\n\r\nPlay a few quick puzzles when you have a moment, or work your way through increasingly difficult challenges.\r\n\r\nUse hints when needed, improve your solving skills, and try to complete puzzles more efficiently.\r\n\r\nDAILY CHALLENGES\r\n\r\nCome back regularly for new challenges and test your puzzle-solving skills beyond the main level progression.\r\n\r\nTRACK YOUR PROGRESS\r\n\r\nSee your progress as you solve puzzles, improve your performance, earn XP, and work toward completing more challenging levels.\r\n\r\nREWARDS AND CUSTOMIZATION\r\n\r\nEarn rewards while playing and personalize your experience with unlockable customization options.\r\n\r\nZip Connect is designed to be easy to learn, satisfying to solve, and challenging enough to keep you coming back.\r\n\r\nCan you complete every path?",
+    "features": [
+      "Hundreds of challenging node puzzles",
+      "Interactive levels with escalating difficulty",
+      "Minimalist visual design with smooth transitions",
+      "100% offline gameplay support",
+      "No intrusive tracking or ads"
+    ],
+    "screenshots": [
+      "assets/apps/zip-connect-plus/screenshots/screen_1.webp",
+      "assets/apps/zip-connect-plus/screenshots/screen_2.webp",
+      "assets/apps/zip-connect-plus/screenshots/screen_3.webp",
+      "assets/apps/zip-connect-plus/screenshots/screen_4.webp"
+    ],
+    "score": null,
+    "installs": "5+",
+    "developer": "SudoGrep",
     "status": "Live"
   }
 ]
