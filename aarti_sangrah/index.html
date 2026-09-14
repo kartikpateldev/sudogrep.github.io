@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Aarti Sangrah: Daily Prayers</title>
+<meta name="description" content="300+ Aartis, Mantras, Stotram & custom pooja playlists for your daily worship.">
+<meta name="theme-color" content="#0b0821">
+
+<!-- Apple mobile web app metadata -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aarti Sangrah">
+
+<!-- Open Graph metadata -->
+<meta property="og:title" content="Aarti Sangrah: Daily Prayers">
+<meta property="og:description" content="🙏 300+ Aartis, Mantras, Stotram & custom pooja playlists for your daily worship. Download free 🚀">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./app_icon.png">
+
+<!-- Twitter / additional share metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aarti Sangrah: Daily Prayers">
+<meta name="twitter:description" content="🙏 300+ Aartis, Mantras, Stotram & custom pooja playlists for your daily worship. Download free 🚀">
+<meta name="twitter:image" content="./app_icon.png">
+
+<script>
+  // Run as early as possible (before CSS/body paint) so non-iOS visitors
+  // never see any UI or the background image while redirecting.
+  (function () {
+    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti";
+    var ua = navigator.userAgent || navigator.vendor || "";
+
+    var isAndroid = /Android/i.test(ua);
+    var isClassicIOS = /iPad|iPhone|iPod/i.test(ua) && !window.MSStream;
+    var isModernIPadOS =
+      navigator.platform === "MacIntel" &&
+      navigator.maxTouchPoints &&
+      navigator.maxTouchPoints > 1;
+    var isIOS = isClassicIOS || isModernIPadOS;
+
+    if (!isIOS) {
+      window.location.replace(PLAY_STORE_URL);
+    }
+  })();
+</script>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0821;
+    color: #ffffff;
+    padding: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    padding: 36px 28px 34px;
+    border-radius: 28px;
+    background: rgba(10, 6, 32, 0.55);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    box-shadow:
+      0 0 40px rgba(0, 255, 255, 0.12),
+      0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .badge {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 20px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff2ea6, #7a2bff);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 22px;
+    box-shadow: 0 0 18px rgba(255, 46, 166, 0.55);
+  }
+
+  .app-icon {
+    display: block;
+    width: 112px;
+    height: 112px;
+    border-radius: 26px;
+    object-fit: cover;
+    box-shadow:
+      0 0 30px rgba(0, 255, 255, 0.35),
+      0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .app-name {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 10px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #4bf5ff, #ff6ad5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .tagline {
+    font-size: 14.5px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .coming-soon-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #4bf5ff;
+    text-shadow: 0 0 12px rgba(75, 245, 255, 0.6);
+  }
+
+  .message {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 24px;
+  }
+
+  .play-store-button {
+    display: inline-block;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .play-store-button:active {
+    transform: scale(0.97);
+    opacity: 0.85;
+  }
+
+  .play-store-badge {
+    display: block;
+    height: 54px;
+    width: auto;
+  }
+
+  @media (min-width: 600px) {
+    .card {
+      max-width: 460px;
+      padding: 44px 36px 40px;
+    }
+
+    .app-icon {
+      width: 128px;
+      height: 128px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card" id="ios-coming-soon" style="display:none;">
+  <span class="badge">Coming Soon</span>
+  <img class="app-icon" src="./app_icon.png" alt="Aarti Sangrah app icon">
+  <h1 class="app-name">Aarti Sangrah: Daily Prayers</h1>
+  <p class="tagline">300+ Aartis, Mantras, Stotrams & custom pooja playlists for your daily worship.</p>
+  <p class="coming-soon-heading">Aarti Sangrah is coming soon to iOS.</p>
+  <p class="message">We're working on bringing Aarti Sangrah to iOS. Stay tuned!</p>
+  <a class="play-store-button" href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti" target="_blank" rel="noopener">
+    <img class="play-store-badge" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+  </a>
+</div>
+
+<script>
+  (function () {
+    // By the time we reach here, the head script has already redirected
+    // Android/desktop visitors away. Only iOS visitors remain, so just
+    // reveal the coming-soon card.
+    var ua = navigator.userAgent || navigator.vendor || "";
+    var isClassicIOS = /iPad|iPhone|iPod/i.test(ua) && !window.MSStream;
+    var isModernIPadOS =
+      navigator.platform === "MacIntel" &&
+      navigator.maxTouchPoints &&
+      navigator.maxTouchPoints > 1;
+
+    if (isClassicIOS || isModernIPadOS) {
+      var el = document.getElementById("ios-coming-soon");
+      if (el) {
+        el.style.display = "block";
+      }
+    }
+  })();
+</script>
+
+</body>
+</html>
