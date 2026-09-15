@@ -46,6 +46,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sudogrep.in/apps/vape-quit/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sudogrep.in/apps/zip-connect/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

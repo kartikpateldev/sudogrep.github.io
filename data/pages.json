@@ -1511,5 +1511,37 @@
     "og_description": "Download Zip Connect for Android. Enjoy a clean, ad-free logic node puzzle game offline with beautiful transitions and no tracking.",
     "og_image": "https://sudogrep.in/assets/apps/zip_connect_icon.png",
     "schema_type": "SoftwareApplication"
+  },
+  "/apps/vape-quit/": {
+    "url": "/apps/vape-quit/",
+    "title": "VapeQuit — Quit Vaping & Smoke Tracker | SudoGrep",
+    "description": "Download VapeQuit for Android. Track smoke and vape-free milestones, calculate money saved, manage cravings, and monitor health recovery.",
+    "h1": "VapeQuit",
+    "primary_intent": "download vapequit quit vaping and nicotine tracker app for android",
+    "primary_topic": "Quit Vaping & Smoking",
+    "secondary_topics": [
+      "Sobriety Counter",
+      "Craving Tracker",
+      "Money Saved Calculator"
+    ],
+    "primary_keywords": [
+      "vape quit app"
+    ],
+    "secondary_keywords": [
+      "quit vaping android app",
+      "stop smoking tracker"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/vape-quit/",
+    "og_title": "VapeQuit — Quit Vaping & Smoke Tracker | SudoGrep",
+    "og_description": "Download VapeQuit for Android. Track smoke and vape-free milestones, calculate money saved, manage cravings, and monitor health recovery.",
+    "og_image": "https://sudogrep.in/assets/apps/vape-quit/icon.webp",
+    "schema_type": "SoftwareApplication"
   }
 }

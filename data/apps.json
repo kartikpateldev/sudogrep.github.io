@@ -35,8 +35,8 @@
     "play_store_url": "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti&hl=en&gl=us",
     "icon": "assets/apps/aarti-sangrah/icon.webp",
     "feature_graphic": "assets/apps/aarti-sangrah/feature_graphic.webp",
-    "short_description": "300+ Aartis, Mantras, Chalisas & custom pooja playlists for your daily worship.",
-    "description": "Aarti Sangrah is a comprehensive Hindu devotional app designed to bring over 300 sacred prayers, Aartis, Chalisas, Mantras, and Stotrams directly to your smartphone. Whether performing morning puja, observing festival fasts, or seeking spiritual peace, Aarti Sangrah helps you organize and read sacred scriptures effortlessly in a clean, distraction-free environment.\r\n\r\nOrganize your devotional routine with custom Pooja Playlists. Create personalized sequences for Ganesh Chaturthi, Navratri, Diwali, or daily morning prayers. Arrange your Aartis in exact worship order, reorder them with drag-and-drop ease, and share your playlists with family and friends via direct web and app links.\r\n\r\nKey Features of Aarti Sangrah:\r\n\r\n• 300+ Sacred Devotional Texts: Access a vast collection of Aartis, Ashtakams, Mantras, Chalisas, Stotrams, Bhajans, Kathas, and Shlokas.\r\n\r\n• Custom Pooja Playlists: Create, edit, and reorder prayer lists for festivals and daily worship routines. Sequence your prayers step-by-step.\r\n\r\n• Multi-Language Support: Read devotional text seamlessly in 13 Indian languages, including English, Hindi, Marathi, Gujarati, Bengali, Assamese, Kannada, Malayalam, Odia, Punjabi, Tamil, Telugu, and Urdu.\r\n\r\n• Categorized by Deity & Festival: Easily browse prayers dedicated to Lord Ganesha, Lord Krishna, Lord Shiva, Goddess Durga, Lord Rama, Hanuman Ji, Goddess Laxmi, and Surya Dev. Filter by major occasions such as Diwali, Navratri, Ganesh Chaturthi, Janmashtami, and Maha Shivratri.\r\n\r\n• Customizable Reading Experience: Adjust font sizes (14pt to 32pt) for comfortable reading during rituals. Navigate smoothly between prayers with simple swipes.\r\n\r\n• Smart Search & Instant Filters: Quickly search by prayer title, deity name, festival, or language with real-time suggestions and search history.\r\n\r\n• Audio Aarti Support: Listen to selected audio Aartis directly within the app for a complete prayer experience.\r\n\r\n• Offline Reading & Sync: Access cached prayers offline during worship. Sign in with Google to save and sync your favorite Aartis across devices.\r\n\r\nAarti Sangrah eliminates the need to carry physical prayer books or browse multiple websites during puja. Designed with clear typography, warm devotional aesthetics, and intuitive controls, Aarti Sangrah makes everyday worship simple, meaningful, and accessible.\r\n\r\nDownload Aarti Sangrah today to bring sacred prayers and personalized worship routines to your daily life.",
+    "short_description": "300+ Aartis, Mantras, Stotrams & festival collections for your daily worship.",
+    "description": "Aarti Sangrah is a comprehensive Hindu devotional app designed to bring over 300 sacred prayers, Aartis, Chalisas, Mantras, and Stotrams directly to your smartphone. Whether performing morning puja, observing festival fasts, or seeking spiritual peace, Aarti Sangrah helps you organize and read sacred scriptures effortlessly in a clean, distraction-free environment.\r\n\r\nNever miss a festival prayer again. Aarti Sangrah now highlights curated devotional collections right on your home screen for upcoming festivals like Ganesh Chaturthi, Navratri, and Diwali — a single tap takes you straight to a handpicked set of Aartis, Mantras, and Stotrams for that celebration, updated regularly so you always have the right prayers ready.\r\n\r\nOrganize your devotional routine with custom Pooja Playlists. Create personalized sequences for Ganesh Chaturthi, Navratri, Diwali, or daily morning prayers. Arrange your Aartis in exact worship order, reorder them with drag-and-drop ease, and share your playlists with family and friends via direct web and app links.\r\n\r\nKey Features of Aarti Sangrah:\r\n\r\n• 300+ Sacred Devotional Texts: Access a vast collection of Aartis, Ashtakams, Mantras, Chalisas, Stotrams, Bhajans, Kathas, and Shlokas.\r\n\r\n• Festival Highlights: Curated devotional collections for upcoming festivals, featured on the home screen so you can jump straight into the right prayers for the occasion.\r\n\r\n• Custom Pooja Playlists: Create, edit, and reorder prayer lists for festivals and daily worship routines. Sequence your prayers step-by-step.\r\n\r\n• Multi-Language Support: Read devotional text seamlessly in 13 Indian languages, including English, Hindi, Marathi, Gujarati, Bengali, Assamese, Kannada, Malayalam, Odia, Punjabi, Tamil, Telugu, and Urdu.\r\n\r\n• Categorized by Deity & Festival: Easily browse prayers dedicated to Lord Ganesha, Lord Krishna, Lord Shiva, Goddess Durga, Lord Rama, Hanuman Ji, Goddess Laxmi, and Surya Dev. Filter by major occasions such as Diwali, Navratri, Ganesh Chaturthi, Janmashtami, and Maha Shivratri.\r\n\r\n• Customizable Reading Experience: Adjust font sizes (14pt to 32pt) for comfortable reading during rituals. Navigate smoothly between prayers with simple swipes.\r\n\r\n• Smart Search & Instant Filters: Quickly search by prayer title, deity name, festival, or language with real-time suggestions and search history.\r\n\r\n• Audio Aarti Support: Listen to selected audio Aartis directly within the app for a complete prayer experience.\r\n\r\n• Offline Reading & Sync: Access cached prayers offline during worship. Sign in with Google to save and sync your favorite Aartis across devices.\r\n\r\nAarti Sangrah eliminates the need to carry physical prayer books or browse multiple websites during puja. Designed with clear typography, warm devotional aesthetics, and intuitive controls, Aarti Sangrah makes everyday worship simple, meaningful, and accessible.\r\n\r\nDownload Aarti Sangrah today to bring sacred prayers and personalized worship routines to your daily life.",
     "features": [
       "Comprehensive local prayer list",
       "Devotional lyrics categorized logically",
@@ -54,6 +54,36 @@
     ],
     "score": null,
     "installs": "100+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "VapeQuit: Quit Vaping & Smoke",
+    "slug": "vape-quit",
+    "package_name": "com.sudogrep.vapefree.vape_free",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.sudogrep.vapefree.vape_free&hl=en&gl=us",
+    "icon": "assets/apps/vape-quit/icon.webp",
+    "feature_graphic": "assets/apps/vape-quit/feature_graphic.webp",
+    "short_description": "Quit vaping & nicotine habits. Track clean time, money saved & beat cravings.",
+    "description": "Take control of your health and break free from vaping and nicotine habits with VapeQuit. Whether you are quitting e-cigarettes, vapes, or nicotine pods, VapeQuit gives you the exact tools, motivation, and metrics needed to stay quit for good.\r\n\r\nKEY FEATURES:\r\n\r\n⏱️ REAL-TIME CLEAN DURATION COUNTER\r\nTrack your clean journey down to the exact second. Celebrate every minute you stay vape-free with live progress badges and health milestone tracking.\r\n\r\n💰 SAVINGS & POD COUNTER CALCULATOR\r\nSee exact financial savings based on your custom device cost and vaping habits. Watch your money grow every single day as you avoid buying replacement pods, disposables, or juice.\r\n\r\n⚡ 3-MINUTE PANIC CRAVING BUSTER\r\nWhen intense cravings hit, open the 3-minute emergency tools. Featuring guided 4-7-8 breathing exercises and interactive haptic distraction games designed to bridge peak nicotine urge waves.\r\n\r\n🩺 MEDICAL HEALTH RECOVERY MILESTONES\r\nTrack your body's physiological healing over time—from blood oxygen restoration and lung capacity improvement to nicotine detox completion.\r\n\r\n🛡️ 100% PRIVATE & OFFLINE-FIRST\r\nYour recovery data belongs strictly to you. All metrics, craving logs, and financial calculations remain stored safely on your device without registration or forced account creation.\r\n\r\nDownload VapeQuit today and start your journey to clean, healthy lungs!",
+    "features": [
+      "Real-time smoke & vape free sobriety counter",
+      "Health recovery milestone timelines",
+      "Money saved calculator & wishlist rewards",
+      "Craving management & distraction tools",
+      "Detailed craving logs & trigger analytics",
+      "100% private with local storage and cloud backup"
+    ],
+    "screenshots": [
+      "assets/apps/vape-quit/screenshots/screen_1.webp",
+      "assets/apps/vape-quit/screenshots/screen_2.webp",
+      "assets/apps/vape-quit/screenshots/screen_3.webp",
+      "assets/apps/vape-quit/screenshots/screen_4.webp",
+      "assets/apps/vape-quit/screenshots/screen_5.webp",
+      "assets/apps/vape-quit/screenshots/screen_6.webp"
+    ],
+    "score": null,
+    "installs": "0+",
     "developer": "SudoGrep",
     "status": "Live"
   },

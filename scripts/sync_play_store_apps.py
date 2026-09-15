@@ -22,10 +22,21 @@ SLUG_MAPPING = {
     "com.billreminder.bill_reminder": "billbuddy",
     "in.sudogrep.zip_connect": "zip-connect",
     "in.sudogrep.zip_connect_free": "zip-connect-plus",
-    "com.kp.kartik.aarti": "aarti-sangrah"
+    "com.kp.kartik.aarti": "aarti-sangrah",
+    "com.sudogrep.vapefree.vape_free": "vape-quit"
 }
 
 PRESERVED_APP_CONFIGS = {
+    "vape-quit": {
+        "features": [
+            "Real-time smoke & vape free sobriety counter",
+            "Health recovery milestone timelines",
+            "Money saved calculator & wishlist rewards",
+            "Craving management & distraction tools",
+            "Detailed craving logs & trigger analytics",
+            "100% private with local storage and cloud backup"
+        ]
+    },
     "kb-snap": {
         "features": [
             "Compress photos to specific target KB sizes",
@@ -152,13 +163,14 @@ def sync_play_store(dev_id="7135905913091619860", apps_json_path="data/apps.json
             print(f"Note: Could not parse existing {apps_json_path}: {e}")
 
     package_ids = get_dev_package_ids(dev_id)
-    if not package_ids:
-        print("Warning: No packages found on developer page. Using fallback package list.", file=sys.stderr)
-        package_ids = list(SLUG_MAPPING.keys())
+    all_package_ids = list(set(package_ids) | set(SLUG_MAPPING.keys()))
+    if not all_package_ids:
+        print("Warning: No packages found. Using fallback package list.", file=sys.stderr)
+        all_package_ids = list(SLUG_MAPPING.keys())
 
     synced_apps = []
 
-    for pkg_id in sorted(package_ids):
+    for pkg_id in sorted(all_package_ids):
         print(f"\nFetching Play Store details for package: {pkg_id}")
         try:
             detail = fetch_app_details(pkg_id, lang='en', country='us')

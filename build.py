@@ -289,6 +289,21 @@ def build_site():
                 ("Are there in-app purchases?", "Yes, optional in-app purchases are available to unlock premium power-ups, but the entire core game can be played and enjoyed for free."),
                 ("How does cloud save work?", "If you are online, your progress can be synced to your Google Play Games profile so you can resume on any compatible device.")
             ]
+        },
+        "vape-quit": {
+            "title": "VapeQuit — Quit Vaping & Nicotine Tracker | SudoGrep",
+            "desc": "Download VapeQuit for Android. Track your smoke and vape-free milestones, calculate money saved, conquer cravings, and monitor health recovery.",
+            "tools": [
+                ("/free-tools/", "Free Online Utilities")
+            ],
+            "guides": [
+                ("/blog/", "SudoGrep Insights Hub")
+            ],
+            "faqs": [
+                ("How does VapeQuit calculate money saved?", "VapeQuit calculates your savings in real-time based on your daily vaping/smoking expenses and habits entered during setup."),
+                ("Is my personal quitting data private?", "Yes. All your craving logs, milestones, and diary entries are securely stored locally on your device."),
+                ("Does the app include craving management tools?", "Yes! VapeQuit features guided breathing exercises, craving timers, and quick distraction tools to help you resist urges.")
+            ]
         }
     }
     
