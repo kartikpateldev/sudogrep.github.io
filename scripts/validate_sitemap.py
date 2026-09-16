@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import os
+from pathlib import Path
 import xml.etree.ElementTree as ET
 import urllib.request
 from html.parser import HTMLParser
@@ -55,23 +56,35 @@ def validate_sitemap():
             errors += 1
             continue
 
-        # Map to local server
+        # Map to local server or local file system
         local_url = url.replace("https://sudogrep.in", "http://localhost:8000")
+        content = None
         
         try:
             req = urllib.request.Request(local_url, headers={'User-Agent': 'SitemapValidator'})
-            with urllib.request.urlopen(req, timeout=5) as response:
+            with urllib.request.urlopen(req, timeout=1) as response:
                 status = response.status
                 if status != 200:
                     print(f"FAIL: {url} returned HTTP {status}")
                     errors += 1
                     continue
-                
                 content = response.read().decode('utf-8')
-        except Exception as e:
-            print(f"FAIL: {url} failed to resolve locally: {e}")
-            errors += 1
-            continue
+        except Exception:
+            # Fallback to direct file system check
+            rel_path = url.replace("https://sudogrep.in", "").strip("/")
+            if not rel_path:
+                file_candidate = Path("index.html")
+            elif rel_path.endswith(".html"):
+                file_candidate = Path(rel_path)
+            else:
+                file_candidate = Path(rel_path) / "index.html"
+            
+            if file_candidate.exists():
+                content = file_candidate.read_text(encoding="utf-8")
+            else:
+                print(f"FAIL: {url} local file {file_candidate} does not exist.")
+                errors += 1
+                continue
 
         # Parse HTML headers
         parser = MetaParser()

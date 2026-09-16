@@ -2,13 +2,16 @@
   {
     "url": "/",
     "page_type": "brand",
-    "primary_intent": "brand landing page and development hub",
-    "primary_topic": "SudoGrep software and utilities",
-    "primary_keyword": "sudogrep software",
+    "primary_intent": "free privacy-first online tools and utilities hub",
+    "primary_topic": "Privacy-First Online Web Tools",
+    "primary_keyword": "free online tools",
     "secondary_keywords": [
-      "custom software engineering",
-      "mobile app developers",
-      "on-device web tools"
+      "privacy-first online tools",
+      "client-side image compressor",
+      "browser image resizer",
+      "image to pdf online",
+      "on-device web tools",
+      "sudogrep software"
     ],
     "search_variations": [],
     "target_entities": [],
@@ -19,11 +22,14 @@
     ],
     "related_tools": [
       "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/",
       "/tools/image-resizer/",
-      "/tools/image-to-pdf/"
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
+      "/guides/how-to-resize-image-for-online-forms/",
       "/guides/jpg-vs-png-vs-webp/"
     ],
     "cannibalization_with": []

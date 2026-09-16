@@ -201,9 +201,9 @@ def build_site():
             "title": "KB Snap — Photo Compressor Android App | SudoGrep",
             "desc": "Download KB Snap for Android. Compress photos, scale signature assets, and reduce image sizes to 50KB offline with complete data privacy.",
             "tools": [
-                ("/compress-image-to-50kb/", "Compress Image to 50KB"),
-                ("/image-compressor/", "Image Compressor"),
-                ("/image-resizer/", "Image Resizer")
+                ("/tools/compress-image-to-50kb/", "Compress Image to 50KB"),
+                ("/tools/image-compressor/", "Image Compressor"),
+                ("/tools/image-resizer/", "Image Resizer")
             ],
             "guides": [
                 ("/guides/how-to-compress-image-to-50kb/", "How to Compress Image to 50KB"),
@@ -219,9 +219,9 @@ def build_site():
             "title": "File Forge — Offline File Converter & Extractor | SudoGrep",
             "desc": "Download File Forge for Android. Convert image and document formats, extract text via on-device OCR, and view metadata locally and securely.",
             "tools": [
-                ("/image-to-pdf/", "Image to PDF Converter"),
-                ("/jpg-to-pdf/", "JPG to PDF Converter"),
-                ("/image-converter/", "Image Converter")
+                ("/tools/image-to-pdf/", "Image to PDF Converter"),
+                ("/tools/jpg-to-pdf/", "JPG to PDF Converter"),
+                ("/tools/image-compressor/", "Image Compressor")
             ],
             "guides": [
                 ("/guides/how-to-convert-png-to-pdf/", "How to Convert PNG to PDF"),
@@ -237,7 +237,7 @@ def build_site():
             "title": "BillBuddy — Bill Reminder & Payment Tracker | SudoGrep",
             "desc": "Download BillBuddy for Android. Track EMIs, manage subscriptions, set payment notifications, and export expense reports locally and securely.",
             "tools": [
-                ("/free-tools/", "Free Online Utilities")
+                ("/tools/", "Free Online Utilities")
             ],
             "guides": [
                 ("/blog/", "SudoGrep Insights Hub")
@@ -251,7 +251,7 @@ def build_site():
             "title": "Zip Connect — Offline Logic Puzzle Game | SudoGrep",
             "desc": "Download Zip Connect for Android. Enjoy a clean, ad-free logic node puzzle game offline with beautiful transitions and no tracking.",
             "tools": [
-                ("/free-tools/", "Free Online Utilities")
+                ("/tools/", "Free Online Utilities")
             ],
             "guides": [
                 ("/blog/", "SudoGrep Insights Hub")
@@ -265,7 +265,7 @@ def build_site():
             "title": "Aarti Sangrah — Spiritual Devotional Prayers App | SudoGrep",
             "desc": "Download Aarti Sangrah for Android. Access a collection of spiritual prayers and traditional lyrics completely offline with an adjustable UI.",
             "tools": [
-                ("/free-tools/", "Free Online Utilities")
+                ("/tools/", "Free Online Utilities")
             ],
             "guides": [
                 ("/blog/", "SudoGrep Insights Hub")
@@ -279,7 +279,7 @@ def build_site():
             "title": "Ghost Trap — Tactical Arcade Puzzle Android Game | SudoGrep",
             "desc": "Download Ghost Trap for Android. A territory-claiming arcade puzzle game featuring offline play, cloud save, powerups and landmarks.",
             "tools": [
-                ("/free-tools/", "Free Online Utilities")
+                ("/tools/", "Free Online Utilities")
             ],
             "guides": [
                 ("/blog/", "SudoGrep Insights Hub")
@@ -294,7 +294,7 @@ def build_site():
             "title": "VapeQuit — Quit Vaping & Nicotine Tracker | SudoGrep",
             "desc": "Download VapeQuit for Android. Track your smoke and vape-free milestones, calculate money saved, conquer cravings, and monitor health recovery.",
             "tools": [
-                ("/free-tools/", "Free Online Utilities")
+                ("/tools/", "Free Online Utilities")
             ],
             "guides": [
                 ("/blog/", "SudoGrep Insights Hub")
@@ -319,7 +319,7 @@ def build_site():
         
         # Load specific details
         rel = app_relationships.get(slug, {
-            "tools": [("/free-tools/", "Free Online Utilities")],
+            "tools": [("/tools/", "Free Online Utilities")],
             "guides": [("/blog/", "SudoGrep Insights Hub")],
             "faqs": [("Is this app safe to use?", "Yes. It processes all operations locally and collects no user data.")]
         })
@@ -398,7 +398,7 @@ def build_site():
         feature_banner_html = ""
         if app.get("feature_graphic") and os.path.exists(app["feature_graphic"]):
             feature_banner_html = f'''        <div class="app-feature-hero" style="margin-top: 2.5rem;">
-          <img src="/{app["feature_graphic"]}" alt="{app["name"]} Feature Graphic" class="app-feature-banner" loading="lazy">
+          <img src="/{app["feature_graphic"]}" alt="{app["name"]} Feature Graphic" class="app-feature-banner" width="1024" height="500" loading="lazy">
         </div>'''
 
         # Generate Screenshot Showcase Gallery HTML
@@ -406,7 +406,7 @@ def build_site():
         if app.get("screenshots"):
             valid_shots = [s for s in app["screenshots"] if os.path.exists(s)]
             if valid_shots:
-                cards_str = "\n".join([f'            <div class="app-screenshot-card"><img src="/{s}" alt="{app["name"]} screenshot" class="app-screenshot-img" loading="lazy"></div>' for s in valid_shots])
+                cards_str = "\n".join([f'            <div class="app-screenshot-card"><img src="/{s}" alt="{app["name"]} screenshot" class="app-screenshot-img" width="300" height="600" loading="lazy"></div>' for s in valid_shots])
                 screenshots_html = f'''    <section class="home-section-tinted" style="padding: 3rem 0;">
       <div class="container">
         <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); text-align: center;">App Showcase & Screenshots</h2>
@@ -494,6 +494,8 @@ def build_site():
             
         # Get intro (first paragraph or custom intro)
         intro = post["description"]
+        section_name = "Guides" if prefix == "guides" else "Insights"
+        section_url = f"/{prefix}/"
         
         # Construct JSON-LD Schema
         schema_json = {
@@ -533,8 +535,8 @@ def build_site():
                         {
                             "@type": "ListItem",
                             "position": 2,
-                            "name": "Insights",
-                            "item": f"https://sudogrep.in/{prefix}/"
+                            "name": section_name,
+                            "item": f"https://sudogrep.in{section_url}"
                         },
                         {
                             "@type": "ListItem",
@@ -555,6 +557,8 @@ def build_site():
         pg_html = pg_html.replace("{{CANONICAL_URL}}", f"https://sudogrep.in/{prefix}/{slug}/")
         pg_html = pg_html.replace("{{OG_TITLE}}", post["title"])
         pg_html = pg_html.replace("{{OG_DESCRIPTION}}", post["description"])
+        pg_html = pg_html.replace("{{BREADCRUMB_SECTION_URL}}", section_url)
+        pg_html = pg_html.replace("{{BREADCRUMB_SECTION_NAME}}", section_name)
         pg_html = pg_html.replace("{{BREADCRUMB_NAME}}", post["h1"])
         pg_html = pg_html.replace("{{ARTICLE_CATEGORY}}", post["category"])
         pg_html = pg_html.replace("{{READ_TIME}}", post["read_time"])
@@ -597,6 +601,13 @@ def build_site():
         ("guides/resize-images-for-online-forms", "/guides/how-to-resize-image-for-online-forms/"),
         ("blog/how-to-reduce-jpg-file-size", "/guides/how-to-reduce-jpg-size/"),
         ("guides/how-to-reduce-jpg-file-size", "/guides/how-to-reduce-jpg-size/"),
+        ("aarti_sangrah", "/apps/aarti-sangrah/"),
+        ("aarti", "/apps/aarti-sangrah/"),
+        ("ghost_trap", "/apps/ghost-trap/"),
+        ("zip_connect", "/apps/zip-connect/"),
+        ("file_forge", "/apps/file-forge/"),
+        ("play_store", "/apps/"),
+        ("apps/zip-connect-plus", "/apps/zip-connect/"),
     ]
     for old_path, target_url in cannibalized_redirects:
         os.makedirs(old_path, exist_ok=True)

@@ -34,7 +34,7 @@ def generate_sitemap():
         if path == "/":
             changefreq = "daily"
             priority = "1.0"
-        elif path in ["/free-tools/", "/apps/", "/blog/", "/insights/", "/guides/", "/services/", "/ai-solutions/"]:
+        elif path in ["/tools/", "/apps/", "/blog/", "/insights/", "/guides/", "/services/", "/ai-solutions/"]:
             changefreq = "weekly"
             priority = "0.9"
         elif path in ["/about/", "/contact/"]:

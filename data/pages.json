@@ -1,42 +1,52 @@
 {
   "/": {
     "url": "/",
-    "title": "SudoGrep — Free Online Tools, Software & AI Solutions",
-    "description": "Free online tools, privacy-first apps and practical software solutions by SudoGrep. Compress images, resize photos, convert files and explore useful AI-powered tools.",
-    "h1": "Free Online Tools, Privacy-First Apps & AI Solutions",
-    "primary_intent": "brand landing page and development hub",
-    "primary_topic": "SudoGrep software and utilities",
+    "title": "SudoGrep — Free Privacy-First Online Tools",
+    "description": "Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.",
+    "h1": "Free Privacy-First Online Tools",
+    "primary_intent": "free privacy-first online tools and utilities hub",
+    "primary_topic": "Privacy-First Online Web Tools",
     "secondary_topics": [
-      "mobile apps",
-      "custom AI integrations",
-      "free web tools"
+      "Image Compression",
+      "Image Resizing",
+      "Image Conversion",
+      "Image to PDF",
+      "Mobile Applications",
+      "Software Development"
     ],
     "primary_keywords": [
-      "sudogrep software"
+      "free privacy-first online tools",
+      "privacy-first online tools"
     ],
     "secondary_keywords": [
-      "custom software engineering",
-      "mobile app developers",
-      "on-device web tools"
+      "client-side image compressor",
+      "browser image resizer",
+      "image to pdf online",
+      "on-device web tools",
+      "sudogrep software"
     ],
     "related_tools": [
       "/tools/image-compressor/",
+      "/tools/compress-image-to-50kb/",
       "/tools/image-resizer/",
-      "/tools/image-to-pdf/"
+      "/tools/image-to-pdf/",
+      "/tools/jpg-to-pdf/"
     ],
     "related_guides": [
       "/guides/how-to-compress-image-to-50kb/",
+      "/guides/how-to-resize-image-for-online-forms/",
       "/guides/jpg-vs-png-vs-webp/"
     ],
     "recommended_internal_links": [
       "/tools/",
+      "/guides/",
       "/apps/",
       "/services/",
       "/ai-solutions/"
     ],
     "canonical": "https://sudogrep.in/",
-    "og_title": "SudoGrep — Free Online Tools, Software & AI Solutions",
-    "og_description": "Free online tools, privacy-first apps and practical software solutions by SudoGrep. Compress images, resize photos, convert files and explore useful AI-powered tools.",
+    "og_title": "SudoGrep — Free Privacy-First Online Tools",
+    "og_description": "Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebSite"
   },
@@ -44,7 +54,7 @@
     "url": "/tools/",
     "title": "Free Online Web Utilities & Tools — SudoGrep",
     "description": "Explore fast, privacy-focused online web tools by SudoGrep. Compress images, resize dimensions, and compile PDFs completely in your browser.",
-    "h1": "Free Web Utilities",
+    "h1": "Free Online Web Utilities",
     "primary_intent": "free online tools directory",
     "primary_topic": "web utilities",
     "secondary_topics": [
@@ -53,7 +63,8 @@
       "image dimensions resizing"
     ],
     "primary_keywords": [
-      "free online tools"
+      "free online web utilities",
+      "browser tools directory"
     ],
     "secondary_keywords": [
       "browser utilities",
