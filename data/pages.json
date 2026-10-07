@@ -1554,5 +1554,101 @@
     "og_description": "Download VapeQuit for Android. Track smoke and vape-free milestones, calculate money saved, manage cravings, and monitor health recovery.",
     "og_image": "https://sudogrep.in/assets/apps/vape-quit/icon.webp",
     "schema_type": "SoftwareApplication"
+  },
+  "/apps/citizenprep/": {
+    "url": "/apps/citizenprep/",
+    "title": "CitizenPrep — US Citizenship Civics Practice App | SudoGrep",
+    "description": "Download CitizenPrep for Android. Practice civics test questions, take timed mock tests, track learning progress, and study completely offline.",
+    "h1": "CitizenPrep",
+    "primary_intent": "download citizenprep us citizenship test prep app for android",
+    "primary_topic": "US Citizenship Civics Prep",
+    "secondary_topics": [
+      "Civics & History Questions",
+      "Timed Mock Tests",
+      "Offline Study Access"
+    ],
+    "primary_keywords": [
+      "citizenprep app"
+    ],
+    "secondary_keywords": [
+      "us citizenship test app android",
+      "civics practice questions offline"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/citizenprep/",
+    "og_title": "CitizenPrep — US Citizenship Civics Practice App | SudoGrep",
+    "og_description": "Download CitizenPrep for Android. Practice civics test questions, take timed mock tests, track learning progress, and study completely offline.",
+    "og_image": "https://sudogrep.in/assets/apps/citizenprep/icon.webp",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/savi/": {
+    "url": "/apps/savi/",
+    "title": "Savi — Period & Cycle Tracker Android App | SudoGrep",
+    "description": "Download Savi for Android. Track periods, menstrual cycle phases, ovulation, symptoms, and fertile windows with privacy-first on-device security.",
+    "h1": "Savi: Period & Cycle Tracker",
+    "primary_intent": "download savi period and menstrual cycle tracker app for android",
+    "primary_topic": "Period & Menstrual Cycle Tracker",
+    "secondary_topics": [
+      "Ovulation Prediction",
+      "Fertile Window & TTC Tracking",
+      "Daily Health Symptoms"
+    ],
+    "primary_keywords": [
+      "savi app"
+    ],
+    "secondary_keywords": [
+      "period tracker android offline",
+      "ovulation and cycle tracker app"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/savi/",
+    "og_title": "Savi — Period & Cycle Tracker Android App | SudoGrep",
+    "og_description": "Download Savi for Android. Track periods, menstrual cycle phases, ovulation, symptoms, and fertile windows with privacy-first on-device security.",
+    "og_image": "https://sudogrep.in/assets/apps/savi/icon.webp",
+    "schema_type": "SoftwareApplication"
+  },
+  "/apps/zip-connect-plus/": {
+    "url": "/apps/zip-connect-plus/",
+    "title": "Zip Connect Plus — Logic Number Puzzle Game | SudoGrep",
+    "description": "Download Zip Connect Plus for Android. Connect numbered nodes in sequence, conquer daily logic puzzles, and enjoy relaxing brain challenges offline.",
+    "h1": "Zip Connect Plus:Number Puzzle",
+    "primary_intent": "download zip connect plus logic number puzzle game for android",
+    "primary_topic": "Logic Number Puzzle Game",
+    "secondary_topics": [
+      "Node Connection Puzzles",
+      "Daily Brain Challenges",
+      "Offline Puzzle Game"
+    ],
+    "primary_keywords": [
+      "zip connect plus game"
+    ],
+    "secondary_keywords": [
+      "number puzzle game android",
+      "offline connect nodes puzzle"
+    ],
+    "related_tools": [
+      "/tools/"
+    ],
+    "related_guides": [],
+    "recommended_internal_links": [
+      "/apps/"
+    ],
+    "canonical": "https://sudogrep.in/apps/zip-connect-plus/",
+    "og_title": "Zip Connect Plus — Logic Number Puzzle Game | SudoGrep",
+    "og_description": "Download Zip Connect Plus for Android. Connect numbered nodes in sequence, conquer daily logic puzzles, and enjoy relaxing brain challenges offline.",
+    "og_image": "https://sudogrep.in/assets/apps/zip-connect-plus/icon.webp",
+    "schema_type": "SoftwareApplication"
   }
 }

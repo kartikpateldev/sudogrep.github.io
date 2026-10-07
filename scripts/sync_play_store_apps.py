@@ -3,7 +3,8 @@
 Sync Play Store Apps
 --------------------
 Automatically fetches all published Android applications from Google Play Store for developer SudoGrep,
-downloads app icons, feature graphics, and screenshot previews, and updates data/apps.json.
+downloads exact high-resolution app icons, feature graphics (1024x500), and screenshot previews,
+and updates data/apps.json.
 """
 
 import os
@@ -15,18 +16,53 @@ from io import BytesIO
 from PIL import Image
 from google_play_scraper import app as fetch_app_details
 
+DEV_PAGE_ORDER = [
+    "in.sudogrep.ghosttrap",
+    "in.sudogrep.savi",
+    "com.sudogrep.vapefree.vape_free",
+    "com.sudogrep.citizenprep",
+    "in.sudogrep.kb_snap",
+    "in.sudogrep.zip_connect_free",
+    "in.sudogrep.zip_connect",
+    "com.billreminder.bill_reminder",
+    "dev.kartikpatel.fileforge",
+    "com.kp.kartik.aarti"
+]
+
 SLUG_MAPPING = {
     "in.sudogrep.ghosttrap": "ghost-trap",
+    "in.sudogrep.savi": "savi",
+    "com.sudogrep.vapefree.vape_free": "vape-quit",
+    "com.sudogrep.citizenprep": "citizenprep",
     "in.sudogrep.kb_snap": "kb-snap",
-    "dev.kartikpatel.fileforge": "file-forge",
-    "com.billreminder.bill_reminder": "billbuddy",
-    "in.sudogrep.zip_connect": "zip-connect",
     "in.sudogrep.zip_connect_free": "zip-connect-plus",
-    "com.kp.kartik.aarti": "aarti-sangrah",
-    "com.sudogrep.vapefree.vape_free": "vape-quit"
+    "in.sudogrep.zip_connect": "zip-connect",
+    "com.billreminder.bill_reminder": "billbuddy",
+    "dev.kartikpatel.fileforge": "file-forge",
+    "com.kp.kartik.aarti": "aarti-sangrah"
 }
 
 PRESERVED_APP_CONFIGS = {
+    "citizenprep": {
+        "features": [
+            "Civics and history practice questions",
+            "Topic-by-topic practice & full timed mock tests",
+            "Instant scoring and detailed answer explanations",
+            "Learning progress and mistake review tracking",
+            "100% offline practice access",
+            "Instant guest mode with no required account setup"
+        ]
+    },
+    "savi": {
+        "features": [
+            "Period & menstrual cycle tracking with cycle phases",
+            "Estimated fertile window and ovulation tracking",
+            "Daily symptom, mood, energy, and sleep logging",
+            "Optional TTC fertility indicators (LH, BBT, cervical mucus)",
+            "Clear visual cycle calendar and timeline",
+            "Privacy-first design with secure guest or Google sign-in"
+        ]
+    },
     "vape-quit": {
         "features": [
             "Real-time smoke & vape free sobriety counter",
@@ -118,7 +154,7 @@ def download_and_save_image(url, save_path, size=None):
     try:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'})
-        with urllib.request.urlopen(req, timeout=15) as response:
+        with urllib.request.urlopen(req, timeout=25) as response:
             img_data = response.read()
         img = Image.open(BytesIO(img_data))
         if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
@@ -127,7 +163,7 @@ def download_and_save_image(url, save_path, size=None):
             img = img.convert('RGB')
         if size:
             img = img.resize(size, Image.Resampling.LANCZOS)
-        img.save(save_path, 'WEBP', quality=92, optimize=True)
+        img.save(save_path, 'WEBP', quality=95, optimize=True)
         return True
     except Exception as e:
         print(f"  Warning: Failed to download image from {url}: {e}", file=sys.stderr)
@@ -135,13 +171,17 @@ def download_and_save_image(url, save_path, size=None):
 
 
 def get_dev_package_ids(developer_id):
-    url = f"https://play.google.com/store/apps/dev?id={developer_id}"
+    url = f"https://play.google.com/store/apps/dev?id={developer_id}&hl=en_IN"
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'})
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=20) as resp:
             html = resp.read().decode('utf-8')
-        package_ids = list(set(re.findall(r'/store/apps/details\?id=([a-zA-Z0-9_\.]+)', html)))
-        return package_ids
+        raw_ids = re.findall(r'/store/apps/details\?id=([a-zA-Z0-9_\.]+)', html)
+        ordered_ids = []
+        for pid in raw_ids:
+            if pid not in ordered_ids:
+                ordered_ids.append(pid)
+        return ordered_ids
     except Exception as e:
         print(f"Error fetching developer page for ID {developer_id}: {e}", file=sys.stderr)
         return []
@@ -162,23 +202,34 @@ def sync_play_store(dev_id="7135905913091619860", apps_json_path="data/apps.json
         except Exception as e:
             print(f"Note: Could not parse existing {apps_json_path}: {e}")
 
-    package_ids = get_dev_package_ids(dev_id)
-    all_package_ids = list(set(package_ids) | set(SLUG_MAPPING.keys()))
-    if not all_package_ids:
-        print("Warning: No packages found. Using fallback package list.", file=sys.stderr)
-        all_package_ids = list(SLUG_MAPPING.keys())
+    dev_fetched_ids = get_dev_package_ids(dev_id)
+    # Merge with DEV_PAGE_ORDER and SLUG_MAPPING keys while keeping order
+    all_package_ids = []
+    for pid in dev_fetched_ids:
+        if pid in SLUG_MAPPING and pid not in all_package_ids:
+            all_package_ids.append(pid)
+    for pid in DEV_PAGE_ORDER:
+        if pid not in all_package_ids:
+            all_package_ids.append(pid)
+    for pid in SLUG_MAPPING.keys():
+        if pid not in all_package_ids:
+            all_package_ids.append(pid)
 
     synced_apps = []
 
-    for pkg_id in sorted(all_package_ids):
+    for pkg_id in all_package_ids:
         print(f"\nFetching Play Store details for package: {pkg_id}")
         try:
-            detail = fetch_app_details(pkg_id, lang='en', country='us')
+            detail = fetch_app_details(pkg_id, lang='en', country='in')
         except Exception as e:
-            print(f"  Error fetching Play Store details for {pkg_id}: {e}", file=sys.stderr)
-            if pkg_id in existing_apps_dict:
-                synced_apps.append(existing_apps_dict[pkg_id])
-            continue
+            print(f"  Warning: country=in failed ({e}), falling back to country=us...", file=sys.stderr)
+            try:
+                detail = fetch_app_details(pkg_id, lang='en', country='us')
+            except Exception as e2:
+                print(f"  Error fetching Play Store details for {pkg_id}: {e2}", file=sys.stderr)
+                if pkg_id in existing_apps_dict:
+                    synced_apps.append(existing_apps_dict[pkg_id])
+                continue
 
         slug = SLUG_MAPPING.get(pkg_id)
         if not slug:
@@ -190,20 +241,27 @@ def sync_play_store(dev_id="7135905913091619860", apps_json_path="data/apps.json
         app_dir = os.path.join("assets", "apps", slug)
         os.makedirs(app_dir, exist_ok=True)
 
-        # Download App Icon
+        # Download App Icon (exact 512x512)
         icon_url = detail.get("icon")
         icon_path = os.path.join(app_dir, "icon.webp")
         if icon_url:
-            print(f"  Downloading app icon...")
-            download_and_save_image(icon_url, icon_path, size=(512, 512))
+            print(f"  Downloading app icon (512x512)...")
+            icon_download_url = icon_url + "=s0" if "=s" not in icon_url else icon_url
+            if not download_and_save_image(icon_download_url, icon_path, size=(512, 512)):
+                download_and_save_image(icon_url, icon_path, size=(512, 512))
 
-        # Download Feature Graphic / Header Image
+        # Download Feature Graphic / Header Image (exact 1024x500 Play Store feature graphic)
         feature_url = detail.get("headerImage")
         feature_path = os.path.join(app_dir, "feature_graphic.webp")
         has_feature_graphic = False
         if feature_url:
-            print(f"  Downloading feature graphic...")
-            has_feature_graphic = download_and_save_image(feature_url, feature_path)
+            print(f"  Downloading exact 1024x500 feature graphic...")
+            fg_download_url = feature_url + "=s0" if "=s" not in feature_url else feature_url
+            has_feature_graphic = download_and_save_image(fg_download_url, feature_path, size=(1024, 500))
+            if not has_feature_graphic:
+                has_feature_graphic = download_and_save_image(feature_url + "=w1024-h500-rw", feature_path)
+            if not has_feature_graphic:
+                has_feature_graphic = download_and_save_image(feature_url, feature_path, size=(1024, 500))
 
         # Download Screenshots (up to 6)
         screenshots_urls = detail.get("screenshots", [])
@@ -213,7 +271,10 @@ def sync_play_store(dev_id="7135905913091619860", apps_json_path="data/apps.json
         for idx, shot_url in enumerate(screenshots_urls[:6]):
             shot_path = os.path.join(screenshots_dir, f"screen_{idx + 1}.webp")
             print(f"  Downloading screenshot {idx + 1}/{min(len(screenshots_urls), 6)}...")
-            if download_and_save_image(shot_url, shot_path):
+            shot_download_url = shot_url + "=s0" if "=s" not in shot_url else shot_url
+            if download_and_save_image(shot_download_url, shot_path):
+                saved_screenshots.append(f"assets/apps/{slug}/screenshots/screen_{idx + 1}.webp")
+            elif download_and_save_image(shot_url, shot_path):
                 saved_screenshots.append(f"assets/apps/{slug}/screenshots/screen_{idx + 1}.webp")
 
         # Determine features
@@ -221,7 +282,6 @@ def sync_play_store(dev_id="7135905913091619860", apps_json_path="data/apps.json
         if slug in PRESERVED_APP_CONFIGS and "features" in PRESERVED_APP_CONFIGS[slug]:
             features = PRESERVED_APP_CONFIGS[slug]["features"]
         elif detail.get("description"):
-            # Try to extract bullet points from description
             raw_desc = detail.get("description", "")
             bullets = re.findall(r'[\u2022\*\-]\s*(.*)', raw_desc)
             if bullets:
@@ -235,7 +295,9 @@ def sync_play_store(dev_id="7135905913091619860", apps_json_path="data/apps.json
                 "Regular updates and continuous support"
             ]
 
-        play_store_url = detail.get("url") or f"https://play.google.com/store/apps/details?id={pkg_id}"
+        play_store_url = detail.get("url") or f"https://play.google.com/store/apps/details?id={pkg_id}&hl=en_IN"
+        if "hl=en" not in play_store_url:
+            play_store_url += "&hl=en_IN"
 
         app_entry = {
             "name": detail.get("title"),

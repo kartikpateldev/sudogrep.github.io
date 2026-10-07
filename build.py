@@ -304,6 +304,50 @@ def build_site():
                 ("Is my personal quitting data private?", "Yes. All your craving logs, milestones, and diary entries are securely stored locally on your device."),
                 ("Does the app include craving management tools?", "Yes! VapeQuit features guided breathing exercises, craving timers, and quick distraction tools to help you resist urges.")
             ]
+        },
+        "citizenprep": {
+            "title": "CitizenPrep — US Citizenship Civics Practice App | SudoGrep",
+            "desc": "Download CitizenPrep for Android. Practice civics test questions, take timed mock tests, track learning progress, and study completely offline.",
+            "tools": [
+                ("/tools/", "Free Online Utilities")
+            ],
+            "guides": [
+                ("/blog/", "SudoGrep Insights Hub")
+            ],
+            "faqs": [
+                ("Is CitizenPrep affiliated with the US Government?", "No, CitizenPrep is an independent educational prep app. All civics questions and study materials are based on publicly available official test resources from the U.S. Citizenship and Immigration Services (USCIS)."),
+                ("Can I practice for the citizenship test offline?", "Yes! All civics test questions, categories, and practice tests are stored locally on your device for convenient offline study."),
+                ("Does CitizenPrep require an account?", "No account setup is required. You can start practicing immediately in Guest mode with zero setup.")
+            ]
+        },
+        "savi": {
+            "title": "Savi — Period & Cycle Tracker Android App | SudoGrep",
+            "desc": "Download Savi for Android. Track periods, menstrual cycle phases, ovulation, symptoms, and fertile windows with privacy-first on-device security.",
+            "tools": [
+                ("/tools/", "Free Online Utilities")
+            ],
+            "guides": [
+                ("/blog/", "SudoGrep Insights Hub")
+            ],
+            "faqs": [
+                ("How does Savi predict ovulation and fertile windows?", "Savi analyzes your historical cycle lengths and user-entered symptoms to calculate estimated fertile windows and ovulation timing."),
+                ("Is my personal health and cycle data private?", "Yes. Savi is designed with a strict privacy-first model. You can use Guest mode without an account, and your personal cycle logs remain completely under your control."),
+                ("Can I use Savi when trying to conceive (TTC)?", "Yes, Savi includes dedicated fertility tracking support including LH test results, basal body temperature (BBT), and cervical mucus monitoring.")
+            ]
+        },
+        "zip-connect-plus": {
+            "title": "Zip Connect Plus — Logic Number Puzzle Game | SudoGrep",
+            "desc": "Download Zip Connect Plus for Android. Connect numbered nodes in sequence, conquer daily logic puzzles, and enjoy relaxing brain challenges offline.",
+            "tools": [
+                ("/tools/", "Free Online Utilities")
+            ],
+            "guides": [
+                ("/blog/", "SudoGrep Insights Hub")
+            ],
+            "faqs": [
+                ("What is the difference between Zip Connect and Zip Connect Plus?", "Zip Connect Plus offers an expanded puzzle library, new board sizes, daily challenge modes, and additional customization options."),
+                ("Does Zip Connect Plus work without internet?", "Yes, the full puzzle library and daily levels are playable 100% offline.")
+            ]
         }
     }
     
@@ -607,7 +651,6 @@ def build_site():
         ("zip_connect", "/apps/zip-connect/"),
         ("file_forge", "/apps/file-forge/"),
         ("play_store", "/apps/"),
-        ("apps/zip-connect-plus", "/apps/zip-connect/"),
     ]
     for old_path, target_url in cannibalized_redirects:
         os.makedirs(old_path, exist_ok=True)

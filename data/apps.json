@@ -1,9 +1,213 @@
 [
   {
+    "name": "Ghost Trap: Reveal the World",
+    "slug": "ghost-trap",
+    "package_name": "in.sudogrep.ghosttrap",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap&hl=en&gl=in",
+    "icon": "assets/apps/ghost-trap/icon.webp",
+    "feature_graphic": "assets/apps/ghost-trap/feature_graphic.webp",
+    "short_description": "Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!",
+    "description": "🎮 Claim territory, outsmart ghosts, and reveal stunning world landmarks in Ghost Trap – a tactical arcade puzzle game that challenges your spatial strategy and quick thinking.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🎯 HOW TO PLAY\r\n\r\nNavigate Champ across the grid, carving paths to claim territory while avoiding bouncing ghosts. Claim 80%+ of each level to reveal breathtaking images of famous landmarks from around the world.\r\n\r\nEach completed level brings you closer to mastering entire countries – from the Taj Mahal in India to Mount Fuji in Japan.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n⚡ CORE GAMEPLAY\r\n\r\n🗺️ Territory Claiming\r\nDraw paths from safe zones into unclaimed territory. Connect back to safety to claim the enclosed area. But watch out – if a ghost touches your path before you finish, you lose a life!\r\n\r\n💪 Strategic Power-Ups\r\n• 🚀 Speeder – Move twice as fast for 30 seconds\r\n• 🥶 Frost – Slow down ghosts by 50% for 30 seconds\r\n• 🧊 Freeze – Stop all ghosts completely for 60 seconds\r\n\r\n📈 Progressive Challenge\r\n30 levels per stage with increasing difficulty. Early levels ease you in with 3 slow ghosts, while later levels challenge you with 8 fast-moving enemies.\r\n\r\n🌍 World Exploration\r\nJourney across countries and continents. Each stage represents a different nation with 30 unique landmarks to discover. Complete all levels to unlock the next country and earn bonus rewards.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n✨ KEY FEATURES\r\n\r\n❤️ Fair Lives System\r\nStart with 5 lives. Lives regenerate automatically – 1 life every 30 minutes. No pressure, no forced waiting. Play at your own pace.\r\n\r\n🎁 Generous Rewards\r\nEarn coins, power-ups, and infinity lives passes by completing levels. Collect rewards in your Reward Box and claim them whenever you want.\r\n\r\n📴 Offline Play\r\nPlay anywhere, anytime – no internet required. Your progress syncs automatically when you reconnect.\r\n\r\n☁️ Cloud Save\r\nLink your Google account to back up your progress and play across multiple devices. Never lose your achievements.\r\n\r\n💎 Optional Purchases\r\nRemove ads permanently, buy coin packs, or unlock infinity lives passes. All purchases are optional – enjoy the full game for free.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🎮 GAME CONTENT\r\n\r\n✓ Multiple stages representing countries worldwide\r\n✓ 30 levels per stage featuring famous landmarks\r\n✓ Progressive difficulty that rewards skill improvement\r\n✓ Reward Box system for claiming earned bonuses\r\n✓ In-game store with optional purchases\r\n✓ Settings and customization including sound controls\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n💯 WHY PLAYERS LOVE GHOST TRAP\r\n\r\n🧠 Pure Logic Gameplay\r\nNo random chance. No pay-to-win mechanics. Success depends entirely on your spatial strategy and timing.\r\n\r\n🏛️ Beautiful Landmark Reveals\r\nEach level completion unveils a stunning high-definition image of a world-famous place. It's part puzzle, part discovery.\r\n\r\n⏱️ Smooth Progression\r\nFair life regeneration means you're never stuck waiting. Watch rewarded ads to earn extra lives, coins, or power-ups if you want to keep playing.\r\n\r\n✨ Polished Experience\r\nClean dark theme interface with neon accents. Intuitive touch controls. Satisfying confetti celebrations when you win.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n👥 PERFECT FOR\r\n\r\n✓ Fans of classic arcade games like Xonix, Qix, and Jezzball\r\n✓ Puzzle enthusiasts who enjoy spatial strategy\r\n✓ Players who want fair free-to-play games\r\n✓ Anyone who loves discovering world landmarks\r\n✓ Casual gamers looking for quick sessions\r\n✓ Hardcore players seeking challenging levels\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🌟 DOWNLOAD NOW\r\n\r\nStart your journey in India with the iconic Taj Mahal, then unlock stages across Japan, France, USA, Australia, and beyond.\r\n\r\nCan you master every landmark and conquer the world? 🌍",
+    "features": [
+      "Territory claiming gameplay",
+      "Strategic ghost avoidance",
+      "World landmark discovery",
+      "Progressive difficulty",
+      "Speeder, Frost and Freeze power-ups",
+      "Offline play",
+      "Cloud save",
+      "Reward system",
+      "Optional in-app purchases"
+    ],
+    "screenshots": [
+      "assets/apps/ghost-trap/screenshots/screen_1.webp",
+      "assets/apps/ghost-trap/screenshots/screen_2.webp",
+      "assets/apps/ghost-trap/screenshots/screen_3.webp",
+      "assets/apps/ghost-trap/screenshots/screen_4.webp",
+      "assets/apps/ghost-trap/screenshots/screen_5.webp"
+    ],
+    "score": 5,
+    "installs": "10+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Savi: Period & Cycle Tracker",
+    "slug": "savi",
+    "package_name": "in.sudogrep.savi",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.savi&hl=en&gl=in",
+    "icon": "assets/apps/savi/icon.webp",
+    "feature_graphic": "assets/apps/savi/feature_graphic.webp",
+    "short_description": "Period & cycle tracker with ovulation, fertile window, symptoms and TTC tracking",
+    "description": "Savi is a simple period and cycle tracker designed to help you understand your menstrual cycle, track how you feel, and follow your fertile window when trying to conceive.\r\n\r\nWhether you want to keep track of your periods, understand your cycle patterns, or monitor fertility signs, Savi keeps the important information in one simple place.\r\n\r\n🌸 TRACK YOUR PERIOD & CYCLE\r\n\r\n• Log your period and flow\r\n• See your current cycle day and cycle phase\r\n• View your cycle history and patterns\r\n• Get estimated upcoming period dates based on your cycle history\r\n• Understand your cycle without complicated charts\r\n\r\n🌿 UNDERSTAND YOUR DAILY HEALTH\r\n\r\nTrack the things that matter to you:\r\n\r\n• Symptoms\r\n• Mood\r\n• Energy\r\n• Sleep\r\n• Flow\r\n• Notes\r\n\r\nKeep your daily tracking simple and only record what you want to remember.\r\n\r\n💗 TRYING TO CONCEIVE\r\n\r\nSavi can help you understand your estimated fertile window and ovulation timing based on your cycle history.\r\n\r\nYou can also optionally track fertility signs such as:\r\n\r\n• LH test results\r\n• Basal body temperature (BBT)\r\n• Cervical mucus\r\n• Intercourse\r\n\r\nSavi uses your available cycle information to provide estimated fertile-window and ovulation information. These estimates can vary between cycles and should not be considered a guarantee of ovulation, fertility, conception, or pregnancy.\r\n\r\n📅 SEE YOUR CYCLE CLEARLY\r\n\r\nUse the cycle calendar and timeline to see your periods, estimated fertile window, estimated ovulation and other important cycle information in one place.\r\n\r\n🔒 YOUR DATA, YOUR CONTROL\r\n\r\nSavi is designed with privacy in mind.\r\n\r\n• Sign in with Google or use Guest access\r\n• Your cycle and health information is associated with your account when you choose an account-based experience\r\n• Delete your account and associated data from within the app\r\n• Your data is transmitted securely\r\n\r\n✨ SIMPLE BY DESIGN\r\n\r\nSavi focuses on the information you actually need instead of overwhelming you with unnecessary features.\r\n\r\nTrack your cycle. Understand your patterns. Know your estimated fertile days.\r\n\r\nDownload Savi: Period & Cycle Tracker and make cycle tracking simpler.\r\n\r\nIMPORTANT HEALTH INFORMATION\r\n\r\nSavi is intended for tracking and informational purposes only. Cycle, fertile-window and ovulation information is estimated from the information you provide and may not be accurate for every person or every cycle.\r\n\r\nSavi does not provide medical diagnosis, treatment, or medical advice and should not be used as a substitute for professional medical care. If you have concerns about your menstrual health, fertility, pregnancy, symptoms, or other health conditions, consult a qualified healthcare professional.",
+    "features": [
+      "Period & menstrual cycle tracking with cycle phases",
+      "Estimated fertile window and ovulation tracking",
+      "Daily symptom, mood, energy, and sleep logging",
+      "Optional TTC fertility indicators (LH, BBT, cervical mucus)",
+      "Clear visual cycle calendar and timeline",
+      "Privacy-first design with secure guest or Google sign-in"
+    ],
+    "screenshots": [
+      "assets/apps/savi/screenshots/screen_1.webp",
+      "assets/apps/savi/screenshots/screen_2.webp",
+      "assets/apps/savi/screenshots/screen_3.webp",
+      "assets/apps/savi/screenshots/screen_4.webp",
+      "assets/apps/savi/screenshots/screen_5.webp",
+      "assets/apps/savi/screenshots/screen_6.webp"
+    ],
+    "score": null,
+    "installs": "0+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "VapeQuit: Quit Vaping & Smoke",
+    "slug": "vape-quit",
+    "package_name": "com.sudogrep.vapefree.vape_free",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.sudogrep.vapefree.vape_free&hl=en&gl=in",
+    "icon": "assets/apps/vape-quit/icon.webp",
+    "feature_graphic": "assets/apps/vape-quit/feature_graphic.webp",
+    "short_description": "Quit vaping & nicotine habits. Track clean time, money saved & beat cravings.",
+    "description": "Take control of your health and break free from vaping and nicotine habits with VapeQuit. Whether you are quitting e-cigarettes, vapes, or nicotine pods, VapeQuit gives you the exact tools, motivation, and metrics needed to stay quit for good.\r\n\r\nKEY FEATURES:\r\n\r\n⏱️ REAL-TIME CLEAN DURATION COUNTER\r\nTrack your clean journey down to the exact second. Celebrate every minute you stay vape-free with live progress badges and health milestone tracking.\r\n\r\n💰 SAVINGS & POD COUNTER CALCULATOR\r\nSee exact financial savings based on your custom device cost and vaping habits. Watch your money grow every single day as you avoid buying replacement pods, disposables, or juice.\r\n\r\n⚡ 3-MINUTE PANIC CRAVING BUSTER\r\nWhen intense cravings hit, open the 3-minute emergency tools. Featuring guided 4-7-8 breathing exercises and interactive haptic distraction games designed to bridge peak nicotine urge waves.\r\n\r\n🩺 MEDICAL HEALTH RECOVERY MILESTONES\r\nTrack your body's physiological healing over time—from blood oxygen restoration and lung capacity improvement to nicotine detox completion.\r\n\r\n🛡️ 100% PRIVATE & OFFLINE-FIRST\r\nYour recovery data belongs strictly to you. All metrics, craving logs, and financial calculations remain stored safely on your device without registration or forced account creation.\r\n\r\nDownload VapeQuit today and start your journey to clean, healthy lungs!",
+    "features": [
+      "Real-time smoke & vape free sobriety counter",
+      "Health recovery milestone timelines",
+      "Money saved calculator & wishlist rewards",
+      "Craving management & distraction tools",
+      "Detailed craving logs & trigger analytics",
+      "100% private with local storage and cloud backup"
+    ],
+    "screenshots": [
+      "assets/apps/vape-quit/screenshots/screen_1.webp",
+      "assets/apps/vape-quit/screenshots/screen_2.webp",
+      "assets/apps/vape-quit/screenshots/screen_3.webp",
+      "assets/apps/vape-quit/screenshots/screen_4.webp",
+      "assets/apps/vape-quit/screenshots/screen_5.webp",
+      "assets/apps/vape-quit/screenshots/screen_6.webp"
+    ],
+    "score": null,
+    "installs": "5+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "CitizenPrep",
+    "slug": "citizenprep",
+    "package_name": "com.sudogrep.citizenprep",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.sudogrep.citizenprep&hl=en&gl=in",
+    "icon": "assets/apps/citizenprep/icon.webp",
+    "feature_graphic": "assets/apps/citizenprep/feature_graphic.webp",
+    "short_description": "Prepare for your citizenship test with practice questions and progress tracking.",
+    "description": "Prepare smarter for your U.S. Citizenship Test with CitizenPrep! CitizenPrep helps you practice, learn, and build confidence with structured civics and history practice questions. \r\n\r\nWhether you're starting your preparation or doing a final review before your interview, CitizenPrep gives you a simple way to practice questions, track your progress, and identify areas where you need more focus.\r\n\r\n--------------------------------------------------\r\n⚠️ IMPORTANT GOVERNMENT DISCLAIMER & OFFICIAL SOURCES\r\n--------------------------------------------------\r\nDISCLAIMER: \r\nCitizenPrep is an independent educational prep app and is NOT affiliated with, endorsed by, authorized by, or in any way officially connected to the United States Government, the United States Citizenship and Immigration Services (USCIS), the U.S. Department of Homeland Security (DHS), or any other government agency.\r\n\r\nOFFICIAL GOVERNMENT SOURCES:\r\nAll civics test questions and educational study materials provided in this app are based on publicly available official government resources from the U.S. Citizenship and Immigration Services (USCIS). You can access official and up-to-date government test resources directly from the official U.S. government website:\r\n• Official USCIS Civics Test Study Materials: https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test\r\n• Official USCIS Citizenship Resource Center: https://www.uscis.gov/citizenship\r\n\r\n--------------------------------------------------\r\nKEY FEATURES\r\n--------------------------------------------------\r\n📚 Practice Civics & History Test Questions\r\nTest your knowledge with practice questions covering essential topics:\r\n• Government structure and institutions\r\n• Rights and responsibilities\r\n• American history and historical figures\r\n• Integrated civics, geography, and national symbols\r\n\r\n🎯 Practice at Your Own Pace\r\n• Practice questions individually by topic\r\n• Take full-length timed mock practice tests\r\n• Review your answers and explanations\r\n• Learn from previous mistakes\r\n\r\n📊 Track Your Learning Progress\r\n• Instant score calculation and pass/fail feedback\r\n• History tracking across all practice sessions\r\n• Question-level performance analytics\r\n\r\n🔄 Offline Access & Guest Mode\r\n• Offline access allows you to practice anytime\r\n• Start practicing immediately in Guest mode with no account setup required",
+    "features": [
+      "Civics and history practice questions",
+      "Topic-by-topic practice & full timed mock tests",
+      "Instant scoring and detailed answer explanations",
+      "Learning progress and mistake review tracking",
+      "100% offline practice access",
+      "Instant guest mode with no required account setup"
+    ],
+    "screenshots": [
+      "assets/apps/citizenprep/screenshots/screen_1.webp",
+      "assets/apps/citizenprep/screenshots/screen_2.webp",
+      "assets/apps/citizenprep/screenshots/screen_3.webp",
+      "assets/apps/citizenprep/screenshots/screen_4.webp",
+      "assets/apps/citizenprep/screenshots/screen_5.webp",
+      "assets/apps/citizenprep/screenshots/screen_6.webp"
+    ],
+    "score": null,
+    "installs": "1+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Image Compressor: MB to KB",
+    "slug": "kb-snap",
+    "package_name": "in.sudogrep.kb_snap",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en&gl=in",
+    "icon": "assets/apps/kb-snap/icon.webp",
+    "feature_graphic": "assets/apps/kb-snap/feature_graphic.webp",
+    "short_description": "Compress photos, Images to any KB size for forms, uploads and applications.",
+    "description": "KB Snap makes it easy to compress photos to the exact file size you need.\r\n\r\nNeed a photo under 20 KB, 50 KB, 100 KB or 200 KB?\r\n\r\nSelect your photo, choose the target size, and KB Snap optimizes it automatically.\r\n\r\nPerfect for:\r\n\r\n• Online forms\r\n• Government applications\r\n• Exam applications\r\n• Job applications\r\n• ID and document uploads\r\n• Websites with photo size limits\r\n• Any upload requiring a specific KB limit\r\n\r\nFEATURES\r\n\r\n✓ Compress photos to a target KB size\r\n✓ 20 KB, 50 KB, 100 KB, 200 KB, 500 KB and 1 MB presets\r\n✓ Custom target size\r\n✓ Maintains image aspect ratio\r\n✓ Shows original and final file size\r\n✓ Save compressed photos to your gallery\r\n✓ Share compressed photos instantly\r\n✓ Works directly on your device\r\n✓ No cloud upload required\r\n\r\nKB Snap is designed to make photo size reduction fast and simple.\r\n\r\nYour photos are processed locally on your device.",
+    "features": [
+      "Compress photos to specific target KB sizes",
+      "Batch photo resizing and image scaling",
+      "Aspect ratio cropping for signature and passport photos",
+      "100% offline-first processing for absolute privacy",
+      "No server uploads, ads, or tracking",
+      "Clean, modern user interface"
+    ],
+    "screenshots": [
+      "assets/apps/kb-snap/screenshots/screen_1.webp",
+      "assets/apps/kb-snap/screenshots/screen_2.webp",
+      "assets/apps/kb-snap/screenshots/screen_3.webp"
+    ],
+    "score": null,
+    "installs": "10+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Zip Connect Plus:Number Puzzle",
+    "slug": "zip-connect-plus",
+    "package_name": "in.sudogrep.zip_connect_free",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect_free&hl=en&gl=in",
+    "icon": "assets/apps/zip-connect-plus/icon.webp",
+    "feature_graphic": "assets/apps/zip-connect-plus/feature_graphic.webp",
+    "short_description": "Connect numbers, complete paths, and solve relaxing logic puzzles.",
+    "description": "Connect. Think. Complete the path.\r\n\r\nZip Connect is a relaxing and challenging logic puzzle game where you connect numbered nodes in the correct order and create a complete path across the grid.\r\n\r\nStart with simple puzzles and gradually take on larger, more challenging boards. Every puzzle is easy to understand, but finding the perfect path becomes increasingly satisfying.\r\n\r\nWHAT YOU CAN DO\r\n\r\n• Connect numbers in the correct order\r\n• Create a complete path across the grid\r\n• Solve hundreds of logic puzzles\r\n• Progress through increasingly challenging levels\r\n• Take on daily challenges\r\n• Use hints when you get stuck\r\n• Track your puzzle progress and statistics\r\n• Earn XP and rewards as you play\r\n• Customize your puzzle experience\r\n• Play at your own pace\r\n\r\nA SIMPLE PUZZLE WITH DEPTH\r\n\r\nThe rules are simple: connect the nodes in order and complete the entire grid.\r\n\r\nBut as the puzzles become harder, you'll need to think ahead, plan your route, and make every move count.\r\n\r\nWhether you enjoy number puzzles, logic games, brain teasers, or relaxing offline games, Zip Connect gives you a simple puzzle experience that becomes more challenging as you progress.\r\n\r\nPLAY YOUR WAY\r\n\r\nPlay a few quick puzzles when you have a moment, or work your way through increasingly difficult challenges.\r\n\r\nUse hints when needed, improve your solving skills, and try to complete puzzles more efficiently.\r\n\r\nDAILY CHALLENGES\r\n\r\nCome back regularly for new challenges and test your puzzle-solving skills beyond the main level progression.\r\n\r\nTRACK YOUR PROGRESS\r\n\r\nSee your progress as you solve puzzles, improve your performance, earn XP, and work toward completing more challenging levels.\r\n\r\nREWARDS AND CUSTOMIZATION\r\n\r\nEarn rewards while playing and personalize your experience with unlockable customization options.\r\n\r\nZip Connect is designed to be easy to learn, satisfying to solve, and challenging enough to keep you coming back.\r\n\r\nCan you complete every path?",
+    "features": [
+      "Hundreds of challenging node puzzles",
+      "Interactive levels with escalating difficulty",
+      "Minimalist visual design with smooth transitions",
+      "100% offline gameplay support",
+      "No intrusive tracking or ads"
+    ],
+    "screenshots": [
+      "assets/apps/zip-connect-plus/screenshots/screen_1.webp",
+      "assets/apps/zip-connect-plus/screenshots/screen_2.webp",
+      "assets/apps/zip-connect-plus/screenshots/screen_3.webp",
+      "assets/apps/zip-connect-plus/screenshots/screen_4.webp"
+    ],
+    "score": null,
+    "installs": "5+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
+    "name": "Zip Connect: Number Puzzle",
+    "slug": "zip-connect",
+    "package_name": "in.sudogrep.zip_connect",
+    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect&hl=en&gl=in",
+    "icon": "assets/apps/zip-connect/icon.webp",
+    "feature_graphic": "assets/apps/zip-connect/feature_graphic.webp",
+    "short_description": "Connect numbers, fill every cell and solve relaxing logic puzzles.",
+    "description": "Connect numbers, fill every cell and solve relaxing logic puzzles.\r\n\r\nZip Connect is a number puzzle game where you connect numbers in order and complete the entire grid with one continuous path. Start with simple puzzles and use logic, planning and careful moves to solve increasingly challenging levels.\r\n\r\nHOW TO PLAY\r\n\r\nStart at number 1 and connect the numbers in sequence.\r\n\r\n• Connect numbers in the correct order\r\n• Move horizontally or vertically\r\n• Don't skip numbers\r\n• Don't cross your path\r\n• Fill every cell of the grid\r\n• Complete the path to solve the puzzle\r\n\r\nEASY TO LEARN, HARD TO MASTER\r\n\r\nThe rules are simple, but solving every grid requires careful planning. Find the right path, avoid dead ends and think ahead before making your next move.\r\n\r\nPROGRESS THROUGH PUZZLES\r\n\r\nBegin with easier number puzzles and gradually take on more challenging grids. Every completed level helps you improve your logic and problem-solving skills.\r\n\r\nUSE HINTS WHEN YOU'RE STUCK\r\n\r\nCan't find the next move? Use a hint to get guidance and continue solving difficult puzzles.\r\n\r\nEARN XP AND REWARDS\r\n\r\nComplete puzzles and earn XP as you progress. Keep solving levels, improve your rank and challenge yourself to go further.\r\n\r\nRELAXING PUZZLE EXPERIENCE\r\n\r\nZip Connect is designed for players who enjoy calm, focused gameplay. Solve a quick puzzle during a break or spend longer sessions working through challenging levels.\r\n\r\nPLAY OFFLINE\r\n\r\nEnjoy your puzzles wherever you are. Gameplay is available offline, so you can keep solving without an internet connection.\r\n\r\nWHY PLAY ZIP CONNECT?\r\n\r\n• Number and logic puzzles\r\n• Connect numbers in sequence\r\n• Grid-based path puzzles\r\n• Increasing difficulty\r\n• Helpful hint system\r\n• XP and progression\r\n• Relaxing gameplay\r\n• Offline puzzle gameplay\r\n• Suitable for quick sessions or longer challenges\r\n\r\nIf you enjoy number puzzles, logic games, brain puzzles and grid challenges, Zip Connect gives you a simple rule with increasingly challenging paths to solve.",
+    "features": [
+      "Hundreds of challenging node puzzles",
+      "Interactive levels with escalating difficulty",
+      "Minimalist visual design with smooth transitions",
+      "100% offline gameplay support",
+      "No intrusive tracking or ads",
+      "Quick level reset and help options"
+    ],
+    "screenshots": [
+      "assets/apps/zip-connect/screenshots/screen_1.webp",
+      "assets/apps/zip-connect/screenshots/screen_2.webp",
+      "assets/apps/zip-connect/screenshots/screen_3.webp",
+      "assets/apps/zip-connect/screenshots/screen_4.webp"
+    ],
+    "score": null,
+    "installs": "0+",
+    "developer": "SudoGrep",
+    "status": "Live"
+  },
+  {
     "name": "BillBuddy - Bills & Budget",
     "slug": "billbuddy",
     "package_name": "com.billreminder.bill_reminder",
-    "play_store_url": "https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder&hl=en&gl=us",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder&hl=en&gl=in",
     "icon": "assets/apps/billbuddy/icon.webp",
     "feature_graphic": "assets/apps/billbuddy/feature_graphic.webp",
     "short_description": "Track bills, manage budgets, split expenses & understand spending.",
@@ -29,69 +233,10 @@
     "status": "Live"
   },
   {
-    "name": "Aarti Sangrah: Daily Prayers",
-    "slug": "aarti-sangrah",
-    "package_name": "com.kp.kartik.aarti",
-    "play_store_url": "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti&hl=en&gl=us",
-    "icon": "assets/apps/aarti-sangrah/icon.webp",
-    "feature_graphic": "assets/apps/aarti-sangrah/feature_graphic.webp",
-    "short_description": "300+ Aartis, Mantras, Stotrams & festival collections for your daily worship.",
-    "description": "Aarti Sangrah is a comprehensive Hindu devotional app designed to bring over 300 sacred prayers, Aartis, Chalisas, Mantras, and Stotrams directly to your smartphone. Whether performing morning puja, observing festival fasts, or seeking spiritual peace, Aarti Sangrah helps you organize and read sacred scriptures effortlessly in a clean, distraction-free environment.\r\n\r\nNever miss a festival prayer again. Aarti Sangrah now highlights curated devotional collections right on your home screen for upcoming festivals like Ganesh Chaturthi, Navratri, and Diwali — a single tap takes you straight to a handpicked set of Aartis, Mantras, and Stotrams for that celebration, updated regularly so you always have the right prayers ready.\r\n\r\nOrganize your devotional routine with custom Pooja Playlists. Create personalized sequences for Ganesh Chaturthi, Navratri, Diwali, or daily morning prayers. Arrange your Aartis in exact worship order, reorder them with drag-and-drop ease, and share your playlists with family and friends via direct web and app links.\r\n\r\nKey Features of Aarti Sangrah:\r\n\r\n• 300+ Sacred Devotional Texts: Access a vast collection of Aartis, Ashtakams, Mantras, Chalisas, Stotrams, Bhajans, Kathas, and Shlokas.\r\n\r\n• Festival Highlights: Curated devotional collections for upcoming festivals, featured on the home screen so you can jump straight into the right prayers for the occasion.\r\n\r\n• Custom Pooja Playlists: Create, edit, and reorder prayer lists for festivals and daily worship routines. Sequence your prayers step-by-step.\r\n\r\n• Multi-Language Support: Read devotional text seamlessly in 13 Indian languages, including English, Hindi, Marathi, Gujarati, Bengali, Assamese, Kannada, Malayalam, Odia, Punjabi, Tamil, Telugu, and Urdu.\r\n\r\n• Categorized by Deity & Festival: Easily browse prayers dedicated to Lord Ganesha, Lord Krishna, Lord Shiva, Goddess Durga, Lord Rama, Hanuman Ji, Goddess Laxmi, and Surya Dev. Filter by major occasions such as Diwali, Navratri, Ganesh Chaturthi, Janmashtami, and Maha Shivratri.\r\n\r\n• Customizable Reading Experience: Adjust font sizes (14pt to 32pt) for comfortable reading during rituals. Navigate smoothly between prayers with simple swipes.\r\n\r\n• Smart Search & Instant Filters: Quickly search by prayer title, deity name, festival, or language with real-time suggestions and search history.\r\n\r\n• Audio Aarti Support: Listen to selected audio Aartis directly within the app for a complete prayer experience.\r\n\r\n• Offline Reading & Sync: Access cached prayers offline during worship. Sign in with Google to save and sync your favorite Aartis across devices.\r\n\r\nAarti Sangrah eliminates the need to carry physical prayer books or browse multiple websites during puja. Designed with clear typography, warm devotional aesthetics, and intuitive controls, Aarti Sangrah makes everyday worship simple, meaningful, and accessible.\r\n\r\nDownload Aarti Sangrah today to bring sacred prayers and personalized worship routines to your daily life.",
-    "features": [
-      "Comprehensive local prayer list",
-      "Devotional lyrics categorized logically",
-      "Adjustable font sizing and reading modes",
-      "Full offline access without internet",
-      "Minimalistic user interface",
-      "Zero tracking or permissions"
-    ],
-    "screenshots": [
-      "assets/apps/aarti-sangrah/screenshots/screen_1.webp",
-      "assets/apps/aarti-sangrah/screenshots/screen_2.webp",
-      "assets/apps/aarti-sangrah/screenshots/screen_3.webp",
-      "assets/apps/aarti-sangrah/screenshots/screen_4.webp",
-      "assets/apps/aarti-sangrah/screenshots/screen_5.webp"
-    ],
-    "score": null,
-    "installs": "100+",
-    "developer": "SudoGrep",
-    "status": "Live"
-  },
-  {
-    "name": "VapeQuit: Quit Vaping & Smoke",
-    "slug": "vape-quit",
-    "package_name": "com.sudogrep.vapefree.vape_free",
-    "play_store_url": "https://play.google.com/store/apps/details?id=com.sudogrep.vapefree.vape_free&hl=en&gl=us",
-    "icon": "assets/apps/vape-quit/icon.webp",
-    "feature_graphic": "assets/apps/vape-quit/feature_graphic.webp",
-    "short_description": "Quit vaping & nicotine habits. Track clean time, money saved & beat cravings.",
-    "description": "Take control of your health and break free from vaping and nicotine habits with VapeQuit. Whether you are quitting e-cigarettes, vapes, or nicotine pods, VapeQuit gives you the exact tools, motivation, and metrics needed to stay quit for good.\r\n\r\nKEY FEATURES:\r\n\r\n⏱️ REAL-TIME CLEAN DURATION COUNTER\r\nTrack your clean journey down to the exact second. Celebrate every minute you stay vape-free with live progress badges and health milestone tracking.\r\n\r\n💰 SAVINGS & POD COUNTER CALCULATOR\r\nSee exact financial savings based on your custom device cost and vaping habits. Watch your money grow every single day as you avoid buying replacement pods, disposables, or juice.\r\n\r\n⚡ 3-MINUTE PANIC CRAVING BUSTER\r\nWhen intense cravings hit, open the 3-minute emergency tools. Featuring guided 4-7-8 breathing exercises and interactive haptic distraction games designed to bridge peak nicotine urge waves.\r\n\r\n🩺 MEDICAL HEALTH RECOVERY MILESTONES\r\nTrack your body's physiological healing over time—from blood oxygen restoration and lung capacity improvement to nicotine detox completion.\r\n\r\n🛡️ 100% PRIVATE & OFFLINE-FIRST\r\nYour recovery data belongs strictly to you. All metrics, craving logs, and financial calculations remain stored safely on your device without registration or forced account creation.\r\n\r\nDownload VapeQuit today and start your journey to clean, healthy lungs!",
-    "features": [
-      "Real-time smoke & vape free sobriety counter",
-      "Health recovery milestone timelines",
-      "Money saved calculator & wishlist rewards",
-      "Craving management & distraction tools",
-      "Detailed craving logs & trigger analytics",
-      "100% private with local storage and cloud backup"
-    ],
-    "screenshots": [
-      "assets/apps/vape-quit/screenshots/screen_1.webp",
-      "assets/apps/vape-quit/screenshots/screen_2.webp",
-      "assets/apps/vape-quit/screenshots/screen_3.webp",
-      "assets/apps/vape-quit/screenshots/screen_4.webp",
-      "assets/apps/vape-quit/screenshots/screen_5.webp",
-      "assets/apps/vape-quit/screenshots/screen_6.webp"
-    ],
-    "score": null,
-    "installs": "0+",
-    "developer": "SudoGrep",
-    "status": "Live"
-  },
-  {
     "name": "File Forge: Convert & Extract",
     "slug": "file-forge",
     "package_name": "dev.kartikpatel.fileforge",
-    "play_store_url": "https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge&hl=en&gl=us",
+    "play_store_url": "https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge&hl=en&gl=in",
     "icon": "assets/apps/file-forge/icon.webp",
     "feature_graphic": "assets/apps/file-forge/feature_graphic.webp",
     "short_description": "Convert, compress & edit media files! Extract metadata, text, PDFs & scan QR.",
@@ -112,122 +257,37 @@
       "assets/apps/file-forge/screenshots/screen_5.webp",
       "assets/apps/file-forge/screenshots/screen_6.webp"
     ],
-    "score": null,
+    "score": 5,
     "installs": "100+",
     "developer": "SudoGrep",
     "status": "Live"
   },
   {
-    "name": "Ghost Trap: Reveal the World",
-    "slug": "ghost-trap",
-    "package_name": "in.sudogrep.ghosttrap",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap&hl=en&gl=us",
-    "icon": "assets/apps/ghost-trap/icon.webp",
-    "feature_graphic": "assets/apps/ghost-trap/feature_graphic.webp",
-    "short_description": "Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!",
-    "description": "🎮 Claim territory, outsmart ghosts, and reveal stunning world landmarks in Ghost Trap – a tactical arcade puzzle game that challenges your spatial strategy and quick thinking.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🎯 HOW TO PLAY\r\n\r\nNavigate Champ across the grid, carving paths to claim territory while avoiding bouncing ghosts. Claim 80%+ of each level to reveal breathtaking images of famous landmarks from around the world.\r\n\r\nEach completed level brings you closer to mastering entire countries – from the Taj Mahal in India to Mount Fuji in Japan.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n⚡ CORE GAMEPLAY\r\n\r\n🗺️ Territory Claiming\r\nDraw paths from safe zones into unclaimed territory. Connect back to safety to claim the enclosed area. But watch out – if a ghost touches your path before you finish, you lose a life!\r\n\r\n💪 Strategic Power-Ups\r\n• 🚀 Speeder – Move twice as fast for 30 seconds\r\n• 🥶 Frost – Slow down ghosts by 50% for 30 seconds\r\n• 🧊 Freeze – Stop all ghosts completely for 60 seconds\r\n\r\n📈 Progressive Challenge\r\n30 levels per stage with increasing difficulty. Early levels ease you in with 3 slow ghosts, while later levels challenge you with 8 fast-moving enemies.\r\n\r\n🌍 World Exploration\r\nJourney across countries and continents. Each stage represents a different nation with 30 unique landmarks to discover. Complete all levels to unlock the next country and earn bonus rewards.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n✨ KEY FEATURES\r\n\r\n❤️ Fair Lives System\r\nStart with 5 lives. Lives regenerate automatically – 1 life every 30 minutes. No pressure, no forced waiting. Play at your own pace.\r\n\r\n🎁 Generous Rewards\r\nEarn coins, power-ups, and infinity lives passes by completing levels. Collect rewards in your Reward Box and claim them whenever you want.\r\n\r\n📴 Offline Play\r\nPlay anywhere, anytime – no internet required. Your progress syncs automatically when you reconnect.\r\n\r\n☁️ Cloud Save\r\nLink your Google account to back up your progress and play across multiple devices. Never lose your achievements.\r\n\r\n💎 Optional Purchases\r\nRemove ads permanently, buy coin packs, or unlock infinity lives passes. All purchases are optional – enjoy the full game for free.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🎮 GAME CONTENT\r\n\r\n✓ Multiple stages representing countries worldwide\r\n✓ 30 levels per stage featuring famous landmarks\r\n✓ Progressive difficulty that rewards skill improvement\r\n✓ Reward Box system for claiming earned bonuses\r\n✓ In-game store with optional purchases\r\n✓ Settings and customization including sound controls\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n💯 WHY PLAYERS LOVE GHOST TRAP\r\n\r\n🧠 Pure Logic Gameplay\r\nNo random chance. No pay-to-win mechanics. Success depends entirely on your spatial strategy and timing.\r\n\r\n🏛️ Beautiful Landmark Reveals\r\nEach level completion unveils a stunning high-definition image of a world-famous place. It's part puzzle, part discovery.\r\n\r\n⏱️ Smooth Progression\r\nFair life regeneration means you're never stuck waiting. Watch rewarded ads to earn extra lives, coins, or power-ups if you want to keep playing.\r\n\r\n✨ Polished Experience\r\nClean dark theme interface with neon accents. Intuitive touch controls. Satisfying confetti celebrations when you win.\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n👥 PERFECT FOR\r\n\r\n✓ Fans of classic arcade games like Xonix, Qix, and Jezzball\r\n✓ Puzzle enthusiasts who enjoy spatial strategy\r\n✓ Players who want fair free-to-play games\r\n✓ Anyone who loves discovering world landmarks\r\n✓ Casual gamers looking for quick sessions\r\n✓ Hardcore players seeking challenging levels\r\n\r\n━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n🌟 DOWNLOAD NOW\r\n\r\nStart your journey in India with the iconic Taj Mahal, then unlock stages across Japan, France, USA, Australia, and beyond.\r\n\r\nCan you master every landmark and conquer the world? 🌍",
+    "name": "Aarti Sangrah: Daily Prayers",
+    "slug": "aarti-sangrah",
+    "package_name": "com.kp.kartik.aarti",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.kp.kartik.aarti&hl=en&gl=in",
+    "icon": "assets/apps/aarti-sangrah/icon.webp",
+    "feature_graphic": "assets/apps/aarti-sangrah/feature_graphic.webp",
+    "short_description": "300+ Aartis, Mantras, Stotrams & festival collections for your daily worship.",
+    "description": "Aarti Sangrah is a comprehensive Hindu devotional app designed to bring over 300 sacred prayers, Aartis, Chalisas, Mantras, and Stotrams directly to your smartphone. Whether performing morning puja, observing festival fasts, or seeking spiritual peace, Aarti Sangrah helps you organize and read sacred scriptures effortlessly in a clean, distraction-free environment.\r\n\r\nNever miss a festival prayer again. Aarti Sangrah now highlights curated devotional collections right on your home screen for upcoming festivals like Ganesh Chaturthi, Navratri, and Diwali — a single tap takes you straight to a handpicked set of Aartis, Mantras, and Stotrams for that celebration, updated regularly so you always have the right prayers ready.\r\n\r\nOrganize your devotional routine with custom Pooja Playlists. Create personalized sequences for Ganesh Chaturthi, Navratri, Diwali, or daily morning prayers. Arrange your Aartis in exact worship order, reorder them with drag-and-drop ease, and share your playlists with family and friends via direct web and app links.\r\n\r\nKey Features of Aarti Sangrah:\r\n\r\n• 300+ Sacred Devotional Texts: Access a vast collection of Aartis, Ashtakams, Mantras, Chalisas, Stotrams, Bhajans, Kathas, and Shlokas.\r\n\r\n• Festival Highlights: Curated devotional collections for upcoming festivals, featured on the home screen so you can jump straight into the right prayers for the occasion.\r\n\r\n• Custom Pooja Playlists: Create, edit, and reorder prayer lists for festivals and daily worship routines. Sequence your prayers step-by-step.\r\n\r\n• Multi-Language Support: Read devotional text seamlessly in 13 Indian languages, including English, Hindi, Marathi, Gujarati, Bengali, Assamese, Kannada, Malayalam, Odia, Punjabi, Tamil, Telugu, and Urdu.\r\n\r\n• Categorized by Deity & Festival: Easily browse prayers dedicated to Lord Ganesha, Lord Krishna, Lord Shiva, Goddess Durga, Lord Rama, Hanuman Ji, Goddess Laxmi, and Surya Dev. Filter by major occasions such as Diwali, Navratri, Ganesh Chaturthi, Janmashtami, and Maha Shivratri.\r\n\r\n• Customizable Reading Experience: Adjust font sizes (14pt to 32pt) for comfortable reading during rituals. Navigate smoothly between prayers with simple swipes.\r\n\r\n• Smart Search & Instant Filters: Quickly search by prayer title, deity name, festival, or language with real-time suggestions and search history.\r\n\r\n• Audio Aarti Support: Listen to selected audio Aartis directly within the app for a complete prayer experience.\r\n\r\n• Offline Reading & Sync: Access cached prayers offline during worship. Sign in with Google to save and sync your favorite Aartis across devices.\r\n\r\nAarti Sangrah eliminates the need to carry physical prayer books or browse multiple websites during puja. Designed with clear typography, warm devotional aesthetics, and intuitive controls, Aarti Sangrah makes everyday worship simple, meaningful, and accessible.\r\n\r\nDownload Aarti Sangrah today to bring sacred prayers and personalized worship routines to your daily life.",
     "features": [
-      "Territory claiming gameplay",
-      "Strategic ghost avoidance",
-      "World landmark discovery",
-      "Progressive difficulty",
-      "Speeder, Frost and Freeze power-ups",
-      "Offline play",
-      "Cloud save",
-      "Reward system",
-      "Optional in-app purchases"
+      "Comprehensive local prayer list",
+      "Devotional lyrics categorized logically",
+      "Adjustable font sizing and reading modes",
+      "Full offline access without internet",
+      "Minimalistic user interface",
+      "Zero tracking or permissions"
     ],
     "screenshots": [
-      "assets/apps/ghost-trap/screenshots/screen_1.webp",
-      "assets/apps/ghost-trap/screenshots/screen_2.webp",
-      "assets/apps/ghost-trap/screenshots/screen_3.webp",
-      "assets/apps/ghost-trap/screenshots/screen_4.webp",
-      "assets/apps/ghost-trap/screenshots/screen_5.webp"
+      "assets/apps/aarti-sangrah/screenshots/screen_1.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_2.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_3.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_4.webp",
+      "assets/apps/aarti-sangrah/screenshots/screen_5.webp"
     ],
-    "score": null,
-    "installs": "1+",
-    "developer": "SudoGrep",
-    "status": "Live"
-  },
-  {
-    "name": "Image Compressor: MB to KB",
-    "slug": "kb-snap",
-    "package_name": "in.sudogrep.kb_snap",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en&gl=us",
-    "icon": "assets/apps/kb-snap/icon.webp",
-    "feature_graphic": "assets/apps/kb-snap/feature_graphic.webp",
-    "short_description": "Compress photos, Images to any KB size for forms, uploads and applications.",
-    "description": "KB Snap makes it easy to compress photos to the exact file size you need.\r\n\r\nNeed a photo under 20 KB, 50 KB, 100 KB or 200 KB?\r\n\r\nSelect your photo, choose the target size, and KB Snap optimizes it automatically.\r\n\r\nPerfect for:\r\n\r\n• Online forms\r\n• Government applications\r\n• Exam applications\r\n• Job applications\r\n• ID and document uploads\r\n• Websites with photo size limits\r\n• Any upload requiring a specific KB limit\r\n\r\nFEATURES\r\n\r\n✓ Compress photos to a target KB size\r\n✓ 20 KB, 50 KB, 100 KB, 200 KB, 500 KB and 1 MB presets\r\n✓ Custom target size\r\n✓ Maintains image aspect ratio\r\n✓ Shows original and final file size\r\n✓ Save compressed photos to your gallery\r\n✓ Share compressed photos instantly\r\n✓ Works directly on your device\r\n✓ No cloud upload required\r\n\r\nKB Snap is designed to make photo size reduction fast and simple.\r\n\r\nYour photos are processed locally on your device.",
-    "features": [
-      "Compress photos to specific target KB sizes",
-      "Batch photo resizing and image scaling",
-      "Aspect ratio cropping for signature and passport photos",
-      "100% offline-first processing for absolute privacy",
-      "No server uploads, ads, or tracking",
-      "Clean, modern user interface"
-    ],
-    "screenshots": [
-      "assets/apps/kb-snap/screenshots/screen_1.webp",
-      "assets/apps/kb-snap/screenshots/screen_2.webp",
-      "assets/apps/kb-snap/screenshots/screen_3.webp"
-    ],
-    "score": null,
-    "installs": "1+",
-    "developer": "SudoGrep",
-    "status": "Live"
-  },
-  {
-    "name": "Zip Connect: Number Puzzle",
-    "slug": "zip-connect",
-    "package_name": "in.sudogrep.zip_connect",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect&hl=en&gl=us",
-    "icon": "assets/apps/zip-connect/icon.webp",
-    "feature_graphic": "assets/apps/zip-connect/feature_graphic.webp",
-    "short_description": "Connect numbers, fill every cell and solve relaxing logic puzzles.",
-    "description": "Connect numbers, fill every cell and solve relaxing logic puzzles.\r\n\r\nZip Connect is a number puzzle game where you connect numbers in order and complete the entire grid with one continuous path. Start with simple puzzles and use logic, planning and careful moves to solve increasingly challenging levels.\r\n\r\nHOW TO PLAY\r\n\r\nStart at number 1 and connect the numbers in sequence.\r\n\r\n• Connect numbers in the correct order\r\n• Move horizontally or vertically\r\n• Don't skip numbers\r\n• Don't cross your path\r\n• Fill every cell of the grid\r\n• Complete the path to solve the puzzle\r\n\r\nEASY TO LEARN, HARD TO MASTER\r\n\r\nThe rules are simple, but solving every grid requires careful planning. Find the right path, avoid dead ends and think ahead before making your next move.\r\n\r\nPROGRESS THROUGH PUZZLES\r\n\r\nBegin with easier number puzzles and gradually take on more challenging grids. Every completed level helps you improve your logic and problem-solving skills.\r\n\r\nUSE HINTS WHEN YOU'RE STUCK\r\n\r\nCan't find the next move? Use a hint to get guidance and continue solving difficult puzzles.\r\n\r\nEARN XP AND REWARDS\r\n\r\nComplete puzzles and earn XP as you progress. Keep solving levels, improve your rank and challenge yourself to go further.\r\n\r\nRELAXING PUZZLE EXPERIENCE\r\n\r\nZip Connect is designed for players who enjoy calm, focused gameplay. Solve a quick puzzle during a break or spend longer sessions working through challenging levels.\r\n\r\nPLAY OFFLINE\r\n\r\nEnjoy your puzzles wherever you are. Gameplay is available offline, so you can keep solving without an internet connection.\r\n\r\nWHY PLAY ZIP CONNECT?\r\n\r\n• Number and logic puzzles\r\n• Connect numbers in sequence\r\n• Grid-based path puzzles\r\n• Increasing difficulty\r\n• Helpful hint system\r\n• XP and progression\r\n• Relaxing gameplay\r\n• Offline puzzle gameplay\r\n• Suitable for quick sessions or longer challenges\r\n\r\nIf you enjoy number puzzles, logic games, brain puzzles and grid challenges, Zip Connect gives you a simple rule with increasingly challenging paths to solve.",
-    "features": [
-      "Hundreds of challenging node puzzles",
-      "Interactive levels with escalating difficulty",
-      "Minimalist visual design with smooth transitions",
-      "100% offline gameplay support",
-      "No intrusive tracking or ads",
-      "Quick level reset and help options"
-    ],
-    "screenshots": [
-      "assets/apps/zip-connect/screenshots/screen_1.webp",
-      "assets/apps/zip-connect/screenshots/screen_2.webp",
-      "assets/apps/zip-connect/screenshots/screen_3.webp",
-      "assets/apps/zip-connect/screenshots/screen_4.webp"
-    ],
-    "score": null,
-    "installs": "0+",
-    "developer": "SudoGrep",
-    "status": "Live"
-  },
-  {
-    "name": "Zip Connect Plus:Number Puzzle",
-    "slug": "zip-connect-plus",
-    "package_name": "in.sudogrep.zip_connect_free",
-    "play_store_url": "https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect_free&hl=en&gl=us",
-    "icon": "assets/apps/zip-connect-plus/icon.webp",
-    "feature_graphic": "assets/apps/zip-connect-plus/feature_graphic.webp",
-    "short_description": "Connect numbers, complete paths, and solve relaxing logic puzzles.",
-    "description": "Connect. Think. Complete the path.\r\n\r\nZip Connect is a relaxing and challenging logic puzzle game where you connect numbered nodes in the correct order and create a complete path across the grid.\r\n\r\nStart with simple puzzles and gradually take on larger, more challenging boards. Every puzzle is easy to understand, but finding the perfect path becomes increasingly satisfying.\r\n\r\nWHAT YOU CAN DO\r\n\r\n• Connect numbers in the correct order\r\n• Create a complete path across the grid\r\n• Solve hundreds of logic puzzles\r\n• Progress through increasingly challenging levels\r\n• Take on daily challenges\r\n• Use hints when you get stuck\r\n• Track your puzzle progress and statistics\r\n• Earn XP and rewards as you play\r\n• Customize your puzzle experience\r\n• Play at your own pace\r\n\r\nA SIMPLE PUZZLE WITH DEPTH\r\n\r\nThe rules are simple: connect the nodes in order and complete the entire grid.\r\n\r\nBut as the puzzles become harder, you'll need to think ahead, plan your route, and make every move count.\r\n\r\nWhether you enjoy number puzzles, logic games, brain teasers, or relaxing offline games, Zip Connect gives you a simple puzzle experience that becomes more challenging as you progress.\r\n\r\nPLAY YOUR WAY\r\n\r\nPlay a few quick puzzles when you have a moment, or work your way through increasingly difficult challenges.\r\n\r\nUse hints when needed, improve your solving skills, and try to complete puzzles more efficiently.\r\n\r\nDAILY CHALLENGES\r\n\r\nCome back regularly for new challenges and test your puzzle-solving skills beyond the main level progression.\r\n\r\nTRACK YOUR PROGRESS\r\n\r\nSee your progress as you solve puzzles, improve your performance, earn XP, and work toward completing more challenging levels.\r\n\r\nREWARDS AND CUSTOMIZATION\r\n\r\nEarn rewards while playing and personalize your experience with unlockable customization options.\r\n\r\nZip Connect is designed to be easy to learn, satisfying to solve, and challenging enough to keep you coming back.\r\n\r\nCan you complete every path?",
-    "features": [
-      "Hundreds of challenging node puzzles",
-      "Interactive levels with escalating difficulty",
-      "Minimalist visual design with smooth transitions",
-      "100% offline gameplay support",
-      "No intrusive tracking or ads"
-    ],
-    "screenshots": [
-      "assets/apps/zip-connect-plus/screenshots/screen_1.webp",
-      "assets/apps/zip-connect-plus/screenshots/screen_2.webp",
-      "assets/apps/zip-connect-plus/screenshots/screen_3.webp",
-      "assets/apps/zip-connect-plus/screenshots/screen_4.webp"
-    ],
-    "score": null,
-    "installs": "5+",
+    "score": 4.9583335,
+    "installs": "100+",
     "developer": "SudoGrep",
     "status": "Live"
   }
