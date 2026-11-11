@@ -245,6 +245,8 @@
 
 /* ===== MOBILE NAVIGATION DRAWER (<dialog>) ===== */
 dialog.nav-drawer {
+  position: fixed;
+  inset: 0;
   background: transparent;
   border: none;
   padding: 0;
@@ -278,6 +280,7 @@ dialog.nav-drawer::backdrop {
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: auto;
+  overscroll-behavior: contain;
   transform: translateX(0);
   transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -455,7 +458,9 @@ dialog.nav-drawer::backdrop {
 
 .footer-bottom-links {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
 }
 
 .footer-bottom-links a {
@@ -529,6 +534,10 @@ dialog.nav-drawer::backdrop {
 }
 
 @media (max-width: 640px) {
+  .footer {
+    padding: 3.5rem 0 5.5rem;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;

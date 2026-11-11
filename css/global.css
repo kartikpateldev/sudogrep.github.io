@@ -130,8 +130,7 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: min(1200px, calc(100% - 2rem));
   margin: 0 auto;
 }
 
@@ -141,7 +140,7 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 70px 0;
+    padding: 56px 0;
   }
 }
 
@@ -152,22 +151,28 @@ section {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent-light);
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   display: inline-block;
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: clamp(1.55rem, 3.2vw, 2.25rem);
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .section-desc {
-  font-size: 1.125rem;
+  font-size: clamp(0.98rem, 1.4vw, 1.125rem);
   color: var(--text-secondary);
   max-width: 650px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.75rem;
   line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .section-desc {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Helpers */
