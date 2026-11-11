@@ -12,7 +12,7 @@
 
 .apps-directory-grid {
   padding: 80px 0;
-  background-color: var(--bg-light);
+  background-color: var(--bg-secondary);
 }
 
 .app-catalog-card {
@@ -20,7 +20,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 1.5rem; /* 24px horizontal gap on desktop */
-  background-color: var(--bg-white);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -152,8 +152,9 @@
   gap: 0.35rem;
   padding: 0.35rem 0.75rem;
   border-radius: 20px;
-  background: rgba(16, 185, 129, 0.1);
-  color: #059669;
+  background: rgba(16, 185, 129, 0.14);
+  color: var(--accent-green);
+  border: 1px solid rgba(52, 211, 153, 0.25);
   font-size: 0.8rem;
   font-weight: 600;
 }

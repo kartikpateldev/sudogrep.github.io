@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SudoGrep — Free Privacy-First Online Tools</title>
-  <meta name="description" content="Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.">
+  <title>SudoGrep — Independent Technology &amp; Product Studio</title>
+  <meta name="description" content="Build Better. Ship Faster. Scale Smarter. SudoGrep is an independent technology and product studio building mobile apps, web platforms, and AI systems.">
 
   <!-- Canonical & Styling -->
   <link rel="canonical" href="https://sudogrep.in/">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/navigation.css">
   <link rel="stylesheet" href="/css/components.css?v=1.1">
-  <link rel="stylesheet" href="/css/home.css?v=1.1">
+  <link rel="stylesheet" href="/css/home.css?v=2.1">
 
   <!-- Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,20 +25,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0B0F17">
+
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sudogrep.in/">
-  <meta property="og:title" content="SudoGrep — Free Privacy-First Online Tools">
-  <meta property="og:description" content="Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.">
+  <meta property="og:title" content="SudoGrep — Independent Technology &amp; Product Studio">
+  <meta property="og:description" content="Build Better. Ship Faster. Scale Smarter. SudoGrep is an independent technology and product studio building mobile apps, web platforms, and AI systems.">
   <meta property="og:image" content="https://sudogrep.in/assets/logo_square.png">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="https://sudogrep.in/">
-  <meta name="twitter:title" content="SudoGrep — Free Privacy-First Online Tools">
-  <meta name="twitter:description" content="Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.">
+  <meta name="twitter:title" content="SudoGrep — Independent Technology &amp; Product Studio">
+  <meta name="twitter:description" content="Build Better. Ship Faster. Scale Smarter. SudoGrep is an independent technology and product studio building mobile apps, web platforms, and AI systems.">
   <meta name="twitter:image" content="https://sudogrep.in/assets/logo_square.png">
 
   <!-- Structured Data (JSON-LD) -->
@@ -49,6 +51,7 @@
     "name": "SudoGrep",
     "url": "https://sudogrep.in",
     "logo": "https://sudogrep.in/assets/logo_square.png",
+    "description": "Independent technology and product studio designing and engineering mobile applications, web platforms, and AI-powered systems.",
     "sameAs": [
       "https://play.google.com/store/apps/dev?id=7135905913091619860"
     ],
@@ -83,570 +86,751 @@
         <span>SudoGrep</span>
       </a>
 
-      <nav class="nav" id="mainNav">
-        <a href="/tools/" class="nav-link">Free Tools</a>
-        <a href="/apps/" class="nav-link">Apps</a>
-        <a href="/ai-solutions/" class="nav-link">AI Solutions</a>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/#work" class="nav-link">Work</a>
         <a href="/services/" class="nav-link">Services</a>
-        <a href="/blog/" class="nav-link">Insights</a>
+        <div class="nav-dropdown" data-nav-dropdown>
+          <a href="/apps/" class="nav-link">Products</a>
+          <button
+            class="nav-dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="productsSubmenu"
+            aria-label="Toggle Products menu"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" id="productsSubmenu">
+            <a href="/apps/" class="nav-dropdown-item">
+              <span class="nav-dropdown-title">Apps Directory</span>
+              <span class="nav-dropdown-desc">Independent mobile apps by SudoGrep</span>
+            </a>
+            <a href="/tools/" class="nav-dropdown-item">
+              <span class="nav-dropdown-title">Free Tools</span>
+              <span class="nav-dropdown-desc">Browser-based image compression &amp; converters</span>
+            </a>
+          </div>
+        </div>
+        <a href="/insights/" class="nav-link">Insights</a>
         <a href="/about/" class="nav-link">About</a>
       </nav>
 
-      <a href="/contact/" class="btn btn-primary btn-cta-header">Build with us</a>
-
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mainNav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <a href="/contact/" class="btn btn-accent btn-cta-header">Start a Project</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-      <div class="container">
-        <div class="hero-text-content">
-          <div class="hero-badge">
-            <span class="hero-badge-dot"></span>
-            <span>PRIVACY-FIRST · IN-BROWSER PROCESSING</span>
-          </div>
-          <h1 class="hero-title">Free Privacy-First Online Tools</h1>
-          <p class="hero-description">Compress, resize, and convert images online without uploading your files. Fast, free browser-based utilities for JPG, PNG, WebP, and PDF — engineered for speed with 100% on-device privacy.</p>
-          <div class="hero-buttons">
-            <a href="/tools/" class="btn btn-accent">Explore free tools</a>
-            <a href="/contact/" class="btn btn-secondary">Build with us</a>
-          </div>
-        </div>
-
-        <!-- Interactive Hero Animation Container -->
-        <div class="hero-animation-container" id="heroAnimationContainer" aria-label="SudoGrep product ecosystem animation" aria-hidden="true">
-          <!-- Dynamic radial dot grid overlay -->
-          <div class="animation-grid-overlay"></div>
-
-          <!-- Connecting vector lines SVG -->
-          <svg class="animation-connections">
-            <!-- Background static connection paths -->
-            <line x1="200" y1="200" x2="60" y2="60" class="conn-bg-line conn-tl" />
-            <line x1="200" y1="200" x2="340" y2="60" class="conn-bg-line conn-tr" />
-            <line x1="200" y1="200" x2="60" y2="340" class="conn-bg-line conn-bl" />
-            <line x1="200" y1="200" x2="340" y2="340" class="conn-bg-line conn-br" />
-            <line x1="200" y1="200" x2="200" y2="330" class="conn-bg-line conn-bc" />
-
-            <!-- Foreground flowing dashed data-paths -->
-            <line x1="200" y1="200" x2="60" y2="60" class="conn-flow-line conn-tl" />
-            <line x1="200" y1="200" x2="340" y2="60" class="conn-flow-line conn-tr" />
-            <line x1="200" y1="200" x2="60" y2="340" class="conn-flow-line conn-bl" />
-            <line x1="200" y1="200" x2="340" y2="340" class="conn-flow-line conn-br" />
-            <line x1="200" y1="200" x2="200" y2="330" class="conn-flow-line conn-bc" />
+  <dialog class="nav-drawer" id="mobileNavDrawer" aria-label="Mobile navigation">
+    <div class="nav-drawer-panel">
+      <div class="nav-drawer-header">
+        <a href="/" class="logo">
+          <img src="/assets/logo_square.png" alt="SudoGrep Logo" class="logo-image" width="28" height="28">
+          <span>SudoGrep</span>
+        </a>
+        <button class="nav-drawer-close" id="mobileNavCloseBtn" type="button" aria-label="Close navigation menu" autofocus>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
-
-          <!-- Central SudoGrep Emblem -->
-          <div class="anim-emblem">
-            <div class="emblem-glow"></div>
-            <div class="emblem-core">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="4 17 10 11 4 5" />
-                <line x1="12" y1="19" x2="20" y2="19" />
-              </svg>
-            </div>
-            <span class="emblem-label">SudoGrep</span>
-          </div>
-
-          <!-- Card 1: Image Compressor -->
-          <div class="anim-card card-compressor">
-            <div class="card-glow"></div>
-            <div class="card-header-mini">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-              <span>Compressor</span>
-            </div>
-            <div class="card-body-mini">
-              <div class="compress-bar-bg"><div class="compress-bar-fill"></div></div>
-              <div class="compress-stats">
-                <span>1.2 MB</span>
-                <span class="compress-arrow">→</span>
-                <span class="highlight">300 KB</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2: Image Resizer -->
-          <div class="anim-card card-resizer">
-            <div class="card-glow"></div>
-            <div class="card-header-mini">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" fill="none"></rect><path d="M21 15V9a2 2 0 0 0-2-2h-6M3 9v6a2 2 0 0 0 2 2h6"></path><polyline points="10 14 14 10 18 14"></polyline></svg>
-              <span>Resizer</span>
-            </div>
-            <div class="card-body-mini">
-              <div class="resize-box">
-                <div class="resize-handle tl"></div>
-                <div class="resize-handle br"></div>
-                <span class="resize-text">800 × 600</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Image to PDF -->
-          <div class="anim-card card-pdf">
-            <div class="card-glow"></div>
-            <div class="card-header-mini">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-              <span>Image to PDF</span>
-            </div>
-            <div class="card-body-mini">
-              <div class="pdf-pile">
-                <div class="pdf-layer l1">JPG</div>
-                <div class="pdf-layer l2">PNG</div>
-                <div class="pdf-compiled">PDF</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: AI Solutions -->
-          <div class="anim-card card-ai">
-            <div class="card-glow"></div>
-            <div class="card-header-mini">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
-              <span>AI Agent</span>
-            </div>
-            <div class="card-body-mini">
-              <div class="ai-pulse-node">
-                <div class="node-ring"></div>
-                <div class="node-core"></div>
-              </div>
-              <div class="ai-status">Executing...</div>
-            </div>
-          </div>
-
-          <!-- Card 5: SudoGrep Apps (Mobile Mockup) -->
-          <div class="anim-card card-apps">
-            <div class="phone-mockup">
-              <div class="phone-notch"></div>
-              <div class="phone-screen">
-                <div class="phone-grid">
-                  <div class="mini-app-icon icon-ff">
-                    <img src="/assets/apps/file-forge/icon.webp" alt="File Forge icon" width="12" height="12" loading="lazy">
-                  </div>
-                  <div class="mini-app-icon icon-bb">
-                    <img src="/assets/apps/billbuddy/icon.webp" alt="BillBuddy icon" width="12" height="12" loading="lazy">
-                  </div>
-                  <div class="mini-app-icon icon-zc">
-                    <img src="/assets/apps/zip-connect/icon.webp" alt="Zip Connect icon" width="12" height="12" loading="lazy">
-                  </div>
-                  <div class="mini-app-icon icon-as">
-                    <img src="/assets/apps/aarti-sangrah/icon.webp" alt="Aarti Sangrah icon" width="12" height="12" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="phone-home"></div>
-            </div>
-          </div>
-        </div>
+        </button>
       </div>
-    </section>
-
-    <!-- TRUST / CAPABILITY STRIP -->
-    <div class="capability-strip" aria-label="Our core platform capabilities">
-      <div class="container">
-        <div class="capability-grid">
-          <div class="capability-item">
-            <svg class="capability-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-            <span>Mobile Development</span>
-          </div>
-          <div class="capability-item">
-            <svg class="capability-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            <span>Web Platforms</span>
-          </div>
-          <div class="capability-item">
-            <svg class="capability-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
-            <span>AI Integrations</span>
-          </div>
-          <div class="capability-item">
-            <svg class="capability-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-            <span>Cloud Architecture</span>
-          </div>
-          <div class="capability-item">
-            <svg class="capability-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-            <span>Automations</span>
-          </div>
-          <div class="capability-item">
-            <svg class="capability-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-            <span>Developer Tools</span>
+      <nav class="nav-drawer-links" aria-label="Mobile menu links">
+        <a href="/" class="nav-drawer-link active">Home</a>
+        <a href="/#work" class="nav-drawer-link">Work</a>
+        <a href="/services/" class="nav-drawer-link">Services</a>
+        <div class="nav-drawer-group">
+          <a href="/apps/" class="nav-drawer-link">Products</a>
+          <div class="nav-drawer-sublinks">
+            <a href="/apps/" class="nav-drawer-sublink">Apps Directory</a>
+            <a href="/tools/" class="nav-drawer-sublink">Free Tools</a>
           </div>
         </div>
+        <a href="/insights/" class="nav-drawer-link">Insights</a>
+        <a href="/about/" class="nav-drawer-link">About</a>
+      </nav>
+      <div class="nav-drawer-footer">
+        <a href="/contact/" class="btn btn-accent nav-drawer-cta">Start a Project</a>
       </div>
     </div>
+  </dialog>
 
 
+  <main id="main-content">
 
-    <!-- APPS SECTION (WHITE) -->
-    <section id="apps" class="home-section-white">
-      <div class="container">
-        <span class="eyebrow">OUR MOBILE PORTFOLIO</span>
-        <h2 class="section-title">Applications by SudoGrep</h2>
-        <p class="section-desc">Explore our active Android portfolio. Download real utilities with zero server-side tracking, built for security and user privacy.</p>
-
-        <div class="grid-3" id="homepage-apps-container">
-          <!-- DYNAMICALLY COMPILED VIA BUILD.PY -->
-                    <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/ghost-trap/" style="display: block;">
-                <img src="/assets/apps/ghost-trap/icon.webp" class="app-catalog-icon" alt="Ghost Trap: Reveal the World app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/ghost-trap/" style="color: inherit; text-decoration: none;">Ghost Trap: Reveal the World</a>
-              </h3>
-              <p class="card-desc">Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!</p>
-              <a href="https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download Ghost Trap: Reveal the World on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
+    <!-- SECTION 1: HERO (Independent Technology & Product Studio) -->
+    <section class="hero hero-studio" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+            <span>Independent Technology &amp; Product Studio</span>
           </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/savi/" style="display: block;">
-                <img src="/assets/apps/savi/icon.webp" class="app-catalog-icon" alt="Savi: Period & Cycle Tracker app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/savi/" style="color: inherit; text-decoration: none;">Savi: Period & Cycle Tracker</a>
-              </h3>
-              <p class="card-desc">Period & cycle tracker with ovulation, fertile window, symptoms and TTC tracking</p>
-              <a href="https://play.google.com/store/apps/details?id=in.sudogrep.savi&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download Savi: Period & Cycle Tracker on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
+          <h1 class="hero-title">We turn ambitious ideas into powerful digital products.</h1>
+          <p class="hero-subtitle">From mobile applications and web platforms to intelligent AI-powered systems, we design and engineer technology that solves real problems.</p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Explore Our Work</a>
+            <a href="/contact/" class="btn btn-secondary">Start a Project</a>
           </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/vape-quit/" style="display: block;">
-                <img src="/assets/apps/vape-quit/icon.webp" class="app-catalog-icon" alt="VapeQuit: Quit Vaping & Smoke app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/vape-quit/" style="color: inherit; text-decoration: none;">VapeQuit: Quit Vaping & Smoke</a>
-              </h3>
-              <p class="card-desc">Quit vaping & nicotine habits. Track clean time, money saved & beat cravings.</p>
-              <a href="https://play.google.com/store/apps/details?id=com.sudogrep.vapefree.vape_free&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download VapeQuit: Quit Vaping & Smoke on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/citizenprep/" style="display: block;">
-                <img src="/assets/apps/citizenprep/icon.webp" class="app-catalog-icon" alt="CitizenPrep app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/citizenprep/" style="color: inherit; text-decoration: none;">CitizenPrep</a>
-              </h3>
-              <p class="card-desc">Prepare for your citizenship test with practice questions and progress tracking.</p>
-              <a href="https://play.google.com/store/apps/details?id=com.sudogrep.citizenprep&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download CitizenPrep on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/kb-snap/" style="display: block;">
-                <img src="/assets/apps/kb-snap/icon.webp" class="app-catalog-icon" alt="Image Compressor: MB to KB app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/kb-snap/" style="color: inherit; text-decoration: none;">Image Compressor: MB to KB</a>
-              </h3>
-              <p class="card-desc">Compress photos, Images to any KB size for forms, uploads and applications.</p>
-              <a href="https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download Image Compressor: MB to KB on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/zip-connect-plus/" style="display: block;">
-                <img src="/assets/apps/zip-connect-plus/icon.webp" class="app-catalog-icon" alt="Zip Connect Plus:Number Puzzle app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/zip-connect-plus/" style="color: inherit; text-decoration: none;">Zip Connect Plus:Number Puzzle</a>
-              </h3>
-              <p class="card-desc">Connect numbers, complete paths, and solve relaxing logic puzzles.</p>
-              <a href="https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect_free&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download Zip Connect Plus:Number Puzzle on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/zip-connect/" style="display: block;">
-                <img src="/assets/apps/zip-connect/icon.webp" class="app-catalog-icon" alt="Zip Connect: Number Puzzle app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/zip-connect/" style="color: inherit; text-decoration: none;">Zip Connect: Number Puzzle</a>
-              </h3>
-              <p class="card-desc">Connect numbers, fill every cell and solve relaxing logic puzzles.</p>
-              <a href="https://play.google.com/store/apps/details?id=in.sudogrep.zip_connect&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download Zip Connect: Number Puzzle on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/billbuddy/" style="display: block;">
-                <img src="/assets/apps/billbuddy/icon.webp" class="app-catalog-icon" alt="BillBuddy - Bills & Budget app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/billbuddy/" style="color: inherit; text-decoration: none;">BillBuddy - Bills & Budget</a>
-              </h3>
-              <p class="card-desc">Track bills, manage budgets, split expenses & understand spending.</p>
-              <a href="https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download BillBuddy - Bills & Budget on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/file-forge/" style="display: block;">
-                <img src="/assets/apps/file-forge/icon.webp" class="app-catalog-icon" alt="File Forge: Convert & Extract app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/file-forge/" style="color: inherit; text-decoration: none;">File Forge: Convert & Extract</a>
-              </h3>
-              <p class="card-desc">Convert, compress & edit media files! Extract metadata, text, PDFs & scan QR.</p>
-              <a href="https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download File Forge: Convert & Extract on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="card app-catalog-card">
-            <div class="app-catalog-icon-wrapper">
-              <a href="/apps/aarti-sangrah/" style="display: block;">
-                <img src="/assets/apps/aarti-sangrah/icon.webp" class="app-catalog-icon" alt="Aarti Sangrah: Daily Prayers app icon" width="64" height="64" loading="lazy">
-              </a>
-            </div>
-            <div class="app-catalog-content">
-              <h3 class="card-title">
-                <a href="/apps/aarti-sangrah/" style="color: inherit; text-decoration: none;">Aarti Sangrah: Daily Prayers</a>
-              </h3>
-              <p class="card-desc">300+ Aartis, Mantras, Stotrams & festival collections for your daily worship.</p>
-              <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti&hl=en&gl=in" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download Aarti Sangrah: Daily Prayers on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
-            </div>
+          <div class="hero-tagline-row">
+            <span class="hero-tagline-strong">Build Better. Ship Faster. Scale Smarter.</span>
+            <span class="hero-tagline-sep" aria-hidden="true">/</span>
+            <span>Mobile Products &middot; Web Platforms &middot; Applied AI</span>
           </div>
         </div>
 
-        <div style="margin-top: 3rem; text-align: center;">
-          <a href="/apps/" class="btn btn-secondary">View all published apps</a>
-        </div>
-      </div>
-    </section>
+        <div class="hero-visual">
+          <div class="hero-arch" id="heroArchitectureVisual" role="region" aria-label="SudoGrep studio engineering architecture">
+            <div class="hero-arch-chrome">
+              <span class="hero-arch-label">Studio Systems Architecture</span>
+              <span class="hero-arch-status">
+                <span class="hero-arch-pulse" aria-hidden="true"></span>
+                <span id="heroArchStatusText">LAYER 01 &middot; CLIENT SYSTEMS</span>
+              </span>
+            </div>
 
-    <!-- WHY SUDOGREP SECTION (WHITE) -->
-    <section class="home-section-white" style="border-top: 1px solid var(--border-color); padding: 80px 0;">
-      <div class="container">
-        <span class="eyebrow">WHY SUDOGREP</span>
-        <h2 class="section-title">Engineered for speed, built for privacy.</h2>
-        <p class="section-desc">We follow strict principles when building apps, services, and online utilities.</p>
+            <div class="hero-arch-grid">
+              <button type="button" class="arch-node is-active" data-layer="mobile" aria-pressed="true">
+                <div class="arch-node-top">
+                  <span class="arch-node-code">01 / MOBILE</span>
+                  <span class="arch-node-state">Flutter &middot; Android</span>
+                </div>
+                <div class="arch-node-title">Mobile Applications</div>
+                <div class="arch-node-meta">Offline-first state, native UX &amp; Play Store release engineering.</div>
+              </button>
 
-        <div class="why-grid">
-          <div class="why-item">
-            <h3>
-              <svg class="why-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>100% Client-Side</span>
-            </h3>
-            <p>Your data stays yours. All conversions, cropping, and PDF compiling happen on-device in your web browser. No remote uploads.</p>
-          </div>
-          <div class="why-item">
-            <h3>
-              <svg class="why-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Zero Tracking</span>
-            </h3>
-            <p>We do not load third-party analytics libraries, cookies, or advertisement pixels. The tools operate with absolute local privacy.</p>
-          </div>
-          <div class="why-item">
-            <h3>
-              <svg class="why-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Vercel-Fast Performance</span>
-            </h3>
-            <p>By compiling into pure static pages with zero bloated JS frameworks, our pages load instantly and score excellent Core Web Vitals.</p>
-          </div>
-          <div class="why-item">
-            <h3>
-              <svg class="why-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Technical Design</span>
-            </h3>
-            <p>Every product is minimal, technical, and built using native browser and operating system capabilities. No layout shifts.</p>
+              <button type="button" class="arch-node" data-layer="ai" aria-pressed="false">
+                <div class="arch-node-top">
+                  <span class="arch-node-code">02 / APPLIED AI</span>
+                  <span class="arch-node-state">RAG &middot; OCR</span>
+                </div>
+                <div class="arch-node-title">AI &amp; Retrieval Systems</div>
+                <div class="arch-node-meta">Document intelligence, vector search &amp; practical LLM workflows.</div>
+              </button>
+
+              <button type="button" class="arch-node" data-layer="web" aria-pressed="false">
+                <div class="arch-node-top">
+                  <span class="arch-node-code">03 / WEB</span>
+                  <span class="arch-node-state">Platforms &middot; Web APIs</span>
+                </div>
+                <div class="arch-node-title">Web Platforms</div>
+                <div class="arch-node-meta">Fast SaaS frontends, content engines &amp; client-side compute.</div>
+              </button>
+
+              <button type="button" class="arch-node" data-layer="cloud" aria-pressed="false">
+                <div class="arch-node-top">
+                  <span class="arch-node-code">04 / INFRA</span>
+                  <span class="arch-node-state">APIs &middot; Cloud</span>
+                </div>
+                <div class="arch-node-title">Backend &amp; Release</div>
+                <div class="arch-node-meta">Structured APIs, cloud sync &amp; automated verification pipelines.</div>
+              </button>
+            </div>
+
+            <div class="hero-arch-bus">
+              <p class="hero-arch-bus-detail" id="heroArchDetail">Mobile &amp; Client Layer &mdash; Cross-platform Flutter &amp; native Android engineering designed for responsive, offline-capable everyday use.</p>
+              <div class="hero-arch-app-icons" aria-hidden="true">
+                <img src="/assets/apps/billbuddy/icon.webp" alt="" width="28" height="28" decoding="async">
+                <img src="/assets/apps/file-forge/icon.webp" alt="" width="28" height="28" decoding="async">
+                <img src="/assets/apps/aarti-sangrah/icon.webp" alt="" width="28" height="28" decoding="async">
+                <img src="/assets/apps/ghost-trap/icon.webp" alt="" width="28" height="28" decoding="async">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AI / SOFTWARE DEVELOPMENT SECTION (DARK CHARCOAL) -->
-    <section id="ai-solutions" class="dark-section">
+    <!-- SECTION 2: WHAT WE BUILD -->
+    <section id="capabilities" class="studio-section studio-section-alt">
       <div class="container">
-        <span class="eyebrow" style="color: var(--accent-purple);">ACQUISITION & WORK</span>
-        <h2 class="section-title">Intelligent AI & Custom Software Engineering.</h2>
-        <p class="section-desc">We build premium mobile applications, modern web platforms, secure backend configurations, and customized AI system integrations.</p>
+        <span class="eyebrow">What We Build</span>
+        <h2 class="section-title">Engineering the next generation of digital experiences.</h2>
+        <p class="section-desc">We combine product strategy, disciplined software architecture, and resilient UX across four core technology disciplines.</p>
 
-        <div class="grid-3">
-          <!-- Service Card 1 -->
-          <div class="card">
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <div class="build-grid">
+          <article class="build-card">
+            <div class="build-card-head">
+              <div class="build-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <rect x="7" y="2" width="10" height="20" rx="2"/>
+                  <line x1="12" y1="18" x2="12" y2="18.01"/>
+                </svg>
+              </div>
+              <span class="build-card-index">01</span>
             </div>
-            <h3 class="card-title">AI Agent Frameworks</h3>
-            <p class="card-desc">Deploy task-oriented autonomous agents capable of performing multi-step operations and utilizing external developer APIs.</p>
-          </div>
-
-          <!-- Service Card 2 -->
-          <div class="card">
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <h3 class="build-card-title">Mobile Products</h3>
+            <p class="build-card-desc">Intuitive Android and cross-platform mobile applications engineered for responsive interaction, offline reliability, and sustained product evolution.</p>
+            <div class="build-card-tags">
+              <span class="studio-tag">Flutter</span>
+              <span class="studio-tag">Android</span>
+              <span class="studio-tag">Offline-First</span>
             </div>
-            <h3 class="card-title">Retrieval-Augmented RAG</h3>
-            <p class="card-desc">Build context-aware document question-answering systems using semantic vector search and custom business datasets.</p>
-          </div>
+          </article>
 
-          <!-- Service Card 3 -->
-          <div class="card">
-            <div class="card-icon-container">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <article class="build-card">
+            <div class="build-card-head">
+              <div class="build-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <rect x="3" y="4" width="18" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="18" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <span class="build-card-index">02</span>
             </div>
-            <h3 class="card-title">API & Web Dashboards</h3>
-            <p class="card-desc">Design scalable REST/GraphQL servers, secure database endpoints, and fast web administration platforms.</p>
-          </div>
-        </div>
+            <h3 class="build-card-title">Web Platforms</h3>
+            <p class="build-card-desc">Fast web applications, interactive workflows, and client-side Web API utilities engineered for performance, accessibility, and clean maintainability.</p>
+            <div class="build-card-tags">
+              <span class="studio-tag">Web Apps</span>
+              <span class="studio-tag">SaaS UI</span>
+              <span class="studio-tag">Web APIs</span>
+            </div>
+          </article>
 
-        <div class="services-list-container">
-          <div class="services-list-col">
-            <h3>Mobile Engineering</h3>
-            <ul>
-              <li>Cross-platform Flutter apps</li>
-              <li>Native Android platforms</li>
-              <li>Native iOS applications</li>
-              <li>App store publication assistance</li>
-            </ul>
-          </div>
-          <div class="services-list-col">
-            <h3>Web Development</h3>
-            <ul>
-              <li>Static HTML5 site architectures</li>
-              <li>Next.js & Vite applications</li>
-              <li>Interactive admin consoles</li>
-              <li>Responsive user interfaces</li>
-            </ul>
-          </div>
-          <div class="services-list-col">
-            <h3>Cloud & Data</h3>
-            <ul>
-              <li>Serverless function setups</li>
-              <li>PostgreSQL & SQLite design</li>
-              <li>Vector database setup</li>
-              <li>System migration tasks</li>
-            </ul>
-          </div>
-          <div class="services-list-col">
-            <h3>AI Integration</h3>
-            <ul>
-              <li>Gemini & OpenAI integrations</li>
-              <li>Workflow automation scripts</li>
-              <li>On-device text classifications</li>
-              <li>Autonomous task workflows</li>
-            </ul>
-          </div>
-        </div>
+          <article class="build-card">
+            <div class="build-card-head">
+              <div class="build-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <span class="build-card-index">03</span>
+            </div>
+            <h3 class="build-card-title">AI Solutions</h3>
+            <p class="build-card-desc">Practical AI workflows, Retrieval-Augmented Generation (RAG) assistants, document extraction, and grounded automation that solve operational bottlenecks.</p>
+            <div class="build-card-tags">
+              <span class="studio-tag">RAG</span>
+              <span class="studio-tag">LLM Agents</span>
+              <span class="studio-tag">On-Device OCR</span>
+            </div>
+          </article>
 
-        <div style="margin-top: 4rem; text-align: left;">
-          <a href="/contact/" class="text-link" style="color: var(--accent-purple);">Discuss an AI or custom software project →</a>
+          <article class="build-card">
+            <div class="build-card-head">
+              <div class="build-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <span class="build-card-index">04</span>
+            </div>
+            <h3 class="build-card-title">Product Engineering</h3>
+            <p class="build-card-desc">End-to-end systems design covering backend APIs, data persistence, release engineering, and iterative product improvements from zero to production.</p>
+            <div class="build-card-tags">
+              <span class="studio-tag">APIs</span>
+              <span class="studio-tag">Cloud Sync</span>
+              <span class="studio-tag">Systems QA</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- INSIGHTS SECTION (SOFT-TINTED) -->
-    <section id="insights" class="home-section-tinted">
+    <!-- SECTION 3: SELECTED WORK -->
+    <section id="work" class="studio-section">
       <div class="container">
-        <span class="eyebrow">INSIGHTS & GUIDES</span>
-        <h2 class="section-title">Practical tutorials. Genuinely useful.</h2>
-        <p class="section-desc">Read expert articles on browser compression, mobile layouts, custom AI agent flows, and local-first privacy configurations.</p>
+        <div class="section-header-row">
+          <div>
+            <span class="eyebrow">Selected Work</span>
+            <h2 class="section-title">Built with purpose. Engineered for impact.</h2>
+            <p class="section-desc">Selected applications and interactive software systems designed, architected, and shipped end to end by SudoGrep.</p>
+          </div>
+          <a href="/apps/" class="text-link">View Full Product Portfolio &rarr;</a>
+        </div>
 
-        <div class="grid-3">
-                    <div class="card guide-catalog-card">
+        <div class="work-showcase-grid">
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="/assets/apps/billbuddy/feature_graphic.webp" alt="BillBuddy - Bills &amp; Budget product showcase banner" width="1024" height="500" loading="lazy" decoding="async">
+              <span class="work-role-badge">FinTech Mobile Product</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-header">
+                <img src="/assets/apps/billbuddy/icon.webp" alt="" class="work-card-icon" width="40" height="40" loading="lazy" decoding="async">
+                <h3 class="work-card-title">
+                  <a href="/apps/billbuddy/">BillBuddy - Bills &amp; Budget</a>
+                </h3>
+              </div>
+              <p class="work-card-summary">Recurring bill, EMI, and shared expense manager featuring visual due-date calendars, borrow/lend logs, and automated export workflows.</p>
+              <div class="work-stack-row">
+                  <span class="work-stack-tag">Flutter</span>
+                  <span class="work-stack-tag">Offline-First</span>
+                  <span class="work-stack-tag">SMS Parser</span>
+                  <span class="work-stack-tag">CSV &amp; PDF Export</span>
+              </div>
+              <div class="work-card-footer" aria-hidden="true">
+                <span class="text-link">View Engineering &amp; Specs &rarr;</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="/assets/apps/file-forge/feature_graphic.webp" alt="File Forge: Convert &amp; Extract product showcase banner" width="1024" height="500" loading="lazy" decoding="async">
+              <span class="work-role-badge">Media &amp; Document Engine</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-header">
+                <img src="/assets/apps/file-forge/icon.webp" alt="" class="work-card-icon" width="40" height="40" loading="lazy" decoding="async">
+                <h3 class="work-card-title">
+                  <a href="/apps/file-forge/">File Forge: Convert &amp; Extract</a>
+                </h3>
+              </div>
+              <p class="work-card-summary">All-in-one Android utility engineered for local media conversion, EXIF/GPS inspection, PDF utilities, and offline translation.</p>
+              <div class="work-stack-row">
+                  <span class="work-stack-tag">Format Conversion</span>
+                  <span class="work-stack-tag">On-Device OCR</span>
+                  <span class="work-stack-tag">EXIF Editor</span>
+                  <span class="work-stack-tag">Offline PDF</span>
+              </div>
+              <div class="work-card-footer" aria-hidden="true">
+                <span class="text-link">View Engineering &amp; Specs &rarr;</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="/assets/apps/zip-connect/feature_graphic.webp" alt="Zip Connect: Number Puzzle product showcase banner" width="1024" height="500" loading="lazy" decoding="async">
+              <span class="work-role-badge">Interactive Logic System</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-header">
+                <img src="/assets/apps/zip-connect/icon.webp" alt="" class="work-card-icon" width="40" height="40" loading="lazy" decoding="async">
+                <h3 class="work-card-title">
+                  <a href="/apps/zip-connect/">Zip Connect: Number Puzzle</a>
+                </h3>
+              </div>
+              <p class="work-card-summary">Deterministic number-connection puzzle architecture with clean vector path rendering, escalating difficulty, and zero intrusive tracking.</p>
+              <div class="work-stack-row">
+                  <span class="work-stack-tag">Grid Path Logic</span>
+                  <span class="work-stack-tag">Offline State</span>
+                  <span class="work-stack-tag">Progressive Levels</span>
+                  <span class="work-stack-tag">Hint Engine</span>
+              </div>
+              <div class="work-card-footer" aria-hidden="true">
+                <span class="text-link">View Engineering &amp; Specs &rarr;</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="/assets/apps/ghost-trap/feature_graphic.webp" alt="Ghost Trap: Reveal the World product showcase banner" width="1024" height="500" loading="lazy" decoding="async">
+              <span class="work-role-badge">2D Arcade Game Systems</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-header">
+                <img src="/assets/apps/ghost-trap/icon.webp" alt="" class="work-card-icon" width="40" height="40" loading="lazy" decoding="async">
+                <h3 class="work-card-title">
+                  <a href="/apps/ghost-trap/">Ghost Trap: Reveal the World</a>
+                </h3>
+              </div>
+              <p class="work-card-summary">Tactical territory-claiming arcade game across world landmark stages with Speeder, Frost, and Freeze mechanics plus offline &amp; cloud save sync.</p>
+              <div class="work-stack-row">
+                  <span class="work-stack-tag">Real-Time Loop</span>
+                  <span class="work-stack-tag">Ghost Pathing</span>
+                  <span class="work-stack-tag">Google Cloud Save</span>
+                  <span class="work-stack-tag">30-Level Stages</span>
+              </div>
+              <div class="work-card-footer" aria-hidden="true">
+                <span class="text-link">View Engineering &amp; Specs &rarr;</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SERVICES -->
+    <section id="services" class="studio-section studio-section-alt">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h2 class="section-title">From concept to production, we build what moves your business forward.</h2>
+        <p class="section-desc">We partner with founders, product teams, and growing businesses to design and deliver reliable software systems with clear execution.</p>
+
+        <div class="services-studio-grid">
+          <article class="service-pillar-card">
+            <div class="service-pillar-meta">
+              <span class="service-pillar-num">01 / MOBILE ENGINEERING</span>
+              <span class="service-pillar-kicker">Android &amp; Cross-Platform</span>
+            </div>
+            <h3 class="service-pillar-title">Mobile App Development</h3>
+            <p class="service-pillar-desc">End-to-end mobile engineering for consumer products, fintech tools, health trackers, and specialized utilities shipped cleanly on Google Play.</p>
+            <ul class="service-deliverables">
+              <li>Flutter &amp; Android application architecture</li>
+              <li>Offline-first storage, calendar &amp; notification workflows</li>
+              <li>Store compliance, performance tuning &amp; release support</li>
+            </ul>
+            <div class="service-pillar-links">
+              <a href="/services/mobile-app-development/" class="text-link">Mobile App Development &rarr;</a>
+              <a href="/services/flutter-development/" class="service-secondary-link">Flutter Engineering &rarr;</a>
+            </div>
+          </article>
+
+          <article class="service-pillar-card">
+            <div class="service-pillar-meta">
+              <span class="service-pillar-num">02 / WEB PLATFORMS</span>
+              <span class="service-pillar-kicker">SaaS &amp; Browser Architecture</span>
+            </div>
+            <h3 class="service-pillar-title">Web Application Development</h3>
+            <p class="service-pillar-desc">Responsive web applications, SaaS dashboards, static publishing systems, and client-side browser software designed for low latency and high reliability.</p>
+            <ul class="service-deliverables">
+              <li>Modern semantic web interfaces &amp; design systems</li>
+              <li>Client-side file, media &amp; document processing engines</li>
+              <li>Technical SEO, structured data &amp; fast page delivery</li>
+            </ul>
+            <div class="service-pillar-links">
+              <a href="/services/" class="text-link">Explore Web Capabilities &rarr;</a>
+              <a href="/contact/" class="service-secondary-link">Discuss Scope &rarr;</a>
+            </div>
+          </article>
+
+          <article class="service-pillar-card">
+            <div class="service-pillar-meta">
+              <span class="service-pillar-num">03 / APPLIED AI</span>
+              <span class="service-pillar-kicker">LLMs, RAG &amp; Automation</span>
+            </div>
+            <h3 class="service-pillar-title">AI Development &amp; Integration</h3>
+            <p class="service-pillar-desc">Grounded AI systems built around verified internal documentation, structured retrieval pipelines, and dependable human-in-the-loop automation.</p>
+            <ul class="service-deliverables">
+              <li>Retrieval-Augmented Generation (RAG) &amp; semantic search</li>
+              <li>Domain-specific assistants &amp; workflow automation</li>
+              <li>On-device text extraction, translation &amp; parsing pipelines</li>
+            </ul>
+            <div class="service-pillar-links">
+              <a href="/services/ai-development/" class="text-link">AI Development &rarr;</a>
+              <a href="/services/rag-development/" class="service-secondary-link">RAG Architecture &rarr;</a>
+            </div>
+          </article>
+
+          <article class="service-pillar-card">
+            <div class="service-pillar-meta">
+              <span class="service-pillar-num">04 / SYSTEMS &amp; INFRASTRUCTURE</span>
+              <span class="service-pillar-kicker">APIs, Data &amp; Cloud Sync</span>
+            </div>
+            <h3 class="service-pillar-title">Backend &amp; Cloud Engineering</h3>
+            <p class="service-pillar-desc">Dependable server APIs, synchronization layers, automated compilation pipelines, and clean cloud architectures engineered for long-term stability.</p>
+            <ul class="service-deliverables">
+              <li>REST API design, authentication &amp; state synchronization</li>
+              <li>Cloud backup integrations &amp; structured export pipelines</li>
+              <li>Automated static builds, validation checks &amp; deployment</li>
+            </ul>
+            <div class="service-pillar-links">
+              <a href="/ai-solutions/" class="text-link">Custom Systems &amp; AI &rarr;</a>
+              <a href="/contact/" class="service-secondary-link">Request Architecture Review &rarr;</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="services-cta-bar">
+          <p class="services-cta-copy">Need a technical partner for your next product launch or platform upgrade?</p>
+          <div class="services-cta-actions">
+            <a href="/services/" class="text-link">Explore All Services &rarr;</a>
+            <a href="/contact/" class="btn btn-primary btn-sm">Start a Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: OUR PRODUCTS -->
+    <section id="products" class="studio-section">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <span class="eyebrow">Our Products</span>
+            <h2 class="section-title">Products built to solve real problems.</h2>
+            <p class="section-desc">We own and operate a growing suite of published Android products across utility computing, finance, health, culture, and interactive learning.</p>
+          </div>
+          <a href="/apps/" class="text-link">Browse All 10 Apps &rarr;</a>
+        </div>
+
+        <div class="products-spotlight-grid">
+          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/file-forge/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="/assets/apps/file-forge/icon.webp" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-published">Published</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/file-forge/">File Forge: Convert &amp; Extract</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">Convert, compress &amp; edit media files! Extract metadata, text, PDFs &amp; scan QR.</p>
+              <ul class="product-feature-list">
+                  <li>Universal image, video, and audio conversion</li>
+                  <li>EXIF/GPS metadata viewer and editor</li>
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/file-forge/" class="btn btn-secondary btn-sm">Explore Product</a>
+                <a href="https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge&amp;hl=en&amp;gl=in" target="_blank" rel="noopener noreferrer" class="text-link" aria-label="Get File Forge: Convert &amp; Extract on Google Play">Google Play &rarr;</a>
+              </div>
+            </div>
+            <a href="/apps/file-forge/" class="product-device-frame" aria-label="File Forge: Convert &amp; Extract mobile screenshot preview">
+              <img src="/assets/apps/file-forge/screenshots/screen_1.webp" alt="File Forge: Convert &amp; Extract mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>
+          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/billbuddy/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="/assets/apps/billbuddy/icon.webp" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-published">Published</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/billbuddy/">BillBuddy - Bills &amp; Budget</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">Track bills, manage budgets, split expenses &amp; understand spending.</p>
+              <ul class="product-feature-list">
+                  <li>Unified tracking of EMIs, bills, and subscriptions</li>
+                  <li>Smart upcoming reminders and notifications</li>
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/billbuddy/" class="btn btn-secondary btn-sm">Explore Product</a>
+                <a href="https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder&amp;hl=en&amp;gl=in" target="_blank" rel="noopener noreferrer" class="text-link" aria-label="Get BillBuddy - Bills &amp; Budget on Google Play">Google Play &rarr;</a>
+              </div>
+            </div>
+            <a href="/apps/billbuddy/" class="product-device-frame" aria-label="BillBuddy - Bills &amp; Budget mobile screenshot preview">
+              <img src="/assets/apps/billbuddy/screenshots/screen_1.webp" alt="BillBuddy - Bills &amp; Budget mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>
+          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/aarti-sangrah/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="/assets/apps/aarti-sangrah/icon.webp" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-published">Published</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/aarti-sangrah/">Aarti Sangrah: Daily Prayers</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">300+ Aartis, Mantras, Stotrams &amp; festival collections for your daily worship.</p>
+              <ul class="product-feature-list">
+                  <li>Comprehensive local prayer list</li>
+                  <li>Devotional lyrics categorized logically</li>
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/aarti-sangrah/" class="btn btn-secondary btn-sm">Explore Product</a>
+                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti&amp;hl=en&amp;gl=in" target="_blank" rel="noopener noreferrer" class="text-link" aria-label="Get Aarti Sangrah: Daily Prayers on Google Play">Google Play &rarr;</a>
+              </div>
+            </div>
+            <a href="/apps/aarti-sangrah/" class="product-device-frame" aria-label="Aarti Sangrah: Daily Prayers mobile screenshot preview">
+              <img src="/assets/apps/aarti-sangrah/screenshots/screen_1.webp" alt="Aarti Sangrah: Daily Prayers mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>
+          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/kb-snap/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="/assets/apps/kb-snap/icon.webp" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-published">Published</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/kb-snap/">Image Compressor: MB to KB</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">Compress photos, Images to any KB size for forms, uploads and applications.</p>
+              <ul class="product-feature-list">
+                  <li>Compress photos to specific target KB sizes</li>
+                  <li>Batch photo resizing and image scaling</li>
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/kb-snap/" class="btn btn-secondary btn-sm">Explore Product</a>
+                <a href="https://play.google.com/store/apps/details?id=in.sudogrep.kb_snap&amp;hl=en&amp;gl=in" target="_blank" rel="noopener noreferrer" class="text-link" aria-label="Get Image Compressor: MB to KB on Google Play">Google Play &rarr;</a>
+              </div>
+            </div>
+            <a href="/apps/kb-snap/" class="product-device-frame" aria-label="Image Compressor: MB to KB mobile screenshot preview">
+              <img src="/assets/apps/kb-snap/screenshots/screen_1.webp" alt="Image Compressor: MB to KB mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>
+          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/savi/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="/assets/apps/savi/icon.webp" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-published">Published</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/savi/">Savi: Period &amp; Cycle Tracker</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">Period &amp; cycle tracker with ovulation, fertile window, symptoms and TTC tracking</p>
+              <ul class="product-feature-list">
+                  <li>Period &amp; menstrual cycle tracking with cycle phases</li>
+                  <li>Estimated fertile window and ovulation tracking</li>
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/savi/" class="btn btn-secondary btn-sm">Explore Product</a>
+                <a href="https://play.google.com/store/apps/details?id=in.sudogrep.savi&amp;hl=en&amp;gl=in" target="_blank" rel="noopener noreferrer" class="text-link" aria-label="Get Savi: Period &amp; Cycle Tracker on Google Play">Google Play &rarr;</a>
+              </div>
+            </div>
+            <a href="/apps/savi/" class="product-device-frame" aria-label="Savi: Period &amp; Cycle Tracker mobile screenshot preview">
+              <img src="/assets/apps/savi/screenshots/screen_1.webp" alt="Savi: Period &amp; Cycle Tracker mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>
+          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/vape-quit/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="/assets/apps/vape-quit/icon.webp" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-published">Published</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/vape-quit/">VapeQuit: Quit Vaping &amp; Smoke</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">Quit vaping &amp; nicotine habits. Track clean time, money saved &amp; beat cravings.</p>
+              <ul class="product-feature-list">
+                  <li>Real-time smoke &amp; vape free sobriety counter</li>
+                  <li>Health recovery milestone timelines</li>
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/vape-quit/" class="btn btn-secondary btn-sm">Explore Product</a>
+                <a href="https://play.google.com/store/apps/details?id=com.sudogrep.vapefree.vape_free&amp;hl=en&amp;gl=in" target="_blank" rel="noopener noreferrer" class="text-link" aria-label="Get VapeQuit: Quit Vaping &amp; Smoke on Google Play">Google Play &rarr;</a>
+              </div>
+            </div>
+            <a href="/apps/vape-quit/" class="product-device-frame" aria-label="VapeQuit: Quit Vaping &amp; Smoke mobile screenshot preview">
+              <img src="/assets/apps/vape-quit/screenshots/screen_1.webp" alt="VapeQuit: Quit Vaping &amp; Smoke mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>
+        </div>
+
+        <div class="more-products-strip">
+          <span class="more-products-label">Also published on Google Play:</span>
+          <div class="more-products-pills">
+          <a href="/apps/ghost-trap/" class="more-product-pill">
+            <img src="/assets/apps/ghost-trap/icon.webp" alt="" width="24" height="24" loading="lazy" decoding="async">
+            <span>Ghost Trap: Reveal the World</span>
+            <span class="pill-status-dot" title="Published" aria-hidden="true"></span>
+          </a>
+          <a href="/apps/citizenprep/" class="more-product-pill">
+            <img src="/assets/apps/citizenprep/icon.webp" alt="" width="24" height="24" loading="lazy" decoding="async">
+            <span>CitizenPrep</span>
+            <span class="pill-status-dot" title="Published" aria-hidden="true"></span>
+          </a>
+          <a href="/apps/zip-connect-plus/" class="more-product-pill">
+            <img src="/assets/apps/zip-connect-plus/icon.webp" alt="" width="24" height="24" loading="lazy" decoding="async">
+            <span>Zip Connect Plus:Number Puzzle</span>
+            <span class="pill-status-dot" title="Published" aria-hidden="true"></span>
+          </a>
+          <a href="/apps/zip-connect/" class="more-product-pill">
+            <img src="/assets/apps/zip-connect/icon.webp" alt="" width="24" height="24" loading="lazy" decoding="async">
+            <span>Zip Connect: Number Puzzle</span>
+            <span class="pill-status-dot" title="Published" aria-hidden="true"></span>
+          </a>
+          </div>
+          <a href="/apps/" class="text-link">Open Directory &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: HOW WE WORK -->
+    <section id="process" class="studio-section studio-section-alt">
+      <div class="container">
+        <span class="eyebrow">How We Work</span>
+        <h2 class="section-title">Good products start with good engineering.</h2>
+        <p class="section-desc">Every engagement and internal build follows an engineering-led cycle focused on clarity, architectural soundness, and reliable delivery.</p>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="process-step-num">01 &mdash; Discover</span>
+            <h3 class="process-step-title">Align on Goals &amp; Scope</h3>
+            <p class="process-step-desc">We map product objectives, user flows, edge cases, and technical constraints upfront so engineering effort goes directly into what matters.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step-num">02 &mdash; Design</span>
+            <h3 class="process-step-title">Architect Interfaces &amp; Data</h3>
+            <p class="process-step-desc">We shape clean responsive layouts, explicit state models, and practical API contracts before scaling implementation across platforms.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step-num">03 &mdash; Build</span>
+            <h3 class="process-step-title">Engineer Iteratively</h3>
+            <p class="process-step-desc">We deliver tested, maintainable code across mobile, web, and AI pipelines with privacy-first defaults and automated verification.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step-num">04 &mdash; Launch &amp; Evolve</span>
+            <h3 class="process-step-title">Ship &amp; Refine</h3>
+            <p class="process-step-desc">We manage store and web releases carefully, validate real-world performance, and evolve features with discipline after launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: INSIGHTS -->
+    <section id="insights" class="studio-section">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <span class="eyebrow">Insights</span>
+            <h2 class="section-title">Ideas, engineering and perspectives.</h2>
+            <p class="section-desc">Technical notes from our product engineering, applied AI architecture, and browser-native software work.</p>
+          </div>
+          <a href="/insights/" class="text-link">View All Insights &rarr;</a>
+        </div>
+
+        <div class="insights-grid">
+          <div class="card guide-catalog-card">
+            <span class="guide-card-meta">Mobile Development · 4 min read</span>
+            <h3 class="guide-card-title">
+              <a href="/insights/flutter-app-development-trends-2026/">Flutter App Development Trends in 2026</a>
+            </h3>
+            <p class="guide-card-desc">Explore the top Flutter mobile engineering trends in 2026: WebAssembly (WASM), local-first databases, on-device AI integration, and riverpod patterns.</p>
+            <a href="/insights/flutter-app-development-trends-2026/" class="text-link" style="margin-top: auto;">Read Article →</a>
+          </div>
+          <div class="card guide-catalog-card">
+            <span class="guide-card-meta">AI · 5 min read</span>
+            <h3 class="guide-card-title">
+              <a href="/insights/how-ai-agents-are-changing-software-development/">How AI Agents Are Changing Software Development</a>
+            </h3>
+            <p class="guide-card-desc">Discover how task-oriented autonomous AI agents are moving beyond autocomplete assistants to automate software engineering workflows.</p>
+            <a href="/insights/how-ai-agents-are-changing-software-development/" class="text-link" style="margin-top: auto;">Read Article →</a>
+          </div>
+          <div class="card guide-catalog-card">
             <span class="guide-card-meta">Privacy · 8 min read</span>
             <h3 class="guide-card-title">
               <a href="/insights/browser-based-tools-private-no-upload/">Why Browser-Based Tools Are Becoming More Private in 2026: No Upload, No Server Processing</a>
@@ -654,107 +838,47 @@
             <p class="guide-card-desc">Understand how client-side browser-based tools process files locally using WebAssembly, WebGPU, and Canvas without uploading them to remote servers.</p>
             <a href="/insights/browser-based-tools-private-no-upload/" class="text-link" style="margin-top: auto;">Read Article →</a>
           </div>
-          <div class="card guide-catalog-card">
-            <span class="guide-card-meta">AI · 5 min read</span>
-            <h3 class="guide-card-title">
-              <a href="/insights/will-ai-replace-jobs-bill-gates-2026/">Will AI Replace Jobs? Bill Gates Says Some Jobs Should Be Reserved for Humans</a>
-            </h3>
-            <p class="guide-card-desc">Will AI replace jobs? Bill Gates is calling for “human-reserved” work as AI becomes more capable. Here's what it could mean for workers and businesses.</p>
-            <a href="/insights/will-ai-replace-jobs-bill-gates-2026/" class="text-link" style="margin-top: auto;">Read Article →</a>
-          </div>
-          <div class="card guide-catalog-card">
-            <span class="guide-card-meta">AI · 6 min read</span>
-            <h3 class="guide-card-title">
-              <a href="/insights/ai-agents-2026/">AI Agents in 2026: From Chatbots to AI That Actually Gets Things Done</a>
-            </h3>
-            <p class="guide-card-desc">AI agents are moving beyond chatbots. Learn how AI agents use tools, automate tasks, work with software, and what developers should know in 2026.</p>
-            <a href="/insights/ai-agents-2026/" class="text-link" style="margin-top: auto;">Read Article →</a>
-          </div>
-        </div>
-
-        <div style="margin-top: 3rem; text-align: center;">
-          <a href="/blog/" class="btn btn-secondary">View all insights →</a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="home-section-tinted contact-section-dark">
+    <!-- SECTION 8: FREE TOOLS (Compact Secondary Section) -->
+    <section id="tools" class="studio-section studio-section-compact" aria-labelledby="tools-strip-heading">
       <div class="container">
-        <div class="contact-layout">
-          <div class="contact-info">
-            <span class="eyebrow">BUILD WITH US</span>
-            <h2 class="contact-info-title">Build Something Amazing</h2>
-            <p class="contact-info-desc">Have a product, automation, AI or software idea? Let's discuss it.</p>
-
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                </div>
-                <div>
-                  <div class="contact-item-title">Calendly</div>
-                  <a href="https://calendly.com/sudogrep-support/30min" target="_blank" rel="noopener" class="contact-item-link">Book a Call</a>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </div>
-                <div>
-                  <div class="contact-item-title">Email</div>
-                  <a href="mailto:support@sudogrep.in" class="contact-item-link">support@sudogrep.in</a>
-                </div>
-              </div>
-            </div>
-
-            <div style="margin-top: 1rem;">
-              <a href="https://play.google.com/store/apps/dev?id=7135905913091619860" target="_blank" aria-label="SudoGrep Google Play Developer Listing" class="play-developer-link" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-                <span>Google Play Developer Page</span>
-              </a>
-            </div>
+        <div class="tools-strip">
+          <div class="tools-strip-copy">
+            <span class="eyebrow">Open Web Utilities</span>
+            <h2 class="tools-strip-title" id="tools-strip-heading">Useful tools. Thoughtfully built.</h2>
+            <p class="tools-strip-desc">Side utilities created in our studio lab using client-side Web APIs so images and PDFs process locally inside your browser.</p>
           </div>
 
-          <div class="contact-form-wrapper">
-            <form class="contact-form" id="contactForm" method="POST">
-              <!-- Web3Forms Configuration -->
-              <input type="hidden" name="access_key" value="d770a694-461b-4aae-89f8-1a2313c66e11">
-              <input type="hidden" name="subject" value="New SudoGrep Project Inquiry">
-              <input type="hidden" name="from_name" value="SudoGrep Contact Form">
+          <div class="tools-strip-actions">
+            <div class="tools-strip-links">
+              <a href="/tools/image-compressor/" class="tool-chip-link">Image Compressor</a>
+              <a href="/tools/compress-image-to-50kb/" class="tool-chip-link">Compress to 50 KB</a>
+              <a href="/tools/image-resizer/" class="tool-chip-link">Image Resizer</a>
+              <a href="/tools/image-to-pdf/" class="tool-chip-link">Image to PDF</a>
+            </div>
+            <a href="/tools/" class="text-link">Browse All Free Tools &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <!-- Spam Honeypot Field -->
-              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    <!-- SECTION 9: FINAL PROJECT CTA -->
+    <section id="cta" class="studio-section">
+      <div class="container">
+        <div class="final-cta-panel">
+          <div class="final-cta-content">
+            <span class="eyebrow">Start a Project</span>
+            <h2 class="final-cta-title">Have an idea worth building?</h2>
+            <p class="final-cta-desc">Let's turn your vision into a product that makes a difference. Tell us what you are building and we will map a pragmatic path to launch.</p>
+            <p class="final-cta-meta">Mobile Apps &middot; Web Platforms &middot; AI Systems &middot; Product Engineering</p>
+          </div>
 
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com">
-              </div>
-              <div class="form-group">
-                <label for="service">Interested Service</label>
-                <select id="service" name="service" required>
-                  <option value="">Select a service</option>
-                  <option value="mobile">Mobile App Development</option>
-                  <option value="web">Web Application Design</option>
-                  <option value="ai-integration">AI Integration & RAG</option>
-                  <option value="backend">Backend & Cloud Systems</option>
-                  <option value="other">Other Development Services</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Project Description</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Outline what you want to build..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-accent" style="width: 100%;">Send Message</button>
-
-              <!-- Inline Response Message -->
-              <div class="form-response" style="display: none; margin-top: 1rem; padding: 0.75rem; border-radius: 0.375rem; font-size: 0.95rem; text-align: center;"></div>
-            </form>
+          <div class="final-cta-actions">
+            <a href="/contact/" class="btn btn-primary">Start a Project</a>
+            <a href="#work" class="btn btn-secondary">Explore Our Work</a>
           </div>
         </div>
       </div>
@@ -762,6 +886,7 @@
 
   </main>
 
+  <!-- SECTION 10: FOOTER -->
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -771,48 +896,54 @@
             <img src="/assets/logo_square.png" alt="SudoGrep Logo" class="logo-image" width="32" height="32">
             <span>SudoGrep</span>
           </a>
-          <p class="footer-tagline">Devoted to client-side computing, speed, and privacy-first digital products.</p>
-          <div class="footer-social-links" style="display: flex; gap: 1rem; margin-top: 1rem; align-items: center;">
+          <p class="footer-tagline"><strong>Build Better. Ship Faster. Scale Smarter.</strong> Independent technology &amp; product studio building mobile apps, web platforms, and AI systems.</p>
+          <div class="footer-social-links" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.75rem; align-items: center;">
             <a href="https://www.reddit.com/user/SudoGrep_27/" target="_blank" rel="noopener" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="Reddit Profile">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.33 13.67c-.42.42-1.07.42-1.48 0L12 13.81l-1.85 1.85c-.41.41-1.07.41-1.48 0-.41-.41-.41-1.07 0-1.48l1.85-1.85-1.85-1.85c-.41-.41-.41-1.07 0-1.48.41-.41 1.07-.41 1.48 0L12 11.16l1.85-1.85c.41-.41 1.07-.41 1.48 0 .41.41.41 1.07 0 1.48L13.48 12l1.85 1.85c.42.41.42 1.07 0 1.48z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.33 13.67c-.42.42-1.07.42-1.48 0L12 13.81l-1.85 1.85c-.41.41-1.07.41-1.48 0-.41-.41-.41-1.07 0-1.48l1.85-1.85-1.85-1.85c-.41-.41-.41-1.07 0-1.48.41-.41 1.07-.41 1.48 0L12 11.16l1.85-1.85c.41-.41 1.07-.41 1.48 0 .41.41.41 1.07 0 1.48L13.48 12l1.85 1.85c.42.41.42 1.07 0 1.48z"/></svg>
               <span>Reddit</span>
             </a>
             <a href="https://wa.me/917977440556?text=Hi%20SudoGrep%2C%20I%27d%20like%20to%20discuss%20a%20software%20project." target="_blank" rel="noopener" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="WhatsApp Chat">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
               <span>WhatsApp</span>
             </a>
             <a href="mailto:support@sudogrep.in" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="Email Support">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>Email</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>support@sudogrep.in</span>
+            </a>
+            <a href="https://play.google.com/store/apps/dev?id=7135905913091619860" target="_blank" rel="noopener" class="footer-social-link" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.25rem;" aria-label="SudoGrep Google Play Developer Profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+              <span>Google Play</span>
             </a>
           </div>
         </div>
 
         <div class="footer-column">
-          <h4>Products</h4>
+          <h4>Studio</h4>
           <ul>
-            <li><a href="/tools/">Free Utilities</a></li>
-            <li><a href="/apps/">Mobile Apps</a></li>
-            <li><a href="/blog/">Insights</a></li>
-            <li><a href="/guides/">Guides</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>Solutions</h4>
-          <ul>
-            <li><a href="/ai-solutions/">AI Solutions</a></li>
-            <li><a href="/services/">Mobile Apps</a></li>
-            <li><a href="/services/">Web Platforms</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>Company</h4>
-          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#work">Work</a></li>
             <li><a href="/about/">About SudoGrep</a></li>
-            <li><a href="/contact/">Contact Us</a></li>
-            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/contact/">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/mobile-app-development/">Mobile App Development</a></li>
+            <li><a href="/services/">Web Application Development</a></li>
+            <li><a href="/services/ai-development/">AI Development &amp; RAG</a></li>
+            <li><a href="/ai-solutions/">AI Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Products &amp; Research</h4>
+          <ul>
+            <li><a href="/apps/">Mobile Apps</a></li>
+            <li><a href="/tools/">Free Tools</a></li>
+            <li><a href="/insights/">Insights</a></li>
+            <li><a href="/guides/">Technical Guides</a></li>
           </ul>
         </div>
       </div>
@@ -821,10 +952,12 @@
         <p>&copy; 2026 SudoGrep. All rights reserved.</p>
         <div class="footer-bottom-links">
           <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms/">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
   </footer>
+
 
   <!-- Ask SudoGrep AI — Floating Button -->
   <button
@@ -897,15 +1030,17 @@
     </div>
   </div>
 
+
   <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/917977440556?text=Hi%20SudoGrep%2C%20I%27d%20like%20to%20discuss%20a%20software%20project." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
     </svg>
   </a>
 
-  <script src="/js/global.js"></script>
-  <script src="/js/home-animation.js?v=1.2" defer></script>
+
+  <script src="/js/global.js?v=1.1"></script>
+  <script src="/js/home-animation.js?v=2.0" defer></script>
   <script src="/js/chatbot.js" defer></script>
 </body>
 </html>

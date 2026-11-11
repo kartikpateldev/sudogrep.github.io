@@ -2,16 +2,15 @@
   {
     "url": "/",
     "page_type": "brand",
-    "primary_intent": "free privacy-first online tools and utilities hub",
-    "primary_topic": "Privacy-First Online Web Tools",
-    "primary_keyword": "free online tools",
+    "primary_intent": "independent technology and product studio building mobile, web, and AI products",
+    "primary_topic": "Technology and Product Engineering Studio",
+    "primary_keyword": "independent technology and product studio",
     "secondary_keywords": [
-      "privacy-first online tools",
-      "client-side image compressor",
-      "browser image resizer",
-      "image to pdf online",
-      "on-device web tools",
-      "sudogrep software"
+      "mobile application development",
+      "web application development",
+      "ai-powered solutions",
+      "backend and cloud engineering",
+      "digital product studio"
     ],
     "search_variations": [],
     "target_entities": [],

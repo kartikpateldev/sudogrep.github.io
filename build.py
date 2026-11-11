@@ -1,23 +1,288 @@
 #!/usr/bin/env python3
-import os
+import html
 import json
+import os
+import re
 import sys
 
+THEME_COLOR_DEFAULT = "#0B0F17"
+FEATURED_WORK_SPECS = (
+    {
+        "slug": "billbuddy",
+        "role": "FinTech Mobile Product",
+        "stack": ("Flutter", "Offline-First", "SMS Parser", "CSV & PDF Export"),
+        "summary": "Recurring bill, EMI, and shared expense manager featuring visual due-date calendars, borrow/lend logs, and automated export workflows.",
+    },
+    {
+        "slug": "file-forge",
+        "role": "Media & Document Engine",
+        "stack": ("Format Conversion", "On-Device OCR", "EXIF Editor", "Offline PDF"),
+        "summary": "All-in-one Android utility engineered for local media conversion, EXIF/GPS inspection, PDF utilities, and offline translation.",
+    },
+    {
+        "slug": "zip-connect",
+        "role": "Interactive Logic System",
+        "stack": ("Grid Path Logic", "Offline State", "Progressive Levels", "Hint Engine"),
+        "summary": "Deterministic number-connection puzzle architecture with clean vector path rendering, escalating difficulty, and zero intrusive tracking.",
+    },
+    {
+        "slug": "ghost-trap",
+        "role": "2D Arcade Game Systems",
+        "stack": ("Real-Time Loop", "Ghost Pathing", "Google Cloud Save", "30-Level Stages"),
+        "summary": "Tactical territory-claiming arcade game across world landmark stages with Speeder, Frost, and Freeze mechanics plus offline & cloud save sync.",
+    },
+)
+FEATURED_PRODUCT_SLUGS = (
+    "file-forge",
+    "billbuddy",
+    "aarti-sangrah",
+    "kb-snap",
+    "savi",
+    "vape-quit",
+)
+FEATURED_INSIGHT_SLUGS = (
+    "flutter-app-development-trends-2026",
+    "how-ai-agents-are-changing-software-development",
+    "browser-based-tools-private-no-upload",
+)
+VALID_APP_STATUSES = ("Published", "In Development", "Experimental", "Archived")
+APP_STATUS_ALIASES = {
+    "live": "Published",
+    "published": "Published",
+    "in development": "In Development",
+    "in-development": "In Development",
+    "in_development": "In Development",
+    "experimental": "Experimental",
+    "archived": "Archived",
+}
+APP_STATUS_DISPLAY = {
+    "Published": ("Published on Google Play", "#34D399"),
+    "In Development": ("In Development", "#FBBF24"),
+    "Experimental": ("Experimental", "#A5B4FC"),
+    "Archived": ("Archived", "#CBD5E1"),
+}
+REQUIRED_PARTIALS = (
+    "head_common",
+    "header",
+    "footer",
+    "floating_widgets",
+    "chatbot_widget",
+)
+PARTIAL_PLACEHOLDERS = {
+    "head_common": "{{PARTIAL_HEAD_COMMON}}",
+    "header": "{{PARTIAL_HEADER}}",
+    "footer": "{{PARTIAL_FOOTER}}",
+    "floating_widgets": "{{PARTIAL_FLOATING_WIDGETS}}",
+    "chatbot_widget": "{{PARTIAL_CHATBOT_WIDGET}}",
+}
+NAV_ACTIVE_TOKENS = {
+    "home": "NAV_ACTIVE_HOME",
+    "work": "NAV_ACTIVE_WORK",
+    "services": "NAV_ACTIVE_SERVICES",
+    "products": "NAV_ACTIVE_PRODUCTS",
+    "tools": "NAV_ACTIVE_TOOLS",
+    "apps": "NAV_ACTIVE_APPS",
+    "ai": "NAV_ACTIVE_AI",
+    "insights": "NAV_ACTIVE_INSIGHTS",
+    "about": "NAV_ACTIVE_ABOUT",
+}
+NAV_ACTIVE_GROUPS = {
+    "apps": ("apps", "products"),
+    "tools": ("tools", "products"),
+}
+CONFIG_TOKEN_KEYS = (
+    "WHATSAPP_NUMBER",
+    "CALENDLY_URL",
+    "REDDIT_URL",
+    "GHOST_TRAP_PLAY_STORE_URL",
+)
+UNRESOLVED_TOKEN_RE = re.compile(r"\{\{[A-Z0-9_:]+\}\}")
+STATIC_PARTIAL_MARKER_RE = re.compile(
+    r'(<!--\s*@sudogrep:partial\s+name="([a-zA-Z0-9_-]+)"(?:\s+active="([a-zA-Z0-9_-]+)")?\s*-->)'
+    r'.*?'
+    r'(<!--\s*@sudogrep:/partial\s+name="\2"\s*-->)',
+    re.DOTALL,
+)
+
+
+def normalize_app_status(raw_status):
+    """Normalize app status into one of the four verified SudoGrep categories."""
+    if not isinstance(raw_status, str):
+        raise ValueError(f"Invalid app status type: {type(raw_status).__name__}")
+    normalized = APP_STATUS_ALIASES.get(raw_status.strip().lower())
+    if not normalized:
+        raise ValueError(
+            f"Unsupported app status '{raw_status}'. Expected one of {VALID_APP_STATUSES} (or 'Live')."
+        )
+    return normalized
+
+
+def load_partials(partials_dir="templates/partials"):
+    """Load shared HTML partials and ensure all required fragments exist."""
+    if not os.path.isdir(partials_dir):
+        print(f"Error: Partials directory '{partials_dir}' missing!", file=sys.stderr)
+        sys.exit(1)
+
+    partials = {}
+    for entry in sorted(os.listdir(partials_dir)):
+        if entry.endswith(".html"):
+            name = entry[:-5]
+            with open(os.path.join(partials_dir, entry), "r", encoding="utf-8") as f:
+                partials[name] = f.read()
+
+    missing = [name for name in REQUIRED_PARTIALS if name not in partials]
+    if missing:
+        print(f"Error: Missing required partials in '{partials_dir}': {missing}", file=sys.stderr)
+        sys.exit(1)
+    return partials
+
+
+def inject_config_vars(html_str, config):
+    """Inject runtime environment/config tokens into HTML."""
+    for key in CONFIG_TOKEN_KEYS:
+        html_str = html_str.replace(f"{{{{{key}}}}}", config.get(key, ""))
+    html_str = html_str.replace("{{THEME_COLOR}}", config.get("THEME_COLOR", THEME_COLOR_DEFAULT))
+    return html_str
+
+
+def render_partial(name, partials, config, active_nav=None):
+    """Render a named partial with active navigation and config substitutions."""
+    content = partials[name]
+    if name == "header":
+        active_keys = NAV_ACTIVE_GROUPS.get(active_nav, (active_nav,))
+        for nav_key, token_name in NAV_ACTIVE_TOKENS.items():
+            value = " active" if nav_key in active_keys else ""
+            content = content.replace(f"{{{{{token_name}}}}}", value)
+    return inject_config_vars(content, config)
+
+
+def assert_no_unresolved_placeholders(html_str, output_path):
+    """Fail the build if any unresolved {{PLACEHOLDER}} token remains in compiled HTML."""
+    tokens = sorted(set(UNRESOLVED_TOKEN_RE.findall(html_str)))
+    if tokens:
+        print(
+            f"Build Error: Unresolved template placeholder(s) in '{output_path}': {tokens}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+
+def resolve_app_play_url(app, config):
+    """Return canonical Play Store URL for an app, applying optional Ghost Trap override."""
+    play_url = app.get("play_store_url", "")
+    if app.get("slug") == "ghost-trap":
+        override = config.get("GHOST_TRAP_PLAY_STORE_URL", "")
+        if override:
+            play_url = override
+    return play_url
+
+
+def render_google_play_button(app_name, play_url, aria_verb="Download", extra_style="", indent="              "):
+    """Render shared Google Play Store CTA button markup."""
+    style_attr = f' style="{extra_style}"' if extra_style else ""
+    return (
+        f'{indent}<a href="{play_url}" target="_blank" rel="noopener" class="google-play-btn" '
+        f'aria-label="{aria_verb} {app_name} on Google Play"{style_attr}>\n'
+        f'{indent}  <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">\n'
+        f'{indent}    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />\n'
+        f'{indent}  </svg>\n'
+        f'{indent}  <div class="google-play-btn-text">\n'
+        f'{indent}    <span class="google-play-btn-subtitle">GET IT ON</span>\n'
+        f'{indent}    <span class="google-play-btn-title">Google Play</span>\n'
+        f'{indent}  </div>\n'
+        f'{indent}</a>'
+    )
+
+
+def render_redirect_html(target_url, include_js=False):
+    """Build consistent meta-refresh + canonical HTML redirect page."""
+    js_line = f"\n  <script>window.location.replace('{target_url}');</script>" if include_js else ""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={target_url}">
+  <link rel="canonical" href="https://sudogrep.in{target_url}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>{js_line}
+</body>
+</html>"""
+
+
+def finalize_and_write_html(html_str, output_path, partials, config, active_nav=None, compiled_log=None):
+    """Inject partials and config vars, verify zero unresolved placeholders, and write file."""
+    for partial_name, placeholder in PARTIAL_PLACEHOLDERS.items():
+        if placeholder in html_str:
+            rendered = render_partial(partial_name, partials, config, active_nav=active_nav)
+            html_str = html_str.replace(placeholder, rendered)
+
+    html_str = inject_config_vars(html_str, config)
+    assert_no_unresolved_placeholders(html_str, output_path)
+
+    parent_dir = os.path.dirname(output_path)
+    if parent_dir:
+        os.makedirs(parent_dir, exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html_str)
+
+    if compiled_log is not None:
+        compiled_log.append(output_path)
+
+
+def sync_static_page_partials(partials, config, root_dir="."):
+    """Refresh any opt-in @sudogrep:partial marker blocks in static HTML files."""
+    excluded_dirs = {".git", "templates", "node_modules", "data", ".well-known", "zip_connect", "file_forge"}
+    updated_count = 0
+
+    for current_root, dirs, files in os.walk(root_dir):
+        dirs[:] = [d for d in dirs if d not in excluded_dirs and not d.startswith(".")]
+        for filename in sorted(files):
+            if not filename.endswith(".html"):
+                continue
+            file_path = os.path.join(current_root, filename)
+            with open(file_path, "r", encoding="utf-8") as f:
+                original = f.read()
+            if "@sudogrep:partial" not in original:
+                continue
+
+            def _replace_marker(match):
+                start_tag, partial_name, active_attr, end_tag = match.groups()
+                if partial_name not in partials:
+                    print(
+                        f"Build Error: Unknown static partial '{partial_name}' referenced in '{file_path}'",
+                        file=sys.stderr,
+                    )
+                    sys.exit(1)
+                rendered = render_partial(partial_name, partials, config, active_nav=active_attr)
+                return f"{start_tag}\n{rendered}\n{end_tag}"
+
+            updated = STATIC_PARTIAL_MARKER_RE.sub(_replace_marker, original)
+            assert_no_unresolved_placeholders(updated, file_path)
+            if updated != original:
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(updated)
+                updated_count += 1
+
+    return updated_count
+
+
 def build_site():
-    print("Starting SudoGrep Phase 1 site compile...")
-    
+    print("Starting SudoGrep site compile...")
+
     # 1. Read and validate configuration and datasets
     config_json_path = "data/config.json"
     config_example_path = "data/config.example.json"
     apps_json_path = "data/apps.json"
     insights_json_path = "data/insights.json"
     pages_json_path = "data/pages.json"
-    
+
     for path in [apps_json_path, insights_json_path, pages_json_path]:
         if not os.path.exists(path):
             print(f"Error: {path} does not exist!", file=sys.stderr)
             sys.exit(1)
-            
+
     config = {}
     if os.path.exists(config_json_path):
         try:
@@ -59,7 +324,7 @@ def build_site():
             print(f"Warning: Error parsing .env file: {e}", file=sys.stderr)
 
     # Override with environment variables if set
-    for key in ["WHATSAPP_NUMBER", "CALENDLY_URL", "REDDIT_URL", "GHOST_TRAP_PLAY_STORE_URL"]:
+    for key in ["WHATSAPP_NUMBER", "CALENDLY_URL", "REDDIT_URL", "GHOST_TRAP_PLAY_STORE_URL", "THEME_COLOR"]:
         if key in os.environ:
             config[key] = os.environ[key]
 
@@ -73,38 +338,43 @@ def build_site():
     except Exception as e:
         print(f"Error reading JSON files: {e}", file=sys.stderr)
         sys.exit(1)
-        
-    # Validate apps fields
-    required_fields = ["name", "slug", "package_name", "play_store_url", "icon", "short_description", "description", "features", "status"]
+
+    partials = load_partials()
+    compiled_outputs = []
+
+    # Validate apps fields and normalize status categories
+    required_fields = ["name", "slug", "package_name", "icon", "short_description", "description", "features", "status"]
     for app in apps:
         for field in required_fields:
             if field not in app or not app[field]:
                 print(f"Validation Error: App '{app.get('name', 'Unknown')}' is missing required field '{field}'!", file=sys.stderr)
                 sys.exit(1)
+        try:
+            normalized_status = normalize_app_status(app["status"])
+        except ValueError as err:
+            print(f"Validation Error for app '{app['name']}': {err}", file=sys.stderr)
+            sys.exit(1)
+        app["_normalized_status"] = normalized_status
+        if normalized_status == "Published" and not app.get("play_store_url"):
+            print(f"Validation Error: Published app '{app['name']}' is missing 'play_store_url'!", file=sys.stderr)
+            sys.exit(1)
         icon_path = app["icon"]
         if not os.path.exists(icon_path):
             print(f"Validation Error: Icon path '{icon_path}' for app '{app['name']}' does not exist!", file=sys.stderr)
             sys.exit(1)
-            
-    print(f"Validation success: {len(apps)} published applications verified.")
-    print(f"Validation success: {len(insights)} insights articles verified.")
 
-    # Helper function to inject variables
-    def inject_config_vars(html_str):
-        html_str = html_str.replace("{{WHATSAPP_NUMBER}}", config.get("WHATSAPP_NUMBER", ""))
-        html_str = html_str.replace("{{CALENDLY_URL}}", config.get("CALENDLY_URL", ""))
-        html_str = html_str.replace("{{REDDIT_URL}}", config.get("REDDIT_URL", ""))
-        html_str = html_str.replace("{{GHOST_TRAP_PLAY_STORE_URL}}", config.get("GHOST_TRAP_PLAY_STORE_URL", ""))
-        return html_str
+    print(f"Validation success: {len(apps)} applications verified ({len(partials)} shared partials loaded).")
+    print(f"Validation success: {len(insights)} insights articles verified.")
 
     # Helper to generate app card
     def generate_app_card(app):
-        # Determine exact link - use play store link if it's Ghost Trap as requested (or we can use internal pages as default, and play store button)
-        # Note: Ghost Trap links directly to Google Play, but we also compile its internal detail page as part of standard evolution.
-        play_url = app["play_store_url"]
-        if app["slug"] == "ghost-trap":
-            play_url = config.get("GHOST_TRAP_PLAY_STORE_URL", play_url)
-            
+        status = app.get("_normalized_status") or normalize_app_status(app["status"])
+        if status == "Published" and app.get("play_store_url"):
+            play_url = resolve_app_play_url(app, config)
+            action_html = render_google_play_button(app["name"], play_url, aria_verb="Download")
+        else:
+            action_html = f"""              <a href="/apps/{app['slug']}/" class="text-link">{status} · View Details →</a>"""
+
         return f"""          <div class="card app-catalog-card">
             <div class="app-catalog-icon-wrapper">
               <a href="/apps/{app['slug']}/" style="display: block;">
@@ -116,15 +386,7 @@ def build_site():
                 <a href="/apps/{app['slug']}/" style="color: inherit; text-decoration: none;">{app['name']}</a>
               </h3>
               <p class="card-desc">{app['short_description']}</p>
-              <a href="{play_url}" target="_blank" rel="noopener" class="google-play-btn" aria-label="Download {app['name']} on Google Play">
-                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div class="google-play-btn-text">
-                  <span class="google-play-btn-subtitle">GET IT ON</span>
-                  <span class="google-play-btn-title">Google Play</span>
-                </div>
-              </a>
+{action_html}
             </div>
           </div>"""
 
@@ -141,31 +403,164 @@ def build_site():
             <a href="/{prefix}/{post['slug']}/" class="text-link" style="margin-top: auto;">Read Article →</a>
           </div>"""
 
+    # Helpers for Studio Homepage (Selected Work & Our Products)
+    apps_by_slug = {app["slug"]: app for app in apps}
+    insights_by_slug = {post["slug"]: post for post in insights}
+
+    def generate_work_card(app, spec):
+        name = html.escape(app["name"], quote=True)
+        role = html.escape(spec["role"], quote=True)
+        summary = html.escape(spec["summary"], quote=True)
+        slug = app["slug"]
+        banner_src = f"/{app.get('feature_graphic') or app['icon']}"
+        icon_src = f"/{app['icon']}"
+        stack_html = "\n".join(
+            f'                  <span class="work-stack-tag">{html.escape(tag)}</span>'
+            for tag in spec["stack"]
+        )
+        return f"""          <article class="work-card">
+            <div class="work-card-media">
+              <img src="{banner_src}" alt="{name} product showcase banner" width="1024" height="500" loading="lazy" decoding="async">
+              <span class="work-role-badge">{role}</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-header">
+                <img src="{icon_src}" alt="" class="work-card-icon" width="40" height="40" loading="lazy" decoding="async">
+                <h3 class="work-card-title">
+                  <a href="/apps/{slug}/">{name}</a>
+                </h3>
+              </div>
+              <p class="work-card-summary">{summary}</p>
+              <div class="work-stack-row">
+{stack_html}
+              </div>
+              <div class="work-card-footer" aria-hidden="true">
+                <span class="text-link">View Engineering &amp; Specs &rarr;</span>
+              </div>
+            </div>
+          </article>"""
+
+    def generate_product_card(app, config):
+        name = html.escape(app["name"], quote=True)
+        short_desc = html.escape(app["short_description"], quote=True)
+        slug = app["slug"]
+        status = app.get("_normalized_status") or normalize_app_status(app["status"])
+        status_cls = status.lower().replace(" ", "-")
+        icon_src = f"/{app['icon']}"
+        screenshots = app.get("screenshots") or []
+        preview_src = f"/{screenshots[0]}" if screenshots else f"/{app.get('feature_graphic') or app['icon']}"
+        features = app.get("features") or []
+        feature_items = "\n".join(
+            f"                  <li>{html.escape(feat)}</li>"
+            for feat in features[:2]
+        )
+        play_url = resolve_app_play_url(app, config) if status == "Published" else ""
+        if status == "Published" and play_url:
+            secondary_action = (
+                f'                <a href="{html.escape(play_url, quote=True)}" target="_blank" rel="noopener noreferrer" '
+                f'class="text-link" aria-label="Get {name} on Google Play">Google Play &rarr;</a>'
+            )
+        else:
+            secondary_action = ""
+
+        return f"""          <article class="product-spotlight-card">
+            <div class="product-spotlight-main">
+              <div class="product-spotlight-head">
+                <a href="/apps/{slug}/" class="product-spotlight-icon-link" aria-hidden="true" tabindex="-1">
+                  <img src="{icon_src}" alt="" class="product-spotlight-icon" width="48" height="48" loading="lazy" decoding="async">
+                </a>
+                <div class="product-spotlight-meta">
+                  <div class="product-badge-row">
+                    <span class="product-status-badge status-{status_cls}">{html.escape(status)}</span>
+                    <span class="product-platform-label">Android</span>
+                  </div>
+                  <h3 class="product-spotlight-title">
+                    <a href="/apps/{slug}/">{name}</a>
+                  </h3>
+                </div>
+              </div>
+              <p class="product-spotlight-desc">{short_desc}</p>
+              <ul class="product-feature-list">
+{feature_items}
+              </ul>
+              <div class="product-spotlight-actions">
+                <a href="/apps/{slug}/" class="btn btn-secondary btn-sm">Explore Product</a>
+{secondary_action}
+              </div>
+            </div>
+            <a href="/apps/{slug}/" class="product-device-frame" aria-label="{name} mobile screenshot preview">
+              <img src="{preview_src}" alt="{name} mobile app screen" width="108" height="228" loading="lazy" decoding="async">
+            </a>
+          </article>"""
+
+    def generate_more_product_pill(app):
+        name = html.escape(app["name"], quote=True)
+        slug = app["slug"]
+        icon_src = f"/{app['icon']}"
+        status = app.get("_normalized_status") or normalize_app_status(app["status"])
+        return (
+            f'          <a href="/apps/{slug}/" class="more-product-pill">\n'
+            f'            <img src="{icon_src}" alt="" width="24" height="24" loading="lazy" decoding="async">\n'
+            f'            <span>{name}</span>\n'
+            f'            <span class="pill-status-dot" title="{html.escape(status, quote=True)}" aria-hidden="true"></span>\n'
+            f'          </a>'
+        )
+
     # 2. Compile Homepage (index.html)
     home_template_path = "templates/index.html"
     if not os.path.exists(home_template_path):
         print(f"Error: Homepage template '{home_template_path}' missing!", file=sys.stderr)
         sys.exit(1)
-        
+
     with open(home_template_path, 'r', encoding='utf-8') as f:
         home_html = f.read()
-        
-    # Generate app cards and insights cards
-    homepage_cards = [generate_app_card(app) for app in apps]
-    homepage_cards_str = "\n".join(homepage_cards)
-    
-    # Sort insights by date (newest first) and take the latest 3
+
+    # Generate Selected Work cards (curated verified builds)
+    work_cards = [
+        generate_work_card(apps_by_slug[spec["slug"]], spec)
+        for spec in FEATURED_WORK_SPECS
+        if spec["slug"] in apps_by_slug
+    ]
+    work_cards_str = "\n".join(work_cards)
+
+    # Generate Our Products flagship spotlight + compact remaining published apps strip
+    featured_product_set = set(FEATURED_PRODUCT_SLUGS)
+    product_cards = [
+        generate_product_card(apps_by_slug[slug], config)
+        for slug in FEATURED_PRODUCT_SLUGS
+        if slug in apps_by_slug
+    ]
+    product_cards_str = "\n".join(product_cards)
+
+    remaining_apps = [app for app in apps if app["slug"] not in featured_product_set]
+    more_product_pills_str = "\n".join(generate_more_product_pill(app) for app in remaining_apps)
+
+    # Select curated studio insights (with date-sorted fallback)
     sorted_insights = sorted(insights, key=lambda x: x.get("date_published", ""), reverse=True)
-    featured_insights = sorted_insights[:3]
-    homepage_insights = [generate_blog_card(post, is_home=True) for post in featured_insights]
+    featured_insights = [
+        insights_by_slug[slug]
+        for slug in FEATURED_INSIGHT_SLUGS
+        if slug in insights_by_slug
+    ]
+    if len(featured_insights) < 3:
+        existing_slugs = {post["slug"] for post in featured_insights}
+        for post in sorted_insights:
+            if post["slug"] not in existing_slugs:
+                featured_insights.append(post)
+                existing_slugs.add(post["slug"])
+            if len(featured_insights) >= 3:
+                break
+    homepage_insights = [generate_blog_card(post, is_home=True) for post in featured_insights[:3]]
     homepage_insights_str = "\n".join(homepage_insights)
-    
-    home_html = home_html.replace("{{APP_CARDS}}", homepage_cards_str)
+
+    # Legacy fallback token support if referenced elsewhere
+    homepage_cards = [generate_app_card(app) for app in apps]
+    home_html = home_html.replace("{{APP_CARDS}}", "\n".join(homepage_cards))
+    home_html = home_html.replace("{{WORK_CARDS}}", work_cards_str)
+    home_html = home_html.replace("{{PRODUCT_CARDS}}", product_cards_str)
+    home_html = home_html.replace("{{MORE_PRODUCT_PILLS}}", more_product_pills_str)
     home_html = home_html.replace("{{INSIGHTS_CARDS}}", homepage_insights_str)
-    home_html = inject_config_vars(home_html)
-    
-    with open("index.html", "w", encoding="utf-8") as f:
-        f.write(home_html)
+    finalize_and_write_html(home_html, "index.html", partials, config, active_nav="home", compiled_log=compiled_outputs)
     print("Homepage (index.html) compiled.")
 
     # 3. Compile Apps Catalog (apps/index.html)
@@ -173,18 +568,14 @@ def build_site():
     if not os.path.exists(apps_template_path):
         print(f"Error: Apps catalog template '{apps_template_path}' missing!", file=sys.stderr)
         sys.exit(1)
-        
+
     with open(apps_template_path, 'r', encoding='utf-8') as f:
         catalog_html = f.read()
-        
+
     catalog_cards = [generate_app_card(app) for app in apps]
     catalog_cards_str = "\n".join(catalog_cards)
     catalog_html = catalog_html.replace("{{APP_LISTINGS}}", catalog_cards_str)
-    catalog_html = inject_config_vars(catalog_html)
-    
-    os.makedirs("apps", exist_ok=True)
-    with open("apps/index.html", "w", encoding="utf-8") as f:
-        f.write(catalog_html)
+    finalize_and_write_html(catalog_html, "apps/index.html", partials, config, active_nav="apps", compiled_log=compiled_outputs)
     print("Apps catalog (apps/index.html) compiled.")
 
     # 4. Individual App Pages compilation
@@ -386,31 +777,36 @@ def build_site():
         for path, name in rel["guides"]:
             guides_html += f'              <li style="margin-bottom: 0.5rem;"><a href="{path}" style="color: var(--accent-purple); text-decoration: none; font-weight: 500; font-size: 0.95rem;">→ {name}</a></li>\n'
             
+        app_status = app.get("_normalized_status") or normalize_app_status(app["status"])
+        is_published = app_status == "Published" and bool(app.get("play_store_url"))
+
         # JSON-LD Schema
+        software_schema = {
+            "@type": "SoftwareApplication",
+            "@id": f"https://sudogrep.in/apps/{slug}/#application",
+            "name": app["name"],
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilityApplication",
+            "description": app["description"],
+            "softwareVersion": "1.0",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "SudoGrep",
+                "url": "https://sudogrep.in"
+            }
+        }
+        if is_published:
+            software_schema["downloadUrl"] = resolve_app_play_url(app, config)
+
         schema_json = {
             "@context": "https://schema.org",
             "@graph": [
-                {
-                    "@type": "SoftwareApplication",
-                    "@id": f"https://sudogrep.in/apps/{slug}/#application",
-                    "name": app["name"],
-                    "operatingSystem": "Android",
-                    "applicationCategory": "UtilityApplication",
-                    "downloadUrl": app["play_store_url"],
-                    "description": app["description"],
-                    "softwareVersion": "1.0",
-                    "aggregateRating": None,
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "0.00",
-                        "priceCurrency": "USD"
-                    },
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "SudoGrep",
-                        "url": "https://sudogrep.in"
-                    }
-                },
+                software_schema,
                 {
                     "@type": "BreadcrumbList",
                     "itemListElement": [
@@ -461,6 +857,22 @@ def build_site():
     </section>'''
 
         installs_str = app.get("installs") or "10+"
+        status_label, status_color = APP_STATUS_DISPLAY[app_status]
+        if is_published:
+            play_cta_html = render_google_play_button(
+                app["name"],
+                resolve_app_play_url(app, config),
+                aria_verb="Get",
+                extra_style="display: inline-flex;",
+                indent="            ",
+            )
+            installs_row_html = f'''                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-secondary);">Play Store Downloads</span>
+                  <span style="font-weight: 600; color: var(--text-primary);">{installs_str}</span>
+                </div>'''
+        else:
+            play_cta_html = f'''            <span style="display: inline-flex; align-items: center; padding: 0.5rem 1rem; border-radius: 999px; background: var(--bg-secondary); border: 1px solid var(--border-color); font-size: 0.85rem; font-weight: 600; color: {status_color};">Status: {status_label}</span>'''
+            installs_row_html = ""
 
         # Replace placeholders
         pg_html = detail_template
@@ -473,25 +885,29 @@ def build_site():
         pg_html = pg_html.replace("{{APP_NAME}}", app["name"])
         pg_html = pg_html.replace("{{APP_H1}}", app_h1)
         pg_html = pg_html.replace("{{APP_SHORT_DESCRIPTION}}", app["short_description"])
-        pg_html = pg_html.replace("{{PLAY_STORE_URL}}", app["play_store_url"])
+        pg_html = pg_html.replace("{{PLAY_STORE_CTA}}", play_cta_html)
         pg_html = pg_html.replace("{{BREADCRUMB_NAME}}", app["name"])
         pg_html = pg_html.replace("{{APP_DESCRIPTION}}", app["description"])
         pg_html = pg_html.replace("{{APP_FEATURES}}", features_html)
         pg_html = pg_html.replace("{{FEATURE_GRAPHIC_BANNER}}", feature_banner_html)
         pg_html = pg_html.replace("{{APP_SCREENSHOTS_GALLERY}}", screenshots_html)
-        pg_html = pg_html.replace("{{APP_INSTALLS}}", installs_str)
+        pg_html = pg_html.replace("{{APP_INSTALLS_ROW}}", installs_row_html)
+        pg_html = pg_html.replace("{{APP_STATUS_LABEL}}", status_label)
+        pg_html = pg_html.replace("{{APP_STATUS_COLOR}}", status_color)
         pg_html = pg_html.replace("{{FAQ_SECTION}}", faq_html)
         pg_html = pg_html.replace("{{RELATED_TOOLS}}", tools_html)
         pg_html = pg_html.replace("{{RELATED_GUIDES}}", guides_html)
         pg_html = pg_html.replace("{{SCHEMA_JSON_LD}}", schema_str)
-        pg_html = inject_config_vars(pg_html)
-        
-        # Ensure directory exists and write index.html
-        app_dir = os.path.join("apps", slug)
-        os.makedirs(app_dir, exist_ok=True)
-        with open(os.path.join(app_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(pg_html)
-            
+
+        finalize_and_write_html(
+            pg_html,
+            os.path.join("apps", slug, "index.html"),
+            partials,
+            config,
+            active_nav="apps",
+            compiled_log=compiled_outputs,
+        )
+
     print(f"Generated landing pages for {len(apps)} apps successfully.")
 
     # 5. Compile Blog Index Page (/blog/index.html)
@@ -499,18 +915,14 @@ def build_site():
     if not os.path.exists(blog_index_template_path):
         print(f"Error: Blog index template '{blog_index_template_path}' missing!", file=sys.stderr)
         sys.exit(1)
-        
+
     with open(blog_index_template_path, 'r', encoding='utf-8') as f:
         blog_idx_html = f.read()
-        
+
     blog_cards = [generate_blog_card(post, is_home=False) for post in sorted_insights]
     blog_cards_str = "\n".join(blog_cards)
     blog_idx_html = blog_idx_html.replace("{{BLOG_LISTINGS}}", blog_cards_str)
-    blog_idx_html = inject_config_vars(blog_idx_html)
-    
-    os.makedirs("blog", exist_ok=True)
-    with open("blog/index.html", "w", encoding="utf-8") as f:
-        f.write(blog_idx_html)
+    finalize_and_write_html(blog_idx_html, "blog/index.html", partials, config, active_nav="insights", compiled_log=compiled_outputs)
     print("Blog catalog (blog/index.html) compiled.")
 
     # 6. Compile Individual Blog Pages (/blog/[slug]/index.html)
@@ -612,32 +1024,28 @@ def build_site():
         pg_html = pg_html.replace("{{ARTICLE_BODY}}", post_body)
         pg_html = pg_html.replace("{{ARTICLE_AUTHOR}}", "SudoGrep")
         pg_html = pg_html.replace("{{SCHEMA_JSON_LD}}", schema_str)
-        pg_html = inject_config_vars(pg_html)
-        
-        # Write
-        post_dir = os.path.join(prefix, slug)
-        os.makedirs(post_dir, exist_ok=True)
-        with open(os.path.join(post_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(pg_html)
-            
+
+        article_nav = "insights" if prefix in ("insights", "blog") else None
+        finalize_and_write_html(
+            pg_html,
+            os.path.join(prefix, slug, "index.html"),
+            partials,
+            config,
+            active_nav=article_nav,
+            compiled_log=compiled_outputs,
+        )
+
         # 7. Compile Backwards-Compatible Redirect for old blog paths if hosted under guides/insights
         if prefix != "blog":
             old_blog_dir = os.path.join("blog", slug)
-            os.makedirs(old_blog_dir, exist_ok=True)
-            redirect_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/{prefix}/{slug}/">
-  <link rel="canonical" href="https://sudogrep.in/{prefix}/{slug}/">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <p>Redirecting to <a href="/{prefix}/{slug}/">/{prefix}/{slug}/</a>...</p>
-</body>
-</html>"""
-            with open(os.path.join(old_blog_dir, "index.html"), "w", encoding="utf-8") as f:
-                f.write(redirect_html)
+            redirect_html = render_redirect_html(f"/{prefix}/{slug}/", include_js=False)
+            finalize_and_write_html(
+                redirect_html,
+                os.path.join(old_blog_dir, "index.html"),
+                partials,
+                config,
+                compiled_log=compiled_outputs,
+            )
 
     # Specific Phase 2 & Phase 4 301 Redirects for resolved cannibalization clusters
     cannibalized_redirects = [
@@ -653,36 +1061,25 @@ def build_site():
         ("play_store", "/apps/"),
     ]
     for old_path, target_url in cannibalized_redirects:
-        os.makedirs(old_path, exist_ok=True)
-        redirect_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url={target_url}">
-  <link rel="canonical" href="https://sudogrep.in{target_url}">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>
-</body>
-</html>"""
-        with open(os.path.join(old_path, "index.html"), "w", encoding="utf-8") as f:
-            f.write(redirect_html)
+        redirect_html = render_redirect_html(target_url, include_js=False)
+        finalize_and_write_html(
+            redirect_html,
+            os.path.join(old_path, "index.html"),
+            partials,
+            config,
+            compiled_log=compiled_outputs,
+        )
 
     # Compile Guides Catalog Page (/guides/index.html)
     guides_index_template_path = "templates/guides_index.html"
     if os.path.exists(guides_index_template_path):
         with open(guides_index_template_path, 'r', encoding='utf-8') as f:
             guides_idx_html = f.read()
-        
+
         guide_posts = [p for p in insights if p.get("path_prefix", "blog") == "guides"]
         guide_cards = [generate_blog_card(post, is_home=False) for post in guide_posts]
         guides_idx_html = guides_idx_html.replace("{{BLOG_LISTINGS}}", "\n".join(guide_cards))
-        guides_idx_html = inject_config_vars(guides_idx_html)
-        
-        os.makedirs("guides", exist_ok=True)
-        with open("guides/index.html", "w", encoding="utf-8") as f:
-            f.write(guides_idx_html)
+        finalize_and_write_html(guides_idx_html, "guides/index.html", partials, config, compiled_log=compiled_outputs)
         print("Guides catalog (guides/index.html) compiled.")
 
     print(f"Generated landing pages and old redirects for {len(insights)} posts successfully.")
@@ -700,10 +1097,7 @@ def build_site():
 
     # Reuse the same article cards that appear on /blog/
     insights_idx_html = insights_idx_html.replace("{{INSIGHTS_LISTINGS}}", blog_cards_str)
-    insights_idx_html = inject_config_vars(insights_idx_html)
-    os.makedirs("insights", exist_ok=True)
-    with open("insights/index.html", "w", encoding="utf-8") as f:
-        f.write(insights_idx_html)
+    finalize_and_write_html(insights_idx_html, "insights/index.html", partials, config, active_nav="insights", compiled_log=compiled_outputs)
     print("Insights landing page (insights/index.html) compiled.")
 
     # 5c. Compile Backwards-Compatible Redirects for legacy root tool paths
@@ -727,25 +1121,21 @@ def build_site():
         ("resize-image-for-passport", "/guides/how-to-resize-image-for-online-forms/")
     ]
     for old_path, target_url in legacy_tools:
-        os.makedirs(old_path, exist_ok=True)
-        redirect_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url={target_url}">
-  <link rel="canonical" href="https://sudogrep.in{target_url}">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <p>Redirecting to <a href="{target_url}">{target_url}</a>...</p>
-  <script>window.location.replace('{target_url}');</script>
-</body>
-</html>"""
-        with open(os.path.join(old_path, "index.html"), "w", encoding="utf-8") as f:
-            f.write(redirect_html)
+        redirect_html = render_redirect_html(target_url, include_js=True)
+        finalize_and_write_html(
+            redirect_html,
+            os.path.join(old_path, "index.html"),
+            partials,
+            config,
+            compiled_log=compiled_outputs,
+        )
     print("Legacy root tools redirects compiled.")
 
-    print("Site compilation complete. Ready for static deployment.")
+    synced_static = sync_static_page_partials(partials, config)
+    print(
+        f"Site compilation complete: {len(compiled_outputs)} compiled HTML outputs, "
+        f"{synced_static} static partial file(s) synced, 0 unresolved placeholders."
+    )
 
 if __name__ == "__main__":
     if "--sync" in sys.argv:

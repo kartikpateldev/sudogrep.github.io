@@ -1,40 +1,53 @@
 /* ==========================================================================
    SudoGrep CSS Design System — Global Tokens & Styles
-   Visual Rhythm: White, light-gray, blue-tinted, and charcoal sections.
+   Dark-First Studio Palette: Deep obsidian canvas, charcoal surfaces, refined blue accents.
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --bg-white: #ffffff;
-  --bg-light: #fafafa;
-  --bg-tinted: #f4f7fc;       /* Subtle blue-tinted background */
-  --bg-dark: #09090b;         /* Charcoal section background */
-  --bg-dark-card: #18181b;    /* Charcoal card backgrounds */
-  
-  --text-primary: #09090b;
-  --text-secondary: #4b5563;
-  --text-muted: #6b7280;
-  --text-light: #9ca3af;
-  --text-white: #ffffff;
-  
-  --border-color: #e5e7eb;
-  --border-hover: #d1d5db;
-  --border-dark: #27272a;
-  
-  --accent: #2563eb;         /* Interactive brand blue */
-  --accent-hover: #1d4ed8;
-  --accent-subtle: #eff6ff;
-  --accent-purple: #7c3aed;  /* AI capability purple */
-  --accent-purple-subtle: #f5f3ff;
-  --accent-green: #10b981;   /* Live/status green */
-  --accent-green-subtle: #ecfdf5;
-  
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
-  --shadow-premium: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
-  
+  /* Dark-First Studio Colors */
+  --bg-main: #0B0F17;
+  --bg-secondary: #111827;
+  --bg-card: #161F2D;
+  --bg-elevated: #1E293B;
+
+  /* Compatibility Surface Tokens */
+  --bg-white: var(--bg-main);
+  --bg-light: var(--bg-card);
+  --bg-tinted: var(--bg-secondary);
+  --bg-dark: #070A10;
+  --bg-dark-card: var(--bg-card);
+
+  /* Typography Hierarchy */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #94A3B8;
+  --text-light: #CBD5E1;
+  --text-white: #F8FAFC;
+
+  /* Borders */
+  --border-color: #243244;
+  --border-subtle: rgba(148, 163, 184, 0.16);
+  --border-interactive: #64748B;
+  --border-hover: #475569;
+  --border-dark: #243244;
+
+  /* Studio Accents */
+  --accent: #3B82F6;
+  --accent-light: #60A5FA;
+  --accent-fill: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-subtle: rgba(59, 130, 246, 0.14);
+  --accent-purple: #A78BFA;
+  --accent-purple-subtle: rgba(167, 139, 250, 0.14);
+  --accent-green: #34D399;
+  --accent-green-subtle: rgba(16, 185, 129, 0.14);
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px 0 rgba(2, 6, 23, 0.45);
+  --shadow-md: 0 10px 24px -6px rgba(2, 6, 23, 0.55);
+  --shadow-lg: 0 18px 34px -10px rgba(2, 6, 23, 0.65);
+  --shadow-premium: 0 24px 48px -14px rgba(2, 6, 23, 0.72);
+
   /* Border Radius */
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -43,10 +56,11 @@
 
   /* Font Stack */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
   /* Navigation height offset */
-  scroll-padding-top: 70px;
-  color-scheme: light;
+  scroll-padding-top: 76px;
+  color-scheme: dark;
 }
 
 /* Reset & Global */
@@ -58,16 +72,16 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: var(--text-light) var(--bg-light);
+  scrollbar-color: #334155 #0B0F17;
   scrollbar-width: thin;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-white);
+  background-color: var(--bg-main);
   color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
+  line-height: 1.65;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -85,8 +99,8 @@ img {
 
 /* Accessibility */
 :focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
 }
 
 /* Custom Scrollbar fallback */
@@ -96,14 +110,14 @@ img {
     height: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: var(--bg-light);
+    background: var(--bg-main);
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--text-light);
+    background: #334155;
     border-radius: var(--radius-sm);
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-muted);
+    background: #475569;
   }
 }
 
@@ -137,7 +151,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-light);
   margin-bottom: 1rem;
   display: inline-block;
 }
@@ -183,13 +197,13 @@ section {
 /* ===== GLOBAL GRIDS ===== */
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 1.5rem;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -198,4 +212,23 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
+  .btn,
+  .card,
+  .nav-dropdown-menu,
+  .nav-drawer-panel {
+    border: 1px solid ButtonBorder;
+  }
 }

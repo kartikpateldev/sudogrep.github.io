@@ -18,7 +18,7 @@
 .guide-catalog-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-white);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -54,7 +54,7 @@
 }
 
 .guide-card-title a:hover {
-  color: var(--accent);
+  color: var(--accent-light);
 }
 
 .guide-card-desc {
@@ -94,7 +94,7 @@
 
 .article-category {
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-light);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -159,9 +159,9 @@
 }
 
 .article-content code {
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: 0.9em;
-  background-color: var(--bg-light);
+  background-color: var(--bg-card);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   color: var(--text-primary);
@@ -171,7 +171,7 @@
 /* Callout Box inside guides */
 .article-callout {
   background-color: var(--accent-subtle);
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--accent-light);
   padding: 1.5rem;
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   margin: 2rem 0;
@@ -180,12 +180,12 @@
 .article-callout p {
   margin-bottom: 0;
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--text-light);
   font-weight: 500;
 }
 
 .article-callout a {
-  color: var(--accent);
+  color: var(--accent-light);
   font-weight: 700;
 }
 
@@ -198,7 +198,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 2rem;
-  background-color: var(--bg-tinted);
+  background-color: var(--bg-card);
   margin: 3rem 0;
   display: flex;
   flex-direction: column;

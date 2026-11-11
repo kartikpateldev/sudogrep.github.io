@@ -1,29 +1,28 @@
 {
   "/": {
     "url": "/",
-    "title": "SudoGrep — Free Privacy-First Online Tools",
-    "description": "Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.",
-    "h1": "Free Privacy-First Online Tools",
-    "primary_intent": "free privacy-first online tools and utilities hub",
-    "primary_topic": "Privacy-First Online Web Tools",
+    "title": "SudoGrep — Independent Technology & Product Studio",
+    "description": "Build Better. Ship Faster. Scale Smarter. SudoGrep is an independent technology and product studio building mobile apps, web platforms, and AI systems.",
+    "h1": "We turn ambitious ideas into powerful digital products.",
+    "primary_intent": "independent technology and product studio building mobile, web, and AI products",
+    "primary_topic": "Technology and Product Engineering Studio",
     "secondary_topics": [
-      "Image Compression",
-      "Image Resizing",
-      "Image Conversion",
-      "Image to PDF",
-      "Mobile Applications",
-      "Software Development"
+      "Mobile App Development",
+      "Web Platform Engineering",
+      "AI-Powered Systems",
+      "Product Engineering",
+      "Independent Digital Products"
     ],
     "primary_keywords": [
-      "free privacy-first online tools",
-      "privacy-first online tools"
+      "independent technology and product studio",
+      "sudogrep product studio"
     ],
     "secondary_keywords": [
-      "client-side image compressor",
-      "browser image resizer",
-      "image to pdf online",
-      "on-device web tools",
-      "sudogrep software"
+      "mobile application development",
+      "web application development",
+      "ai-powered solutions",
+      "backend and cloud engineering",
+      "digital product studio"
     ],
     "related_tools": [
       "/tools/image-compressor/",
@@ -38,15 +37,16 @@
       "/guides/jpg-vs-png-vs-webp/"
     ],
     "recommended_internal_links": [
-      "/tools/",
-      "/guides/",
-      "/apps/",
       "/services/",
-      "/ai-solutions/"
+      "/apps/",
+      "/insights/",
+      "/tools/",
+      "/about/",
+      "/contact/"
     ],
     "canonical": "https://sudogrep.in/",
-    "og_title": "SudoGrep — Free Privacy-First Online Tools",
-    "og_description": "Compress, resize and convert images online without uploading your files. Free browser-based tools for JPG, PNG, WebP and PDF.",
+    "og_title": "SudoGrep — Independent Technology & Product Studio",
+    "og_description": "Build Better. Ship Faster. Scale Smarter. SudoGrep is an independent technology and product studio building mobile apps, web platforms, and AI systems.",
     "og_image": "https://sudogrep.in/assets/logo_square.png",
     "schema_type": "WebSite"
   },
